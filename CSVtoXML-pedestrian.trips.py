@@ -1,5 +1,6 @@
 import pandas as pd
-import os
+
+#Document osm.pedestrian.rou.xml
 df = pd.read_csv('./generated_demand/demand_1000.csv', sep=',')
 
 def convert_row(row):
@@ -20,15 +21,17 @@ def convert_row(row):
         id_TrainStation = row.id_TrainStation
 
     return """
-    <person id="ped%s" type="ped_pedestrian" depart="%s">
-        <walk busStop="%s"/>
-        <ride intended="%s" depart="%s"/>
+    <person id="ped%s" depart="%s" type="ped_pedestrian">
+        <personTrip from="%s" to="%s" modes="public"/>
     </person>
     """ % (
     int(row.id), time, id_busStop, id_TrainStation, time_bus)
 
-file1 = open("demand_test.xml","w")
+file1 = open("osm.pedestrian.trips.xml","w")
 file1.write("""<?xml version="1.0" encoding="UTF-8"?>""")
+file1.write("""<!-- generated on 2021-10-22 19:59:28.281209 by $Id$ v1_10_0+0000-83496a5972
+  options: 
+-->""")
 file1.write("""\n<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">""")
 file1.write("""<vType id="ped_pedestrian" vClass="pedestrian"/>""")
 file1.write("".join(df.apply(convert_row, axis=1)))
