@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-10-23 15:32:21 by Eclipse SUMO sumo Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="osm.net.xml"/>
+        <route-files value="osm_pt.rou.xml,osm.passenger.trips.xml,osm.bus.trips.xml,osm.pedestrian.rou.xml,osm.rail.trips.xml"/>
+        <additional-files value="osm.poly.xml,osm_stops.add.xml"/>
+    </input>
+
+    <output>
+        <statistic-output value="stats.xml"/>
+    </output>
+
+    <time>
+        <end value="2000"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.adaptation-steps value="18"/>
+        <device.rerouting.adaptation-interval value="10"/>
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <gui_only>
+        <gui-settings-file value="osm.view.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <vehicles loaded="33221" inserted="29771" running="24412" waiting="3429"/>
+    <teleports total="3742" jam="1584" yield="1955" wrongLane="170"/>
+    <safety collisions="33" emergencyStops="2"/>
+    <persons loaded="21950" running="15311" jammed="6424"/>
+    <vehicleTripStatistics routeLength="2152.28" speed="4.87" duration="524.18" waitingTime="248.09" timeLoss="352.98" departDelay="3.70" departDelayWaiting="-1.00" totalTravelTime="2809073.00" totalDepartDelay="19847.61"/>
+    <pedestrianStatistics number="13143" routeLength="391.27" duration="354.17" timeLoss="72.00"/>
+    <rideStatistics number="6399" waitingTime="126.45" routeLength="851.53" duration="97.96" bus="76" train="6323" taxi="0" bike="0" aborted="0"/>
+    <transportStatistics number="0"/>
+</statistics>
