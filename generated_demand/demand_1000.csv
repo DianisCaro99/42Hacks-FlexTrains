@@ -1,4 +1,4 @@
-,index,Date/Time,Lat,Lon,Base,id_busStop,id_TrainStation
+,index,Time,Lat,Lon,Base,id_busStop,id_TrainStation
 0,0,2014-08-01 00:03:00,40.7366,-73.9906,B02512,152_bus_M15-SBS:1,38_subway_N:0
 1,3,2014-08-01 00:12:00,40.7387,-73.9856,B02512,152_bus_M15-SBS:1,177_subway_N:4
 2,9,2014-08-01 00:20:00,40.7448,-73.9799,B02512,122_bus_M15:0,43_train_Harlem:0
