@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2021-10-23 22:25:14.999333 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_10_0+0000-83496a5972
+  options: 
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus"/>
+    <vType id="pt_tram" vClass="tram"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="rail_urban"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail"/>
+    <vType id="pt_trolleybus" vClass="bus"/>
+    <vType id="pt_aerialway" vClass="bus"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <route id="pt_subway_S:0" edges="817036018" >
+        <stop busStop="7630776657" duration="30.00" until="31.0"/> <!-- Times Square -->
+        <stop busStop="7630776662" duration="30.00" until="91.0"/> <!-- Grand Central -->
+    </route>
+    <route id="pt_subway_JSQ–33_via_HOB:0" edges="-552266811 -579074444 802782788 813712317" >
+        <stop busStop="-5332398711" duration="30.00" until="31.0"/> <!-- 33rd Street -->
+        <stop busStop="5551785165" duration="30.00" until="107.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_JSQ–33_via_HOB:1" edges="813712318 802782787 579074443 552266811" >
+        <stop busStop="5551785164" duration="30.00" until="67.0"/> <!-- 23rd Street -->
+        <stop busStop="5332398711" duration="30.00" until="135.0"/> <!-- 33rd Street -->
+    </route>
+    <route id="pt_train_Harlem:0" edges="759945015" >
+        <stop busStop="100515086" duration="30.00" until="31.0"/> <!-- Grand Central Terminal -->
+    </route>
+    <route id="pt_bus_2602:0" edges="767683111#1 767683110#2 767683108#0 460069727#1 5672730 207542284 36806908 46492009 968406200 46482819#1 320888292" >
+        <stop busStop="7167585626" duration="30.00" until="33.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_2601:0" edges="767683111#1 767683110#2 767683108#0 460069727#1 5672730 207542284 36806908 46492009 968406200 46482819#1 320888292" >
+        <stop busStop="7167585626" duration="30.00" until="34.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_subway_S:1" edges="-821671625#1" >
+        <stop busStop="-7630776662" duration="30.00" until="31.0"/> <!-- Grand Central -->
+        <stop busStop="-7630776657" duration="30.00" until="89.0"/> <!-- Times Square -->
+    </route>
+    <route id="pt_train_Hudson:0" edges="759945015" >
+        <stop busStop="100515086" duration="30.00" until="31.0"/> <!-- Grand Central Terminal -->
+    </route>
+    <route id="pt_bus_2601:1" edges="5669566 36806907 46492015 46492007 465256869 465256868 68325075 500182596 5670275 420901925 36806658 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1" >
+        <stop busStop="7167585626" duration="30.00" until="298.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_125:0" edges="8028096 5669218 36807165#0 36807165#1 223694351 273895450 36807166 5669332#1 36836400#0 36836400#1 36807214 -36807212" >
+    </route>
+    <route id="pt_bus_2602:1" edges="5669566 36806907 46492015 46492007 465256869 465256868 68325075 500182596 5670275 420901925 36806658 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1" >
+        <stop busStop="7167585626" duration="30.00" until="334.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_M23_SBS:0" edges="22904005 763121489 34625463#0 34625463#2 34625463#3 -420908136#0" >
+        <stop busStop="8378777761" duration="30.00" until="43.0"/> <!-- 12th Avenue & West 23rd Street -->
+    </route>
+    <route id="pt_bus_2686:1" edges="767683111#1 767683110#2 767683108#0 460069727#1 5672730 207542284 36806908 46492009 968406200 46482819#1 320888292" >
+        <stop busStop="7167585626" duration="30.00" until="34.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_Q101:0" edges="-46211829#2 -46211829#1 198595548 358290454#1 818182930#0 375164210 46419222#1" >
+        <stop busStop="-4798293326" duration="30.00" until="38.0"/> <!-- East 60th Street/2nd Avenue -->
+        <stop busStop="-4798293327" duration="30.00" until="69.0"/> <!-- East 60th Street & 2nd Avenue -->
+    </route>
+    <route id="pt_bus_M14A_SBS:1" edges="350726031#1" >
+        <stop busStop="3913758293" duration="30.00" until="43.0"/> <!-- West 14th Street & 9th Avenue -->
+    </route>
+    <route id="pt_bus_Q101:1" edges="-46211829#2 -46211829#1 198595470" >
+        <stop busStop="-4798293326" duration="30.00" until="104.0"/> <!-- East 60th Street/2nd Avenue -->
+        <stop busStop="-4798293327" duration="30.00" until="135.0"/> <!-- East 60th Street & 2nd Avenue -->
+    </route>
+    <route id="pt_bus_2601:2" edges="767683111#1 767683110#2 767683108#0 460069727#1 5672730 207542284 36806908 46492009 968406200 46482819#1 320888292" >
+        <stop busStop="7167585626" duration="30.00" until="35.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_M14A_SBS:0" edges="458106348#0 458106348#1 458106348#2 5670451#0 5670451#2 5670451#3" >
+        <stop busStop="3913758293@12382566" duration="30.00" until="71.0"/> <!-- West 14th Street & 9th Avenue -->
+    </route>
+    <route id="pt_train_New_Haven:0" edges="759945015" >
+        <stop busStop="100515086" duration="30.00" until="31.0"/> <!-- Grand Central Terminal -->
+    </route>
+    <route id="pt_subway_5:1" edges="817013577" >
+        <stop busStop="7630558481" duration="30.00" until="111.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630410489" duration="30.00" until="142.0"/> <!-- 59th Street -->
+        <stop busStop="7630379982" duration="30.00" until="173.0"/> <!-- 86th Street -->
+    </route>
+    <route id="pt_bus_2686:0" edges="5669566 36806907 46492015 46492007 465256869 465256868 68325075 500182596 5670275 420901925 36806658 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1" >
+        <stop busStop="7167585626" duration="30.00" until="403.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_2683:1" edges="767683111#1 767683110#2 767683108#0 460069727#1 5672730 207542284 36806908 46492009 968406200 46482819#1 320888292" >
+        <stop busStop="7167585626" duration="30.00" until="33.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_subway_5:2" edges="817013577" >
+        <stop busStop="7630558481" duration="30.00" until="106.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630410489" duration="30.00" until="137.0"/> <!-- 59th Street -->
+        <stop busStop="7630379982" duration="30.00" until="168.0"/> <!-- 86th Street -->
+    </route>
+    <route id="pt_subway_5:0" edges="816983740" >
+        <stop busStop="7630379968" duration="30.00" until="92.0"/> <!-- 86th Street -->
+        <stop busStop="7630379974" duration="30.00" until="206.0"/> <!-- 59th Street -->
+        <stop busStop="7630588825" duration="30.00" until="237.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_subway_5:3" edges="816983740" >
+        <stop busStop="7630379968" duration="30.00" until="88.0"/> <!-- 86th Street -->
+        <stop busStop="7630379974" duration="30.00" until="202.0"/> <!-- 59th Street -->
+        <stop busStop="7630588825" duration="30.00" until="233.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_subway_HOB–33:0" edges="-552266810 802782788 813712317" >
+        <stop busStop="-5332358378" duration="30.00" until="31.0"/> <!-- 33rd Street -->
+        <stop busStop="5551785165" duration="30.00" until="107.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_JSQ–33:0" edges="813712318 802782787 552256574" >
+        <stop busStop="5551785164" duration="30.00" until="67.0"/> <!-- 23rd Street -->
+        <stop busStop="5332398715" duration="30.00" until="135.0"/> <!-- 33rd Street -->
+    </route>
+    <route id="pt_bus_Q60:0" edges="-46211829#2 -46211829#1 198595470" >
+        <stop busStop="-4798293326" duration="30.00" until="106.0"/> <!-- East 60th Street/2nd Avenue -->
+        <stop busStop="-4798293327" duration="30.00" until="137.0"/> <!-- East 60th Street & 2nd Avenue -->
+    </route>
+    <route id="pt_bus_2680:0" edges="767683111#1 767683110#2 767683108#0 460069727#1 5672730 207542284 36806908 46492009 968406200 46482819#1 320888292" >
+        <stop busStop="7167585626" duration="30.00" until="35.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_2601:3" edges="5669566 36806907 46492015 46492007 465256869 465256868 68325075 500182596 5670275 420901925 36806658 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1" >
+        <stop busStop="7167585626" duration="30.00" until="440.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_subway_F:0" edges="797157469 819186626 46340246" >
+        <stop busStop="7656750800" duration="30.00" until="72.0"/> <!-- Lexington Avenue–63rd Street -->
+        <stop busStop="7657247703" duration="30.00" until="103.0"/> <!-- 57th Street -->
+        <stop busStop="597928314" duration="30.00" until="231.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7650206920" duration="30.00" until="289.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650207492" duration="30.00" until="320.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="5551785167" duration="30.00" until="351.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_train_55:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="70.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_F:1" edges="813712319 819186628 819186615" >
+        <stop busStop="7657247708" duration="30.00" until="68.0"/> <!-- 23rd Street -->
+        <stop busStop="7650207498" duration="30.00" until="130.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247706" duration="30.00" until="161.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206927" duration="30.00" until="192.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7657247702" duration="30.00" until="304.0"/> <!-- 57th Street -->
+        <stop busStop="7656750799" duration="30.00" until="335.0"/> <!-- Lexington Avenue–63rd Street -->
+    </route>
+    <route id="pt_bus_QM7:0" edges="169383516#1" >
+        <stop busStop="6133359418" duration="30.00" until="36.0"/> <!-- 1 Av/E 42 St -->
+    </route>
+    <route id="pt_bus_Q101:2" edges="-46211829#1" >
+        <stop busStop="-4798293326" duration="30.00" until="33.0"/> <!-- East 60th Street/2nd Avenue -->
+        <stop busStop="-4798293327" duration="30.00" until="64.0"/> <!-- East 60th Street & 2nd Avenue -->
+    </route>
+    <route id="pt_bus_2683:0" edges="5669566 36806907 46492015 46492007 465256869 465256868 68325075 500182596 5670275 420901925 36806658 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1" >
+        <stop busStop="7167585626" duration="30.00" until="481.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_subway_4:0" edges="816983740" >
+        <stop busStop="7630379968" duration="30.00" until="128.0"/> <!-- 86th Street -->
+        <stop busStop="7630379974" duration="30.00" until="273.0"/> <!-- 59th Street -->
+        <stop busStop="7630588825" duration="30.00" until="304.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_subway_4:1" edges="817013577" >
+        <stop busStop="7630558481" duration="30.00" until="208.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630410489" duration="30.00" until="239.0"/> <!-- 59th Street -->
+        <stop busStop="7630379982" duration="30.00" until="270.0"/> <!-- 86th Street -->
+    </route>
+    <route id="pt_train_57:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="103.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_Q60:1" edges="-46211829#1" >
+        <stop busStop="-4798293326" duration="30.00" until="32.0"/> <!-- East 60th Street/2nd Avenue -->
+        <stop busStop="-4798293327" duration="30.00" until="63.0"/> <!-- East 60th Street & 2nd Avenue -->
+    </route>
+    <route id="pt_subway_D:0" edges="819186630 819186612 715214988 816331850#0 816331850#1 816331850#2 816331850#3 689037416#1 689037416#3 689037416#4 689037416#9 689037416#10 689037416#16" >
+        <stop busStop="7650206934" duration="30.00" until="100.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247704" duration="30.00" until="150.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206932" duration="30.00" until="181.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7657247698" duration="30.00" until="270.0"/> <!-- 7th Avenue -->
+        <stop busStop="6463379284" duration="30.00" until="358.0"/> <!-- 59th Street–Columbus Circle -->
+    </route>
+    <route id="pt_subway_HOB–33:1" edges="813712318 579074445#0 579074445#1 552266810" >
+        <stop busStop="5551785164" duration="30.00" until="67.0"/> <!-- 23rd Street -->
+        <stop busStop="5332358378" duration="30.00" until="135.0"/> <!-- 33rd Street -->
+    </route>
+    <route id="pt_bus_M14D_SBS:0" edges="458106348#0 458106348#1 458106348#2 194923791#0 194923791#2 196117075#0 196117075#1 196117075#2 196117075#3 22909152#0 22909152#1 194923792#0 194923792#1 194923802#0 194923802#1 194923802#2 992132287#0" >
+        <stop busStop="3913758293@12382567" duration="30.00" until="136.0"/> <!-- West 14th Street & 9th Avenue -->
+    </route>
+    <route id="pt_bus_2680:1" edges="5669566 36806907 46492015 46492007 465256869 465256868 68325075 500182596 5670275 420901925 36806658 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1" >
+        <stop busStop="7167585626" duration="30.00" until="541.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_subway_JSQ–33:1" edges="-552256574 -579074446#1 -579074446#0 813712317" >
+        <stop busStop="-5332398715" duration="30.00" until="31.0"/> <!-- 33rd Street -->
+        <stop busStop="5551785165" duration="30.00" until="107.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_D:1" edges="686769237#0 686769237#1 686769237#7 686769237#8 686769237#13 686769237#14 686769237#16 171570637#1 171570637#2 715214987 715214982 819186625" >
+        <stop busStop="6463380721" duration="30.00" until="189.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="7657247700" duration="30.00" until="246.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650206922" duration="30.00" until="334.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="591997397" duration="30.00" until="380.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="5350434153" duration="30.00" until="411.0"/> <!-- 34th Street–Herald Square -->
+    </route>
+    <route id="pt_subway_S:2" edges="-484012802" >
+        <stop busStop="591997437" duration="30.00" until="39.0"/> <!-- Times Square -->
+        <stop busStop="3918987127" duration="30.00" until="70.0"/> <!-- Grand Central -->
+    </route>
+    <route id="pt_train_64:0" edges="756094505" >
+        <stop busStop="6165053270" duration="30.00" until="58.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M66:0" edges="968393473#0 968393473#3 968393473#6 968393473#7 945384088#1 945384088#4 945384088#6 195743335#1 36185330#1 36185329 -992603349 5673114#0 5673114#1 46334586#0 46334586#1 46334586#2 46334586#3 46334586#5 195743212#1 195743212#2 68668561#0 68668561#1" >
+        <stop busStop="3278932320" duration="30.00" until="120.0"/> <!-- 67th St / Lexington Ave -->
+    </route>
+    <route id="pt_train_2167:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_D:2" edges="819186630 819186612 715214988 816331850#0 816331850#1 816331850#2 816331850#3 689037416#1 689037416#3 689037416#4 689037416#9 689037416#10 689037416#16" >
+        <stop busStop="7650206934" duration="30.00" until="96.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247704" duration="30.00" until="146.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206932" duration="30.00" until="177.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7657247698" duration="30.00" until="303.0"/> <!-- 7th Avenue -->
+        <stop busStop="6463379284" duration="30.00" until="393.0"/> <!-- 59th Street–Columbus Circle -->
+    </route>
+    <route id="pt_subway_E:1" edges="759735515 46340266 719086609 719086610#0" >
+        <stop busStop="591998010" duration="30.00" until="76.0"/> <!-- 53rd Street–Lexington Avenue -->
+        <stop busStop="5407862242" duration="30.00" until="131.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="7657247701" duration="30.00" until="214.0"/> <!-- 7th Avenue -->
+        <stop busStop="6751642215" duration="30.00" until="256.0"/> <!-- 50th Street -->
+        <stop busStop="6751622968" duration="30.00" until="337.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621274" duration="30.00" until="368.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621238" duration="30.00" until="399.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621199" duration="30.00" until="430.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_Q:1" edges="46340259 817381421 821206648#0 821206648#1 817381419 817381397 817381417" >
+        <stop busStop="7656750798" duration="30.00" until="67.0"/> <!-- Lexington Avenue–63rd Street -->
+        <stop busStop="7656750807" duration="30.00" until="170.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7633689337" duration="30.00" until="241.0"/> <!-- 49th Street -->
+        <stop busStop="7656750813" duration="30.00" until="288.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705497" duration="30.00" until="377.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633689319" duration="30.00" until="431.0"/> <!-- 28th Street -->
+        <stop busStop="7633689324" duration="30.00" until="462.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_E:2" edges="759735515 46340266 719086609 719086610#0" >
+        <stop busStop="591998010" duration="30.00" until="71.0"/> <!-- 53rd Street–Lexington Avenue -->
+        <stop busStop="5407862242" duration="30.00" until="126.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="7657247701" duration="30.00" until="209.0"/> <!-- 7th Avenue -->
+        <stop busStop="6751642215" duration="30.00" until="251.0"/> <!-- 50th Street -->
+        <stop busStop="6751622968" duration="30.00" until="332.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621274" duration="30.00" until="363.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621238" duration="30.00" until="394.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621199" duration="30.00" until="425.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_train_54:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="324.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_157:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_N:1" edges="817381409 817381403 817381402 821206644 821206643 817383474" >
+        <stop busStop="7633705521" duration="30.00" until="69.0"/> <!-- 23rd Street -->
+        <stop busStop="7633705517" duration="30.00" until="131.0"/> <!-- 28th Street -->
+        <stop busStop="7633705506" duration="30.00" until="177.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633705531" duration="30.00" until="261.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705534" duration="30.00" until="321.0"/> <!-- 49th Street -->
+        <stop busStop="7656750809" duration="30.00" until="392.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7656750804" duration="30.00" until="477.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="4796291635" duration="30.00" until="548.0"/> <!-- Lexington Avenue–59th Street -->
+    </route>
+    <route id="pt_subway_D:3" edges="686769237#0 686769237#1 686769237#7 686769237#8 686769237#13 686769237#14 686769237#16 171570637#1 171570637#2 715214987 715214982 819186625" >
+        <stop busStop="6463380721" duration="30.00" until="222.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="7657247700" duration="30.00" until="280.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650206922" duration="30.00" until="433.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="591997397" duration="30.00" until="479.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="5350434153" duration="30.00" until="510.0"/> <!-- 34th Street–Herald Square -->
+    </route>
+    <route id="pt_bus_M31:0" edges="195743211#1 584971503#0 324118557#0 324118557#1 226041033 324118556#1 420890025 420890027 420890029 439933933 -196117083#1 -5672752#1 -5672752#0 -496986969#1 -496986969#0 497258109#0 5670139 388696206 497165757#0 497165757#1 505778913 375165665 710571390 587038175#1 421851200#0 421851200#1" >
+        <stop busStop="-4794775935" duration="30.00" until="185.0"/> <!-- West 57th Street & 7th Avenue -->
+        <stop busStop="-4794775932" duration="30.00" until="223.0"/> <!-- West 57th Street & 7th Avenue -->
+    </route>
+    <route id="pt_subway_N:0" edges="817383471 817381420 821206638 817381419 817381397 817381417" >
+        <stop busStop="7656750802" duration="30.00" until="82.0"/> <!-- Lexington Avenue–59th Street -->
+        <stop busStop="7656750805" duration="30.00" until="153.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="7656750808" duration="30.00" until="228.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7633689337" duration="30.00" until="334.0"/> <!-- 49th Street -->
+        <stop busStop="7656750813" duration="30.00" until="381.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705497" duration="30.00" until="470.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633689319" duration="30.00" until="524.0"/> <!-- 28th Street -->
+        <stop busStop="7633689324" duration="30.00" until="555.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_N:2" edges="817383471 817381420 821206638 817381419 817381397 817381417" >
+        <stop busStop="7656750802" duration="30.00" until="78.0"/> <!-- Lexington Avenue–59th Street -->
+        <stop busStop="7656750805" duration="30.00" until="149.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="7656750808" duration="30.00" until="224.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7633689337" duration="30.00" until="320.0"/> <!-- 49th Street -->
+        <stop busStop="7656750813" duration="30.00" until="367.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705497" duration="30.00" until="456.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633689319" duration="30.00" until="510.0"/> <!-- 28th Street -->
+        <stop busStop="7633689324" duration="30.00" until="541.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_3:0" edges="808965711 803142784#1 803142784#2 803142782#1 821671629" >
+        <stop busStop="5106260207" duration="30.00" until="53.0"/> <!-- 14th Street -->
+        <stop busStop="4464067416" duration="30.00" until="108.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="5111472138" duration="30.00" until="226.0"/> <!-- 42nd Street–Times Square -->
+    </route>
+    <route id="pt_subway_Q:0" edges="817381409 817381403 817381402 821206645#0 821206645#1 821206641 817381408" >
+        <stop busStop="7633705521" duration="30.00" until="65.0"/> <!-- 23rd Street -->
+        <stop busStop="7633705517" duration="30.00" until="199.0"/> <!-- 28th Street -->
+        <stop busStop="7633705506" duration="30.00" until="245.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633705531" duration="30.00" until="329.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705534" duration="30.00" until="389.0"/> <!-- 49th Street -->
+        <stop busStop="7656750806" duration="30.00" until="460.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7656750801" duration="30.00" until="525.0"/> <!-- Lexington Avenue–63rd Street -->
+    </route>
+    <route id="pt_subway_S:3" edges="-821671622" >
+        <stop busStop="-3918987127" duration="30.00" until="31.0"/> <!-- Grand Central -->
+        <stop busStop="-591997437" duration="30.00" until="93.0"/> <!-- Times Square -->
+    </route>
+    <route id="pt_subway_2:0" edges="803130478 803137435#0 803137435#1 525428784#1 803142785" >
+        <stop busStop="5111464772" duration="30.00" until="117.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="6496930048" duration="30.00" until="203.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="4464067393" duration="30.00" until="295.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_3:3" edges="821671629" >
+        <stop busStop="5111472138" duration="30.00" until="42.0"/> <!-- 42nd Street–Times Square -->
+    </route>
+    <route id="pt_subway_E:0" edges="739454520 719086607 816679188 819186609" >
+        <stop busStop="6923621203" duration="30.00" until="176.0"/> <!-- 14th Street -->
+        <stop busStop="6923621236" duration="30.00" until="223.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621277" duration="30.00" until="254.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642166" duration="30.00" until="285.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="7450462465" duration="30.00" until="420.0"/> <!-- 50th Street -->
+        <stop busStop="7657247699" duration="30.00" until="451.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650207504" duration="30.00" until="550.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="7650173977" duration="30.00" until="597.0"/> <!-- 53rd Street–Lexington Avenue -->
+    </route>
+    <route id="pt_train_2170:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="358.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_3:2" edges="803130478" >
+        <stop busStop="5111464772" duration="30.00" until="117.0"/> <!-- 42nd Street–Times Square -->
+    </route>
+    <route id="pt_train_2165:0" edges="46493330 901213208 95579501 756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="336.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_4:2" edges="817013577" >
+        <stop busStop="7630558481" duration="30.00" until="111.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630410489" duration="30.00" until="142.0"/> <!-- 59th Street -->
+        <stop busStop="7630379982" duration="30.00" until="173.0"/> <!-- 86th Street -->
+    </route>
+    <route id="pt_subway_A:0" edges="689037413#1 689037413#6 689037413#7 689037412#1 46340129#1 816679186 719086610#0" >
+        <stop busStop="6437617431" duration="30.00" until="31.0"/> <!-- 103rd Street -->
+        <stop busStop="6437617428" duration="30.00" until="62.0"/> <!-- 96th Street -->
+        <stop busStop="6437617426" duration="30.00" until="160.0"/> <!-- 86th Street -->
+        <stop busStop="6437617424" duration="30.00" until="206.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6441849564" duration="30.00" until="237.0"/> <!-- 72nd Street -->
+        <stop busStop="6463380709" duration="30.00" until="363.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6751642217" duration="30.00" until="420.0"/> <!-- 50th Street -->
+        <stop busStop="6751622968" duration="30.00" until="525.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621274" duration="30.00" until="556.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621238" duration="30.00" until="587.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621199" duration="30.00" until="618.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_5:4" edges="816983740" >
+        <stop busStop="7630379968" duration="30.00" until="92.0"/> <!-- 86th Street -->
+        <stop busStop="7630379974" duration="30.00" until="206.0"/> <!-- 59th Street -->
+        <stop busStop="7630588825" duration="30.00" until="237.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_bus_M72:0" edges="-46694753#6 387128267#14 387128267#15 387128267#17 387128267#19 387128267#21 945384089 945384090 686125781#1 686125781#2 36185330#1 36185329 -992603349 5673114#0 5673114#1 661227257#2 661227257#4 661227257#5 661227257#7 661227257#8 661227257#9 661227257#11 -661227257#11 -661227257#9 -661227257#8 -661227257#7 -661227257#5 -661227257#4 661227257#4 661227257#5 661227257#7 661227257#8 661227257#9 661227257#11 661227257#12" >
+        <stop busStop="3269484626" duration="30.00" until="400.0"/> <!-- Central Park West & West 70th Street -->
+        <stop busStop="3269484629" duration="30.00" until="478.0"/> <!-- Central Park West & West 68th Street -->
+    </route>
+    <route id="pt_subway_2:3" edges="808965711 803142784#1 803142784#2 803142782#1 821671629" >
+        <stop busStop="5106260207" duration="30.00" until="53.0"/> <!-- 14th Street -->
+        <stop busStop="4464067416" duration="30.00" until="108.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="5111472138" duration="30.00" until="226.0"/> <!-- 42nd Street–Times Square -->
+    </route>
+    <route id="pt_subway_3:1" edges="803130478 803137435#0 803137435#1 525428784#1 803142785" >
+        <stop busStop="5111464772" duration="30.00" until="117.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="6496930048" duration="30.00" until="203.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="4464067393" duration="30.00" until="295.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_M:0" edges="759735515 819186611 46340246" >
+        <stop busStop="591998010" duration="30.00" until="76.0"/> <!-- 53rd Street–Lexington Avenue -->
+        <stop busStop="5407862242" duration="30.00" until="131.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="597928314" duration="30.00" until="216.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7650206920" duration="30.00" until="274.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650207492" duration="30.00" until="305.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="5551785167" duration="30.00" until="336.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_train_2164:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="392.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_141+143:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M72:1" edges="-661227257#14 -661227257#11 -661227257#9 -661227257#8 -661227257#7 -661227257#5 -661227257#4 -661227257#2 -47795999#2 -47795999#1 22946821#1 992603344 5673117 962831194 962831195 5672760#0 5672760#1 981182867#0 195743166#0 671208358#9 686125782#0 686125782#2 686125782#4 686125782#5 686125782#7 686125782#9 686125782#10 46694753#5 46694753#6" >
+        <stop busStop="-3269484626" duration="30.00" until="55.0"/> <!-- Central Park West & West 70th Street -->
+        <stop busStop="-3269484629" duration="30.00" until="114.0"/> <!-- Central Park West & West 68th Street -->
+    </route>
+    <route id="pt_subway_7:1" edges="815757679 815757677#2 815757677#3 815757675#0 815757675#1 815757675#2" >
+        <stop busStop="8389238665" duration="30.00" until="88.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7618672865" duration="30.00" until="119.0"/> <!-- 5th Avenue -->
+        <stop busStop="7618672833" duration="30.00" until="237.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7618672883" duration="30.00" until="337.0"/> <!-- 34th Street–Hudson Yards -->
+    </route>
+    <route id="pt_subway_7:0" edges="552272274#0 552272274#1 552272274#2 46340255#0 46340255#1 46340255#2" >
+        <stop busStop="591990999" duration="30.00" until="31.0"/> <!-- 34th Street–Hudson Yards -->
+        <stop busStop="7618672836" duration="30.00" until="136.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="3918908280" duration="30.00" until="205.0"/> <!-- 5th Avenue -->
+        <stop busStop="8389238660" duration="30.00" until="275.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_subway_4:3" edges="816983740" >
+        <stop busStop="7630379968" duration="30.00" until="92.0"/> <!-- 86th Street -->
+        <stop busStop="7630379974" duration="30.00" until="208.0"/> <!-- 59th Street -->
+        <stop busStop="7630588825" duration="30.00" until="239.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_train_2154:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="426.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_5:6" edges="816983740" >
+        <stop busStop="7630379968" duration="30.00" until="88.0"/> <!-- 86th Street -->
+        <stop busStop="7630379974" duration="30.00" until="202.0"/> <!-- 59th Street -->
+        <stop busStop="7630588825" duration="30.00" until="233.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_bus_M10:0" edges="-661227257#14 -661227257#11 -661227257#9 -661227257#8 -661227257#7 -661227257#5 -661227257#4 -661227257#2 -47795999#2 -47795999#1 -802292178#1 -802292178#0 -46579577#1 -584971528#1 -584971528#0 420276996#1 420276996#2 420276996#3 835176558#1 835176555 835176554#1 835176554#3 460065822#0 460065822#2 439801902 976050707#0 22898530#0 308322448#1 196117083#1" >
+        <stop busStop="-3269484626" duration="30.00" until="52.0"/> <!-- Central Park West & West 70th Street -->
+        <stop busStop="-3269484629" duration="30.00" until="120.0"/> <!-- Central Park West & West 68th Street -->
+        <stop busStop="-3271270870" duration="30.00" until="213.0"/> <!-- Central Park West & West 66th Street -->
+        <stop busStop="-3269484627" duration="30.00" until="304.0"/> <!-- Central Park West & West 64th Street -->
+        <stop busStop="3269834177" duration="30.00" until="437.0"/> <!-- Broadway & West 61st Street -->
+    </route>
+    <route id="pt_subway_E:3" edges="739454520 719086607 816679188 819186609" >
+        <stop busStop="6923621203" duration="30.00" until="281.0"/> <!-- 14th Street -->
+        <stop busStop="6923621236" duration="30.00" until="328.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621277" duration="30.00" until="359.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642166" duration="30.00" until="390.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="7450462465" duration="30.00" until="525.0"/> <!-- 50th Street -->
+        <stop busStop="7657247699" duration="30.00" until="556.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650207504" duration="30.00" until="655.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="7650173977" duration="30.00" until="702.0"/> <!-- 53rd Street–Lexington Avenue -->
+    </route>
+    <route id="pt_train_171:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_5:5" edges="817013577" >
+        <stop busStop="7630558481" duration="30.00" until="154.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630410489" duration="30.00" until="185.0"/> <!-- 59th Street -->
+        <stop busStop="7630379982" duration="30.00" until="216.0"/> <!-- 86th Street -->
+    </route>
+    <route id="pt_subway_5:7" edges="817013577" >
+        <stop busStop="7630558481" duration="30.00" until="140.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630410489" duration="30.00" until="171.0"/> <!-- 59th Street -->
+        <stop busStop="7630379982" duration="30.00" until="202.0"/> <!-- 86th Street -->
+    </route>
+    <route id="pt_subway_1:0" edges="808965710 803142783#1 803137434 823979090" >
+        <stop busStop="5106260206" duration="30.00" until="53.0"/> <!-- 14th Street -->
+        <stop busStop="5106260204" duration="30.00" until="108.0"/> <!-- 18th Street -->
+        <stop busStop="5106260202" duration="30.00" until="139.0"/> <!-- 23rd Street -->
+        <stop busStop="5106260200" duration="30.00" until="170.0"/> <!-- 28th Street -->
+        <stop busStop="5111472122" duration="30.00" until="201.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="5111464765" duration="30.00" until="319.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="5111471159" duration="30.00" until="368.0"/> <!-- 50th Street -->
+        <stop busStop="5111472285" duration="30.00" until="399.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="4462306214" duration="30.00" until="430.0"/> <!-- 66th Street–Lincoln Center -->
+    </route>
+    <route id="pt_bus_M31:1" edges="-421851200#1 -421851200#0 -421851201 -587355676 -375165665 -587038082 -497165757#1 -497165757#0 -388696206 -5670139 -497258109#1 496986969#0 496986969#1 5672752#0 -5672752#0 -496986969#1 496986969#1 5672752#0 5672752#1 196116976#1 196116976#4 499172074#10 499172074#11 499172074#12 499172074#13 499172074#14 499172074#15 499172074#16 499172074#17 420894338#3 195743211#1" >
+        <stop busStop="4794775935" duration="30.00" until="259.0"/> <!-- West 57th Street & 7th Avenue -->
+        <stop busStop="4794775932" duration="30.00" until="340.0"/> <!-- West 57th Street & 7th Avenue -->
+    </route>
+    <route id="pt_subway_7:2" edges="552272274#0 552272274#1 552272274#2 46340255#0 46340255#1 46340255#2" >
+        <stop busStop="591990999" duration="30.00" until="31.0"/> <!-- 34th Street–Hudson Yards -->
+        <stop busStop="7618672836" duration="30.00" until="139.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="3918908280" duration="30.00" until="209.0"/> <!-- 5th Avenue -->
+        <stop busStop="8389238660" duration="30.00" until="279.0"/> <!-- 42nd Street–Grand Central -->
+    </route>
+    <route id="pt_subway_Q:3" edges="813742186 817381401 817381400 821206642 821206641 817381408" >
+        <stop busStop="7633705507" duration="30.00" until="83.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="591997500" duration="30.00" until="171.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7656750806" duration="30.00" until="255.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7656750801" duration="30.00" until="320.0"/> <!-- Lexington Avenue–63rd Street -->
+    </route>
+    <route id="pt_subway_Q:2" edges="46340259 817381421 821206640 817381422 817381399 817381424 817381426#1" >
+        <stop busStop="7656750798" duration="30.00" until="67.0"/> <!-- Lexington Avenue–63rd Street -->
+        <stop busStop="7656750807" duration="30.00" until="170.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7633689352" duration="30.00" until="245.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633689355" duration="30.00" until="334.0"/> <!-- 34th Street–Herald Square -->
+    </route>
+    <route id="pt_train_63:0" edges="756094505 756094496 46493329 572230545 46481749 800136743" >
+        <stop busStop="6165053270" duration="30.00" until="58.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M7:0" edges="196117090#0 196117090#2 196117090#3 196117090#4 196117090#6 196117090#7 196117090#8 196117090#9 196117090#10 196117090#11 630828586#0 630828586#1 630828586#2 489019752 968394450 968394452#0 968394452#1 968394453 968394455#0 968394455#1 968394456 68668519 978161521#0 460606347#1 439933932#1 496983397#1 496983396#0 587038081#0 587038081#1 384649120#1 384649120#2 384649120#3 384649120#4 440122868 448686048#0 127693103#1 127693103#2 464516471#0 464516471#1 464516471#2 464516471#3 464516471#4 464516471#6 464516471#8 464516471#9 569345537#0 569345537#3 569345537#5 569345537#6 541350711#0 541350711#1 497258108#0 497258108#1 420899372#0" >
+    </route>
+    <route id="pt_bus_M104:0" edges="195743345 420907902 125480075 194926851#0 194926851#1 194926851#2 194926851#3 194926851#4 194926851#5 194926851#6 420907903 420907906#0 420907906#1 420907906#2 420907906#3 420890026 420890028 420890024 420890025 420890027 420890029 439933933 196117092 420890022#0 420890023#3 439801902 460065820 439801901#0 768381525 439801903 171574337 91383966#0 91383966#2 630828582 671202178#0 420276995#1 835176560#1 835176560#4 346613529#2 346613529#5 346613529#8 346613529#10 346613529#13" >
+        <stop busStop="3269834178" duration="30.00" until="404.0"/> <!-- Broadway & West 61st Street -->
+        <stop busStop="3269834179" duration="30.00" until="490.0"/> <!-- Broadway & West 63rd Street -->
+        <stop busStop="3269834172" duration="30.00" until="593.0"/> <!-- Broadway & West 66th Street -->
+    </route>
+    <route id="pt_subway_7:3" edges="815757679 815757677#2 815757677#3 815757675#0 815757675#1 815757675#2" >
+        <stop busStop="8389238665" duration="30.00" until="130.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7618672865" duration="30.00" until="161.0"/> <!-- 5th Avenue -->
+        <stop busStop="7618672833" duration="30.00" until="279.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7618672883" duration="30.00" until="379.0"/> <!-- 34th Street–Hudson Yards -->
+    </route>
+    <route id="pt_subway_D:4" edges="819186630 819186612 715214988 816331850#0 816331850#1 816331850#2 816331850#3 689037416#1 689037416#3 689037416#4 689037416#9 689037416#10 689037416#16" >
+        <stop busStop="7650206934" duration="30.00" until="96.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247704" duration="30.00" until="146.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206932" duration="30.00" until="177.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7657247698" duration="30.00" until="303.0"/> <!-- 7th Avenue -->
+        <stop busStop="6463379284" duration="30.00" until="391.0"/> <!-- 59th Street–Columbus Circle -->
+    </route>
+    <route id="pt_bus_2610:1" edges="767683111#1 767683110#2 767683108#0 460069727#1 46490537#1 46490537#2 767990686#0 767990686#1 460585329#0 460585329#1 708353351#0 708353351#1 708353351#2 498635438#0 498635438#1 194926843#0 194926843#1 46481752#1 194926850#0 421853810#1 992164861#0 992164861#1 935228363 68325061#0 421853647 495253326#2 495253326#4 763126559#0 5673276#1 420904838 505777313#1 505777310 169267539#0 169267539#1 992144532#0 992144532#1 421852041 681042531#0 682359029#0 682359029#1 194920159#0 965833823#0 421852034 68506907 68506901#0 68506901#1 717634746 46443624 122738266" >
+        <stop busStop="7167585626" duration="30.00" until="33.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_subway_A:1" edges="739454520 816336111 689037414#0 689037414#1 689037414#2 813748784#1 813748784#16 813748784#17 813748784#22" >
+        <stop busStop="6923621203" duration="30.00" until="55.0"/> <!-- 14th Street -->
+        <stop busStop="6923621236" duration="30.00" until="102.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621277" duration="30.00" until="133.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642166" duration="30.00" until="164.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6751642238" duration="30.00" until="299.0"/> <!-- 50th Street -->
+        <stop busStop="6463380701" duration="30.00" until="382.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6441849565" duration="30.00" until="449.0"/> <!-- 72nd Street -->
+        <stop busStop="6437617425" duration="30.00" until="480.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6437617427" duration="30.00" until="593.0"/> <!-- 86th Street -->
+        <stop busStop="6437617429" duration="30.00" until="668.0"/> <!-- 96th Street -->
+        <stop busStop="6437617465" duration="30.00" until="699.0"/> <!-- 103rd Street -->
+        <stop busStop="6427120636" duration="30.00" until="786.0"/> <!-- Cathedral Parkway–110th Street -->
+        <stop busStop="6427120645" duration="30.00" until="855.0"/> <!-- 116th Street -->
+    </route>
+    <route id="pt_train_148:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="460.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_65+67:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_2:1" edges="525428790 820099949 803142786#1" >
+        <stop busStop="4460385064" duration="30.00" until="58.0"/> <!-- 66th Street–Lincoln Center -->
+        <stop busStop="5111471161" duration="30.00" until="153.0"/> <!-- 50th Street -->
+        <stop busStop="5105725456" duration="30.00" until="212.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="4464067418" duration="30.00" until="297.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="5106260201" duration="30.00" until="361.0"/> <!-- 28th Street -->
+        <stop busStop="5106260203" duration="30.00" until="424.0"/> <!-- 23rd Street -->
+        <stop busStop="7512663145" duration="30.00" until="481.0"/> <!-- 18th Street -->
+        <stop busStop="5106260209" duration="30.00" until="527.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_F:3" edges="797157469 819186626 46340246" >
+        <stop busStop="7656750800" duration="30.00" until="72.0"/> <!-- Lexington Avenue–63rd Street -->
+        <stop busStop="7657247703" duration="30.00" until="103.0"/> <!-- 57th Street -->
+        <stop busStop="597928314" duration="30.00" until="231.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7650206920" duration="30.00" until="289.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650207492" duration="30.00" until="320.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="5551785167" duration="30.00" until="351.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_2:2" edges="808965710 803142783#1 803137434 823979090" >
+        <stop busStop="5106260206" duration="30.00" until="53.0"/> <!-- 14th Street -->
+        <stop busStop="5106260204" duration="30.00" until="158.0"/> <!-- 18th Street -->
+        <stop busStop="5106260202" duration="30.00" until="189.0"/> <!-- 23rd Street -->
+        <stop busStop="5106260200" duration="30.00" until="220.0"/> <!-- 28th Street -->
+        <stop busStop="5111472122" duration="30.00" until="251.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="5111464765" duration="30.00" until="369.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="5111471159" duration="30.00" until="418.0"/> <!-- 50th Street -->
+        <stop busStop="4462306214" duration="30.00" until="449.0"/> <!-- 66th Street–Lincoln Center -->
+    </route>
+    <route id="pt_train_146:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="494.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_N:3" edges="813742186 817381406#0 817381406#1 817381402 821206644 821206643 817383474" >
+        <stop busStop="7633705507" duration="30.00" until="87.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633705531" duration="30.00" until="171.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705534" duration="30.00" until="231.0"/> <!-- 49th Street -->
+        <stop busStop="7656750809" duration="30.00" until="302.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7656750804" duration="30.00" until="387.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="4796291635" duration="30.00" until="458.0"/> <!-- Lexington Avenue–59th Street -->
+    </route>
+    <route id="pt_subway_A:3" edges="552742171 739454523#1 719086615#1 816331850#0 816331850#1 816331850#2 816331850#3 689037416#1 689037416#3 689037416#4 689037416#9 689037416#10 689037416#16" >
+        <stop busStop="6938799279" duration="30.00" until="55.0"/> <!-- 14th Street -->
+        <stop busStop="6923621290" duration="30.00" until="160.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642175" duration="30.00" until="207.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6463379284" duration="30.00" until="321.0"/> <!-- 59th Street–Columbus Circle -->
+    </route>
+    <route id="pt_bus_2610:0" edges="171561798#0 171561798#1 990288467 990288468 22941939 963588773 46538382 717634745 463033873#0 463033873#1 265356028 618990022#0 618990022#1 618990022#2 618990022#3 618990022#4 420892275 420892269 420892272#0 420892271#0 5671276#0 814278019#0 814278019#3 814278019#6 814278019#8 814278019#11 420907908 968513231 968513228 968513229 194926855 525729009#0 525729010#0 525729010#1 525729010#4 525729010#6 525729010#7 525729010#8 525729010#10 420901923#0 420901923#1 420901919#0 420901919#1 988515374#0 988515374#1 420901920#1 420901920#2 420901920#3 420901917#1 420901921#0 420901921#1 420901922#0 194926856#1 350726030#1 663515452#1 989270322#1 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1" >
+        <stop busStop="7167585626" duration="30.00" until="1001.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_train_99:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M57:0" edges="46694752 169381958#1 169381958#2 455122830#0 455122830#1 710571388 465000799 -587038082 -497165757#1 -497165757#0 -388696206 -5670139 -497258109#1 496986969#0 496986969#1 5672752#0 5672752#1 196117083#1 196117092 420890022#0 420890023#3 439801902 460065820 439801901#0 768381525 439801903 171574337 91383966#0 91383966#2 46579578#0 46579578#1 46579578#2 46579578#3 46579578#4 46579578#5 5671691#0 5671691#1 5671691#2 5671691#3 5671691#4 5671691#5 789634640#0 789634640#1 789634640#2 789634640#4 789634640#6 789634640#7 789634640#8 789634640#9 420894376#0 -420894368#1 420894363#0 420894362#0 420894366#0 420894365#0 95181769#0 420894367#0" >
+        <stop busStop="4794775932" duration="30.00" until="327.0"/> <!-- West 57th Street & 7th Avenue -->
+        <stop busStop="4794775935" duration="30.00" until="397.0"/> <!-- West 57th Street & 7th Avenue -->
+    </route>
+    <route id="pt_bus_M15-SBS:0" edges="194923807#0 438384743 974336290#0 222299276#1 222299276#4 222299276#5 222299276#6 222299276#9 222299276#10 144001606#1 954878305#0 954926502#1 954929768#0 420872177#0 420872177#1 368938762#1 368938761#1 771939270#0 771939270#3 884400279#1 46518732 379843699 379843704 654560920 819074877 379843702#0 379843702#1 819074878 619280617#0 884400294#1 884400286#0 884400289#0 884400289#1 884400289#2 884400301 884400297 375316257 169381962 226092571" >
+        <stop busStop="6133355291" duration="30.00" until="37.0"/> <!-- 1 Av & E 25 St -->
+    </route>
+    <route id="pt_bus_M34A_SBS:1" edges="194926842 964198407 964198408 711924577 420872205#1 68668529#0 68668529#1 556075521 -420872204 -554083352#0 587038129#0 542096278#1 542096278#2 571651963#0 420904658#1 5671315#1 5670600#1 -496982023#3 -496982023#2 -195743208#3 -195743208#1 -195743208#0 194926854#1 194926854#2 194926854#3 194926854#4 194926854#6 194926854#7 194926854#8 194926854#10 194926854#11 125479721 542257430 195743345 420907902 125480075 194926846#0 194926846#1" >
+        <stop busStop="4770624020" duration="30.00" until="317.0"/> <!-- West 34th Street/Broadway -->
+        <stop busStop="-4770628022" duration="30.00" until="399.0"/> <!-- West 34th Street & Broadway -->
+        <stop busStop="-4770628023" duration="30.00" until="431.0"/> <!-- West 34th Street/Broadway -->
+    </route>
+    <route id="pt_bus_M103:0" edges="388240124#0 388240124#3 388240124#6 388240124#9 388240124#12 388240124#16 388240124#19 388240124#22 587061869#1 587061869#2 554083353#1 554083353#2 587038101 729972919#0 729972919#1 729972918 458166897#0 458166897#1 458166897#2 458166897#3 458166897#4 458166897#5 458166897#6 458166897#7 458166897#8 458166897#9 458166897#10 458166897#11 458166897#12 458166897#13 458166897#14 458166897#15 458166897#16 710571388 465000799 375165664 873372086 375165501 873372087#0 420806145#1 375165666 962813251#0 962813251#1 497251086#0 497251086#1 497251086#2 196117089#0 686125790#0 686125790#2 686125790#4 686125790#6" >
+        <stop busStop="4798293332" duration="30.00" until="575.0"/> <!-- 3rd Avenue/East 60th Street -->
+    </route>
+    <route id="pt_bus_M57:1" edges="-420894367#1 -95181769#1 -420894365#1 -420894366#1 -420894362#1 -420894363#1 420894368#0 -420894374#1 -46538396#1 -5669975#2 -5669975#1 22904155#0 46538405#0 46525065#0 46525065#1 46525065#2 46525065#4 46525065#5 46525065#6 46525065#7 46525065#8 308322446#1 308322448#1 -5672752#1 -5672752#0 -496986969#1 496986969#1 5672752#0 -5672752#0 -496986969#1 -496986969#0 497258109#0 5670139 388696206 497165757#0 497165757#1 505778913 375165665 710571390 587038175#1 421851200#0 421851200#1" >
+        <stop busStop="-4794775932" duration="30.00" until="389.0"/> <!-- West 57th Street & 7th Avenue -->
+        <stop busStop="-4794775935" duration="30.00" until="491.0"/> <!-- West 57th Street & 7th Avenue -->
+    </route>
+    <route id="pt_subway_1:1" edges="525428790 820099949 803142786#1" >
+        <stop busStop="4460385064" duration="30.00" until="52.0"/> <!-- 66th Street–Lincoln Center -->
+        <stop busStop="5111472254" duration="30.00" until="123.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="5111471161" duration="30.00" until="199.0"/> <!-- 50th Street -->
+        <stop busStop="5105725456" duration="30.00" until="258.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="4464067418" duration="30.00" until="343.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="5106260201" duration="30.00" until="407.0"/> <!-- 28th Street -->
+        <stop busStop="5106260203" duration="30.00" until="470.0"/> <!-- 23rd Street -->
+        <stop busStop="7512663145" duration="30.00" until="531.0"/> <!-- 18th Street -->
+        <stop busStop="5106260209" duration="30.00" until="577.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_B:0" edges="819186630 819186612 715214989 689037414#0 689037414#1 689037414#2 813748784#1 813748784#16 813748784#17 813748784#22" >
+        <stop busStop="7650206934" duration="30.00" until="100.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247704" duration="30.00" until="150.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206932" duration="30.00" until="181.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7657247698" duration="30.00" until="270.0"/> <!-- 7th Avenue -->
+        <stop busStop="6463380701" duration="30.00" until="358.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6441849565" duration="30.00" until="425.0"/> <!-- 72nd Street -->
+        <stop busStop="6437617425" duration="30.00" until="456.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6427120636" duration="30.00" until="612.0"/> <!-- Cathedral Parkway–110th Street -->
+        <stop busStop="6427120645" duration="30.00" until="681.0"/> <!-- 116th Street -->
+    </route>
+    <route id="pt_train_140:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="528.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_A:2" edges="686769237#0 686769237#1 686769237#7 686769237#8 686769237#13 686769237#14 686769237#16 171570637#1 171570637#2 715214985 46340263#1 803137437#2" >
+        <stop busStop="6463380721" duration="30.00" until="189.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6751642150" duration="30.00" until="291.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621292" duration="30.00" until="337.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621217" duration="30.00" until="447.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_train_93:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_A:4" edges="552742171 739454523#1 719086615#1 816331850#0 816331850#1 816331850#2 816331850#3 689037416#1 689037416#3 689037416#4 689037416#9 689037416#10 689037416#16" >
+        <stop busStop="6938799279" duration="30.00" until="88.0"/> <!-- 14th Street -->
+        <stop busStop="6923621290" duration="30.00" until="225.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642175" duration="30.00" until="272.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6463379284" duration="30.00" until="386.0"/> <!-- 59th Street–Columbus Circle -->
+    </route>
+    <route id="pt_bus_M101:0" edges="388240124#0 388240124#3 388240124#6 388240124#9 388240124#12 388240124#16 388240124#19 388240124#22 587061869#1 587061869#2 554083353#1 554083353#2 587038101 729972919#0 729972919#1 729972918 458166897#0 458166897#1 458166897#2 458166897#3 458166897#4 458166897#5 458166897#6 458166897#7 458166897#8 458166897#9 458166897#10 458166897#11 458166897#12 458166897#13 458166897#14 458166897#15 458166897#16 710571388 465000799 375165664 873372086 375165501 873372087#0 420806145#1 375165666 962813251#0 962813251#1 497251086#0 497251086#1 497251086#2 196117089#0 686125790#0 686125790#2 686125790#4 686125790#6" >
+        <stop busStop="4798293332" duration="30.00" until="621.0"/> <!-- 3rd Avenue/East 60th Street -->
+    </route>
+    <route id="pt_subway_W:1" edges="817381409 817381403 817381402 821206644 821206643 817383474" >
+        <stop busStop="7633705521" duration="30.00" until="69.0"/> <!-- 23rd Street -->
+        <stop busStop="7633705517" duration="30.00" until="131.0"/> <!-- 28th Street -->
+        <stop busStop="7633705506" duration="30.00" until="177.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633705531" duration="30.00" until="261.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705534" duration="30.00" until="321.0"/> <!-- 49th Street -->
+        <stop busStop="7656750809" duration="30.00" until="392.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7656750804" duration="30.00" until="477.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="4796291635" duration="30.00" until="548.0"/> <!-- Lexington Avenue–59th Street -->
+    </route>
+    <route id="pt_subway_E:5" edges="759735515 46340266 719086609 719086610#0" >
+        <stop busStop="591998010" duration="30.00" until="76.0"/> <!-- 53rd Street–Lexington Avenue -->
+        <stop busStop="5407862242" duration="30.00" until="131.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="7657247701" duration="30.00" until="214.0"/> <!-- 7th Avenue -->
+        <stop busStop="6751642215" duration="30.00" until="256.0"/> <!-- 50th Street -->
+        <stop busStop="6751622968" duration="30.00" until="337.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621274" duration="30.00" until="368.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621238" duration="30.00" until="399.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621199" duration="30.00" until="430.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_bus_N2610:0" edges="5669566 36806907 46492015 46492007 465256869 465256868 68325075 500182596 5670275 420901925 36806658 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1 767683110#2 767683108#0 460069727#1 46490537#1 46490537#2 767990686#0 767990686#1 460585329#0 460585329#1 708353351#0 708353351#1 708353351#2 498635438#0 498635438#1 194926843#0 194926843#1 46481752#1 194926850#0 421853810#1 992164861#0 992164861#1 935228363 68325061#0 421853647 495253326#2 495253326#4 763126559#0 5673276#1 420904838 505777313#1 505777310 169267539#0 169267539#1 992144532#0 992144532#1 421852041 681042531#0 682359029#0 682359029#1 194920159#0 965833823#0 421852034 68506907 68506901#0 68506901#1 717634746 46443624 122738266" >
+        <stop busStop="7167585626" duration="30.00" until="374.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_bus_M102:0" edges="388240124#0 388240124#3 388240124#6 388240124#9 388240124#12 388240124#16 388240124#19 388240124#22 587061869#1 587061869#2 554083353#1 554083353#2 587038101 729972919#0 729972919#1 729972918 458166897#0 458166897#1 458166897#2 458166897#3 458166897#4 458166897#5 458166897#6 458166897#7 458166897#8 458166897#9 458166897#10 458166897#11 458166897#12 458166897#13 458166897#14 458166897#15 458166897#16 710571388 465000799 375165664 873372086 375165501 873372087#0 420806145#1 375165666 962813251#0 962813251#1 497251086#0 497251086#1 497251086#2 196117089#0 686125790#0 686125790#2 686125790#4 686125790#6" >
+        <stop busStop="4798293332" duration="30.00" until="654.0"/> <!-- 3rd Avenue/East 60th Street -->
+    </route>
+    <route id="pt_subway_M:1" edges="813712319 819186614 819186609" >
+        <stop busStop="7657247708" duration="30.00" until="68.0"/> <!-- 23rd Street -->
+        <stop busStop="7650207498" duration="30.00" until="130.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247706" duration="30.00" until="161.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206927" duration="30.00" until="192.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7650207504" duration="30.00" until="517.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="7650173977" duration="30.00" until="564.0"/> <!-- 53rd Street–Lexington Avenue -->
+    </route>
+    <route id="pt_subway_A:5" edges="552742171 739454523#1 719086615#1 816331850#0 816331850#1 816331850#2 816331850#3 689037416#1 689037416#3 689037416#4 689037416#9 689037416#10 689037416#16" >
+        <stop busStop="6938799279" duration="30.00" until="92.0"/> <!-- 14th Street -->
+        <stop busStop="6923621290" duration="30.00" until="193.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642175" duration="30.00" until="240.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6463379284" duration="30.00" until="390.0"/> <!-- 59th Street–Columbus Circle -->
+    </route>
+    <route id="pt_train_176:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="562.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_N2610:1" edges="171561798#0 171561798#1 990288467 990288468 22941939 963588773 46538382 717634745 463033873#0 463033873#1 265356028 618990022#0 618990022#1 618990022#2 618990022#3 618990022#4 420892275 420892269 420892272#0 420892271#0 5671276#0 814278019#0 814278019#3 814278019#6 814278019#8 814278019#11 420907908 968513231 968513228 968513229 194926855 525729009#0 525729010#0 525729010#1 525729010#4 525729010#6 525729010#7 525729010#8 525729010#10 420901923#0 420901923#1 420901919#0 420901919#1 988515374#0 988515374#1 420901920#1 420901920#2 420901920#3 420901917#1 420901921#0 420901921#1 420901922#0 194926856#1 350726030#1 663515452#1 989270322#1 36806659#0 36806659#1 767683112#0 767683112#1 767683107#2 767683111#0 767683111#1 767683110#2 767683108#0 460069727#1 5672730 207542284 36806908 46492009 968406200 46482819#1 320888292" >
+        <stop busStop="7167585626" duration="30.00" until="954.0"/> <!-- FlixBus NYC 300 W 31st St. -->
+    </route>
+    <route id="pt_train_2155+2163+2249+2251+2253+2255+2257+2259:0" edges="46493330 901213208 95579501 756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="281.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M34A_SBS:0" edges="194926855 525729009#0 525729010#0 525729010#1 525729010#4 525729010#6 525729010#7 525729010#8 525729010#10 420901923#0 420901923#1 420901919#0 420901919#1 988515374#0 988515374#1 733667933#6 733667933#7 733667933#8 46481747#0 46481747#1 464543615#1 464543615#2 496982023#0 496982023#3 -496982022#0 5670600#1 496983397#1 496983396#0 5673561#0 5673561#1 5673561#4 464543615#2 496982023#0 496982023#3 -496982022#0 195743343#1 195743343#2 5671693#0 195743165#0 385668565#1 385668565#2 385668565#5 385668565#6 385668565#9 385668565#10 385668565#11 118400729#8 118400729#11 420872194#0 381474197#1 420872190#1 222299248#1 222299248#4" >
+        <stop busStop="-4770624020" duration="30.00" until="288.0"/> <!-- West 34th Street/Broadway -->
+        <stop busStop="4770628022" duration="30.00" until="497.0"/> <!-- West 34th Street & Broadway -->
+        <stop busStop="4770628023" duration="30.00" until="528.0"/> <!-- West 34th Street/Broadway -->
+    </route>
+    <route id="pt_subway_A:6" edges="686769237#0 686769237#1 686769237#7 686769237#8 686769237#13 686769237#14 686769237#16 171570637#1 171570637#2 715214985 46340263#1 803137437#2" >
+        <stop busStop="6463380721" duration="30.00" until="222.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6751642150" duration="30.00" until="359.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621292" duration="30.00" until="405.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621217" duration="30.00" until="515.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_R:1" edges="817381409 817381403 817381402 821206644 821206643 817383474" >
+        <stop busStop="7633705521" duration="30.00" until="65.0"/> <!-- 23rd Street -->
+        <stop busStop="7633705517" duration="30.00" until="199.0"/> <!-- 28th Street -->
+        <stop busStop="7633705506" duration="30.00" until="245.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633705531" duration="30.00" until="329.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705534" duration="30.00" until="389.0"/> <!-- 49th Street -->
+        <stop busStop="7656750809" duration="30.00" until="460.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7656750804" duration="30.00" until="545.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="4796291635" duration="30.00" until="616.0"/> <!-- Lexington Avenue–59th Street -->
+    </route>
+    <route id="pt_bus_M104:1" edges="993368839#0 993368839#5 993368839#8 993368839#12 195743141#1 196116980#1 196116980#3 196116975#1 835176558#1 835176555 835176554#1 835176554#3 460065822#0 460065822#2 439801902 976050707#0 22898530#0 308322447#2 496986970#2 496989355#0 496989355#1 496989355#3 382740985#0 382740985#3 382740985#6 588157337#0 569345540#0 569345540#3 167922071 483360105#0 483360105#1 483360105#2 397795463#0 397795463#1 682360554#0 682360554#1 682360554#2 397795464#1 397795464#2 569345544#0 569345544#1 167922070" >
+        <stop busStop="3248816728" duration="30.00" until="188.0"/> <!-- Broadway & West 64th Street -->
+        <stop busStop="4794775921" duration="30.00" until="484.0"/> <!-- 7th Avenue & West 58th Street -->
+        <stop busStop="4794775938" duration="30.00" until="533.0"/> <!-- 7th Avenue & West 56th Street -->
+        <stop busStop="4784141036" duration="30.00" until="600.0"/> <!-- 7th Avenue & West 54th Street -->
+        <stop busStop="4784141041" duration="30.00" until="680.0"/> <!-- 7th Avenue & West 53rd Street -->
+        <stop busStop="4782363333" duration="30.00" until="758.0"/> <!-- 7th Avenue & West 50th Street -->
+    </route>
+    <route id="pt_train_66:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="596.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M10:1" edges="196117083#1 196117092 420890022#0 420890023#3 439801902 460065820 439801901#0 768381525 439801903 5670348#0 709355577#0 709355577#3 420897874#1 584971528#1 46579577#1 802292178#0 802292178#1 47795999#1 47795999#2 661227257#2 661227257#4 661227257#5 661227257#7 661227257#8 661227257#9 661227257#11 -661227257#11 -661227257#9 -661227257#8 -661227257#7 -661227257#5 -661227257#4 661227257#4 661227257#5 -661227257#5 -661227257#4 -661227257#2 -47795999#2 -47795999#1 47795999#1 47795999#2 -47795999#2 -47795999#1 -802292178#1 -802292178#0 -46579577#1 46579577#1 -46579577#1 -584971528#1 -584971528#0 420276996#1 420276996#2 420276996#3 835176558#1 835176555" >
+        <stop busStop="3269484626" duration="30.00" until="388.0"/> <!-- Central Park West & West 70th Street -->
+        <stop busStop="3269484629" duration="30.00" until="479.0"/> <!-- Central Park West & West 68th Street -->
+        <stop busStop="3271270870" duration="30.00" until="577.0"/> <!-- Central Park West & West 66th Street -->
+        <stop busStop="3269484627" duration="30.00" until="680.0"/> <!-- Central Park West & West 64th Street -->
+        <stop busStop="3269834177" duration="30.00" until="839.0"/> <!-- Broadway & West 61st Street -->
+    </route>
+    <route id="pt_train_195:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M34_SBS:1" edges="-46481754#5 -46481754#1 -46481754#0 46481755#1 273019810#0 273019810#3 273019810#4 589494596#1 589494596#2 36806903#0 583020573#2 420509471#0 195743208#0 195743208#1 195743208#2 496982023#0 496982023#3 -496982022#0 5670600#1 496983397#1 496983396#0 5673561#0 5673561#1 5673561#4 464543615#2 496982023#0 496982023#3 -496982022#0 195743343#1 195743343#2 5671693#0 195743165#0 385668565#1 385668565#2 385668565#5 385668565#6 385668565#9 385668565#10 385668565#11 118400729#8 118400729#11 420872194#0 381474197#1 420872190#1 222299248#1 222299248#4" >
+        <stop busStop="4770628023" duration="30.00" until="256.0"/> <!-- West 34th Street/Broadway -->
+        <stop busStop="-4770624020" duration="30.00" until="324.0"/> <!-- West 34th Street/Broadway -->
+        <stop busStop="4770628022" duration="30.00" until="531.0"/> <!-- West 34th Street & Broadway -->
+    </route>
+    <route id="pt_subway_F:2" edges="813712319 813712319 819186628 819186615" >
+        <stop busStop="7657247708" duration="30.00" until="68.0"/> <!-- 23rd Street -->
+        <stop busStop="7650207498" duration="30.00" until="130.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247706" duration="30.00" until="161.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206927" duration="30.00" until="192.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7657247702" duration="30.00" until="711.0"/> <!-- 57th Street -->
+        <stop busStop="7656750799" duration="30.00" until="742.0"/> <!-- Lexington Avenue–63rd Street -->
+    </route>
+    <route id="pt_bus_M34_SBS:0" edges="194926842 964198407 964198408 711924577 420872205#1 68668529#0 68668529#1 556075521 -420872204 -554083352#0 587038129#0 542096278#1 542096278#2 571651963#0 420904658#1 5671315#1 5670600#1 -496982023#3 -496982023#2 5670803#1 492489884 484170269#0 484170269#1 460606347#1 439933932#1 -496982022#0 5670600#1 -496982023#3 -496982023#2 -195743208#3 -195743208#1 -195743208#0 -420509471#1 -583020573#2 -36806903#0 -542096280#0 -589494596#1 -273019810#4 -273019810#3 -273019810#0 -46481755#1 -584971499#0 -46481754#0" >
+        <stop busStop="-4770628023" duration="30.00" until="404.0"/> <!-- West 34th Street/Broadway -->
+        <stop busStop="4770624020" duration="30.00" until="642.0"/> <!-- West 34th Street/Broadway -->
+        <stop busStop="-4770628022" duration="30.00" until="688.0"/> <!-- West 34th Street & Broadway -->
+    </route>
+    <route id="pt_subway_A:7" edges="686769237#0 686769237#1 686769237#7 686769237#8 686769237#13 686769237#14 686769237#16 171570637#1 171570637#2 715214985 46340263#1 803137437#2" >
+        <stop busStop="6463380721" duration="30.00" until="255.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6751642150" duration="30.00" until="427.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621292" duration="30.00" until="473.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621217" duration="30.00" until="583.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_subway_D:5" edges="686769237#0 686769237#1 686769237#7 686769237#8 686769237#13 686769237#14 686769237#16 171570637#1 171570637#2 715214987 715214982 819186625" >
+        <stop busStop="6463380721" duration="30.00" until="288.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="7657247700" duration="30.00" until="345.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650206922" duration="30.00" until="433.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="591997397" duration="30.00" until="479.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="5350434153" duration="30.00" until="510.0"/> <!-- 34th Street–Herald Square -->
+    </route>
+    <route id="pt_subway_N:5" edges="817381409 817381403 817381402 821206644 821206643 817383474" >
+        <stop busStop="7633705521" duration="30.00" until="105.0"/> <!-- 23rd Street -->
+        <stop busStop="7633705517" duration="30.00" until="267.0"/> <!-- 28th Street -->
+        <stop busStop="7633705506" duration="30.00" until="313.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633705531" duration="30.00" until="397.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705534" duration="30.00" until="457.0"/> <!-- 49th Street -->
+        <stop busStop="7656750809" duration="30.00" until="528.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7656750804" duration="30.00" until="613.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="4796291635" duration="30.00" until="684.0"/> <!-- Lexington Avenue–59th Street -->
+    </route>
+    <route id="pt_train_96+194:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="630.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_B:3" edges="819186630 819186612 715214989 689037414#0 689037414#1 689037414#2 813748784#1 813748784#16 813748784#17 813748784#22" >
+        <stop busStop="7650206934" duration="30.00" until="100.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7657247704" duration="30.00" until="150.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="7650206932" duration="30.00" until="181.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="7657247698" duration="30.00" until="270.0"/> <!-- 7th Avenue -->
+        <stop busStop="6463380701" duration="30.00" until="358.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6441849565" duration="30.00" until="425.0"/> <!-- 72nd Street -->
+        <stop busStop="6437617425" duration="30.00" until="456.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6427120636" duration="30.00" until="614.0"/> <!-- Cathedral Parkway–110th Street -->
+        <stop busStop="6427120645" duration="30.00" until="683.0"/> <!-- 116th Street -->
+    </route>
+    <route id="pt_subway_6:1" edges="804373929" >
+        <stop busStop="7142969941" duration="30.00" until="68.0"/> <!-- 23rd Street -->
+        <stop busStop="7142969921" duration="30.00" until="130.0"/> <!-- 28th Street -->
+        <stop busStop="7142969930" duration="30.00" until="190.0"/> <!-- 33rd Street -->
+        <stop busStop="591997974" duration="30.00" until="253.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7142969936" duration="30.00" until="284.0"/> <!-- 51st Street -->
+        <stop busStop="2024979388" duration="30.00" until="315.0"/> <!-- 59th Street -->
+        <stop busStop="1261183479" duration="30.00" until="346.0"/> <!-- 68th Street–Hunter College -->
+        <stop busStop="7596192197" duration="30.00" until="377.0"/> <!-- 77th Street -->
+        <stop busStop="7596192196" duration="30.00" until="408.0"/> <!-- 86th Street -->
+        <stop busStop="7142969899" duration="30.00" until="439.0"/> <!-- 96th Street -->
+        <stop busStop="7142969907" duration="30.00" until="470.0"/> <!-- 103rd Street -->
+        <stop busStop="4661347470" duration="30.00" until="501.0"/> <!-- 110th Street -->
+        <stop busStop="7142064622" duration="30.00" until="532.0"/> <!-- 116th Street -->
+    </route>
+    <route id="pt_train_175:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M15:1" edges="194923807#0 438384743 974336290#0 222299276#1 222299276#4 222299276#5 222299276#6 222299276#9 222299276#10 144001606#1 954878305#0 954926502#1 954929768#0 420872177#0 420872177#1 368938762#1 368938761#1 771939270#0 771939270#3 884400279#1 46518732 884400281 169383517 381480876 169383516#0 169383516#1 46518731#2 46518731#5 46518731#8 46518731#9 46518734#0 46518734#1 669657396 988977540 884400300 884400282 884400293#0 884400293#1 884400293#2 379843702#0 379843702#1 819074878 619280617#0 884400294#1 884400286#0 884400289#0 884400289#1 884400289#2 884400301 884400297 375316257 169381962 226092571" >
+        <stop busStop="5265737234" duration="30.00" until="92.0"/> <!-- 1 Av/E 28 St -->
+        <stop busStop="5265740579" duration="30.00" until="253.0"/> <!-- 1 Av/E 34 St -->
+        <stop busStop="6128549131" duration="30.00" until="552.0"/> <!-- 1 Av/E 42 St -->
+        <stop busStop="5265741650" duration="30.00" until="678.0"/> <!-- 1 Av/Mitchell Pl -->
+    </route>
+    <route id="pt_train_174:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="664.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_173:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M7:1" edges="420899372#1 496986970#1 496986970#2 496989355#0 496989355#1 496989355#3 382740985#0 382740985#3 382740985#6 588157337#0 569345540#0 569345540#3 167922071 483360105#0 483360105#1 483360105#2 397795463#0 397795463#1 682360554#0 682360554#1 682360554#2 397795464#1 397795464#2 569345544#0 569345544#1 167922070 195743344 569345545 569345547#0 569345547#1 569345547#2 464543615#0 464543615#1 464543615#2 5670803#1 492489884 195743190 68668556 420512231#0 420512231#1 420512231#2 420598330 986615539 986615541#0 986615541#1 986615542 420598327 5670836 954659191 813970416#0 813970416#1 852992107 852992111#0 852992111#1 852992100#0 852992102#1 852992102#4" >
+        <stop busStop="4796245036" duration="30.00" until="41.0"/> <!-- Central Park South/6th Avenue -->
+        <stop busStop="4794775922" duration="30.00" until="108.0"/> <!-- 7th Avenue/West 58th Street -->
+        <stop busStop="4784141037" duration="30.00" until="203.0"/> <!-- 7th Avenue/West 54th Street -->
+        <stop busStop="4784141040" duration="30.00" until="280.0"/> <!-- 7th Avenue/West 53rd Street -->
+        <stop busStop="4782363334" duration="30.00" until="384.0"/> <!-- 7th Avenue/West 50th Street -->
+    </route>
+    <route id="pt_subway_B:1" edges="689037413#1 689037413#6 689037413#7 689037412#1 46340129#1 715214990 715214982 819186625" >
+        <stop busStop="6437617431" duration="30.00" until="31.0"/> <!-- 103rd Street -->
+        <stop busStop="6437617428" duration="30.00" until="62.0"/> <!-- 96th Street -->
+        <stop busStop="6437617426" duration="30.00" until="146.0"/> <!-- 86th Street -->
+        <stop busStop="6437617424" duration="30.00" until="192.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6441849564" duration="30.00" until="223.0"/> <!-- 72nd Street -->
+        <stop busStop="6463380709" duration="30.00" until="349.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="7657247700" duration="30.00" until="406.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650206922" duration="30.00" until="541.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="591997397" duration="30.00" until="587.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="5350434153" duration="30.00" until="618.0"/> <!-- 34th Street–Herald Square -->
+    </route>
+    <route id="pt_train_94:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="698.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_167:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_6:0" edges="816976506 817013581 -817013581 -46695595 -821671625#1 817036018 46695595 817013581" >
+        <stop busStop="7630334256" duration="30.00" until="59.0"/> <!-- 116th Street -->
+        <stop busStop="7630334266" duration="30.00" until="123.0"/> <!-- 110th Street -->
+        <stop busStop="7630334265" duration="30.00" until="192.0"/> <!-- 103rd Street -->
+        <stop busStop="7630379954" duration="30.00" until="262.0"/> <!-- 96th Street -->
+        <stop busStop="7630379956" duration="30.00" until="338.0"/> <!-- 86th Street -->
+        <stop busStop="7630379959" duration="30.00" until="412.0"/> <!-- 77th Street -->
+        <stop busStop="7630379961" duration="30.00" until="487.0"/> <!-- 68th Street–Hunter College -->
+        <stop busStop="7630379952" duration="30.00" until="559.0"/> <!-- 59th Street -->
+        <stop busStop="7630379945" duration="30.00" until="631.0"/> <!-- 51st Street -->
+        <stop busStop="7630588813" duration="30.00" until="677.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630588804" duration="30.00" until="779.0"/> <!-- 33rd Street -->
+        <stop busStop="-7630588806" duration="30.00" until="810.0"/> <!-- 28th Street -->
+    </route>
+    <route id="pt_train_88:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="732.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_6:2" edges="816976506 817013581 -817013581 -46695595 -821671625#1 817036018 46695595 817013581" >
+        <stop busStop="7630334256" duration="30.00" until="54.0"/> <!-- 116th Street -->
+        <stop busStop="7630334266" duration="30.00" until="118.0"/> <!-- 110th Street -->
+        <stop busStop="7630334265" duration="30.00" until="187.0"/> <!-- 103rd Street -->
+        <stop busStop="7630379954" duration="30.00" until="257.0"/> <!-- 96th Street -->
+        <stop busStop="7630379956" duration="30.00" until="333.0"/> <!-- 86th Street -->
+        <stop busStop="7630379959" duration="30.00" until="407.0"/> <!-- 77th Street -->
+        <stop busStop="7630379961" duration="30.00" until="482.0"/> <!-- 68th Street–Hunter College -->
+        <stop busStop="7630379952" duration="30.00" until="554.0"/> <!-- 59th Street -->
+        <stop busStop="7630379945" duration="30.00" until="679.0"/> <!-- 51st Street -->
+        <stop busStop="7630588813" duration="30.00" until="725.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="-7630588806" duration="30.00" until="853.0"/> <!-- 28th Street -->
+    </route>
+    <route id="pt_train_165:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M11:1" edges="5671261#0 5671261#4 5671261#5 5671261#7 5671261#8 196117075#0 196117075#1 196117075#2 196117075#3 22909152#0 22909152#1 485556247#1 485556246 194923800#0 194923800#2 194923800#3 194923800#4 194923800#8 127693200#0 127693200#1 127693200#2 226041041 226041042 46490540 939613202 396444293#0 396444293#1 396444293#3 396444293#4 396444293#5 396444295#1 396444295#3 396444295#4 396444295#5 396444295#7 396444295#8 396444295#9 396444295#10 767990686#0 767990686#1 589494595#1 496986803#1 496986803#2 496986803#4 496986803#5 496986803#6 496986803#8 496986803#9 496986803#10 496986803#11 496986803#12 496986803#13 496986803#15 496986803#16 496986803#17 954520389#1 954520389#2 954520389#5 945460473 460585328#0 460585328#1 460585328#2 460585328#3 460585328#4 460585328#6 460585328#7 460585328#8 460585328#9 814278017 808190587 601733867 808190588 195743301 808190577 808190584#0 808190584#1 808190576 195743297#0 195743297#1 808190578 5671056#0 5671056#2 5671056#4 5671056#7 5671056#10 809013917#0 809013918#1 809013918#2 809013918#3 809013918#4 808055022#0 808055023#1 808055023#2 808055023#3 808055023#4" >
+        <stop busStop="3913758293@12382567" duration="30.00" until="93.0"/> <!-- West 14th Street & 9th Avenue -->
+    </route>
+    <route id="pt_bus_M42:1" edges="584971497#0 584971497#1 989261433 46435658#1 169267538#1 420904621#0 420904621#1 989265269#0 989265269#1 420904620 974611019#1 617425347 420904618#0 420904618#1 167922077 -542259076#3 -542259076#1 -542259076#0 -525729008#1 -167922076 -167922072#7 -167922072#6 -167922072#5 -167922072#4 -167922072#3 -167922072#1 -511699183#3 -511699183#2 -511699183#1 -438384692#1 -5672991#1 -496995905 -438382685#1 -438382685#0 -496990648 420356169#0 420356169#1 988980354#1 384826723#0 747908052#1 747908053 747908051#0 682359868 46201630#0 46201630#1 46201630#2 46201630#3 32939046#0 32939046#1 46469724#1 46469724#2" >
+        <stop busStop="3679458105" duration="30.00" until="47.0"/> <!-- None -->
+        <stop busStop="3679359825" duration="30.00" until="115.0"/> <!-- W 42 St / 12 Av -->
+        <stop busStop="3679360498" duration="30.00" until="190.0"/> <!-- W 42 St / 11 Av -->
+        <stop busStop="3679359855" duration="30.00" until="258.0"/> <!-- West 42nd Street & 10th Avenue -->
+        <stop busStop="-3679372025" duration="30.00" until="358.0"/> <!-- W 42 St / 9 Av -->
+        <stop busStop="-3679386558" duration="30.00" until="415.0"/> <!-- W 24 St / 8 Av -->
+        <stop busStop="-3679392380" duration="30.00" until="474.0"/> <!-- 200 West 42nd Street -->
+        <stop busStop="-3679402057" duration="30.00" until="599.0"/> <!-- W 42 St / 6 Av -->
+        <stop busStop="-3679412804" duration="30.00" until="681.0"/> <!-- West 42nd Street & 5th Avenue -->
+        <stop busStop="-3679405817" duration="30.00" until="727.0"/> <!-- East 42nd Street & Madison Avenue -->
+        <stop busStop="-3679431796" duration="30.00" until="797.0"/> <!-- East 24th Street & Park Avenue -->
+        <stop busStop="-1427285944" duration="30.00" until="857.0"/> <!-- East 42nd Street & Lexington Avenue -->
+        <stop busStop="3679403747" duration="30.00" until="909.0"/> <!-- East 42nd Street & 3rd Avenue -->
+        <stop busStop="3679439920" duration="30.00" until="998.0"/> <!-- E 42 St / 2 Av -->
+        <stop busStop="3679435962" duration="30.00" until="1130.0"/> <!-- East 42nd Street & 1st Avenue -->
+        <stop busStop="3679455264" duration="30.00" until="1189.0"/> <!-- East 41st Street & 1st Avenue -->
+    </route>
+    <route id="pt_train_178:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="766.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_161:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M15:0" edges="686125787#0 686125787#1 686125787#2 686125787#3 198595549#1 198595548 358290454#1 818182930#0 226092573#1 455125048#0 455125048#1 670988060#0 670988060#1 670988060#2 456409017#0 456409017#2 169267541#0 169267541#1 420901681#0 420901681#1 420901681#2 420901681#3 420901681#4 420901682#0 420901673#1 420901673#2 420901690#0 420901690#1 420901690#2 420901679#0 420901683#1 457948936 157014137#1 157014137#2 421852618#0 421852618#1 420872188#1 118400729#1 118400729#5 118400729#8 118400729#11 420872194#0 381474197#1 420872190#1 222299248#1 222299248#4" >
+        <stop busStop="7946231856" duration="30.00" until="49.0"/> <!-- 2 Av/E 64 St -->
+        <stop busStop="7946231854" duration="30.00" until="141.0"/> <!-- 2 Av/E 61 St -->
+        <stop busStop="6139477282" duration="30.00" until="298.0"/> <!-- 2 Av/E 57 St -->
+        <stop busStop="7946231852" duration="30.00" until="391.0"/> <!-- 2 Av/E 54 St -->
+        <stop busStop="6139477296" duration="30.00" until="497.0"/> <!-- 2 Av/E 50 St -->
+        <stop busStop="7946231855" duration="30.00" until="603.0"/> <!-- 2 Av/E 46 St -->
+        <stop busStop="6139477278" duration="30.00" until="721.0"/> <!-- 2 Av/E 42 St -->
+        <stop busStop="4207912625" duration="30.00" until="836.0"/> <!-- 2 Av/E 39 St -->
+        <stop busStop="7949892055" duration="30.00" until="904.0"/> <!-- 2 Av/E 36 St -->
+        <stop busStop="6139477293" duration="30.00" until="1017.0"/> <!-- 2 Av/E 34 St -->
+        <stop busStop="8119193323" duration="30.00" until="1132.0"/> <!-- 2 Av/E 31 St -->
+        <stop busStop="6162115861" duration="30.00" until="1223.0"/> <!-- 2 Av/E 28 St -->
+    </route>
+    <route id="pt_bus_M20:0" edges="46334586#0 46334586#1 46334586#2 46334586#3 439801900#0 439801900#1 196116980#1 196116980#3 196116975#1 835176558#1 835176555 835176554#1 835176554#3 460065822#0 460065822#2 439801902 976050707#0 22898530#0 308322447#2 496986970#2 496989355#0 496989355#1 496989355#3 382740985#0 382740985#3 382740985#6 588157337#0 569345540#0 569345540#3 167922071 483360105#0 483360105#1 483360105#2 397795463#0 397795463#1 682360554#0 682360554#1 682360554#2 397795464#1 397795464#2 569345544#0 569345544#1 167922070 195743344 569345545 569345547#0 569345547#1 569345547#2 464543615#0 464543615#1 464543615#2 5670803#1 492489884 195743190 68668556 420512231#0 420512231#1 420512231#2 420598330 986615539 986615541#0 986615541#1 986615542 420598327 5670836 954659191 813970416#0 813970416#1 852992107 852992111#0 852992111#1 852992100#0 852992102#1 852992102#4" >
+        <stop busStop="4794775921" duration="30.00" until="360.0"/> <!-- 7th Avenue & West 58th Street -->
+        <stop busStop="4784141034" duration="30.00" until="466.0"/> <!-- 7th Avenue & West 55th Street -->
+        <stop busStop="4784141041" duration="30.00" until="544.0"/> <!-- 7th Avenue & West 53rd Street -->
+        <stop busStop="4782363333" duration="30.00" until="646.0"/> <!-- 7th Avenue & West 50th Street -->
+    </route>
+    <route id="pt_bus_M42:0" edges="46469724#1 46469724#2 169383517 381480876 46201630#0 46201630#1 46201630#2 46201630#3 32939046#0 32939046#1 169383518#0 169383518#1 169383518#2 169383518#3 -628093103#2 -628093103#1 368938761#1 771939270#0 771939270#3 884400279#1 36185650 654561413 351224631 380098431#0 380098431#1 -747908051#0 -988980353 -747908052#1 -384826723#0 -988980354#1 988980354#1 384826723#0 -384826723#0 -988980354#1 -988980354#0 -420356169#0 420356168 438382685#0 438382685#1 496995905 5672991#0 438384692#0 511699183#1 511699183#2 511699183#3 167922072#1 167922072#3 167922072#4 167922072#5 167922072#6 167922072#7 167922076 525729008#0 542259076#0 542259076#1 542259076#2 -167922077 -420904618#1 -420904618#0 -68325079 -974611019#1 -420904620 -989265269#1 -989265269#0 -420904621#1 -420904621#0 -169267538#1 5673276#1 420904838 584971497#0 584971497#1 989261433" >
+        <stop busStop="3679455264" duration="30.00" until="47.0"/> <!-- East 41st Street & 1st Avenue -->
+        <stop busStop="-3679438746" duration="30.00" until="331.0"/> <!-- East 42 Street & 1st Avenue -->
+        <stop busStop="3679438201" duration="30.00" until="427.0"/> <!-- East 42nd Street & 2nd Avenue -->
+        <stop busStop="3679437133" duration="30.00" until="521.0"/> <!-- East 42nd Street & 3rd Avenue -->
+        <stop busStop="3679433462" duration="30.00" until="556.0"/> <!-- East 42nd Street & Lexington Avenue -->
+        <stop busStop="3679423001" duration="30.00" until="647.0"/> <!-- East 42nd Street & Madison Avenue -->
+        <stop busStop="3679406934" duration="30.00" until="703.0"/> <!-- W 42 St / 5 Av -->
+        <stop busStop="3679396691" duration="30.00" until="779.0"/> <!-- West 42nd Street & 6th Avenue -->
+        <stop busStop="3679394774" duration="30.00" until="830.0"/> <!-- West 42nd Street/Broadway -->
+        <stop busStop="3679391773" duration="30.00" until="882.0"/> <!-- West 42nd Street & 7th Avenue -->
+        <stop busStop="3679387948" duration="30.00" until="960.0"/> <!-- W 42 St / 8 Av -->
+        <stop busStop="-3679372930" duration="30.00" until="1024.0"/> <!-- W 42 St / 9 Av -->
+        <stop busStop="-3679366525" duration="30.00" until="1118.0"/> <!-- W 42 St / 10 Av -->
+        <stop busStop="-3679360604" duration="30.00" until="1173.0"/> <!-- W 42 St / 11 Av -->
+        <stop busStop="-3679357885" duration="30.00" until="1239.0"/> <!-- W 42 St / 12 Av -->
+        <stop busStop="3679458105" duration="30.00" until="1339.0"/> <!-- None -->
+    </route>
+    <route id="pt_subway_C:1" edges="689037413#1 689037413#6 689037413#7 689037412#1 46340129#1 816679186 719086610#0" >
+        <stop busStop="6437617431" duration="30.00" until="31.0"/> <!-- 103rd Street -->
+        <stop busStop="6437617428" duration="30.00" until="62.0"/> <!-- 96th Street -->
+        <stop busStop="6437617426" duration="30.00" until="160.0"/> <!-- 86th Street -->
+        <stop busStop="6437617424" duration="30.00" until="206.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6441849564" duration="30.00" until="237.0"/> <!-- 72nd Street -->
+        <stop busStop="6463380709" duration="30.00" until="363.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6751642217" duration="30.00" until="420.0"/> <!-- 50th Street -->
+        <stop busStop="6751622968" duration="30.00" until="506.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6923621274" duration="30.00" until="537.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6923621238" duration="30.00" until="568.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621199" duration="30.00" until="599.0"/> <!-- 14th Street -->
+    </route>
+    <route id="pt_bus_M15-SBS:1" edges="686125787#0 686125787#1 686125787#2 686125787#3 198595549#1 198595548 358290454#1 818182930#0 226092573#1 455125048#0 455125048#1 670988060#0 670988060#1 670988060#2 456409017#0 456409017#2 169267541#0 169267541#1 420901681#0 420901681#1 420901681#2 420901681#3 420901681#4 420901682#0 420901673#1 420901673#2 420901690#0 420901690#1 420901690#2 420901679#0 420901683#1 457948936 157014137#1 157014137#2 421852618#0 421852618#1 420872188#1 118400729#1 118400729#5 118400729#8 118400729#11 420872194#0 381474197#1 420872190#1 222299248#1 222299248#4" >
+        <stop busStop="6139477282" duration="30.00" until="242.0"/> <!-- 2 Av/E 57 St -->
+        <stop busStop="6139477296" duration="30.00" until="435.0"/> <!-- 2 Av/E 50 St -->
+        <stop busStop="6139477278" duration="30.00" until="684.0"/> <!-- 2 Av/E 42 St -->
+        <stop busStop="6139477293" duration="30.00" until="940.0"/> <!-- 2 Av/E 34 St -->
+        <stop busStop="6139477294" duration="30.00" until="1124.0"/> <!-- 2 Av & E 28 St -->
+    </route>
+    <route id="pt_train_172:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="800.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_6:3" edges="804373929" >
+        <stop busStop="7142969941" duration="30.00" until="78.0"/> <!-- 23rd Street -->
+        <stop busStop="7142969921" duration="30.00" until="141.0"/> <!-- 28th Street -->
+        <stop busStop="7142969930" duration="30.00" until="202.0"/> <!-- 33rd Street -->
+        <stop busStop="591997974" duration="30.00" until="542.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7142969936" duration="30.00" until="573.0"/> <!-- 51st Street -->
+        <stop busStop="2024979388" duration="30.00" until="604.0"/> <!-- 59th Street -->
+        <stop busStop="1261183479" duration="30.00" until="635.0"/> <!-- 68th Street–Hunter College -->
+        <stop busStop="7596192197" duration="30.00" until="666.0"/> <!-- 77th Street -->
+        <stop busStop="7596192196" duration="30.00" until="697.0"/> <!-- 86th Street -->
+        <stop busStop="7142969899" duration="30.00" until="728.0"/> <!-- 96th Street -->
+        <stop busStop="7142969907" duration="30.00" until="759.0"/> <!-- 103rd Street -->
+        <stop busStop="4661347470" duration="30.00" until="790.0"/> <!-- 110th Street -->
+        <stop busStop="7142064622" duration="30.00" until="821.0"/> <!-- 116th Street -->
+    </route>
+    <route id="pt_subway_4:5" edges="804373929" >
+        <stop busStop="7142969941" duration="30.00" until="76.0"/> <!-- 23rd Street -->
+        <stop busStop="7142969921" duration="30.00" until="140.0"/> <!-- 28th Street -->
+        <stop busStop="7142969930" duration="30.00" until="201.0"/> <!-- 33rd Street -->
+        <stop busStop="591997974" duration="30.00" until="493.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7142969936" duration="30.00" until="524.0"/> <!-- 51st Street -->
+        <stop busStop="2024979388" duration="30.00" until="555.0"/> <!-- 59th Street -->
+        <stop busStop="1261183479" duration="30.00" until="586.0"/> <!-- 68th Street–Hunter College -->
+        <stop busStop="7596192197" duration="30.00" until="617.0"/> <!-- 77th Street -->
+        <stop busStop="7596192196" duration="30.00" until="648.0"/> <!-- 86th Street -->
+        <stop busStop="7142969899" duration="30.00" until="679.0"/> <!-- 96th Street -->
+        <stop busStop="7142969907" duration="30.00" until="710.0"/> <!-- 103rd Street -->
+        <stop busStop="4661347470" duration="30.00" until="741.0"/> <!-- 110th Street -->
+        <stop busStop="7142064622" duration="30.00" until="772.0"/> <!-- 116th Street -->
+    </route>
+    <route id="pt_train_139:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M11:0" edges="907627764#0 907627765 439801899#0 439801900#0 439801900#1 196116991 630828581#0 630828581#1 630828581#3 630828581#5 938601999 938601996#0 938601996#1 460067515#0 420892268 420892262 420892263 420892275 420892269 420892272#0 420892271#0 5671276#0 814278019#0 814278019#3 814278019#6 814278019#8 814278019#11 420907908 968513231 968513228 968513229 194926855 525729009#0 525729010#0 525729010#1 525729010#4 525729010#6 525729010#7 525729010#8 525729010#10 420901923#0 420901923#1 420901919#0 420901919#1 988515374#0 988515374#1 420901920#1 420901920#2 420901920#3 420901917#1 420901921#0 420901921#1 420901922#0 194926856#1 350726030#1 663515452#1 989270322#1 989270322#3 350726028#0 350726028#1 350726028#3 350726028#4 350726028#5 350726028#6 350726028#7 350726028#8 350726028#10 350726028#11 384178813#1 963567032 963567034 156994977 963575583 963575586#0 963575586#1 963575587#0 963575587#1 194923812#0 194923812#1 194923812#3 194923812#4 194923812#5 127693388#1 127693388#2 127693388#3 350726031#0 350726031#1 350726031#2 5670451#0 5670451#2 5670451#3" >
+        <stop busStop="3269834171" duration="30.00" until="83.0"/> <!-- Columbus Avenue & West 66th Street -->
+        <stop busStop="3913758293" duration="30.00" until="1365.0"/> <!-- West 14th Street & 9th Avenue -->
+    </route>
+    <route id="pt_subway_4:4" edges="816976506 817013581 -817013581 -46695595 -821671625#1 817036018 46695595 817013581" >
+        <stop busStop="7630334256" duration="30.00" until="59.0"/> <!-- 116th Street -->
+        <stop busStop="7630334266" duration="30.00" until="123.0"/> <!-- 110th Street -->
+        <stop busStop="7630334265" duration="30.00" until="192.0"/> <!-- 103rd Street -->
+        <stop busStop="7630379954" duration="30.00" until="262.0"/> <!-- 96th Street -->
+        <stop busStop="7630379956" duration="30.00" until="338.0"/> <!-- 86th Street -->
+        <stop busStop="7630379959" duration="30.00" until="412.0"/> <!-- 77th Street -->
+        <stop busStop="7630379961" duration="30.00" until="487.0"/> <!-- 68th Street–Hunter College -->
+        <stop busStop="7630379952" duration="30.00" until="559.0"/> <!-- 59th Street -->
+        <stop busStop="7630379945" duration="30.00" until="708.0"/> <!-- 51st Street -->
+        <stop busStop="7630588813" duration="30.00" until="754.0"/> <!-- 42nd Street–Grand Central -->
+        <stop busStop="7630588804" duration="30.00" until="856.0"/> <!-- 33rd Street -->
+        <stop busStop="-7630588806" duration="30.00" until="887.0"/> <!-- 28th Street -->
+        <stop busStop="7630588808" duration="30.00" until="1054.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_train_170:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="834.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_137:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M5:1" edges="993368839#0 993368839#5 993368839#8 993368839#12 195743141#1 196116980#1 196116980#3 196116975#1 835176558#1 835176555 835176554#1 835176554#3 460065822#0 460065822#2 439801902 460065820 167922075#0 167922075#2 420899373 -196116988#0 -420899372#0 5670253#1 5670253#2 5670874#0 5670874#1 422298615#1 422298615#2 422298615#4 195743336#0 195743336#1 195743336#2 458180197 458180191#0 458180191#1 458180191#2 458180190#0 458180190#1 458180190#2 384178816#0 384178816#1 511699175 458180183 438397345 464515891 511699184#0 511699184#1 511699185#1 438385431#1 438385431#2 438385431#3 438385431#4 438385431#5 420496529 458166892#0 458166892#1 195743343#1 195743343#2 588168464 46490538#0 46490538#1 46490538#2 46490538#3 46490538#5" >
+        <stop busStop="-4796245033" duration="30.00" until="498.0"/> <!-- Central Park South/Avenue of the Americas -->
+        <stop busStop="-4796245036" duration="30.00" until="529.0"/> <!-- Central Park South/6th Avenue -->
+        <stop busStop="4769084861" duration="30.00" until="1304.0"/> <!-- West 31st Street/6th Avenue -->
+        <stop busStop="4769084860" duration="30.00" until="1335.0"/> <!-- West 31st Street & 6th Avenue -->
+    </route>
+    <route id="pt_train_168:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="868.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_E:4" edges="739454520 739454520 719086607 816679188 819186609" >
+        <stop busStop="6923621203" duration="30.00" until="281.0"/> <!-- 14th Street -->
+        <stop busStop="6923621236" duration="30.00" until="328.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621277" duration="30.00" until="359.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642166" duration="30.00" until="390.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="7450462465" duration="30.00" until="1108.0"/> <!-- 50th Street -->
+        <stop busStop="7657247699" duration="30.00" until="1139.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650207504" duration="30.00" until="1238.0"/> <!-- 53rd Street–5th Avenue -->
+        <stop busStop="7650173977" duration="30.00" until="1285.0"/> <!-- 53rd Street–Lexington Avenue -->
+    </route>
+    <route id="pt_train_135:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_subway_B:2" edges="689037413#1 689037413#6 689037413#7 689037412#1 46340129#1 715214990 715214982 819186625" >
+        <stop busStop="6437617431" duration="30.00" until="31.0"/> <!-- 103rd Street -->
+        <stop busStop="6437617428" duration="30.00" until="62.0"/> <!-- 96th Street -->
+        <stop busStop="6437617426" duration="30.00" until="160.0"/> <!-- 86th Street -->
+        <stop busStop="6437617424" duration="30.00" until="206.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6441849564" duration="30.00" until="237.0"/> <!-- 72nd Street -->
+        <stop busStop="6463380709" duration="30.00" until="363.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="7657247700" duration="30.00" until="420.0"/> <!-- 7th Avenue -->
+        <stop busStop="7650206922" duration="30.00" until="508.0"/> <!-- 47th–50th Streets–Rockefeller Center -->
+        <stop busStop="591997397" duration="30.00" until="554.0"/> <!-- 42nd Street–Bryant Park -->
+        <stop busStop="5350434153" duration="30.00" until="585.0"/> <!-- 34th Street–Herald Square -->
+    </route>
+    <route id="pt_train_166:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="902.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_Morristown:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="895371274" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_Montclair-Boonton:0" edges="46493326" >
+        <stop busStop="895371274" duration="30.00" until="43.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M4:1" edges="587061858#4 5672524#2 5672524#4 387128267#10 387128267#12 387128267#13 387128267#14 387128267#15 387128267#17 387128267#19 387128267#21 945384089 945384091 420496091#0 420496091#1 420496091#2 420496091#3 420496091#4 458180200 569345474 588157336 569345502#0 569345502#1 569345502#2 458180195 458180193#0 458180193#1 458180193#2 458180189 458180187#0 458180187#1 458180187#2 196117039 496990647#0 496990647#1 496990647#2 630828556 671212509 458177133#0 458177133#1 458177133#2 458177129 518451322 989793292#0 989793292#1 46469731#0 46469731#1 458166892#1 195743343#1 195743343#2 588168464 46490538#0 46490538#1 46490538#2 46490538#3 46490538#5 68668519 978161521#0 460606348#1 693345069#1 46490538#5 68668519 978161521#0 460606347#1 439933932#1 496983397#1 496983396#0 587038081#0 587038081#1 384649120#1 46522005 500717399 464543615#0 464543615#1 464543615#2 5670803#1 492489884 484170269#0 484170269#1 460606348#1" >
+        <stop busStop="3278932314" duration="30.00" until="39.0"/> <!-- Madison Avenue & East 75th Street -->
+        <stop busStop="4769084859" duration="30.00" until="1184.0"/> <!-- West 32nd Street/Avenue of the Americas -->
+        <stop busStop="4770624019" duration="30.00" until="1357.0"/> <!-- West 37th Street/Broadway -->
+        <stop busStop="4769084858" duration="30.00" until="1513.0"/> <!-- West 32nd Street & Avenue of the Americas -->
+    </route>
+    <route id="pt_train_164:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="936.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_North_Jersey_Coast:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="895371274" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M50:1" edges="658583343#0 658583343#1 658583343#2 169267536 619280601 697186456 619280607#0 619280607#1 619280607#2 619280607#3 619280607#4 46522002 458180186#0 458180186#1 458180186#3 458180186#4 458180184#0 458180184#1 458180184#2 458180184#3 384178816#0 5671629#0 5671629#1 5671629#2 496993762#0 496993762#1 458180184#0 458180184#1 458180184#2 458180184#3 5670114#0 5670114#1 5670114#2 542258337#1 542258337#2 542258337#3 542258337#4 46443656#0 46443656#3 46443656#4 46443656#5 46443656#6 46443656#7 46443656#8 46443656#9 46443656#10 46443656#11 46443656#12 989265273#1 989265273#2 5671115#0 460585328#7 46443656#12 46443656#13 681042531#0 989265274#1 989265274#2 989265274#3 989265273#0 46443656#13 421852031 421852029 965836271 421852030 169269031#1 505777317#1 584971497#0 584971497#1 989261433" >
+        <stop busStop="4782442657" duration="30.00" until="102.0"/> <!-- East 49th Street/1st Avenue -->
+        <stop busStop="4782506040" duration="30.00" until="170.0"/> <!-- East 49th Street/2nd Avenue -->
+        <stop busStop="4782506039" duration="30.00" until="235.0"/> <!-- East 49th Street/3rd Avenue -->
+        <stop busStop="4782506037" duration="30.00" until="298.0"/> <!-- East 49th Street/Lexington Avenue -->
+        <stop busStop="4782506035" duration="30.00" until="374.0"/> <!-- East 49th Street/Madison Avenue -->
+        <stop busStop="4782506034" duration="30.00" until="464.0"/> <!-- East 49th Street & Madison Avenue -->
+        <stop busStop="4782506033" duration="30.00" until="535.0"/> <!-- East 49th Street/5th Avenue -->
+        <stop busStop="4782506031" duration="30.00" until="601.0"/> <!-- West 49th Street/Avenue of the Americas -->
+        <stop busStop="4782363336" duration="30.00" until="658.0"/> <!-- West 49th Street & 7th Avenue -->
+        <stop busStop="4782363335" duration="30.00" until="689.0"/> <!-- West 49th Street/7th Avenue -->
+        <stop busStop="4782543132" duration="30.00" until="768.0"/> <!-- West 49th Street/8th Avenue -->
+        <stop busStop="4782543129" duration="30.00" until="824.0"/> <!-- West 49th Street/9th Avenue -->
+        <stop busStop="4782543128" duration="30.00" until="855.0"/> <!-- West 49th Street & 9th Avenue -->
+        <stop busStop="3607161886" duration="30.00" until="936.0"/> <!-- West 49th Street & 10th Avenue -->
+        <stop busStop="4782543127" duration="30.00" until="1079.0"/> <!-- West 49th Street/10th Avenue -->
+        <stop busStop="4782543126" duration="30.00" until="1157.0"/> <!-- West 49th Street & 11th Avenue -->
+        <stop busStop="2956903784" duration="30.00" until="1188.0"/> <!-- West 49th Street/11th Avenue -->
+        <stop busStop="4782543123" duration="30.00" until="1236.0"/> <!-- West 49th Street & 12th Avenue -->
+        <stop busStop="4782543124" duration="30.00" until="1385.0"/> <!-- West 49th Street/12th Avenue -->
+        <stop busStop="4782543122" duration="30.00" until="1514.0"/> <!-- 12th Avenue/West 46th Street -->
+        <stop busStop="3679458105" duration="30.00" until="1604.0"/> <!-- None -->
+    </route>
+    <route id="pt_train_Port_Washington:0" edges="46493326" >
+        <stop busStop="895371274" duration="30.00" until="43.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_162:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="970.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_95:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M12:1" edges="458106348#0 458106348#1 458106348#2 194923791#0 194923791#2 196117075#0 196117075#1 196117075#2 196117075#3 22909152#0 22909152#1 194923792#0 194923792#1 308322431#2 22909136 -196117075#3 -196117075#2 -196117075#1 -196117075#0 196117075#0 196117075#1 196117075#2 196117075#3 22909152#0 22909152#1 194923792#0 194923792#1 194923802#0 194923802#1 194923802#2 992132287#0 194923801#0 194923801#1 194923801#3 939433105 945167874#1 34625463#0 34625463#2 34625463#3 194923803 118714476#0 118714476#2 118714476#3 118714476#4 989267825#1 989267825#3 989267825#4 194926850#0 421853810#1 992164861#0 992164861#1 935228363 68325061#0 421853647 495253326#2 495253326#4 763126559#0 5673276#1 420904838 505777313#1 505777310 169267539#0 169267539#1 992144532#0 992144532#1 421852041 681042531#0 682359029#0 682359029#1 194920159#0 965833823#0 519705722#0 519705722#1 195743211#1 584971503#0 324118557#0 324118557#1 226041033 324118556#1 420890025 420890027 420890029 439933933 196117092 420890022#0 308322446#1 308322448#1" >
+        <stop busStop="8402249048" duration="30.00" until="193.0"/> <!-- 10th Avenue & West 15th Street -->
+        <stop busStop="3913758293@12382567" duration="30.00" until="341.0"/> <!-- West 14th Street & 9th Avenue -->
+        <stop busStop="3720959930" duration="30.00" until="1047.0"/> <!-- 12th Avenue/West 43rd Street -->
+        <stop busStop="4782363327" duration="30.00" until="1115.0"/> <!-- 12th Avenue/West 46th Street -->
+        <stop busStop="4782404433" duration="30.00" until="1181.0"/> <!-- 12th Avenue/West 48th Street -->
+    </route>
+    <route id="pt_subway_N:4" edges="817383471 817381420 821206638 817381419 817381419 817381405#0 817381405#1 817381424 817381426#1" >
+        <stop busStop="7656750802" duration="30.00" until="118.0"/> <!-- Lexington Avenue–59th Street -->
+        <stop busStop="7656750805" duration="30.00" until="190.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="7656750808" duration="30.00" until="266.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7633689337" duration="30.00" until="375.0"/> <!-- 49th Street -->
+        <stop busStop="7656750813" duration="30.00" until="422.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633689355" duration="30.00" until="1398.0"/> <!-- 34th Street–Herald Square -->
+    </route>
+    <route id="pt_subway_C:0" edges="739454520 739454520 816336111 689037414#0 689037414#1 689037414#2 813748784#1 813748784#16 813748784#17 813748784#22" >
+        <stop busStop="6923621203" duration="30.00" until="160.0"/> <!-- 14th Street -->
+        <stop busStop="6923621236" duration="30.00" until="207.0"/> <!-- 23rd Street -->
+        <stop busStop="6923621277" duration="30.00" until="238.0"/> <!-- 34th Street–Penn Station -->
+        <stop busStop="6751642166" duration="30.00" until="269.0"/> <!-- 42nd Street–Port Authority Bus Terminal -->
+        <stop busStop="6751642238" duration="30.00" until="1044.0"/> <!-- 50th Street -->
+        <stop busStop="6463380701" duration="30.00" until="1127.0"/> <!-- 59th Street–Columbus Circle -->
+        <stop busStop="6441849565" duration="30.00" until="1194.0"/> <!-- 72nd Street -->
+        <stop busStop="6437617425" duration="30.00" until="1225.0"/> <!-- 81st Street–Museum of Natural History -->
+        <stop busStop="6437617427" duration="30.00" until="1338.0"/> <!-- 86th Street -->
+        <stop busStop="6437617429" duration="30.00" until="1413.0"/> <!-- 96th Street -->
+        <stop busStop="6437617465" duration="30.00" until="1444.0"/> <!-- 103rd Street -->
+        <stop busStop="6427120636" duration="30.00" until="1531.0"/> <!-- Cathedral Parkway–110th Street -->
+        <stop busStop="6427120645" duration="30.00" until="1600.0"/> <!-- 116th Street -->
+    </route>
+    <route id="pt_train_86:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="1004.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_147:0" edges="756094508 46493326 879081748#1 756094522 5671507#0 5671507#1 5671507#2 5671507#3 32965981" >
+        <stop busStop="6342154195" duration="30.00" until="102.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M50:0" edges="584971497#0 584971497#1 989261433 46435658#1 5673276#1 420904838 505777313#1 505777310 169267539#0 169267539#1 992144532#0 992144532#1 421852041 681042531#0 989265274#1 989265274#2 989265274#3 989265273#0 46443656#13 681042531#0 989265274#1 989265274#2 989265274#3 194920158#0 194920158#1 194920158#2 194920158#5 194920158#6 194920158#7 194920158#8 194920158#9 194920158#10 194920158#12 194920158#14 420908138#0 420908138#2 420908138#3 5670867#0 5670867#1 5670867#2 5673497 441405436#0 441405436#1 511924978#1 458180188 46522003 169267541#0 619280607#4 46522002 458180186#0 458180186#1 458180186#3 458180186#4 458180184#0 458180184#1 458180184#2 458180184#3 5670114#0 5670114#1 5670114#2 542258337#1 542258337#2 542258337#3 542258337#4 46443656#0 46443656#3 46443656#4 46443656#5 46443656#6 46443656#7 46443656#8 46443656#9 46443656#10 46443656#11 46443656#12 46443656#13 421852031 421852029 965836271 421852030 169269031#1" >
+        <stop busStop="3679458105" duration="30.00" until="46.0"/> <!-- None -->
+        <stop busStop="4782363328" duration="30.00" until="113.0"/> <!-- 12th Avenue/West 43rd Street -->
+        <stop busStop="4782363326" duration="30.00" until="193.0"/> <!-- 12th Avenue/West 46th Street -->
+        <stop busStop="4782404432" duration="30.00" until="245.0"/> <!-- 12th Avenue/West 48th Street -->
+        <stop busStop="4782404431" duration="30.00" until="296.0"/> <!-- West 50th Street & 12th Avenue -->
+        <stop busStop="4782404430" duration="30.00" until="396.0"/> <!-- West 50th Street/12th Avenue -->
+        <stop busStop="4782404428" duration="30.00" until="448.0"/> <!-- West 50th Street & 11th Avenue -->
+        <stop busStop="4782404429" duration="30.00" until="483.0"/> <!-- West 50th Street/11th Avenue -->
+        <stop busStop="4782404427" duration="30.00" until="561.0"/> <!-- West 50th Street/10th Avenue -->
+        <stop busStop="4782404426" duration="30.00" until="592.0"/> <!-- West 50th Street & 10th Avenue -->
+        <stop busStop="4782404425" duration="30.00" until="650.0"/> <!-- West 50th Street/9th Avenue -->
+        <stop busStop="4782404424" duration="30.00" until="681.0"/> <!-- West 50th Street & 9th Avenue -->
+        <stop busStop="4782404423" duration="30.00" until="762.0"/> <!-- West 50th Street/8th Avenue -->
+        <stop busStop="4782363330" duration="30.00" until="813.0"/> <!-- West 50th Street & 7th Avenue -->
+        <stop busStop="4782363329" duration="30.00" until="844.0"/> <!-- West 50th Street/7th Avenue -->
+        <stop busStop="4782442668" duration="30.00" until="929.0"/> <!-- West 50th Street/Avenue of the Americas -->
+        <stop busStop="4782442665" duration="30.00" until="1010.0"/> <!-- East 50th Street/5th Avenue -->
+        <stop busStop="4782442664" duration="30.00" until="1061.0"/> <!-- East 50th Street & Madison Avenue -->
+        <stop busStop="4782442663" duration="30.00" until="1093.0"/> <!-- East 50th Street/Madison Avenue -->
+        <stop busStop="4782442661" duration="30.00" until="1165.0"/> <!-- East 50th Street/Lexington Avenue -->
+        <stop busStop="4782442659" duration="30.00" until="1219.0"/> <!-- East 50th Street/3rd Avenue -->
+        <stop busStop="4782442658" duration="30.00" until="1268.0"/> <!-- East 50th Street/2nd Avenue -->
+        <stop busStop="4782543122" duration="30.00" until="1753.0"/> <!-- 12th Avenue/West 46th Street -->
+    </route>
+    <route id="pt_subway_W:0" edges="817383471 817381420 821206638 817381419 817381419 817381397 817381417" >
+        <stop busStop="7656750802" duration="30.00" until="82.0"/> <!-- Lexington Avenue–59th Street -->
+        <stop busStop="7656750805" duration="30.00" until="153.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="7656750808" duration="30.00" until="228.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7633689337" duration="30.00" until="299.0"/> <!-- 49th Street -->
+        <stop busStop="7656750813" duration="30.00" until="346.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705497" duration="30.00" until="1394.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633689319" duration="30.00" until="1448.0"/> <!-- 28th Street -->
+        <stop busStop="7633689324" duration="30.00" until="1479.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_subway_R:0" edges="817383471 817381420 821206638 817381419 817381419 817381397 817381417" >
+        <stop busStop="7656750802" duration="30.00" until="78.0"/> <!-- Lexington Avenue–59th Street -->
+        <stop busStop="7656750805" duration="30.00" until="149.0"/> <!-- 5th Avenue–59th Street -->
+        <stop busStop="7656750808" duration="30.00" until="224.0"/> <!-- 57th Street–7th Avenue -->
+        <stop busStop="7633689337" duration="30.00" until="295.0"/> <!-- 49th Street -->
+        <stop busStop="7656750813" duration="30.00" until="342.0"/> <!-- 42nd Street–Times Square -->
+        <stop busStop="7633705497" duration="30.00" until="1380.0"/> <!-- 34th Street–Herald Square -->
+        <stop busStop="7633689319" duration="30.00" until="1434.0"/> <!-- 28th Street -->
+        <stop busStop="7633689324" duration="30.00" until="1465.0"/> <!-- 23rd Street -->
+    </route>
+    <route id="pt_train_56:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="1038.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_train_2158+2248+2250+2252+2254+2256:0" edges="316621098 750256036#0 750256036#1 750256036#2 750256036#3 756094477 571475066#0 571475066#1 750256035#0 750256035#1 750256035#2 750256035#3 572231716 571475065" >
+        <stop busStop="6616343384" duration="30.00" until="1072.0"/> <!-- New York Penn Station -->
+    </route>
+    <route id="pt_bus_M5:0" edges="46490538#0 46490538#1 46490538#2 46490538#3 46490538#5 68668519 978161521#0 460606347#1 439933932#1 496983397#1 496983396#0 587038081#0 587038081#1 384649120#1 384649120#2 384649120#3 384649120#4 440122868 448686048#0 127693103#1 127693103#2 464516471#0 464516471#1 464516471#2 464516471#3 464516471#4 464516471#6 464516471#8 464516471#9 569345537#0 569345537#3 569345537#5 569345537#6 541350711#0 541350711#1 497258108#0 497258108#1 420899372#0 420899372#1 496986970#1 496986970#2 496989355#0 496989355#1 496989355#3 382740985#0 382740985#3 382740985#6 588157337#0 569345540#0 569345540#3 167922071 483360105#0 483360105#1 483360105#2 397795463#0 397795463#1 682360554#0 682360554#1 682360554#2 397795464#1 397795464#2 569345544#0 569345544#1 167922070 195743344 569345545 569345547#0 569345547#1 569345547#2 464543615#0 464543615#1 464543615#2 5670803#1 492489884 484170269#0 484170269#1 460606348#1 693345069#1 46490538#5 68668519 978161521#0 460606347#1 439933932#1 496983397#1 496983396#0 587038081#0 587038081#1 384649120#1 384649120#2 384649120#3 384649120#4 440122868 448686048#0 127693103#1 127693103#2 464516471#0 464516471#1 464516471#2 464516471#3 464516471#4 464516471#6 464516471#8 464516471#9 569345537#0 569345537#3 569345537#5 569345537#6 541350711#0 541350711#1 497258108#0 497258108#1 420899372#0 420899372#1 -195743152#0 186202420#0 186202420#2 439801903 171574337 91383966#0 91383966#2 630828582 671202178#0 420276995#1 835176560#1 835176560#4 346613529#2 346613529#5 346613529#8 346613529#10 346613529#13" >
+        <stop busStop="4796245033" duration="30.00" until="555.0"/> <!-- Central Park South/Avenue of the Americas -->
+        <stop busStop="4796245036" duration="30.00" until="595.0"/> <!-- Central Park South/6th Avenue -->
+        <stop busStop="4769084861" duration="30.00" until="1172.0"/> <!-- West 31st Street/6th Avenue -->
+        <stop busStop="4769084860" duration="30.00" until="1203.0"/> <!-- West 31st Street & 6th Avenue -->
+    </route>
+    <route id="pt_bus_M12:0" edges="308322448#1 196116976#1 196116976#4 499172074#10 499172074#11 499172074#12 499172074#13 499172074#14 499172074#15 420892269 420892272#0 420892271#0 5671276#0 814278019#0 814278019#3 814278019#6 814278019#8 814278019#11 420907908 968513231 968513228 968513229 194926855 525729009#0 525729010#0 525729010#1 525729010#4 525729010#6 525729010#7 525729010#8 525729010#10 420901923#0 420901923#1 420901919#0 420901919#1 988515374#0 988515374#1 420901920#1 420901920#2 420901920#3 420901917#1 420901921#0 420901921#1 420901922#0 194926856#1 350726030#1 663515452#1 989270322#1 989270322#3 350726028#0 350726028#1 350726028#3 350726028#4 350726028#5 350726028#6 350726028#7 350726028#8 350726028#10 350726028#11 384178813#1 963567032 963567034 156994977 963575583 963575586#0 963575586#1 963575587#0 963575587#1 194923812#0 194923812#1 194923812#3 194923812#4 194923812#5 127693388#1 127693388#2 127693388#3 350726031#0 350726031#1 350726031#2 5670451#0 5670451#2 846046868#0 846046868#1 5671261#7 5671261#8 196117075#0 196117075#1 196117075#2 196117075#3 22909152#0 22909152#1 194923792#0 194923792#1 194923802#0 194923802#1 194923802#2 992132287#0 194923801#0 194923801#1 194923801#3 939433105 945167874#1 34625463#0 34625463#2 34625463#3 194923803 118714476#0 118714476#2 118714476#3 118714476#4 989267825#1 989267825#3 989267825#4 194926850#0 421853810#1 992164861#0 992164861#1 935228363 68325061#0 421853647 495253326#2 495253326#4 763126559#0 5673276#1 420904838 505777313#1 505777310 169267539#0 169267539#1 992144532#0 992144532#1 421852041" >
+        <stop busStop="3913758293" duration="30.00" until="1157.0"/> <!-- West 14th Street & 9th Avenue -->
+        <stop busStop="4782363328" duration="30.00" until="1860.0"/> <!-- 12th Avenue/West 43rd Street -->
+        <stop busStop="4782363326" duration="30.00" until="1962.0"/> <!-- 12th Avenue/West 46th Street -->
+        <stop busStop="4782404432" duration="30.00" until="2030.0"/> <!-- 12th Avenue/West 48th Street -->
+    </route>
+    <route id="pt_bus_M4:0" edges="464543615#0 46481747#2 963613972 384649120#1 384649120#2 384649120#3 384649120#4 440122868 448686048#0 127693103#1 127693103#2 464516471#0 464516471#1 464516471#2 464516471#3 464516471#4 464516471#6 464516471#8 464516471#9 569345537#0 569345537#3 569345537#5 569345537#6 541350711#0 541350711#1 497258108#0 497258108#1 5670253#1 5670253#2 5670874#0 5670874#1 5671574#1 5671574#2 5671574#3 198924587#0 198924587#1 964208970 458180199#0 458180199#1 458180199#4 458180199#6 458180199#9 195743183#0 195743183#3 195743183#6 195743185#0 195743185#2 195743185#3 195743185#4 587061858#1 587061858#2 587061858#3 587061858#4 5672524#2 5672524#4 387128267#10 387128267#12 387128267#13 387128267#14 387128267#15 387128267#17 387128267#19 387128267#21 945384089 945384091 420496091#0 420496091#1 420496091#2 420496091#3 420496091#4 458180200 569345474 588157336 569345502#0 569345502#1 569345502#2 458180195 458180193#0 458180193#1 458180193#2 458180189 458180187#0 458180187#1 458180187#2 196117039 496990647#0 496990647#1 496990647#2 630828556 671212509 458177133#0 458177133#1 458177133#2 458177129 518451322 989793292#0 989793292#1 46469731#0 46469731#1 458166892#1 195743343#1 195743343#2 588168464 46490538#0 46490538#1 46490538#2 46490538#3 46490538#5 68668519 978161521#0 460606348#1 693345069#1 46490538#5 68668519 978161521#0 460606347#1 439933932#1 496983397#1 496983396#0 587038081#0 587038081#1 384649120#1 46522005 500717399 464543615#0 464543615#1 464543615#2 5670803#1 492489884 484170269#0 484170269#1 460606348#1 415849235#1 415849235#2 5671693#0 420499932#0 420499932#2 542096279#1 542096279#2 458166894#0 195743182#0 195743182#2 195743182#3 511699182#0 511699182#2 511699181#0 438384693#0 438384693#1 420356173 420906755#0 458180182#0 420906743 420356172 496993762#0 496993762#1 458180185#1 441405435 420906753 496992868 420281339 458180196 420906750#1 420906752#1 421850829 388696207#0 388696207#3 198924587#0 198924587#1 964208970 458180199#0 458180199#1 458180199#4 458180199#6 458180199#9 195743183#0 195743183#3 195743183#6 195743185#0 195743185#2 195743185#3 195743185#4 587061858#1 587061858#2 587061858#3 587061858#4 587061858#5" >
+        <stop busStop="3278932314" duration="30.00" until="700.0"/> <!-- Madison Avenue & East 75th Street -->
+        <stop busStop="4769084859" duration="30.00" until="1845.0"/> <!-- West 32nd Street/Avenue of the Americas -->
+        <stop busStop="4770624019" duration="30.00" until="2014.0"/> <!-- West 37th Street/Broadway -->
+        <stop busStop="4769084858" duration="30.00" until="2171.0"/> <!-- West 32nd Street & Avenue of the Americas -->
+    </route>
+    <route id="pt_bus_Q32:1" edges="460606348#1 693345069#1 46490538#5 68668519 978161521#0 460606347#1 439933932#1 496983397#1 496983396#0 587038081#0 587038081#1 384649120#1 46522005 700951339 963613972 384649120#1 384649120#2 384649120#3 384649120#4 440122868 448686048#0 127693103#1 127693103#2 464516471#0 464516471#1 464516471#2 464516471#3 464516471#4 464516471#6 464516471#8 464516471#9 569345537#0 569345537#3 569345537#5 569345537#6 541350711#0 541350711#1 497258108#0 497258108#1 5670253#1 5670253#2 5670874#0 5670874#1 5671574#1 5671574#2 5671574#3 198924587#0 198924587#1 964208970 458180198#0 458180198#1 198924778#0 198924778#1 962626218#0 5671574#1 5671574#2 5671574#3 198924552#0 198924552#1 671208358#2 671208358#3 46334594#2 458180198#0 458180198#1 198924778#0 198924778#1 962626218#0 5671574#1 5671574#2 5671574#3 198924552#0 198924552#1 198924552#5 569345468#0 569345468#1 420806145#1 46521995#0 46521995#1 963856064 458180200 569345468#0 569345468#1 420806145#1 375165666 962813251#0 962813251#1 497251085#0 497251085#1 686125787#3 198595549#1 5672629#1 962829745 46521995#0 46521995#1 963856064 458180200 569345474 588157336 569345502#0 569345502#1 569345502#2 458180195 458180193#0 458180193#1 458180193#2 458180189 458180187#0 458180187#1 458180187#2 196117039 496990647#0 496990647#1 496990647#2 630828556 671212509 458177133#0 458177133#1 458177133#2 458177129 518451322 989793292#0 989793292#1 989793295#0 68674965#1 573476359#1 464683344#1 447001271#2 447001272#2 420499932#0 420499932#2 542096279#1 542096279#2 458166894#0 195743182#0 195743182#2 195743182#3 511699182#0 511699182#2 511699181#0 438384693#0 438384693#1 420356173 420906755#0 458180182#0 420906743 420356172 496993762#0 496993762#1 458180185#1 441405435 420906753 496992868 420281339 458180196 420906750#1 420906752#1 421850829 388696207#0 388696207#3 198924552#0 198924552#1 198924552#5 569345468#0 569345468#1 455678353#1 691480071#0" >
+        <stop busStop="4769084859" duration="30.00" until="37.0"/> <!-- West 32nd Street/Avenue of the Americas -->
+        <stop busStop="4770624019" duration="30.00" until="248.0"/> <!-- West 37th Street/Broadway -->
+        <stop busStop="4796291645" duration="30.00" until="712.0"/> <!-- East 60th Street/Madison Avenue -->
+        <stop busStop="4796291639" duration="30.00" until="832.0"/> <!-- East 60th Street/Park Avenue -->
+        <stop busStop="6177439758" duration="30.00" until="1010.0"/> <!-- East 60th Street/Lexington Avenue -->
+        <stop busStop="4798293331" duration="30.00" until="1250.0"/> <!-- East 60th Street/2nd Avenue -->
+        <stop busStop="4960503206" duration="30.00" until="1945.0"/> <!-- None -->
+        <stop busStop="4960503208" duration="30.00" until="2042.0"/> <!-- None -->
+        <stop busStop="4960516267" duration="30.00" until="2113.0"/> <!-- None -->
+        <stop busStop="4960516272" duration="30.00" until="2267.0"/> <!-- Madison Avenue & East 45th Street -->
+        <stop busStop="4960516273" duration="30.00" until="2298.0"/> <!-- None -->
+        <stop busStop="4960516275" duration="30.00" until="2391.0"/> <!-- None -->
+        <stop busStop="4960516277" duration="30.00" until="2467.0"/> <!-- None -->
+        <stop busStop="4960527241" duration="30.00" until="2546.0"/> <!-- None -->
+        <stop busStop="4960527243" duration="30.00" until="2613.0"/> <!-- None -->
+        <stop busStop="4960527245" duration="30.00" until="2665.0"/> <!-- None -->
+        <stop busStop="4960527247" duration="30.00" until="2716.0"/> <!-- None -->
+        <stop busStop="6186989597" duration="30.00" until="2801.0"/> <!-- None -->
+        <stop busStop="6186989601" duration="30.00" until="2852.0"/> <!-- None -->
+    </route>
+    <route id="pt_bus_Q32:0" edges="484170269#0 484170269#1 460606348#1 693345069#1 46490538#5 68668519 978161521#0 460606347#1 439933932#1 496983397#1 496983396#0 587038081#0 587038081#1 384649120#1 46522005 700951339 963613972 384649120#1 384649120#2 384649120#3 384649120#4 440122868 448686048#0 127693103#1 127693103#2 464516471#0 464516471#1 464516471#2 464516471#3 464516471#4 464516471#6 464516471#8 464516471#9 569345537#0 569345537#3 569345537#5 569345537#6 541350711#0 541350711#1 497258108#0 497258108#1 5670253#1 5670253#2 5670874#0 5670874#1 5671574#1 5671574#2 5671574#3 198924587#0 198924587#1 964208970 458180198#0 458180198#1 198924778#0 198924778#1 962626218#0 5671574#1 5671574#2 5671574#3 198924552#0 198924552#1 671208358#2 671208358#3 46334594#2 458180198#0 458180198#1 198924778#0 198924778#1 962626218#0 5671574#1 5671574#2 5671574#3 198924552#0 198924552#1 198924552#5 569345468#0 569345468#1 420806145#1 46521995#0 46521995#1 963856064 458180200 569345468#0 569345468#1 420806145#1 375165666 962813251#0 962813251#1 497251085#0 497251085#1 686125787#3 198595549#1 5672629#1 962829745 46521995#0 46521995#1 963856064 458180200 569345474 588157336 569345502#0 569345502#1 569345502#2 458180195 458180193#0 458180193#1 458180193#2 458180189 458180187#0 458180187#1 458180187#2 196117039 496990647#0 496990647#1 496990647#2 630828556 671212509 458177133#0 458177133#1 458177133#2 458177129 518451322 989793292#0 989793292#1 989793295#0 68674965#1 573476359#1 464683344#1 447001271#2 447001272#2 420499932#0 420499932#2 542096279#1 542096279#2 458166894#0 195743182#0 195743182#2 195743182#3 511699182#0 511699182#2 511699181#0 438384693#0 438384693#1 420356173 420906755#0 458180182#0 420906743 420356172 496993762#0 496993762#1 458180185#1 441405435 420906753 496992868 420281339 458180196 420906750#1 420906752#1 421850829 388696207#0 388696207#3 198924552#0 198924552#1 198924552#5 569345468#0 569345468#1 455678353#1 691480071#0 32947292#1 198595470" >
+        <stop busStop="4769084859" duration="30.00" until="78.0"/> <!-- West 32nd Street/Avenue of the Americas -->
+        <stop busStop="4770624019" duration="30.00" until="311.0"/> <!-- West 37th Street/Broadway -->
+        <stop busStop="4796291645" duration="30.00" until="804.0"/> <!-- East 60th Street/Madison Avenue -->
+        <stop busStop="4796291639" duration="30.00" until="922.0"/> <!-- East 60th Street/Park Avenue -->
+        <stop busStop="6177439758" duration="30.00" until="1100.0"/> <!-- East 60th Street/Lexington Avenue -->
+        <stop busStop="4798293331" duration="30.00" until="1318.0"/> <!-- East 60th Street/2nd Avenue -->
+        <stop busStop="4960503206" duration="30.00" until="2037.0"/> <!-- None -->
+        <stop busStop="4960503208" duration="30.00" until="2135.0"/> <!-- None -->
+        <stop busStop="4960516267" duration="30.00" until="2205.0"/> <!-- None -->
+        <stop busStop="4960516272" duration="30.00" until="2341.0"/> <!-- Madison Avenue & East 45th Street -->
+        <stop busStop="4960516273" duration="30.00" until="2372.0"/> <!-- None -->
+        <stop busStop="4960516275" duration="30.00" until="2458.0"/> <!-- None -->
+        <stop busStop="4960516277" duration="30.00" until="2533.0"/> <!-- None -->
+        <stop busStop="4960527241" duration="30.00" until="2614.0"/> <!-- None -->
+        <stop busStop="4960527243" duration="30.00" until="2680.0"/> <!-- None -->
+        <stop busStop="4960527245" duration="30.00" until="2732.0"/> <!-- None -->
+        <stop busStop="4960527247" duration="30.00" until="2784.0"/> <!-- None -->
+        <stop busStop="6186989597" duration="30.00" until="2866.0"/> <!-- None -->
+        <stop busStop="6186989601" duration="30.00" until="2917.0"/> <!-- None -->
+    </route>
+    <flow id="pt_subway_S:0" type="pt_subway" route="pt_subway_S:0" begin="51.0" end="3651.0" period="300" line="S:0" >
+        <param key="name" value="NYCS - S 42nd Street Shuttle: Times Square → Grand Central"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33_via_HOB:0" type="pt_subway" route="pt_subway_JSQ–33_via_HOB:0" begin="42.0" end="3642.0" period="600" line="JSQ–33_via_HOB:0" >
+        <param key="name" value="PATH: 33rd Street → Hoboken → Journal Square"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33_via_HOB:1" type="pt_subway" route="pt_subway_JSQ–33_via_HOB:1" begin="88.0" end="3688.0" period="600" line="JSQ–33_via_HOB:1" >
+        <param key="name" value="PATH: Journal Square → Hoboken → 33rd Street"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_train_Harlem:0" type="pt_train" route="pt_train_Harlem:0" begin="127.0" end="3727.0" period="600" line="Harlem:0" >
+        <param key="name" value="Metro-North Harlem Line: Grand Central &lt;=&gt; Wassaic"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_bus_2602:0" type="pt_bus" route="pt_bus_2602:0" begin="0.0" end="3600.0" period="600" line="2602:0" >
+        <param key="name" value="Flixbus 2602: New York City =&gt; Washington, D.C."/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_bus_2601:0" type="pt_bus" route="pt_bus_2601:0" begin="37.0" end="3637.0" period="600" line="2601:0" >
+        <param key="name" value="Flixbus 2601: New York City =&gt; Richmond"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_subway_S:1" type="pt_subway" route="pt_subway_S:1" begin="165.0" end="3765.0" period="300" line="S:1" >
+        <param key="name" value="NYCS - S 42nd Street Shuttle: Grand Central → Times Square"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_train_Hudson:0" type="pt_train" route="pt_train_Hudson:0" begin="197.0" end="3797.0" period="600" line="Hudson:0" >
+        <param key="name" value="Metro-North Hudson Line: Grand Central &lt;=&gt; Poughkeepsie"/>
+        <param key="completeness" value="0.02"/>
+    </flow>
+    <flow id="pt_bus_2601:1" type="pt_bus" route="pt_bus_2601:1" begin="6.0" end="3606.0" period="600" line="2601:1" >
+        <param key="name" value="Flixbus 2601: Richmond =&gt; New York City"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_bus_125:0" type="pt_bus" route="pt_bus_125:0" begin="128.0" end="3728.0" period="600" line="125:0" >
+        <param key="name" value="NJTB - 125 - Journal Square to New York"/>
+        <param key="completeness" value="0.00"/>
+    </flow>
+    <flow id="pt_bus_2602:1" type="pt_bus" route="pt_bus_2602:1" begin="11.0" end="3611.0" period="600" line="2602:1" >
+        <param key="name" value="Flixbus 2602: Washington, D.C. =&gt; New York City"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_bus_M23_SBS:0" type="pt_bus" route="pt_bus_M23_SBS:0" begin="253.0" end="3853.0" period="600" line="M23_SBS:0" >
+        <param key="name" value="NYCB - M23 SBS Chelsea Piers --&gt; Peter Cooper Village"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_2686:1" type="pt_bus" route="pt_bus_2686:1" begin="112.0" end="3712.0" period="600" line="2686:1" >
+        <param key="name" value="Flixbus 2686: New York City =&gt; Niagara Falls"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_bus_Q101:0" type="pt_bus" route="pt_bus_Q101:0" begin="227.0" end="3827.0" period="600" line="Q101:0" >
+        <param key="name" value="NYCB - Q101 East Midtown --&gt; Ed Koch UPPER --&gt; Steinway, Queens"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_M14A_SBS:1" type="pt_bus" route="pt_bus_M14A_SBS:1" begin="334.0" end="3934.0" period="600" line="M14A_SBS:1" >
+        <param key="name" value="NYCB - M14A SBS Chelsea --&gt; Williamsburg Bridge"/>
+        <param key="completeness" value="0.50"/>
+    </flow>
+    <flow id="pt_bus_Q101:1" type="pt_bus" route="pt_bus_Q101:1" begin="232.0" end="3832.0" period="600" line="Q101:1" >
+        <param key="name" value="NYCB - Q101 East 60th Street --&gt; Ed Koch LOWER --&gt; Steinway, Queens"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_2601:2" type="pt_bus" route="pt_bus_2601:2" begin="150.0" end="3750.0" period="600" line="2601:2" >
+        <param key="name" value="Flixbus 2601: New York City =&gt; Rosslyn"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_bus_M14A_SBS:0" type="pt_bus" route="pt_bus_M14A_SBS:0" begin="291.0" end="3891.0" period="600" line="M14A_SBS:0" >
+        <param key="name" value="NYCB - M14A SBS Williamsburg Bridge --&gt; Chelsea"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_train_New_Haven:0" type="pt_train" route="pt_train_New_Haven:0" begin="305.0" end="3905.0" period="600" line="New_Haven:0" >
+        <param key="name" value="Metro-North New Haven Line: Grand Central &lt;=&gt; New Haven"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_5:1" type="pt_subway" route="pt_subway_5:1" begin="58.0" end="3658.0" period="600" line="5:1" >
+        <param key="name" value="NYCS - 5 Train (evenings, weekends): Bowling Green → Eastchester–Dyre Avenue"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_bus_2686:0" type="pt_bus" route="pt_bus_2686:0" begin="27.0" end="3627.0" period="600" line="2686:0" >
+        <param key="name" value="Flixbus 2686: Niagara Falls =&gt; New York City"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_bus_2683:1" type="pt_bus" route="pt_bus_2683:1" begin="189.0" end="3789.0" period="600" line="2683:1" >
+        <param key="name" value="Flixbus 2683: New York City =&gt; Ithaca"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_subway_5:2" type="pt_subway" route="pt_subway_5:2" begin="73.0" end="3673.0" period="300" line="5:2" >
+        <param key="name" value="NYCS - 5 Train (pm rush): Flatbush Avenue–Brooklyn College → Eastchester–Dyre Avenue"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_subway_5:0" type="pt_subway" route="pt_subway_5:0" begin="58.0" end="3658.0" period="600" line="5:0" >
+        <param key="name" value="NYCS - 5 Train (evenings, weekends): Eastchester–Dyre Avenue → Bowling Green"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_subway_5:3" type="pt_subway" route="pt_subway_5:3" begin="73.0" end="3673.0" period="300" line="5:3" >
+        <param key="name" value="NYCS - 5 Train (am rush): Eastchester–Dyre Avenue → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_subway_HOB–33:0" type="pt_subway" route="pt_subway_HOB–33:0" begin="322.0" end="3922.0" period="600" line="HOB–33:0" >
+        <param key="name" value="PATH: 33rd Street → Hoboken"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33:0" type="pt_subway" route="pt_subway_JSQ–33:0" begin="323.0" end="3923.0" period="600" line="JSQ–33:0" >
+        <param key="name" value="PATH: Journal Square → 33rd Street"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_bus_Q60:0" type="pt_bus" route="pt_bus_Q60:0" begin="302.0" end="3902.0" period="600" line="Q60:0" >
+        <param key="name" value="NYCB - Q60 East Midtown --&gt; South Jamaica"/>
+        <param key="completeness" value="0.50"/>
+    </flow>
+    <flow id="pt_bus_2680:0" type="pt_bus" route="pt_bus_2680:0" begin="226.0" end="3826.0" period="600" line="2680:0" >
+        <param key="name" value="Flixbus 2680: New York City =&gt; Columbus"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_bus_2601:3" type="pt_bus" route="pt_bus_2601:3" begin="34.0" end="3634.0" period="600" line="2601:3" >
+        <param key="name" value="Flixbus 2601: Rosslyn =&gt; New York City"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_subway_F:0" type="pt_subway" route="pt_subway_F:0" begin="54.0" end="3654.0" period="600" line="F:0" >
+        <param key="name" value="NYCS - &lt;F&gt; Train (pm rush): Jamaica–179th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.16"/>
+    </flow>
+    <flow id="pt_train_55:0" type="pt_train" route="pt_train_55:0" begin="131.0" end="3731.0" period="600" line="55:0" >
+        <param key="name" value="Amtrak Vermonter: Saint Albans =&gt; Washington"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_F:1" type="pt_subway" route="pt_subway_F:1" begin="55.0" end="3655.0" period="600" line="F:1" >
+        <param key="name" value="NYCS - &lt;F&gt; Train (am rush): Coney Island–Stillwell Avenue → Jamaica–179th Street"/>
+        <param key="completeness" value="0.16"/>
+    </flow>
+    <flow id="pt_bus_QM7:0" type="pt_bus" route="pt_bus_QM7:0" begin="457.0" end="4057.0" period="600" line="QM7:0" >
+        <param key="name" value="NYCB - QM7"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_Q101:2" type="pt_bus" route="pt_bus_Q101:2" begin="445.0" end="4045.0" period="600" line="Q101:2" >
+        <param key="name" value="NYCB - Q101 Steinway --&gt; E60 Street"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_2683:0" type="pt_bus" route="pt_bus_2683:0" begin="35.0" end="3635.0" period="600" line="2683:0" >
+        <param key="name" value="Flixbus 2683: Ithaca =&gt; New York City"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_subway_4:0" type="pt_subway" route="pt_subway_4:0" begin="88.0" end="3688.0" period="180" line="4:0" >
+        <param key="name" value="NYCS - 4 Train (am rush): Woodlawn → Crown Heights–Utica Avenue"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_subway_4:1" type="pt_subway" route="pt_subway_4:1" begin="88.0" end="3688.0" period="240" line="4:1" >
+        <param key="name" value="NYCS - 4 Train (pm rush): Crown Heights–Utica Avenue → Woodlawn"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_train_57:0" type="pt_train" route="pt_train_57:0" begin="165.0" end="3765.0" period="600" line="57:0" >
+        <param key="name" value="Amtrak Vermonter: Saint Albans =&gt; Washington"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_Q60:1" type="pt_bus" route="pt_bus_Q60:1" begin="509.0" end="4109.0" period="600" line="Q60:1" >
+        <param key="name" value="NYCB - Q60 South Jamaica --&gt; East Midtown"/>
+        <param key="completeness" value="0.40"/>
+    </flow>
+    <flow id="pt_subway_D:0" type="pt_subway" route="pt_subway_D:0" begin="79.0" end="3679.0" period="1200" line="D:0" >
+        <param key="name" value="NYCS - D Train (late nights): Coney Island–Stillwell Avenue → Norwood–205th Street"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_subway_HOB–33:1" type="pt_subway" route="pt_subway_HOB–33:1" begin="441.0" end="4041.0" period="600" line="HOB–33:1" >
+        <param key="name" value="PATH: Hoboken → 33rd Street"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_bus_M14D_SBS:0" type="pt_bus" route="pt_bus_M14D_SBS:0" begin="297.0" end="3897.0" period="600" line="M14D_SBS:0" >
+        <param key="name" value="NYCB - M14D SBS Williamsburg Bridge --&gt; Chelsea"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_2680:1" type="pt_bus" route="pt_bus_2680:1" begin="42.0" end="3642.0" period="600" line="2680:1" >
+        <param key="name" value="Flixbus 2680: Columbus =&gt; New York City"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_subway_JSQ–33:1" type="pt_subway" route="pt_subway_JSQ–33:1" begin="458.0" end="4058.0" period="600" line="JSQ–33:1" >
+        <param key="name" value="PATH: 33rd Street → Journal Square"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_D:1" type="pt_subway" route="pt_subway_D:1" begin="91.0" end="3691.0" period="1200" line="D:1" >
+        <param key="name" value="NYCS - D Train (late nights): Norwood–205th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_subway_S:2" type="pt_subway" route="pt_subway_S:2" begin="501.0" end="4101.0" period="300" line="S:2" >
+        <param key="name" value="NYCS - S 42nd Street Shuttle: Times Square → Grand Central"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_train_64:0" type="pt_train" route="pt_train_64:0" begin="511.0" end="4111.0" period="600" line="64:0" >
+        <param key="name" value="Amtrak Maple Leaf: Niagara Falls =&gt; New York"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_M66:0" type="pt_bus" route="pt_bus_M66:0" begin="272.0" end="3872.0" period="600" line="M66:0" >
+        <param key="name" value="NYCB - M66 Upper East Side --&gt; Upper West Side via 66th Street"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_train_2167:0" type="pt_train" route="pt_train_2167:0" begin="233.0" end="3833.0" period="600" line="2167:0" >
+        <param key="name" value="Amtrak Acela: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_subway_D:2" type="pt_subway" route="pt_subway_D:2" begin="94.0" end="3694.0" period="360" line="D:2" >
+        <param key="name" value="NYCS - D Train (pm rush): Coney Island–Stillwell Avenue → Norwood–205th Street"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_subway_E:1" type="pt_subway" route="pt_subway_E:1" begin="102.0" end="3702.0" period="1200" line="E:1" >
+        <param key="name" value="NYCS - E Train (late nights): Jamaica Center–Parsons/Archer → World Trade Center"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_Q:1" type="pt_subway" route="pt_subway_Q:1" begin="126.0" end="3726.0" period="1200" line="Q:1" >
+        <param key="name" value="NYCS - Q Train (late nights): 96th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_subway_E:2" type="pt_subway" route="pt_subway_E:2" begin="117.0" end="3717.0" period="600" line="E:2" >
+        <param key="name" value="NYCS - E Train (evenings, weekends): Jamaica Center–Parsons/Archer → World Trade Center"/>
+        <param key="completeness" value="0.36"/>
+    </flow>
+    <flow id="pt_train_54:0" type="pt_train" route="pt_train_54:0" begin="131.0" end="3731.0" period="600" line="54:0" >
+        <param key="name" value="Amtrak Vermonter: Washington =&gt; Saint Albans"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_train_157:0" type="pt_train" route="pt_train_157:0" begin="300.0" end="3900.0" period="600" line="157:0" >
+        <param key="name" value="Amtrak Northeast Regional: Springfield =&gt; Norfolk"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_subway_N:1" type="pt_subway" route="pt_subway_N:1" begin="119.0" end="3719.0" period="600" line="N:1" >
+        <param key="name" value="NYCS - N Train (weekends): Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_D:3" type="pt_subway" route="pt_subway_D:3" begin="106.0" end="3706.0" period="360" line="D:3" >
+        <param key="name" value="NYCS - D Train (am rush): Norwood–205th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_bus_M31:0" type="pt_bus" route="pt_bus_M31:0" begin="260.0" end="3860.0" period="600" line="M31:0" >
+        <param key="name" value="NYCB - M31 Clinton --&gt; Yorkville"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_subway_N:0" type="pt_subway" route="pt_subway_N:0" begin="114.0" end="3714.0" period="600" line="N:0" >
+        <param key="name" value="NYCS - N Train (weekends): Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_N:2" type="pt_subway" route="pt_subway_N:2" begin="129.0" end="3729.0" period="1200" line="N:2" >
+        <param key="name" value="NYCS - N Train (late nights): Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.18"/>
+    </flow>
+    <flow id="pt_subway_3:0" type="pt_subway" route="pt_subway_3:0" begin="410.0" end="4010.0" period="420" line="3:0" >
+        <param key="name" value="NYCS - 3 Train: New Lots Avenue → Harlem–148th Street"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_subway_Q:0" type="pt_subway" route="pt_subway_Q:0" begin="134.0" end="3734.0" period="1200" line="Q:0" >
+        <param key="name" value="NYCS - Q Train (late nights): Coney Island–Stillwell Avenue → 96th Street"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_subway_S:3" type="pt_subway" route="pt_subway_S:3" begin="610.0" end="4210.0" period="300" line="S:3" >
+        <param key="name" value="NYCS - S 42nd Street Shuttle: Grand Central → Times Square"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_subway_2:0" type="pt_subway" route="pt_subway_2:0" begin="409.0" end="4009.0" period="420" line="2:0" >
+        <param key="name" value="NYCS - 2 Train: Wakefield–241st Street → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_3:3" type="pt_subway" route="pt_subway_3:3" begin="600.0" end="4200.0" period="1200" line="3:3" >
+        <param key="name" value="NYCS - 3 Train (late nights): 42nd Street–Times Square → Harlem–148th Street"/>
+        <param key="completeness" value="0.14"/>
+    </flow>
+    <flow id="pt_subway_E:0" type="pt_subway" route="pt_subway_E:0" begin="99.0" end="3699.0" period="1200" line="E:0" >
+        <param key="name" value="NYCS - E Train (late nights): World Trade Center → Jamaica Center–Parsons/Archer"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_train_2170:0" type="pt_train" route="pt_train_2170:0" begin="164.0" end="3764.0" period="600" line="2170:0" >
+        <param key="name" value="Amtrak Acela: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_subway_3:2" type="pt_subway" route="pt_subway_3:2" begin="598.0" end="4198.0" period="1200" line="3:2" >
+        <param key="name" value="NYCS - 3 Train (late nights): Harlem–148th Street → 42nd Street–Times Square"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_train_2165:0" type="pt_train" route="pt_train_2165:0" begin="133.0" end="3733.0" period="600" line="2165:0" >
+        <param key="name" value="Amtrak Acela: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_subway_4:2" type="pt_subway" route="pt_subway_4:2" begin="418.0" end="4018.0" period="240" line="4:2" >
+        <param key="name" value="NYCS - 4 Train: Crown Heights–Utica Avenue → Woodlawn"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_subway_A:0" type="pt_subway" route="pt_subway_A:0" begin="72.0" end="3672.0" period="1200" line="A:0" >
+        <param key="name" value="NYCS - A Train (late nights): 207th Street–Inwood → Far Rockaway–Mott Avenue"/>
+        <param key="completeness" value="0.19"/>
+    </flow>
+    <flow id="pt_subway_5:4" type="pt_subway" route="pt_subway_5:4" begin="406.0" end="4006.0" period="300" line="5:4" >
+        <param key="name" value="NYCS - 5 Train (am rush): Nereid Avenue → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_bus_M72:0" type="pt_bus" route="pt_bus_M72:0" begin="265.0" end="3865.0" period="600" line="M72:0" >
+        <param key="name" value="NYCB - M72 Upper East Side --&gt; Upper West Side via 72nd Street"/>
+        <param key="completeness" value="0.29"/>
+    </flow>
+    <flow id="pt_subway_2:3" type="pt_subway" route="pt_subway_2:3" begin="483.0" end="4083.0" period="420" line="2:3" >
+        <param key="name" value="NYCS - 2 Train: Flatbush Avenue–Brooklyn College → Wakefield–241st Street"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_subway_3:1" type="pt_subway" route="pt_subway_3:1" begin="484.0" end="4084.0" period="420" line="3:1" >
+        <param key="name" value="NYCS - 3 Train: Harlem–148th Street → New Lots Avenue"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_subway_M:0" type="pt_subway" route="pt_subway_M:0" begin="388.0" end="3988.0" period="600" line="M:0" >
+        <param key="name" value="NYCS - M Train: Forest Hills–71st Avenue → Middle Village–Metropolitan Avenue"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_train_2164:0" type="pt_train" route="pt_train_2164:0" begin="197.0" end="3797.0" period="600" line="2164:0" >
+        <param key="name" value="Amtrak Acela: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_train_141+143:0" type="pt_train" route="pt_train_141+143:0" begin="434.0" end="4034.0" period="600" line="141+143:0" >
+        <param key="name" value="Amtrak Northeast Regional: Springfield =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_M72:1" type="pt_bus" route="pt_bus_M72:1" begin="371.0" end="3971.0" period="600" line="M72:1" >
+        <param key="name" value="NYCB - M72 Upper West Side --&gt; Upper East Side via 72nd Street"/>
+        <param key="completeness" value="0.29"/>
+    </flow>
+    <flow id="pt_subway_7:1" type="pt_subway" route="pt_subway_7:1" begin="516.0" end="4116.0" period="300" line="7:1" >
+        <param key="name" value="NYCS - 7 Train: Flushing–Main Street → 34th Street–Hudson Yards"/>
+        <param key="completeness" value="0.18"/>
+    </flow>
+    <flow id="pt_subway_7:0" type="pt_subway" route="pt_subway_7:0" begin="515.0" end="4115.0" period="300" line="7:0" >
+        <param key="name" value="NYCS - 7 Train: 34th Street–Hudson Yards → Flushing–Main Street"/>
+        <param key="completeness" value="0.18"/>
+    </flow>
+    <flow id="pt_subway_4:3" type="pt_subway" route="pt_subway_4:3" begin="484.0" end="4084.0" period="240" line="4:3" >
+        <param key="name" value="NYCS - 4 Train: Woodlawn → Crown Heights–Utica Avenue"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_train_2154:0" type="pt_train" route="pt_train_2154:0" begin="230.0" end="3830.0" period="600" line="2154:0" >
+        <param key="name" value="Amtrak Acela: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_subway_5:6" type="pt_subway" route="pt_subway_5:6" begin="499.0" end="4099.0" period="480" line="5:6" >
+        <param key="name" value="NYCS - 5 Train: Eastchester–Dyre Avenue → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_bus_M10:0" type="pt_bus" route="pt_bus_M10:0" begin="258.0" end="3858.0" period="600" line="M10:0" >
+        <param key="name" value="NYCB - M10 Harlem --&gt; Columbus Circle via Central Park West/Frederick Douglas Boulevard"/>
+        <param key="completeness" value="0.26"/>
+    </flow>
+    <flow id="pt_subway_E:3" type="pt_subway" route="pt_subway_E:3" begin="137.0" end="3737.0" period="600" line="E:3" >
+        <param key="name" value="NYCS - E Train (evenings, weekends): World Trade Center → Jamaica Center–Parsons/Archer"/>
+        <param key="completeness" value="0.36"/>
+    </flow>
+    <flow id="pt_train_171:0" type="pt_train" route="pt_train_171:0" begin="501.0" end="4101.0" period="600" line="171:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Roanoke"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_5:5" type="pt_subway" route="pt_subway_5:5" begin="485.0" end="4085.0" period="480" line="5:5" >
+        <param key="name" value="NYCS - 5 Train: Flatbush Avenue–Brooklyn College → Eastchester–Dyre Avenue"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_subway_5:7" type="pt_subway" route="pt_subway_5:7" begin="500.0" end="4100.0" period="300" line="5:7" >
+        <param key="name" value="NYCS - 5 Train (pm rush): Flatbush Avenue–Brooklyn College → Nereid Avenue"/>
+        <param key="completeness" value="0.09"/>
+    </flow>
+    <flow id="pt_subway_1:0" type="pt_subway" route="pt_subway_1:0" begin="384.0" end="3984.0" period="240" line="1:0" >
+        <param key="name" value="NYCS - 1 Train: South Ferry → Van Cortlandt Park–242nd Street"/>
+        <param key="completeness" value="0.24"/>
+    </flow>
+    <flow id="pt_bus_M31:1" type="pt_bus" route="pt_bus_M31:1" begin="362.0" end="3962.0" period="600" line="M31:1" >
+        <param key="name" value="NYCB - M31 Yorkville --&gt; Clinton"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_subway_7:2" type="pt_subway" route="pt_subway_7:2" begin="561.0" end="4161.0" period="180" line="7:2" >
+        <param key="name" value="NYCS - &lt;7&gt; Train (pm rush): 34th Street–Hudson Yards → Flushing–Main Street"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_subway_Q:3" type="pt_subway" route="pt_subway_Q:3" begin="532.0" end="4132.0" period="480" line="Q:3" >
+        <param key="name" value="NYCS - Q Train: Coney Island–Stillwell Avenue → 96th Street"/>
+        <param key="completeness" value="0.15"/>
+    </flow>
+    <flow id="pt_subway_Q:2" type="pt_subway" route="pt_subway_Q:2" begin="526.0" end="4126.0" period="480" line="Q:2" >
+        <param key="name" value="NYCS - Q Train: 96th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.15"/>
+    </flow>
+    <flow id="pt_train_63:0" type="pt_train" route="pt_train_63:0" begin="432.0" end="4032.0" period="600" line="63:0" >
+        <param key="name" value="Amtrak Maple Leaf: New York =&gt; Niagara Falls"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_M7:0" type="pt_bus" route="pt_bus_M7:0" begin="254.0" end="3854.0" period="600" line="M7:0" >
+        <param key="name" value="NYCB - M7 Chelsea --&gt; Harlem"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_bus_M104:0" type="pt_bus" route="pt_bus_M104:0" begin="285.0" end="3885.0" period="600" line="M104:0" >
+        <param key="name" value="NYCB - M104 Port Authority Bus Terminal --&gt; Harlem"/>
+        <param key="completeness" value="0.23"/>
+    </flow>
+    <flow id="pt_subway_7:3" type="pt_subway" route="pt_subway_7:3" begin="553.0" end="4153.0" period="180" line="7:3" >
+        <param key="name" value="NYCS - &lt;7&gt; Train (am rush): Flushing–Main Street → 34th Street–Hudson Yards"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_subway_D:4" type="pt_subway" route="pt_subway_D:4" begin="404.0" end="4004.0" period="600" line="D:4" >
+        <param key="name" value="NYCS - D Train: Coney Island–Stillwell Avenue → Norwood–205th Street"/>
+        <param key="completeness" value="0.14"/>
+    </flow>
+    <flow id="pt_bus_2610:1" type="pt_bus" route="pt_bus_2610:1" begin="75.0" end="3675.0" period="600" line="2610:1" >
+        <param key="name" value="Flixbus 2610: New York City =&gt; Boston"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_A:1" type="pt_subway" route="pt_subway_A:1" begin="77.0" end="3677.0" period="1200" line="A:1" >
+        <param key="name" value="NYCS - A Train (late nights): Far Rockaway–Mott Avenue → 207th Street–Inwood"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_train_148:0" type="pt_train" route="pt_train_148:0" begin="263.0" end="3863.0" period="600" line="148:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Springfield"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_train_65+67:0" type="pt_train" route="pt_train_65+67:0" begin="568.0" end="4168.0" period="600" line="65+67:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Newport News"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_2:1" type="pt_subway" route="pt_subway_2:1" begin="437.0" end="4037.0" period="1200" line="2:1" >
+        <param key="name" value="NYCS - 2 Train (late nights): Wakefield–241st Street → Flatbush Avenue–Brooklyn College"/>
+        <param key="completeness" value="0.13"/>
+    </flow>
+    <flow id="pt_subway_F:3" type="pt_subway" route="pt_subway_F:3" begin="572.0" end="4172.0" period="420" line="F:3" >
+        <param key="name" value="NYCS - F Train: Jamaica–179th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.14"/>
+    </flow>
+    <flow id="pt_subway_2:2" type="pt_subway" route="pt_subway_2:2" begin="475.0" end="4075.0" period="1200" line="2:2" >
+        <param key="name" value="NYCS - 2 Train (late nights): Flatbush Avenue–Brooklyn College → Wakefield–241st Street"/>
+        <param key="completeness" value="0.13"/>
+    </flow>
+    <flow id="pt_train_146:0" type="pt_train" route="pt_train_146:0" begin="296.0" end="3896.0" period="600" line="146:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Springfield"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_N:3" type="pt_subway" route="pt_subway_N:3" begin="517.0" end="4117.0" period="420" line="N:3" >
+        <param key="name" value="NYCS - N Train: Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.21"/>
+    </flow>
+    <flow id="pt_subway_A:3" type="pt_subway" route="pt_subway_A:3" begin="555.0" end="4155.0" period="420" line="A:3" >
+        <param key="name" value="NYCS - A Train: Ozone Park–Lefferts Boulevard → 207th Street–Inwood"/>
+        <param key="completeness" value="0.13"/>
+    </flow>
+    <flow id="pt_bus_2610:0" type="pt_bus" route="pt_bus_2610:0" begin="15.0" end="3615.0" period="600" line="2610:0" >
+        <param key="name" value="Flixbus 2610: Boston =&gt; New York City"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_train_99:0" type="pt_train" route="pt_train_99:0" begin="635.0" end="4235.0" period="600" line="99:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Newport News"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_M57:0" type="pt_bus" route="pt_bus_M57:0" begin="262.0" end="3862.0" period="600" line="M57:0" >
+        <param key="name" value="NYCB - M57 East Midtown --&gt; Upper West Side"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_bus_M15-SBS:0" type="pt_bus" route="pt_bus_M15-SBS:0" begin="459.0" end="4059.0" period="600" line="M15-SBS:0" >
+        <param key="name" value="Bus M15-SBS: South Ferry → East Harlem"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_M34A_SBS:1" type="pt_bus" route="pt_bus_M34A_SBS:1" begin="346.0" end="3946.0" period="600" line="M34A_SBS:1" >
+        <param key="name" value="NYCB - M34A SBS Waterside Plaza --&gt; Port Authority Bus Terminal via 34th Street"/>
+        <param key="completeness" value="0.75"/>
+    </flow>
+    <flow id="pt_bus_M103:0" type="pt_bus" route="pt_bus_M103:0" begin="283.0" end="3883.0" period="600" line="M103:0" >
+        <param key="name" value="NYCB - M103 City Hall --&gt; East Harlem"/>
+        <param key="completeness" value="0.50"/>
+    </flow>
+    <flow id="pt_bus_M57:1" type="pt_bus" route="pt_bus_M57:1" begin="330.0" end="3930.0" period="600" line="M57:1" >
+        <param key="name" value="NYCB - M57 Upper West Side --&gt; East Midtown"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_1:1" type="pt_subway" route="pt_subway_1:1" begin="470.0" end="4070.0" period="240" line="1:1" >
+        <param key="name" value="NYCS - 1 Train: Van Cortlandt Park–242nd Street → South Ferry"/>
+        <param key="completeness" value="0.24"/>
+    </flow>
+    <flow id="pt_subway_B:0" type="pt_subway" route="pt_subway_B:0" begin="389.0" end="3989.0" period="420" line="B:0" >
+        <param key="name" value="NYCS - B Train (am/pm rush): Brighton Beach → Bedford Park Boulevard"/>
+        <param key="completeness" value="0.32"/>
+    </flow>
+    <flow id="pt_train_140:0" type="pt_train" route="pt_train_140:0" begin="329.0" end="3929.0" period="600" line="140:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Springfield"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_A:2" type="pt_subway" route="pt_subway_A:2" begin="622.0" end="4222.0" period="420" line="A:2" >
+        <param key="name" value="NYCS - A Train: 207th Street–Inwood → Far Rockaway–Mott Avenue"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_train_93:0" type="pt_train" route="pt_train_93:0" begin="702.0" end="4302.0" period="600" line="93:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Norfolk"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_A:4" type="pt_subway" route="pt_subway_A:4" begin="570.0" end="4170.0" period="420" line="A:4" >
+        <param key="name" value="NYCS - A Train: Far Rockaway–Mott Avenue → 207th Street–Inwood"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_bus_M101:0" type="pt_bus" route="pt_bus_M101:0" begin="275.0" end="3875.0" period="600" line="M101:0" >
+        <param key="name" value="NYCB - M101 East Village --&gt; Washington Heights"/>
+        <param key="completeness" value="0.25"/>
+    </flow>
+    <flow id="pt_subway_W:1" type="pt_subway" route="pt_subway_W:1" begin="522.0" end="4122.0" period="600" line="W:1" >
+        <param key="name" value="NYCS - W Train: Whitehall Street–South Ferry → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.35"/>
+    </flow>
+    <flow id="pt_subway_E:5" type="pt_subway" route="pt_subway_E:5" begin="582.0" end="4182.0" period="420" line="E:5" >
+        <param key="name" value="NYCS - E Train: Jamaica Center–Parsons/Archer → World Trade Center"/>
+        <param key="completeness" value="0.40"/>
+    </flow>
+    <flow id="pt_bus_N2610:0" type="pt_bus" route="pt_bus_N2610:0" begin="17.0" end="3617.0" period="600" line="N2610:0" >
+        <param key="name" value="Flixbus N2610: Washington, D.C. =&gt; Boston"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_bus_M102:0" type="pt_bus" route="pt_bus_M102:0" begin="280.0" end="3880.0" period="600" line="M102:0" >
+        <param key="name" value="NYCB - M102 East Village --&gt; Hamilton Heights"/>
+        <param key="completeness" value="0.50"/>
+    </flow>
+    <flow id="pt_subway_M:1" type="pt_subway" route="pt_subway_M:1" begin="523.0" end="4123.0" period="600" line="M:1" >
+        <param key="name" value="NYCS - M Train: Middle Village–Metropolitan Avenue → Forest Hills–71st Avenue"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_subway_A:5" type="pt_subway" route="pt_subway_A:5" begin="614.0" end="4214.0" period="240" line="A:5" >
+        <param key="name" value="NYCS - A Train (am rush): Rockaway Park–Beach 116th Street → 207th Street–Inwood"/>
+        <param key="completeness" value="0.11"/>
+    </flow>
+    <flow id="pt_train_176:0" type="pt_train" route="pt_train_176:0" begin="362.0" end="3962.0" period="600" line="176:0" >
+        <param key="name" value="Amtrak Northeast Regional: Roanoke =&gt; Boston"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_N2610:1" type="pt_bus" route="pt_bus_N2610:1" begin="21.0" end="3621.0" period="600" line="N2610:1" >
+        <param key="name" value="Flixbus N2610: Boston =&gt; Washington, D.C."/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_train_2155+2163+2249+2251+2253+2255+2257+2259:0" type="pt_train" route="pt_train_2155+2163+2249+2251+2253+2255+2257+2259:0" begin="590.0" end="4190.0" period="600" line="2155+2163+2249+2251+2253+2255+2257+2259:0" >
+        <param key="name" value="Amtrak Acela: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.08"/>
+    </flow>
+    <flow id="pt_bus_M34A_SBS:0" type="pt_bus" route="pt_bus_M34A_SBS:0" begin="300.0" end="3900.0" period="600" line="M34A_SBS:0" >
+        <param key="name" value="NYCB - M34A SBS Port Authority Bus Terminal --&gt; Waterside Plaza via 34th Street"/>
+        <param key="completeness" value="0.75"/>
+    </flow>
+    <flow id="pt_subway_A:6" type="pt_subway" route="pt_subway_A:6" begin="637.0" end="4237.0" period="240" line="A:6" >
+        <param key="name" value="NYCS - A Train (pm rush): 207th Street–Inwood → Rockaway Park–Beach 116th Street"/>
+        <param key="completeness" value="0.12"/>
+    </flow>
+    <flow id="pt_subway_R:1" type="pt_subway" route="pt_subway_R:1" begin="537.0" end="4137.0" period="600" line="R:1" >
+        <param key="name" value="NYCS - R Train: Bay Ridge–95th Street → Forest Hills–71st Avenue"/>
+        <param key="completeness" value="0.18"/>
+    </flow>
+    <flow id="pt_bus_M104:1" type="pt_bus" route="pt_bus_M104:1" begin="350.0" end="3950.0" period="600" line="M104:1" >
+        <param key="name" value="NYCB - M104 Harlem --&gt; Port Authority Bus Terminal"/>
+        <param key="completeness" value="0.29"/>
+    </flow>
+    <flow id="pt_train_66:0" type="pt_train" route="pt_train_66:0" begin="395.0" end="3995.0" period="600" line="66:0" >
+        <param key="name" value="Amtrak Northeast Regional: Newport News =&gt; Boston"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_M10:1" type="pt_bus" route="pt_bus_M10:1" begin="376.0" end="3976.0" period="600" line="M10:1" >
+        <param key="name" value="NYCB - M10 Columbus Circle --&gt; Harlem via Central Park West/Frederick Douglas Boulevard"/>
+        <param key="completeness" value="0.26"/>
+    </flow>
+    <flow id="pt_train_195:0" type="pt_train" route="pt_train_195:0" begin="836.0" end="4436.0" period="600" line="195:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_bus_M34_SBS:1" type="pt_bus" route="pt_bus_M34_SBS:1" begin="342.0" end="3942.0" period="600" line="M34_SBS:1" >
+        <param key="name" value="NYCB - M34 SBS Javits Center --&gt; Waterside Plaza via 34th Street"/>
+        <param key="completeness" value="0.75"/>
+    </flow>
+    <flow id="pt_subway_F:2" type="pt_subway" route="pt_subway_F:2" begin="393.0" end="3993.0" period="420" line="F:2" >
+        <param key="name" value="NYCS - F Train: Coney Island–Stillwell Avenue → Jamaica–179th Street"/>
+        <param key="completeness" value="0.14"/>
+    </flow>
+    <flow id="pt_bus_M34_SBS:0" type="pt_bus" route="pt_bus_M34_SBS:0" begin="303.0" end="3903.0" period="600" line="M34_SBS:0" >
+        <param key="name" value="NYCB - M34 SBS Waterside Plaza --&gt; Javits Center via 34th Street"/>
+        <param key="completeness" value="0.75"/>
+    </flow>
+    <flow id="pt_subway_A:7" type="pt_subway" route="pt_subway_A:7" begin="652.0" end="4252.0" period="420" line="A:7" >
+        <param key="name" value="NYCS - A Train: 207th Street–Inwood → Ozone Park–Lefferts Boulevard"/>
+        <param key="completeness" value="0.13"/>
+    </flow>
+    <flow id="pt_subway_D:5" type="pt_subway" route="pt_subway_D:5" begin="667.0" end="4267.0" period="600" line="D:5" >
+        <param key="name" value="NYCS - D Train: Norwood–205th Street → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.14"/>
+    </flow>
+    <flow id="pt_subway_N:5" type="pt_subway" route="pt_subway_N:5" begin="552.0" end="4152.0" period="780" line="N:5" >
+        <param key="name" value="NYCS - N Train (late nights): Coney Island–Stillwell Avenue → Astoria–Ditmars Boulevard"/>
+        <param key="completeness" value="0.18"/>
+    </flow>
+    <flow id="pt_train_96+194:0" type="pt_train" route="pt_train_96+194:0" begin="428.0" end="4028.0" period="600" line="96+194:0" >
+        <param key="name" value="Amtrak Northeast Regional: Newport News =&gt; Boston"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_B:3" type="pt_subway" route="pt_subway_B:3" begin="593.0" end="4193.0" period="600" line="B:3" >
+        <param key="name" value="NYCS - B Train: Brighton Beach → 145th Street"/>
+        <param key="completeness" value="0.44"/>
+    </flow>
+    <flow id="pt_subway_6:1" type="pt_subway" route="pt_subway_6:1" begin="509.0" end="4109.0" period="240" line="6:1" >
+        <param key="name" value="NYCS - 6 Train: Brooklyn Bridge–City Hall → Pelham Bay Park"/>
+        <param key="completeness" value="0.34"/>
+    </flow>
+    <flow id="pt_train_175:0" type="pt_train" route="pt_train_175:0" begin="903.0" end="4503.0" period="600" line="175:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_M15:1" type="pt_bus" route="pt_bus_M15:1" begin="499.0" end="4099.0" period="600" line="M15:1" >
+        <param key="name" value="Bus M15: South Ferry → East Harlem"/>
+        <param key="completeness" value="0.20"/>
+    </flow>
+    <flow id="pt_train_174:0" type="pt_train" route="pt_train_174:0" begin="461.0" end="4061.0" period="600" line="174:0" >
+        <param key="name" value="Amtrak Northeast Regional: Newport News =&gt; Boston"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_train_173:0" type="pt_train" route="pt_train_173:0" begin="970.0" end="4570.0" period="600" line="173:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_M7:1" type="pt_bus" route="pt_bus_M7:1" begin="381.0" end="3981.0" period="600" line="M7:1" >
+        <param key="name" value="NYCB - M7 Harlem --&gt; Chelsea"/>
+        <param key="completeness" value="0.22"/>
+    </flow>
+    <flow id="pt_subway_B:1" type="pt_subway" route="pt_subway_B:1" begin="673.0" end="4273.0" period="420" line="B:1" >
+        <param key="name" value="NYCS - B Train (am/pm rush): Bedford Park Boulevard → Brighton Beach"/>
+        <param key="completeness" value="0.27"/>
+    </flow>
+    <flow id="pt_train_94:0" type="pt_train" route="pt_train_94:0" begin="494.0" end="4094.0" period="600" line="94:0" >
+        <param key="name" value="Amtrak Northeast Regional: Norfolk =&gt; Boston"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_train_167:0" type="pt_train" route="pt_train_167:0" begin="1037.0" end="4637.0" period="600" line="167:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_6:0" type="pt_subway" route="pt_subway_6:0" begin="508.0" end="4108.0" period="240" line="6:0" >
+        <param key="name" value="NYCS - 6 Train: Pelham Bay Park → Brooklyn Bridge–City Hall"/>
+        <param key="completeness" value="0.34"/>
+    </flow>
+    <flow id="pt_train_88:0" type="pt_train" route="pt_train_88:0" begin="527.0" end="4127.0" period="600" line="88:0" >
+        <param key="name" value="Amtrak Northeast Regional: Norfolk =&gt; Boston"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_subway_6:2" type="pt_subway" route="pt_subway_6:2" begin="543.0" end="4143.0" period="120" line="6:2" >
+        <param key="name" value="NYCS - &lt;6&gt; Train (am rush): Pelham Bay Park → Brooklyn Bridge–City Hall"/>
+        <param key="completeness" value="0.45"/>
+    </flow>
+    <flow id="pt_train_165:0" type="pt_train" route="pt_train_165:0" begin="1104.0" end="4704.0" period="600" line="165:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_M11:1" type="pt_bus" route="pt_bus_M11:1" begin="378.0" end="3978.0" period="600" line="M11:1" >
+        <param key="name" value="NYCB - M11 Chelsea --&gt; Hamilton Heights"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_bus_M42:1" type="pt_bus" route="pt_bus_M42:1" begin="331.0" end="3931.0" period="600" line="M42:1" >
+        <param key="name" value="NYCB - M42 Circle Line Pier --&gt; East Side"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_train_178:0" type="pt_train" route="pt_train_178:0" begin="560.0" end="4160.0" period="600" line="178:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_train_161:0" type="pt_train" route="pt_train_161:0" begin="1171.0" end="4771.0" period="600" line="161:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_M15:0" type="pt_bus" route="pt_bus_M15:0" begin="352.0" end="3952.0" period="600" line="M15:0" >
+        <param key="name" value="Bus M15: East Harlem → South Ferry"/>
+        <param key="completeness" value="0.14"/>
+    </flow>
+    <flow id="pt_bus_M20:0" type="pt_bus" route="pt_bus_M20:0" begin="353.0" end="3953.0" period="600" line="M20:0" >
+        <param key="name" value="NYCB - M20 Lincoln Center --&gt; South Ferry"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_bus_M42:0" type="pt_bus" route="pt_bus_M42:0" begin="253.0" end="3853.0" period="600" line="M42:0" >
+        <param key="name" value="NYCB - M42 East Side --&gt; Circle Line Pier"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_subway_C:1" type="pt_subway" route="pt_subway_C:1" begin="906.0" end="4506.0" period="600" line="C:1" >
+        <param key="name" value="NYCS - C Train: 168th Street → Euclid Avenue"/>
+        <param key="completeness" value="0.28"/>
+    </flow>
+    <flow id="pt_bus_M15-SBS:1" type="pt_bus" route="pt_bus_M15-SBS:1" begin="465.0" end="4065.0" period="600" line="M15-SBS:1" >
+        <param key="name" value="Bus M15-SBS: East Harlem → South Ferry"/>
+        <param key="completeness" value="0.13"/>
+    </flow>
+    <flow id="pt_train_172:0" type="pt_train" route="pt_train_172:0" begin="593.0" end="4193.0" period="600" line="172:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_6:3" type="pt_subway" route="pt_subway_6:3" begin="547.0" end="4147.0" period="120" line="6:3" >
+        <param key="name" value="NYCS - &lt;6&gt; Train (pm rush): Brooklyn Bridge–City Hall → Pelham Bay Park"/>
+        <param key="completeness" value="0.45"/>
+    </flow>
+    <flow id="pt_subway_4:5" type="pt_subway" route="pt_subway_4:5" begin="597.0" end="4197.0" period="1200" line="4:5" >
+        <param key="name" value="NYCS - 4 Train (late nights): New Lots Avenue → Woodlawn"/>
+        <param key="completeness" value="0.24"/>
+    </flow>
+    <flow id="pt_train_139:0" type="pt_train" route="pt_train_139:0" begin="1238.0" end="4838.0" period="600" line="139:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_M11:0" type="pt_bus" route="pt_bus_M11:0" begin="241.0" end="3841.0" period="600" line="M11:0" >
+        <param key="name" value="NYCB - M11 Hamilton Heights --&gt; Chelsea"/>
+        <param key="completeness" value="0.17"/>
+    </flow>
+    <flow id="pt_subway_4:4" type="pt_subway" route="pt_subway_4:4" begin="597.0" end="4197.0" period="1200" line="4:4" >
+        <param key="name" value="NYCS - 4 Train (late nights): Woodlawn → New Lots Avenue"/>
+        <param key="completeness" value="0.24"/>
+    </flow>
+    <flow id="pt_train_170:0" type="pt_train" route="pt_train_170:0" begin="626.0" end="4226.0" period="600" line="170:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_train_137:0" type="pt_train" route="pt_train_137:0" begin="1305.0" end="4905.0" period="600" line="137:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_bus_M5:1" type="pt_bus" route="pt_bus_M5:1" begin="365.0" end="3965.0" period="600" line="M5:1" >
+        <param key="name" value="NYCB - M5 Washington Heights --&gt; Midtown"/>
+        <param key="completeness" value="0.83"/>
+    </flow>
+    <flow id="pt_train_168:0" type="pt_train" route="pt_train_168:0" begin="659.0" end="4259.0" period="600" line="168:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_E:4" type="pt_subway" route="pt_subway_E:4" begin="423.0" end="4023.0" period="420" line="E:4" >
+        <param key="name" value="NYCS - E Train: World Trade Center → Jamaica Center–Parsons/Archer"/>
+        <param key="completeness" value="0.40"/>
+    </flow>
+    <flow id="pt_train_135:0" type="pt_train" route="pt_train_135:0" begin="1372.0" end="4972.0" period="600" line="135:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Washington"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_subway_B:2" type="pt_subway" route="pt_subway_B:2" begin="1112.0" end="4712.0" period="600" line="B:2" >
+        <param key="name" value="NYCS - B Train: 145th Street → Brighton Beach"/>
+        <param key="completeness" value="0.37"/>
+    </flow>
+    <flow id="pt_train_166:0" type="pt_train" route="pt_train_166:0" begin="692.0" end="4292.0" period="600" line="166:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.06"/>
+    </flow>
+    <flow id="pt_train_Morristown:0" type="pt_train" route="pt_train_Morristown:0" begin="1439.0" end="5039.0" period="600" line="Morristown:0" >
+        <param key="name" value="NJ Transit Morristown Line: New York &lt;=&gt; Hackettstown"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_train_Montclair-Boonton:0" type="pt_train" route="pt_train_Montclair-Boonton:0" begin="1773.0" end="5373.0" period="600" line="Montclair-Boonton:0" >
+        <param key="name" value="NJ Transit Montclair-Boonton Line: New York &lt;=&gt; Hackettstown"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_M4:1" type="pt_bus" route="pt_bus_M4:1" begin="365.0" end="3965.0" period="600" line="M4:1" >
+        <param key="name" value="NYCB - M4 Fort Tyron Park --&gt; Penn Station"/>
+        <param key="completeness" value="0.80"/>
+    </flow>
+    <flow id="pt_train_164:0" type="pt_train" route="pt_train_164:0" begin="725.0" end="4325.0" period="600" line="164:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_train_North_Jersey_Coast:0" type="pt_train" route="pt_train_North_Jersey_Coast:0" begin="1506.0" end="5106.0" period="600" line="North_Jersey_Coast:0" >
+        <param key="name" value="NJ Transit North Jersey Coast Line: New York &lt;=&gt; Bay Head"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_bus_M50:1" type="pt_bus" route="pt_bus_M50:1" begin="329.0" end="3929.0" period="600" line="M50:1" >
+        <param key="name" value="NYCB - M50 East Midtown --&gt; West Midtown"/>
+        <param key="completeness" value="0.72"/>
+    </flow>
+    <flow id="pt_train_Port_Washington:0" type="pt_train" route="pt_train_Port_Washington:0" begin="1847.0" end="5447.0" period="600" line="Port_Washington:0" >
+        <param key="name" value="LIRR Port Washington Branch: New York Penn &lt;=&gt; Port Washington"/>
+        <param key="completeness" value="0.20"/>
+    </flow>
+    <flow id="pt_train_162:0" type="pt_train" route="pt_train_162:0" begin="758.0" end="4358.0" period="600" line="162:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.05"/>
+    </flow>
+    <flow id="pt_train_95:0" type="pt_train" route="pt_train_95:0" begin="1573.0" end="5173.0" period="600" line="95:0" >
+        <param key="name" value="Amtrak Northeast Regional: Boston =&gt; Norfolk"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_M12:1" type="pt_bus" route="pt_bus_M12:1" begin="422.0" end="4022.0" period="600" line="M12:1" >
+        <param key="name" value="NYCB - M12 West Village --&gt; Colombus Circle"/>
+        <param key="completeness" value="1.00"/>
+    </flow>
+    <flow id="pt_subway_N:4" type="pt_subway" route="pt_subway_N:4" begin="546.0" end="4146.0" period="600" line="N:4" >
+        <param key="name" value="NYCS - N Train: Astoria–Ditmars Boulevard → Coney Island–Stillwell Avenue"/>
+        <param key="completeness" value="0.21"/>
+    </flow>
+    <flow id="pt_subway_C:0" type="pt_subway" route="pt_subway_C:0" begin="401.0" end="4001.0" period="600" line="C:0" >
+        <param key="name" value="NYCS - C Train: Euclid Avenue → 168th Street"/>
+        <param key="completeness" value="0.33"/>
+    </flow>
+    <flow id="pt_train_86:0" type="pt_train" route="pt_train_86:0" begin="791.0" end="4391.0" period="600" line="86:0" >
+        <param key="name" value="Amtrak Northeast Regional: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.07"/>
+    </flow>
+    <flow id="pt_train_147:0" type="pt_train" route="pt_train_147:0" begin="1640.0" end="5240.0" period="600" line="147:0" >
+        <param key="name" value="Amtrak Northeast Regional: Springfield =&gt; Roanoke"/>
+        <param key="completeness" value="0.04"/>
+    </flow>
+    <flow id="pt_bus_M50:0" type="pt_bus" route="pt_bus_M50:0" begin="269.0" end="3869.0" period="600" line="M50:0" >
+        <param key="name" value="NYCB - M50 West Midtown --&gt; East Midtown"/>
+        <param key="completeness" value="0.70"/>
+    </flow>
+    <flow id="pt_subway_W:0" type="pt_subway" route="pt_subway_W:0" begin="516.0" end="4116.0" period="600" line="W:0" >
+        <param key="name" value="NYCS - W Train: Astoria–Ditmars Boulevard → Whitehall Street–South Ferry"/>
+        <param key="completeness" value="0.35"/>
+    </flow>
+    <flow id="pt_subway_R:0" type="pt_subway" route="pt_subway_R:0" begin="531.0" end="4131.0" period="600" line="R:0" >
+        <param key="name" value="NYCS - R Train: Forest Hills–71st Avenue → Bay Ridge–95th Street"/>
+        <param key="completeness" value="0.18"/>
+    </flow>
+    <flow id="pt_train_56:0" type="pt_train" route="pt_train_56:0" begin="824.0" end="4424.0" period="600" line="56:0" >
+        <param key="name" value="Amtrak Vermonter: Washington =&gt; Saint Albans"/>
+        <param key="completeness" value="0.03"/>
+    </flow>
+    <flow id="pt_train_2158+2248+2250+2252+2254+2256:0" type="pt_train" route="pt_train_2158+2248+2250+2252+2254+2256:0" begin="857.0" end="4457.0" period="600" line="2158+2248+2250+2252+2254+2256:0" >
+        <param key="name" value="Amtrak Acela: Washington =&gt; Boston"/>
+        <param key="completeness" value="0.10"/>
+    </flow>
+    <flow id="pt_bus_M5:0" type="pt_bus" route="pt_bus_M5:0" begin="253.0" end="3853.0" period="600" line="M5:0" >
+        <param key="name" value="NYCB - M5 Midtown --&gt; Washington Heights"/>
+        <param key="completeness" value="0.83"/>
+    </flow>
+    <flow id="pt_bus_M12:0" type="pt_bus" route="pt_bus_M12:0" begin="240.0" end="3840.0" period="600" line="M12:0" >
+        <param key="name" value="NYCB - M12 Colombus Circle --&gt; West Village"/>
+        <param key="completeness" value="0.57"/>
+    </flow>
+    <flow id="pt_bus_M4:0" type="pt_bus" route="pt_bus_M4:0" begin="253.0" end="3853.0" period="600" line="M4:0" >
+        <param key="name" value="NYCB - M4 Penn Station --&gt; Fort Tyron Park"/>
+        <param key="completeness" value="0.80"/>
+    </flow>
+    <flow id="pt_bus_Q32:1" type="pt_bus" route="pt_bus_Q32:1" begin="383.0" end="3983.0" period="600" line="Q32:1" >
+        <param key="name" value="NYCB - Q32 Jackson Heights --&gt; Penn Station"/>
+        <param key="completeness" value="0.51"/>
+    </flow>
+    <flow id="pt_bus_Q32:0" type="pt_bus" route="pt_bus_Q32:0" begin="239.0" end="3839.0" period="600" line="Q32:0" >
+        <param key="name" value="NYCB - Q32 Penn Station --&gt; Jackson Heights"/>
+        <param key="completeness" value="0.51"/>
+    </flow>
+</routes>
