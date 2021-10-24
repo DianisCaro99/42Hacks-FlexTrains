@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-10-23 22:28:16 by Eclipse SUMO duarouter Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\diani\Sumo\2021-10-23-22-23-54\osm.net.xml"/>
+        <route-files value="C:\Users\diani\Sumo\2021-10-23-22-23-54\osm.rail_urban.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\diani\Sumo\2021-10-23-22-23-54\osm.rail_urban.trips.xml.tmp"/>
+        <write-trips value="true"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="urban_rail_urban" vClass="rail_urban"/>
+    <trip id="urban0" type="urban_rail_urban" depart="0.00" departLane="best" departSpeed="max" from="808965711" to="-484012802"/>
+    <trip id="urban50" type="urban_rail_urban" depart="605.80" departLane="best" departSpeed="max" from="552742171" to="813748784#22"/>
+    <trip id="urban52" type="urban_rail_urban" depart="630.03" departLane="best" departSpeed="max" from="819186630" to="813748784#1"/>
+    <trip id="urban62" type="urban_rail_urban" depart="751.20" departLane="best" departSpeed="max" from="46340259" to="817381426#1"/>
+    <trip id="urban81" type="urban_rail_urban" depart="981.40" departLane="best" departSpeed="max" from="808965710" to="823979090"/>
+    <trip id="urban82" type="urban_rail_urban" depart="993.52" departLane="best" departSpeed="max" from="808965711" to="-484012802"/>
+    <trip id="urban84" type="urban_rail_urban" depart="1017.75" departLane="best" departSpeed="max" from="808965711" to="821671629"/>
+    <trip id="urban119" type="urban_rail_urban" depart="1441.81" departLane="best" departSpeed="max" from="552742171" to="819186609"/>
+    <trip id="urban132" type="urban_rail_urban" depart="1599.32" departLane="best" departSpeed="max" from="808965711" to="-484012802"/>
+    <trip id="urban139" type="urban_rail_urban" depart="1684.13" departLane="best" departSpeed="max" from="817383471" to="817381417"/>
+    <trip id="urban147" type="urban_rail_urban" depart="1781.06" departLane="best" departSpeed="max" from="689037413#0" to="819186625"/>
+    <trip id="urban157" type="urban_rail_urban" depart="1902.22" departLane="best" departSpeed="max" from="808965710" to="-484012802"/>
+    <trip id="urban192" type="urban_rail_urban" depart="2326.28" departLane="best" departSpeed="max" from="759735515" to="719086610#0"/>
+    <trip id="urban205" type="urban_rail_urban" depart="2483.79" departLane="best" departSpeed="max" from="815757679" to="815757674"/>
+    <trip id="urban207" type="urban_rail_urban" depart="2508.02" departLane="best" departSpeed="max" from="759735515" to="803137437#2"/>
+    <trip id="urban212" type="urban_rail_urban" depart="2568.60" departLane="best" departSpeed="max" from="-817013581" to="-821671625#1"/>
+    <trip id="urban217" type="urban_rail_urban" depart="2629.18" departLane="best" departSpeed="max" from="808965711" to="821671629"/>
+    <trip id="urban234" type="urban_rail_urban" depart="2835.16" departLane="best" departSpeed="max" from="759735515" to="719086610#0"/>
+    <trip id="urban258" type="urban_rail_urban" depart="3125.94" departLane="best" departSpeed="max" from="813742186" to="817381408"/>
+    <trip id="urban263" type="urban_rail_urban" depart="3186.52" departLane="best" departSpeed="max" from="759735515" to="803137437#2"/>
+    <trip id="urban272" type="urban_rail_urban" depart="3295.57" departLane="best" departSpeed="max" from="-817013581" to="-821671625#1"/>
+    <trip id="urban277" type="urban_rail_urban" depart="3356.15" departLane="best" departSpeed="max" from="817383471" to="817381397"/>
+</routes>

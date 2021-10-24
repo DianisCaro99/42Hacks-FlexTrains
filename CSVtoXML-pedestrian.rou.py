@@ -1,8 +1,8 @@
 import pandas as pd
 
 #Document osm.pedestrian.rou.xml
-df = pd.read_csv('./generated_demand/demand_1000.csv', sep=',')
-
+df = pd.read_csv('./generated_demand/demand_100000.csv', sep=',')
+df=df.iloc[:100,:]
 def convert_row(row):
     time_dateTime = pd.to_datetime(row.Time)
     time = str(time_dateTime.hour)+"."+str(time_dateTime.minute)
@@ -22,7 +22,7 @@ def convert_row(row):
 
     return """
     <person id="ped%s" type="ped_pedestrian" depart="%s">
-        <walk busStop="%s"/>
+        <walk edges="x" busStop="%s"/>
         <ride intended="%s" depart="%s"/>
     </person>
     """ % (
@@ -33,4 +33,5 @@ file1.write("""<?xml version="1.0" encoding="UTF-8"?>""")
 file1.write("""\n<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">""")
 file1.write("""<vType id="ped_pedestrian" vClass="pedestrian"/>""")
 file1.write("".join(df.apply(convert_row, axis=1)))
+file1.write("</routes>")
 file1.close()

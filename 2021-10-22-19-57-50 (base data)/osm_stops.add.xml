@@ -1,0 +1,2237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-10-22 19:58:15 by Eclipse SUMO netconvert Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvert.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvertUrbanDe.typ.xml,C:\Program%20Files%20(x86)\Eclipse\Sumo\data\typemap\osmNetconvertPedestrians.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <pedestrian>
+        <crossings.guess value="true"/>
+    </pedestrian>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-100515086" name="Grand Central Terminal" lane="-804074070_0" startPos="263.75" endPos="363.75" friendlyPos="true">
+        <access lane="473560295_0" pos="9.84" length="7.56" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="7.16" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="7.95" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="9.68" friendlyPos="1"/>
+        <access lane="473560368#1_0" pos="0.10" length="24.57" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1427285944" name="East 42nd Street &amp; Lexington Avenue" lane="-496990648_1" startPos="40.76" endPos="55.76" friendlyPos="true" lines="M42"/>
+    <busStop id="-1912138145" name="Grand Central Terminal" lane="-759735512_0" startPos="288.19" endPos="388.19" friendlyPos="true">
+        <access lane="473560295_0" pos="9.84" length="10.48" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="8.57" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="7.40" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="7.36" friendlyPos="1"/>
+        <access lane="473560368#1_0" pos="0.10" length="24.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-1912138148" name="Grand Central Terminal" lane="-759735514_0" startPos="329.42" endPos="429.42" friendlyPos="true">
+        <access lane="473560295_0" pos="9.84" length="7.55" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="7.40" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="8.39" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="10.23" friendlyPos="1"/>
+        <access lane="473560368#1_0" pos="0.10" length="24.84" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-3679357885" name="W 42 St / 12 Av" lane="-169267538#1_1" startPos="19.88" endPos="34.88" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679360604" name="W 42 St / 11 Av" lane="-974611019#1_1" startPos="60.85" endPos="75.85" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679366525" name="W 42 St / 10 Av" lane="-68325079_1" startPos="31.43" endPos="46.43" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679372025" name="W 42 St / 9 Av" lane="-542259076#3_1" startPos="20.25" endPos="35.25" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679372930" name="W 42 St / 9 Av" lane="-167922077_1" startPos="27.08" endPos="42.08" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679386558" name="W 24 St / 8 Av" lane="-542259076#0_1" startPos="18.33" endPos="33.33" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679392380" name="200 West 42nd Street" lane="-525729008#1_1" startPos="107.31" endPos="122.31" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679402057" name="W 42 St / 6 Av" lane="-511699183#2_1" startPos="10.84" endPos="25.84" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679405817" name="East 42nd Street &amp; Madison Avenue" lane="-5672991#1_1" startPos="0.00" endPos="10.30" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679412804" name="West 42nd Street &amp; 5th Avenue" lane="-438384692#1_1" startPos="42.03" endPos="57.03" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679431796" name="East 24th Street &amp; Park Avenue" lane="-438382685#0_1" startPos="0.00" endPos="11.27" friendlyPos="true" lines="M42"/>
+    <busStop id="-3679438746" name="East 42 Street &amp; 1st Avenue" lane="-988980353_1" startPos="22.25" endPos="33.80" friendlyPos="true" lines="M42"/>
+    <busStop id="-3918987127" name="Grand Central" lane="-821671622_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="S">
+        <access lane="473560251_0" pos="39.82" length="7.16" friendlyPos="1"/>
+        <access lane="496995905_0" pos="50.59" length="5.96" friendlyPos="1"/>
+        <access lane="5671160#0_0" pos="0.51" length="0.92" friendlyPos="1"/>
+        <access lane="5671160#1_0" pos="0.00" length="8.66" friendlyPos="1"/>
+        <access lane="5672991#0_0" pos="0.00" length="10.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-4462306214" name="66th Street–Lincoln Center" lane="-525428792_0" startPos="25.65" endPos="225.65" friendlyPos="true"/>
+    <busStop id="-4770624020" name="West 34th Street/Broadway" lane="-496982022#0_1" startPos="2.27" endPos="17.27" friendlyPos="true" lines="M34A SBS M34 SBS"/>
+    <busStop id="-4770628022" name="West 34th Street &amp; Broadway" lane="-496982023#2_1" startPos="12.06" endPos="27.06" friendlyPos="true" lines="M34 SBS M34A SBS"/>
+    <busStop id="-4770628023" name="West 34th Street/Broadway" lane="-496982023#2_1" startPos="13.21" endPos="28.21" friendlyPos="true" lines="M34 SBS M34A SBS"/>
+    <busStop id="-4794775932" name="West 57th Street &amp; 7th Avenue" lane="-5672752#0_1" startPos="46.84" endPos="61.84" friendlyPos="true" lines="M31 M57"/>
+    <busStop id="-4794775935" name="West 57th Street &amp; 7th Avenue" lane="-5672752#0_1" startPos="30.99" endPos="45.99" friendlyPos="true" lines="M31 M57"/>
+    <busStop id="-4796245033" name="Central Park South/Avenue of the Americas" lane="-196116988#0_1" startPos="166.07" endPos="181.07" friendlyPos="true" lines="M5"/>
+    <busStop id="-4796245036" name="Central Park South/6th Avenue" lane="-196116988#0_1" startPos="166.07" endPos="181.07" friendlyPos="true" lines="M5"/>
+    <busStop id="-4983147403" name="14th Street–Union Square" lane="-509025001_0" startPos="99.32" endPos="299.32" friendlyPos="true">
+        <access lane="197582881#1_0" pos="10.19" length="77.06" friendlyPos="1"/>
+        <access lane="22819596#0_0" pos="0.00" length="63.45" friendlyPos="1"/>
+        <access lane="22819596#1_0" pos="18.36" length="63.33" friendlyPos="1"/>
+        <access lane="385105200_0" pos="0.00" length="32.34" friendlyPos="1"/>
+        <access lane="420598310#0_0" pos="0.00" length="22.75" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5111471159" name="50th Street" lane="-525428792_0" startPos="1333.38" endPos="1533.38" friendlyPos="true">
+        <access lane="-717625448#2_0" pos="65.84" length="39.03" friendlyPos="1"/>
+        <access lane="-812949648#4_0" pos="48.97" length="10.45" friendlyPos="1"/>
+        <access lane="717625448#0_0" pos="6.19" length="31.23" friendlyPos="1"/>
+        <access lane="812949648#3_0" pos="18.69" length="19.75" friendlyPos="1"/>
+        <access lane="965833822#13_0" pos="161.23" length="42.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5111472285" name="59th Street–Columbus Circle" lane="-525428792_0" startPos="599.37" endPos="799.37" friendlyPos="true">
+        <access lane="29317345_0" pos="184.55" length="179.58" friendlyPos="1"/>
+        <access lane="719105678#1_0" pos="172.98" length="189.78" friendlyPos="1"/>
+        <access lane="839155755_0" pos="0.00" length="224.97" friendlyPos="1"/>
+        <access lane="948627245#1_0" pos="13.69" length="222.70" friendlyPos="1"/>
+        <access lane="948627247#4_0" pos="32.40" length="224.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5332358378" name="33rd Street" lane="-552266810_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="385107995#0_0" pos="0.20" length="30.44" friendlyPos="1"/>
+        <access lane="460606347#1_0" pos="0.00" length="28.32" friendlyPos="1"/>
+        <access lane="484170269#1_0" pos="83.31" length="11.37" friendlyPos="1"/>
+        <access lane="511809755_0" pos="0.00" length="23.35" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="60.71" length="28.68" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5332398711" name="33rd Street" lane="-552266811_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="385107995#0_0" pos="0.20" length="17.71" friendlyPos="1"/>
+        <access lane="460606347#1_0" pos="0.00" length="16.57" friendlyPos="1"/>
+        <access lane="664985025#1_0" pos="0.00" length="19.03" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="60.71" length="16.40" friendlyPos="1"/>
+        <access lane="693386105#6_0" pos="0.00" length="20.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5332398715" name="33rd Street" lane="-552256574_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="385107995#0_0" pos="0.20" length="7.57" friendlyPos="1"/>
+        <access lane="460606347#1_0" pos="0.00" length="10.10" friendlyPos="1"/>
+        <access lane="664985025#1_0" pos="0.00" length="7.42" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="60.71" length="8.39" friendlyPos="1"/>
+        <access lane="693386105#6_0" pos="0.00" length="8.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5492236426" name="New York Penn Station" lane="-571475135_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="195743190_0" pos="48.08" length="33.18" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="50.42" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="19.04" length="27.30" friendlyPos="1"/>
+        <access lane="541448644_0" pos="16.69" length="9.25" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="49.34" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5492236430" name="New York Penn Station" lane="-571475141_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="195743190_0" pos="56.29" length="40.70" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="52.16" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="24.09" length="15.00" friendlyPos="1"/>
+        <access lane="541448644_0" pos="11.61" length="3.01" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="47.35" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5492236436" name="New York Penn Station" lane="-571475143_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="195743190_0" pos="59.31" length="46.73" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="56.98" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="28.12" length="10.50" friendlyPos="1"/>
+        <access lane="541448644_0" pos="7.56" length="7.48" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="50.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5492236464" name="New York Penn Station" lane="-571475152_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="195743190_0" pos="63.18" length="47.54" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="56.19" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="28.14" length="4.20" friendlyPos="1"/>
+        <access lane="541448644_0" pos="7.50" length="22.18" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="46.99" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-5551785165" name="23rd Street" lane="-552266808_0" startPos="974.71" endPos="1174.71" friendlyPos="true">
+        <access lane="196117090#11_0" pos="62.46" length="42.35" friendlyPos="1"/>
+        <access lane="196117090#12_0" pos="19.58" length="7.53" friendlyPos="1"/>
+        <access lane="420598415_0" pos="259.99" length="81.82" friendlyPos="1"/>
+        <access lane="813970417_0" pos="263.03" length="37.96" friendlyPos="1"/>
+        <access lane="846122853#0_0" pos="0.00" length="39.77" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-591997437" name="Times Square" lane="-821671622_0" startPos="290.40" endPos="490.40" friendlyPos="true" lines="S">
+        <access lane="-167922072#7_0" pos="37.72" length="26.24" friendlyPos="1"/>
+        <access lane="163630203_0" pos="71.45" length="53.29" friendlyPos="1"/>
+        <access lane="167922072#7_0" pos="32.89" length="2.54" friendlyPos="1"/>
+        <access lane="513706130_0" pos="0.00" length="52.79" friendlyPos="1"/>
+        <access lane="702540323#1_0" pos="44.61" length="0.32" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7097455188" name="Grand Central Terminal" lane="-759735449_0" startPos="288.17" endPos="388.17" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="24.92" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="12.53" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="15.07" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="17.77" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="20.58" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7097455189" name="Grand Central Terminal" lane="-759771438_0" startPos="264.15" endPos="364.15" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="19.15" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="17.57" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="20.32" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="23.16" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="26.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7097455194" name="Grand Central Terminal" lane="-759771452_0" startPos="142.50" endPos="242.50" friendlyPos="true">
+        <access lane="113944510#3_0" pos="125.46" length="23.46" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="20.74" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="18.00" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="15.32" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="12.78" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098821378" name="Grand Central Terminal" lane="-759912303_0" startPos="193.75" endPos="293.75" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.40" length="36.34" friendlyPos="1"/>
+        <access lane="380991633_0" pos="66.02" length="26.41" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.84" length="39.95" friendlyPos="1"/>
+        <access lane="475109056_0" pos="37.42" length="52.49" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.47" length="41.14" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828762" name="Grand Central Terminal" lane="-759912309_0" startPos="273.27" endPos="373.27" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.25" length="12.13" friendlyPos="1"/>
+        <access lane="380991633_0" pos="82.16" length="26.03" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="45.45" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.91" length="15.73" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.62" length="16.93" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828765" name="Grand Central Terminal" lane="-759912333_0" startPos="272.67" endPos="372.67" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.09" length="0.37" friendlyPos="1"/>
+        <access lane="380991633_0" pos="90.28" length="25.71" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="37.31" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.87" length="3.23" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.77" length="4.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828768" name="Grand Central Terminal" lane="-759912312_0" startPos="312.47" endPos="412.47" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.14" length="5.24" friendlyPos="1"/>
+        <access lane="380991633_0" pos="90.28" length="26.27" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="34.99" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.96" length="1.64" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.73" length="0.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828771" name="Grand Central Terminal" lane="-759912334_0" startPos="311.81" endPos="411.81" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.00" length="18.66" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.07" length="31.08" friendlyPos="1"/>
+        <access lane="380991633_0" pos="96.37" length="30.17" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.94" length="15.06" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.87" length="13.86" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828774" name="Grand Central Terminal" lane="-759912335_0" startPos="349.47" endPos="449.47" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.04" length="24.45" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.05" length="25.29" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="2.31" length="31.41" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="85.02" length="20.85" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.83" length="19.65" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828777" name="Grand Central Terminal" lane="-759912336_0" startPos="348.73" endPos="448.73" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.91" length="36.95" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.20" length="12.79" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="10.64" length="31.42" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="85.01" length="33.35" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.96" length="32.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828780" name="Grand Central Terminal" lane="-759912337_0" startPos="142.73" endPos="242.73" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.41" length="17.85" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="26.22" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="23.39" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="20.57" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="17.79" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098828783" name="Grand Central Terminal" lane="-759735511_0" startPos="211.48" endPos="311.48" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.28" length="5.35" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="19.18" length="32.10" friendlyPos="1"/>
+        <access lane="380991639#2_0" pos="0.00" length="31.67" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="32.56" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="29.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098829004" name="Grand Central Terminal" lane="-759912306_0" startPos="194.47" endPos="294.47" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.13" length="47.37" friendlyPos="1"/>
+        <access lane="380991633_0" pos="58.67" length="26.08" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.48" length="50.97" friendlyPos="1"/>
+        <access lane="475109056_0" pos="44.77" length="52.06" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.74" length="52.17" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098829007" name="Grand Central Terminal" lane="-759912332_0" startPos="244.18" endPos="344.18" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.19" length="17.92" friendlyPos="1"/>
+        <access lane="380991633_0" pos="78.30" length="25.97" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.80" length="21.52" friendlyPos="1"/>
+        <access lane="473560394#0_0" pos="0.00" length="49.40" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.68" length="22.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098829009" name="Grand Central Terminal" lane="-759912302_0" startPos="245.03" endPos="345.03" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.36" length="30.42" friendlyPos="1"/>
+        <access lane="380991633_0" pos="69.97" length="26.31" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.85" length="34.03" friendlyPos="1"/>
+        <access lane="475109056_0" pos="33.47" length="52.45" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.51" length="35.22" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098931601" name="Grand Central Terminal" lane="-759927875_0" startPos="291.21" endPos="391.21" friendlyPos="true">
+        <access lane="113944511_0" pos="19.74" length="24.48" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="39.88" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="35.55" length="32.02" friendlyPos="1"/>
+        <access lane="511699179_0" pos="28.17" length="30.74" friendlyPos="1"/>
+        <access lane="609596058_0" pos="226.12" length="24.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098931604" name="Grand Central Terminal" lane="-759927890_0" startPos="271.99" endPos="371.99" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.60" length="6.97" friendlyPos="1"/>
+        <access lane="46520921#0_0" pos="0.00" length="52.25" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.43" length="5.63" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="74.88" length="44.36" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.36" length="12.02" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098931608" name="Grand Central Terminal" lane="-759927891_0" startPos="253.75" endPos="353.75" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.69" length="25.26" friendlyPos="1"/>
+        <access lane="113944511_0" pos="32.82" length="42.69" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="23.41" length="51.66" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.33" length="12.66" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.30" length="6.26" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098931613" name="Grand Central Terminal" lane="-759927892_0" startPos="254.40" endPos="354.40" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.73" length="19.53" friendlyPos="1"/>
+        <access lane="113944511_0" pos="32.75" length="48.42" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.29" length="6.93" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="74.88" length="49.30" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.39" length="0.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098931614" name="Grand Central Terminal" lane="-759927880_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.81" length="37.82" friendlyPos="1"/>
+        <access lane="113944511_0" pos="32.75" length="30.13" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="31.79" length="51.55" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.21" length="25.22" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.31" length="18.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098931619" name="Grand Central Terminal" lane="-759927874_0" startPos="221.50" endPos="321.50" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="11.66" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="19.15" length="36.86" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="33.96" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="44.09" length="32.19" friendlyPos="1"/>
+        <access lane="609596058_0" pos="225.95" length="37.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098931622" name="Grand Central Terminal" lane="-759927893_0" startPos="220.36" endPos="320.36" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="6.63" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="18.90" length="31.85" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.00" length="32.79" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="29.44" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="32.33" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7098974468" name="Grand Central Terminal" lane="-804074071_0" startPos="292.11" endPos="392.11" friendlyPos="true">
+        <access lane="473560294#1_0" pos="3.33" length="24.40" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="10.90" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="8.89" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="7.53" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="7.25" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099088056" name="Grand Central Terminal" lane="-804074067_0" startPos="396.09" endPos="496.09" friendlyPos="true">
+        <access lane="113944511_0" pos="19.71" length="23.36" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="39.20" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="36.29" length="31.99" friendlyPos="1"/>
+        <access lane="511699179_0" pos="28.14" length="31.86" friendlyPos="1"/>
+        <access lane="609596058_0" pos="226.14" length="25.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099088066" name="Grand Central Terminal" lane="-759944972_0" startPos="73.81" endPos="173.81" friendlyPos="true">
+        <access lane="113944511_0" pos="19.73" length="10.78" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="19.15" length="36.27" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="33.51" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="44.68" length="32.01" friendlyPos="1"/>
+        <access lane="609596058_0" pos="226.07" length="38.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099088080" name="Grand Central Terminal" lane="-759944980_0" startPos="98.66" endPos="198.66" friendlyPos="true">
+        <access lane="113944511_0" pos="19.75" length="7.51" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="18.31" length="31.67" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.00" length="32.83" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="28.55" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="31.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099088081" name="Grand Central Terminal" lane="-759944981_0" startPos="83.45" endPos="183.45" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.39" length="4.60" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="19.18" length="31.80" friendlyPos="1"/>
+        <access lane="380991639#2_0" pos="0.00" length="31.55" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="33.25" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="30.31" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099092298" name="Grand Central Terminal" lane="-759944984_0" startPos="189.52" endPos="289.52" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.50" length="17.07" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="26.93" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="24.08" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="21.24" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="18.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099092299" name="Grand Central Terminal" lane="-804049799_0" startPos="224.02" endPos="324.02" friendlyPos="true">
+        <access lane="113944510#3_0" pos="125.45" length="22.69" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="21.38" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="18.62" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="15.90" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="13.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099092300" name="Grand Central Terminal" lane="-804049793_0" startPos="156.47" endPos="256.47" friendlyPos="true">
+        <access lane="113944511_0" pos="19.74" length="20.08" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="16.65" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="19.39" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="22.22" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="25.11" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099092301" name="Grand Central Terminal" lane="-804049802_0" startPos="194.82" endPos="294.82" friendlyPos="true">
+        <access lane="113944511_0" pos="19.77" length="25.80" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="11.73" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="14.23" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="16.91" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="19.70" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099196283" name="Grand Central Terminal" lane="-759955623_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.98" length="11.02" friendlyPos="1"/>
+        <access lane="380991633_0" pos="91.56" length="27.66" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="32.66" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.85" length="7.42" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.89" length="6.22" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099196284" name="Grand Central Terminal" lane="-759955624_0" startPos="91.28" endPos="191.28" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.91" length="23.69" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.17" length="26.04" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="1.81" length="31.21" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.89" length="20.10" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.96" length="18.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7099209085" name="Grand Central Terminal" lane="-759955625_0" startPos="84.86" endPos="184.86" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.84" length="36.18" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.27" length="13.56" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="10.13" length="31.31" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.93" length="32.58" friendlyPos="1"/>
+        <access lane="804078256_0" pos="121.03" length="31.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7509382447" name="14th Street" lane="-552266808_0" startPos="229.59" endPos="429.59" friendlyPos="true">
+        <access lane="497746843#4_0" pos="54.63" length="15.30" friendlyPos="1"/>
+        <access lane="894036114#2_0" pos="6.90" length="21.31" friendlyPos="1"/>
+        <access lane="894036115#3_0" pos="6.75" length="16.51" friendlyPos="1"/>
+        <access lane="894036116#0_0" pos="2.90" length="16.33" friendlyPos="1"/>
+        <access lane="894036116#1_0" pos="0.00" length="23.37" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7618672833" name="42nd Street–Times Square" lane="-815757677#3_0" startPos="64.22" endPos="264.22" friendlyPos="true">
+        <access lane="195743209_0" pos="72.23" length="0.98" friendlyPos="1"/>
+        <access lane="513706085_0" pos="0.00" length="86.52" friendlyPos="1"/>
+        <access lane="513706089_0" pos="0.00" length="42.44" friendlyPos="1"/>
+        <access lane="513706090_0" pos="0.00" length="52.83" friendlyPos="1"/>
+        <access lane="513706110_0" pos="0.00" length="101.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7630588804" name="33rd Street" lane="-509025001_0" startPos="1501.97" endPos="1701.97" friendlyPos="true">
+        <access lane="-464683344#1_0" pos="27.87" length="3.66" friendlyPos="1"/>
+        <access lane="447001270#1_0" pos="27.30" length="27.67" friendlyPos="1"/>
+        <access lane="464683344#1_0" pos="21.64" length="15.24" friendlyPos="1"/>
+        <access lane="727116511#2_0" pos="29.53" length="29.49" friendlyPos="1"/>
+        <access lane="871725887_0" pos="31.09" length="9.94" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7630588806" name="28th Street" lane="-509025001_0" startPos="1148.44" endPos="1348.44" friendlyPos="true">
+        <access lane="-464683339#1_0" pos="0.00" length="9.60" friendlyPos="1"/>
+        <access lane="-464683339#2_0" pos="71.93" length="5.40" friendlyPos="1"/>
+        <access lane="464683339#1_0" pos="68.04" length="10.20" friendlyPos="1"/>
+        <access lane="464683339#2_0" pos="0.00" length="6.41" friendlyPos="1"/>
+        <access lane="5672487#11_0" pos="0.00" length="10.98" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7630588808" name="23rd Street" lane="-509025001_0" startPos="753.67" endPos="953.67" friendlyPos="true">
+        <access lane="-456308945_0" pos="61.99" length="15.66" friendlyPos="1"/>
+        <access lane="-464683329#0_0" pos="5.96" length="4.34" friendlyPos="1"/>
+        <access lane="-464683329#1_0" pos="68.17" length="21.82" friendlyPos="1"/>
+        <access lane="456308943#1_0" pos="213.43" length="22.58" friendlyPos="1"/>
+        <access lane="464683329#0_0" pos="61.99" length="9.76" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7630776657" name="Times Square" lane="-821671625#1_0" startPos="195.47" endPos="395.47" friendlyPos="true" lines="S">
+        <access lane="-167922072#7_0" pos="35.21" length="9.51" friendlyPos="1"/>
+        <access lane="167922072#7_0" pos="35.41" length="14.19" friendlyPos="1"/>
+        <access lane="513706128_0" pos="0.00" length="50.81" friendlyPos="1"/>
+        <access lane="513706130_0" pos="0.00" length="41.32" friendlyPos="1"/>
+        <access lane="702540323#1_0" pos="42.05" length="17.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-7630776662" name="Grand Central" lane="-821671625#1_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="S">
+        <access lane="-496995905_0" pos="0.00" length="3.20" friendlyPos="1"/>
+        <access lane="-5672991#1_0" pos="76.41" length="9.13" friendlyPos="1"/>
+        <access lane="496995905_0" pos="50.59" length="24.15" friendlyPos="1"/>
+        <access lane="5671160#0_0" pos="0.00" length="28.47" friendlyPos="1"/>
+        <access lane="5672991#0_0" pos="0.00" length="25.61" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-8378777752" name="West 24th Street &amp; 11th Avenue" lane="-420908135#1_1" startPos="37.02" endPos="52.02" friendlyPos="true" lines="M23 SBS"/>
+    <busStop id="100515086" name="Grand Central Terminal" lane="759945015_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="473560295_0" pos="9.84" length="7.56" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="7.16" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="7.95" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="9.68" friendlyPos="1"/>
+        <access lane="473560368#1_0" pos="0.10" length="24.57" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1261183479" name="68th Street–Hunter College" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-387128267#20_0" pos="153.69" length="1.94" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="1394.27" length="12.16" friendlyPos="1"/>
+        <access lane="686125782#2_0" pos="148.60" length="212.98" friendlyPos="1"/>
+        <access lane="954595549#0_0" pos="0.00" length="117.47" friendlyPos="1"/>
+        <access lane="954595551#1_0" pos="70.79" length="126.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1912138145" name="Grand Central Terminal" lane="759735512_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="473560295_0" pos="9.84" length="10.48" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="8.57" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="7.40" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="7.36" friendlyPos="1"/>
+        <access lane="473560368#1_0" pos="0.10" length="24.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1912138148" name="Grand Central Terminal" lane="759735514_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="473560295_0" pos="9.84" length="7.55" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="7.40" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="8.39" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="10.23" friendlyPos="1"/>
+        <access lane="473560368#1_0" pos="0.10" length="24.84" friendlyPos="1"/>
+    </busStop>
+    <busStop id="2024979388" name="59th Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="198595461#2_0" pos="132.05" length="43.37" friendlyPos="1"/>
+        <access lane="198595461#3_0" pos="0.00" length="43.61" friendlyPos="1"/>
+        <access lane="420496091#3_0" pos="69.09" length="46.28" friendlyPos="1"/>
+        <access lane="420496091#4_0" pos="22.27" length="7.87" friendlyPos="1"/>
+        <access lane="963856064_0" pos="52.72" length="71.67" friendlyPos="1"/>
+    </busStop>
+    <busStop id="2956903784" name="West 49th Street/11th Avenue" lane="46443656#13_1" startPos="38.80" endPos="53.80" friendlyPos="true" lines="M50"/>
+    <busStop id="3278932320" name="67th St / Lexington Ave" lane="945384088#1_1" startPos="8.91" endPos="23.91" friendlyPos="true" lines="M66"/>
+    <busStop id="3607161886" name="West 49th Street &amp; 10th Avenue" lane="46443656#12_1" startPos="29.87" endPos="44.87" friendlyPos="true" lines="M50"/>
+    <busStop id="3679359825" name="W 42 St / 12 Av" lane="169267538#1_1" startPos="42.47" endPos="53.62" friendlyPos="true" lines="M42"/>
+    <busStop id="3679359855" name="West 42nd Street &amp; 10th Avenue" lane="420904618#0_1" startPos="22.67" endPos="37.67" friendlyPos="true" lines="M42"/>
+    <busStop id="3679360498" name="W 42 St / 11 Av" lane="974611019#1_1" startPos="31.94" endPos="46.94" friendlyPos="true" lines="M42"/>
+    <busStop id="3679387948" name="W 42 St / 8 Av" lane="542259076#0_1" startPos="44.11" endPos="52.15" friendlyPos="true" lines="M42"/>
+    <busStop id="3679391773" name="West 42nd Street &amp; 7th Avenue" lane="525729008#0_1" startPos="44.28" endPos="59.28" friendlyPos="true" lines="M42"/>
+    <busStop id="3679394774" name="West 42nd Street/Broadway" lane="167922072#7_1" startPos="33.16" endPos="48.16" friendlyPos="true" lines="M42"/>
+    <busStop id="3679396691" name="West 42nd Street &amp; 6th Avenue" lane="167922072#1_1" startPos="41.03" endPos="50.80" friendlyPos="true" lines="M42"/>
+    <busStop id="3679403747" name="East 42nd Street &amp; 3rd Avenue" lane="420356169#0_1" startPos="31.45" endPos="46.45" friendlyPos="true" lines="M42"/>
+    <busStop id="3679406934" name="W 42 St / 5 Av" lane="511699183#1_1" startPos="34.09" endPos="49.09" friendlyPos="true" lines="M42"/>
+    <busStop id="3679423001" name="East 42nd Street &amp; Madison Avenue" lane="438384692#0_1" startPos="0.00" endPos="11.65" friendlyPos="true" lines="M42"/>
+    <busStop id="3679433462" name="East 42nd Street &amp; Lexington Avenue" lane="420356168_1" startPos="58.06" endPos="73.06" friendlyPos="true" lines="M42"/>
+    <busStop id="3679435962" name="East 42nd Street &amp; 1st Avenue" lane="46201630#3_1" startPos="0.00" endPos="8.77" friendlyPos="true" lines="M42"/>
+    <busStop id="3679437133" name="East 42nd Street &amp; 3rd Avenue" lane="420356168_1" startPos="49.83" endPos="64.83" friendlyPos="true" lines="M42"/>
+    <busStop id="3679438201" name="East 42nd Street &amp; 2nd Avenue" lane="384826723#0_1" startPos="32.01" endPos="47.01" friendlyPos="true" lines="M42"/>
+    <busStop id="3679439920" name="E 42 St / 2 Av" lane="747908052#1_1" startPos="16.83" endPos="24.33" friendlyPos="true" lines="M42"/>
+    <busStop id="3679455264" name="East 41st Street &amp; 1st Avenue" lane="46469724#2_1" startPos="66.38" endPos="81.38" friendlyPos="true" lines="M42"/>
+    <busStop id="3679458105" lane="584971497#1_0" startPos="30.87" endPos="45.87" friendlyPos="true" lines="M42 M50"/>
+    <busStop id="3720959930" name="12th Avenue/West 43rd Street" lane="505777313#1_1" startPos="21.56" endPos="36.56" friendlyPos="true" lines="M12"/>
+    <busStop id="3913754635" name="Bethune Street &amp; Greenwich Street" lane="195834894#1_1" startPos="27.30" endPos="42.30" friendlyPos="true" lines="M11"/>
+    <busStop id="3913756003" name="Greenwich St/ Horatio St" lane="5670451#10_1" startPos="0.00" endPos="5.47" friendlyPos="true" lines="M11"/>
+    <busStop id="3913756003@2636370" name="Greenwich St/ Horatio St" lane="196117028#3_1" startPos="2.18" endPos="17.18" friendlyPos="true" lines="M11"/>
+    <busStop id="3913758293" name="West 14th Street &amp; 9th Avenue" lane="350726031#1_1" startPos="43.17" endPos="58.17" friendlyPos="true" lines="M12 M11"/>
+    <busStop id="3913758293@12382566" name="West 14th Street &amp; 9th Avenue" lane="5670451#0_1" startPos="0.00" endPos="7.50" friendlyPos="true" lines="M14A SBS"/>
+    <busStop id="3913758293@12382567" name="West 14th Street &amp; 9th Avenue" lane="196117075#1_1" startPos="23.50" endPos="38.50" friendlyPos="true" lines="M14D SBS M11 M12"/>
+    <busStop id="3918908280" name="5th Avenue" lane="46340255#2_0" startPos="367.44" endPos="567.44" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="702073723_0" pos="1.83" length="2.02" friendlyPos="1"/>
+        <access lane="702073724_0" pos="0.00" length="6.17" friendlyPos="1"/>
+        <access lane="702073789#0_0" pos="0.00" length="3.48" friendlyPos="1"/>
+        <access lane="702073789#1_0" pos="54.63" length="2.03" friendlyPos="1"/>
+        <access lane="702073800#0_0" pos="153.99" length="0.85" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3918987127" name="Grand Central" lane="-484012802_0" startPos="0.00" endPos="134.27" friendlyPos="true" lines="S">
+        <access lane="473560251_0" pos="39.82" length="7.16" friendlyPos="1"/>
+        <access lane="496995905_0" pos="50.59" length="5.96" friendlyPos="1"/>
+        <access lane="5671160#0_0" pos="0.51" length="0.92" friendlyPos="1"/>
+        <access lane="5671160#1_0" pos="0.00" length="8.66" friendlyPos="1"/>
+        <access lane="5672991#0_0" pos="0.00" length="10.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4207912625" name="2 Av/E 39 St" lane="420901679#0_1" startPos="37.83" endPos="52.83" friendlyPos="true" lines="M15"/>
+    <busStop id="4460385064" name="66th Street–Lincoln Center" lane="525428790_0" startPos="192.46" endPos="392.46" friendlyPos="true" lines="2 1"/>
+    <busStop id="4462306214" name="66th Street–Lincoln Center" lane="823979090_0" startPos="0.00" endPos="113.34" friendlyPos="true" lines="1 2"/>
+    <busStop id="4464066997" name="Franklin Street" lane="808965713#1_0" startPos="160.88" endPos="360.88" friendlyPos="true" lines="2 1"/>
+    <busStop id="4464066998" name="Franklin Street" lane="449455275_0" startPos="143.85" endPos="343.85" friendlyPos="true" lines="1 2"/>
+    <busStop id="4464067136" name="Canal Street" lane="808965713#1_0" startPos="160.88" endPos="360.88" friendlyPos="true" lines="2 1"/>
+    <busStop id="4464067137" name="Christopher Street–Sheridan Square" lane="449455275_0" startPos="1776.11" endPos="1976.11" friendlyPos="true" lines="1 2">
+        <access lane="-852992105#3_0" pos="0.00" length="59.74" friendlyPos="1"/>
+        <access lane="852992105#3_0" pos="43.67" length="64.62" friendlyPos="1"/>
+        <access lane="893841840#0_0" pos="122.27" length="41.88" friendlyPos="1"/>
+        <access lane="893841845#0_0" pos="0.00" length="31.73" friendlyPos="1"/>
+        <access lane="893841845#1_0" pos="94.56" length="31.61" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4464067140" name="Christopher Street–Sheridan Square" lane="808965713#1_0" startPos="160.88" endPos="360.88" friendlyPos="true" lines="2 1">
+        <access lane="-663634122#10_0" pos="0.00" length="238.14" friendlyPos="1"/>
+        <access lane="164420607#3_0" pos="138.15" length="294.12" friendlyPos="1"/>
+        <access lane="46608946#0_0" pos="0.00" length="146.30" friendlyPos="1"/>
+        <access lane="663634122#10_0" pos="69.28" length="242.25" friendlyPos="1"/>
+        <access lane="893841845#1_0" pos="60.64" length="227.28" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4464067163" name="Houston Street" lane="449455275_0" startPos="1162.49" endPos="1362.49" friendlyPos="true" lines="1 2"/>
+    <busStop id="4464067393" name="14th Street" lane="808965712#2_0" startPos="90.82" endPos="241.35" friendlyPos="true" lines="2 3">
+        <access lane="-852992101#0_0" pos="3.91" length="5.04" friendlyPos="1"/>
+        <access lane="-852992101#1_0" pos="1.76" length="14.61" friendlyPos="1"/>
+        <access lane="852992101#0_0" pos="5.34" length="18.66" friendlyPos="1"/>
+        <access lane="888695510#8_0" pos="3.10" length="13.83" friendlyPos="1"/>
+        <access lane="894036115#1_0" pos="4.26" length="17.95" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4464067416" name="34th Street–Penn Station" lane="808965711#2_0" startPos="81.24" endPos="281.24" friendlyPos="true" lines="3 2">
+        <access lane="-195743208#3_0" pos="0.00" length="53.30" friendlyPos="1"/>
+        <access lane="-464543615#2_0" pos="23.26" length="2.65" friendlyPos="1"/>
+        <access lane="-496982023#2_0" pos="229.34" length="40.61" friendlyPos="1"/>
+        <access lane="464543615#2_0" pos="42.11" length="31.15" friendlyPos="1"/>
+        <access lane="833665311#0_0" pos="0.00" length="70.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4464067418" name="34th Street–Penn Station" lane="803142786#1_0" startPos="68.93" endPos="268.93" friendlyPos="true" lines="2 1">
+        <access lane="319773434#0_0" pos="10.29" length="71.45" friendlyPos="1"/>
+        <access lane="492489884_0" pos="0.00" length="8.74" friendlyPos="1"/>
+        <access lane="492489888_0" pos="0.00" length="7.78" friendlyPos="1"/>
+        <access lane="492489893#2_0" pos="43.68" length="26.55" friendlyPos="1"/>
+        <access lane="5670803#1_0" pos="67.82" length="8.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4500909091" lane="169267538#1_1" startPos="18.01" endPos="33.01" friendlyPos="true"/>
+    <busStop id="4500916751" lane="169267538#1_1" startPos="46.07" endPos="53.62" friendlyPos="true"/>
+    <busStop id="4661347470" name="110th Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4"/>
+    <busStop id="4763900906" name="East 23rd Street/Madison Avenue" lane="526571477#1_1" startPos="56.92" endPos="71.92" friendlyPos="true"/>
+    <busStop id="4763900907" name="East 23rd Street &amp; Madison Avenue" lane="428569358#1_0" startPos="39.97" endPos="54.97" friendlyPos="true"/>
+    <busStop id="4763900908" name="East 23rd Street/Broadway" lane="526571477#1_1" startPos="42.22" endPos="57.22" friendlyPos="true"/>
+    <busStop id="4763900909" name="East 23rd Street &amp; Broadway" lane="428569358#1_0" startPos="25.65" endPos="40.65" friendlyPos="true"/>
+    <busStop id="4763900910" name="East 23rd Street/Broadway" lane="526571477#1_1" startPos="31.60" endPos="46.60" friendlyPos="true"/>
+    <busStop id="4763900911" name="East 23rd Street/Broadway" lane="428569358#1_0" startPos="14.42" endPos="29.42" friendlyPos="true"/>
+    <busStop id="4763900912" name="East 23rd Street &amp; Broadway" lane="428569357_0" startPos="21.33" endPos="36.33" friendlyPos="true"/>
+    <busStop id="4763900913" name="East 23rd Street/Broadway" lane="428569358#1_0" startPos="11.81" endPos="26.81" friendlyPos="true"/>
+    <busStop id="4763900914" name="East 23rd Street/Broadway" lane="526571477#1_1" startPos="29.15" endPos="44.15" friendlyPos="true"/>
+    <busStop id="4763900915" name="East 23rd Street/Broadway" lane="526571477#1_1" startPos="15.57" endPos="30.57" friendlyPos="true"/>
+    <busStop id="4769084858" name="West 32nd Street &amp; Avenue of the Americas" lane="460606348#1_1" startPos="14.67" endPos="28.85" friendlyPos="true" lines="M4"/>
+    <busStop id="4769084859" name="West 32nd Street/Avenue of the Americas" lane="460606348#1_1" startPos="12.58" endPos="27.58" friendlyPos="true" lines="Q32 M4"/>
+    <busStop id="4769084860" name="West 31st Street &amp; 6th Avenue" lane="46490538#5_1" startPos="27.77" endPos="42.77" friendlyPos="true" lines="M5"/>
+    <busStop id="4769084861" name="West 31st Street/6th Avenue" lane="46490538#5_1" startPos="27.54" endPos="42.54" friendlyPos="true" lines="M5"/>
+    <busStop id="4770624001" name="West 42nd Street/7th Avenue" lane="525729008#0_1" startPos="15.64" endPos="30.64" friendlyPos="true"/>
+    <busStop id="4770624002" name="West 42nd Street/7th Avenue" lane="525729008#0_1" startPos="44.15" endPos="59.15" friendlyPos="true"/>
+    <busStop id="4770624003" name="West 42nd Street/Broadway" lane="167922072#7_1" startPos="33.98" endPos="48.98" friendlyPos="true"/>
+    <busStop id="4770624019" name="West 37th Street/Broadway" lane="46522005_1" startPos="69.43" endPos="84.43" friendlyPos="true" lines="M4 Q32"/>
+    <busStop id="4770624020" name="West 34th Street/Broadway" lane="5670600#1_1" startPos="256.65" endPos="271.65" friendlyPos="true" lines="M34 SBS M34A SBS"/>
+    <busStop id="4770628022" name="West 34th Street &amp; Broadway" lane="496982023#0_1" startPos="109.32" endPos="124.32" friendlyPos="true" lines="M34A SBS M34 SBS"/>
+    <busStop id="4770628023" name="West 34th Street/Broadway" lane="496982023#0_1" startPos="109.32" endPos="124.32" friendlyPos="true" lines="M34A SBS M34 SBS"/>
+    <busStop id="4782363326" name="12th Avenue/West 46th Street" lane="992144532#0_1" startPos="12.34" endPos="27.34" friendlyPos="true" lines="M50"/>
+    <busStop id="4782363327" name="12th Avenue/West 46th Street" lane="992144532#0_1" startPos="13.73" endPos="28.73" friendlyPos="true" lines="M12"/>
+    <busStop id="4782363328" name="12th Avenue/West 43rd Street" lane="505777313#1_1" startPos="21.03" endPos="36.03" friendlyPos="true" lines="M50"/>
+    <busStop id="4782363329" name="West 50th Street/7th Avenue" lane="194920158#14_1" startPos="1.09" endPos="16.09" friendlyPos="true" lines="M50"/>
+    <busStop id="4782363330" name="West 50th Street &amp; 7th Avenue" lane="194920158#14_1" startPos="1.09" endPos="16.09" friendlyPos="true" lines="M50"/>
+    <busStop id="4782363333" name="7th Avenue &amp; West 50th Street" lane="569345540#0_1" startPos="0.00" endPos="7.70" friendlyPos="true" lines="M104 M20"/>
+    <busStop id="4782363334" name="7th Avenue/West 50th Street" lane="569345540#0_1" startPos="0.00" endPos="7.70" friendlyPos="true" lines="M7"/>
+    <busStop id="4782363335" name="West 49th Street/7th Avenue" lane="46443656#0_1" startPos="0.00" endPos="10.97" friendlyPos="true" lines="M50"/>
+    <busStop id="4782363336" name="West 49th Street &amp; 7th Avenue" lane="46443656#0_1" startPos="0.00" endPos="10.97" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404423" name="West 50th Street/8th Avenue" lane="194920158#10_1" startPos="18.80" endPos="33.80" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404424" name="West 50th Street &amp; 9th Avenue" lane="194920158#2_1" startPos="240.05" endPos="255.05" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404425" name="West 50th Street/9th Avenue" lane="194920158#2_1" startPos="239.55" endPos="254.55" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404426" name="West 50th Street &amp; 10th Avenue" lane="194920158#2_1" startPos="12.22" endPos="27.22" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404427" name="West 50th Street/10th Avenue" lane="194920158#2_1" startPos="11.94" endPos="26.94" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404428" name="West 50th Street &amp; 11th Avenue" lane="989265274#3_1" startPos="29.58" endPos="44.58" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404429" name="West 50th Street/11th Avenue" lane="989265274#3_1" startPos="36.00" endPos="51.00" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404430" name="West 50th Street/12th Avenue" lane="989265274#1_1" startPos="7.21" endPos="22.21" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404431" name="West 50th Street &amp; 12th Avenue" lane="989265274#1_1" startPos="9.96" endPos="24.96" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404432" name="12th Avenue/West 48th Street" lane="421852041_1" startPos="14.70" endPos="29.70" friendlyPos="true" lines="M50"/>
+    <busStop id="4782404433" name="12th Avenue/West 48th Street" lane="421852041_1" startPos="14.95" endPos="29.95" friendlyPos="true" lines="M12"/>
+    <busStop id="4782442657" name="East 49th Street/1st Avenue" lane="619280607#2_1" startPos="15.07" endPos="30.07" friendlyPos="true" lines="M50"/>
+    <busStop id="4782442658" name="East 50th Street/2nd Avenue" lane="46522003_1" startPos="188.34" endPos="203.34" friendlyPos="true" lines="M50"/>
+    <busStop id="4782442659" name="East 50th Street/3rd Avenue" lane="46522003_1" startPos="31.13" endPos="46.13" friendlyPos="true" lines="M50"/>
+    <busStop id="4782442661" name="East 50th Street/Lexington Avenue" lane="458180188_1" startPos="20.65" endPos="35.65" friendlyPos="true" lines="M50"/>
+    <busStop id="4782442663" name="East 50th Street/Madison Avenue" lane="441405436#0_1" startPos="34.68" endPos="49.68" friendlyPos="true" lines="M50"/>
+    <busStop id="4782442664" name="East 50th Street &amp; Madison Avenue" lane="441405436#0_1" startPos="33.66" endPos="48.66" friendlyPos="true" lines="M50"/>
+    <busStop id="4782442665" name="East 50th Street/5th Avenue" lane="5673497_1" startPos="16.78" endPos="31.78" friendlyPos="true" lines="M50"/>
+    <busStop id="4782442668" name="West 50th Street/Avenue of the Americas" lane="5670867#0_1" startPos="27.62" endPos="42.62" friendlyPos="true" lines="M50"/>
+    <busStop id="4782506031" name="West 49th Street/Avenue of the Americas" lane="542258337#2_1" startPos="0.00" endPos="7.50" friendlyPos="true" lines="M50"/>
+    <busStop id="4782506033" name="East 49th Street/5th Avenue" lane="5670114#0_1" startPos="33.61" endPos="48.61" friendlyPos="true" lines="M50"/>
+    <busStop id="4782506034" name="East 49th Street &amp; Madison Avenue" lane="458180184#1_1" startPos="5.93" endPos="20.93" friendlyPos="true" lines="M50"/>
+    <busStop id="4782506035" name="East 49th Street/Madison Avenue" lane="458180184#1_1" startPos="5.97" endPos="20.97" friendlyPos="true" lines="M50"/>
+    <busStop id="4782506037" name="East 49th Street/Lexington Avenue" lane="458180186#0_1" startPos="22.06" endPos="37.06" friendlyPos="true" lines="M50"/>
+    <busStop id="4782506039" name="East 49th Street/3rd Avenue" lane="46522002_1" startPos="24.67" endPos="39.67" friendlyPos="true" lines="M50"/>
+    <busStop id="4782506040" name="East 49th Street/2nd Avenue" lane="619280607#4_1" startPos="29.78" endPos="44.78" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543122" name="12th Avenue/West 46th Street" lane="169269031#1_1" startPos="16.15" endPos="31.15" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543123" name="West 49th Street &amp; 12th Avenue" lane="46443656#13_1" startPos="149.30" endPos="164.30" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543124" name="West 49th Street/12th Avenue" lane="46443656#13_1" startPos="149.16" endPos="164.16" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543126" name="West 49th Street &amp; 11th Avenue" lane="46443656#13_1" startPos="38.12" endPos="53.12" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543127" name="West 49th Street/10th Avenue" lane="46443656#12_1" startPos="29.36" endPos="44.36" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543128" name="West 49th Street &amp; 9th Avenue" lane="46443656#9_1" startPos="100.79" endPos="115.79" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543129" name="West 49th Street/9th Avenue" lane="46443656#9_1" startPos="99.60" endPos="114.60" friendlyPos="true" lines="M50"/>
+    <busStop id="4782543132" name="West 49th Street/8th Avenue" lane="46443656#7_1" startPos="24.58" endPos="39.58" friendlyPos="true" lines="M50"/>
+    <busStop id="4784141034" name="7th Avenue &amp; West 55th Street" lane="496989355#3_1" startPos="0.00" endPos="11.68" friendlyPos="true" lines="M20"/>
+    <busStop id="4784141035" name="7th Avenue/West 55th Street" lane="496989355#3_1" startPos="0.00" endPos="11.68" friendlyPos="true"/>
+    <busStop id="4784141036" name="7th Avenue &amp; West 54th Street" lane="496989355#3_1" startPos="0.00" endPos="11.68" friendlyPos="true" lines="M104"/>
+    <busStop id="4784141037" name="7th Avenue/West 54th Street" lane="496989355#3_1" startPos="0.00" endPos="11.68" friendlyPos="true" lines="M7"/>
+    <busStop id="4784141039" name="7th Avenue/West 53rd Street" lane="382740985#3_1" startPos="0.00" endPos="8.92" friendlyPos="true"/>
+    <busStop id="4784141040" name="7th Avenue/West 53rd Street" lane="382740985#3_1" startPos="0.00" endPos="8.92" friendlyPos="true" lines="M7"/>
+    <busStop id="4784141041" name="7th Avenue &amp; West 53rd Street" lane="382740985#3_1" startPos="0.00" endPos="8.92" friendlyPos="true" lines="M104 M20"/>
+    <busStop id="4794775921" name="7th Avenue &amp; West 58th Street" lane="496986970#2_1" startPos="20.62" endPos="35.62" friendlyPos="true" lines="M104 M20"/>
+    <busStop id="4794775922" name="7th Avenue/West 58th Street" lane="496986970#2_1" startPos="21.22" endPos="36.22" friendlyPos="true" lines="M7"/>
+    <busStop id="4794775932" name="West 57th Street &amp; 7th Avenue" lane="5672752#0_1" startPos="19.45" endPos="34.45" friendlyPos="true" lines="M57 M31"/>
+    <busStop id="4794775935" name="West 57th Street &amp; 7th Avenue" lane="5672752#0_1" startPos="35.30" endPos="50.30" friendlyPos="true" lines="M57 M31"/>
+    <busStop id="4794775937" name="7th Avenue/West 57th Street" lane="496989355#0_1" startPos="37.83" endPos="52.83" friendlyPos="true"/>
+    <busStop id="4794775938" name="7th Avenue &amp; West 56th Street" lane="496989355#0_1" startPos="64.54" endPos="79.54" friendlyPos="true" lines="M104"/>
+    <busStop id="4794775939" name="7th Avenue/West 56th Street" lane="496989355#0_1" startPos="64.57" endPos="79.57" friendlyPos="true"/>
+    <busStop id="4796245033" name="Central Park South/Avenue of the Americas" lane="420899372#1_1" startPos="0.00" endPos="12.04" friendlyPos="true" lines="M5"/>
+    <busStop id="4796245035" name="Central Park South/6th Avenue" lane="719105674#1_0" startPos="73.90" endPos="88.90" friendlyPos="true"/>
+    <busStop id="4796245036" name="Central Park South/6th Avenue" lane="420899372#1_1" startPos="25.88" endPos="39.93" friendlyPos="true" lines="M5 M7"/>
+    <busStop id="4796245037" name="Central Park South/6th Avenue" lane="719105674#0_0" startPos="28.38" endPos="37.19" friendlyPos="true"/>
+    <busStop id="4796245038" name="Central Park South/6th Avenue" lane="420899372#1_1" startPos="27.37" endPos="42.37" friendlyPos="true"/>
+    <busStop id="4796291635" name="Lexington Avenue–59th Street" lane="817383474_0" startPos="1179.09" endPos="1379.09" friendlyPos="true" lines="N W R">
+        <access lane="375165666_0" pos="0.00" length="19.81" friendlyPos="1"/>
+        <access lane="420806145#1_0" pos="65.52" length="9.99" friendlyPos="1"/>
+        <access lane="659696741#2_0" pos="67.27" length="6.42" friendlyPos="1"/>
+        <access lane="659696742#0_0" pos="185.40" length="13.99" friendlyPos="1"/>
+        <access lane="962829745_0" pos="126.82" length="11.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4796291639" name="East 60th Street/Park Avenue" lane="46334594#2_1" startPos="13.86" endPos="28.86" friendlyPos="true" lines="Q32"/>
+    <busStop id="4796291640" name="Madison Avenue/East 60th Street" lane="964208970_1" startPos="3.74" endPos="18.74" friendlyPos="true"/>
+    <busStop id="4796291642" name="Madison Avenue/East 59th Street" lane="198924587#1_1" startPos="3.87" endPos="18.87" friendlyPos="true"/>
+    <busStop id="4796291645" name="East 60th Street/Madison Avenue" lane="458180198#0_1" startPos="19.17" endPos="34.17" friendlyPos="true" lines="Q32"/>
+    <busStop id="4798293331" name="East 60th Street/2nd Avenue" lane="5672629_1" startPos="32.80" endPos="47.80" friendlyPos="true" lines="Q32"/>
+    <busStop id="4798293332" name="3rd Avenue/East 60th Street" lane="962813251#0_1" startPos="17.02" endPos="32.02" friendlyPos="true" lines="M101 M102 M103"/>
+    <busStop id="4798293334" name="3rd Avenue/East 61st Street" lane="962813251#0_1" startPos="32.77" endPos="47.77" friendlyPos="true"/>
+    <busStop id="4927353766" name="Canal Street" lane="449455275_0" startPos="550.52" endPos="750.52" friendlyPos="true" lines="1 2"/>
+    <busStop id="4960503202" lane="484170269#0_0" startPos="46.68" endPos="71.68" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960503203" lane="5671693#0_0" startPos="42.35" endPos="67.35" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960503206" lane="420499932#0_1" startPos="0.00" endPos="8.13" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960503208" lane="542096279#1_1" startPos="52.46" endPos="67.46" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960516267" lane="195743182#0_1" startPos="0.00" endPos="7.70" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960516269" lane="511699182#0_0" startPos="52.26" endPos="71.51" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960516271" lane="511699181#0_0" startPos="0.00" endPos="12.70" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960516272" name="Madison Avenue &amp; East 45th Street" lane="420906755#0_1" startPos="58.86" endPos="71.33" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960516273" lane="420906755#0_1" startPos="58.34" endPos="71.33" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960516275" lane="458180185#1_1" startPos="45.92" endPos="60.92" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960516277" lane="496992868_1" startPos="31.89" endPos="46.89" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960527241" lane="420906752#1_1" startPos="30.99" endPos="45.99" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960527243" lane="388696207#0_1" startPos="65.02" endPos="78.32" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960527245" lane="198924552#1_1" startPos="13.25" endPos="28.25" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960527247" lane="198924552#5_1" startPos="10.14" endPos="25.14" friendlyPos="true" lines="Q32"/>
+    <busStop id="4960527249" lane="569345468#0_0" startPos="6.64" endPos="31.64" friendlyPos="true" lines="Q32"/>
+    <busStop id="4983147337" name="14th Street–Union Square" lane="817018813_0" startPos="169.39" endPos="369.39" friendlyPos="true" lines="5 4">
+        <access lane="385105200_0" pos="58.66" length="12.75" friendlyPos="1"/>
+        <access lane="420598310#0_0" pos="64.49" length="7.54" friendlyPos="1"/>
+        <access lane="509024997_0" pos="0.00" length="9.25" friendlyPos="1"/>
+        <access lane="509025003_0" pos="11.48" length="14.08" friendlyPos="1"/>
+        <access lane="509025012_0" pos="0.00" length="12.59" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4983147359" name="14th Street–Union Square" lane="816983740_0" startPos="2944.81" endPos="3144.81" friendlyPos="true" lines="5 4">
+        <access lane="197582881#1_0" pos="10.19" length="86.17" friendlyPos="1"/>
+        <access lane="22819596#0_0" pos="0.00" length="74.01" friendlyPos="1"/>
+        <access lane="22819596#1_0" pos="18.36" length="73.82" friendlyPos="1"/>
+        <access lane="385105200_0" pos="0.00" length="30.66" friendlyPos="1"/>
+        <access lane="420598310#0_0" pos="0.00" length="20.22" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4983147377" name="14th Street–Union Square" lane="813742875_0" startPos="190.83" endPos="390.83" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="362824469#0_0" pos="0.20" length="10.51" friendlyPos="1"/>
+        <access lane="385105200_0" pos="77.04" length="4.06" friendlyPos="1"/>
+        <access lane="420598310#0_0" pos="85.08" length="1.22" friendlyPos="1"/>
+        <access lane="509025016_0" pos="3.40" length="10.44" friendlyPos="1"/>
+        <access lane="810861682_0" pos="0.20" length="12.20" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4983147403" name="14th Street–Union Square" lane="817013581_0" startPos="1565.30" endPos="1765.30" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="197582881#1_0" pos="10.19" length="77.06" friendlyPos="1"/>
+        <access lane="22819596#0_0" pos="0.00" length="63.45" friendlyPos="1"/>
+        <access lane="22819596#1_0" pos="18.36" length="63.33" friendlyPos="1"/>
+        <access lane="385105200_0" pos="0.00" length="32.34" friendlyPos="1"/>
+        <access lane="420598310#0_0" pos="0.00" length="22.75" friendlyPos="1"/>
+    </busStop>
+    <busStop id="4983147855" name="14th Street–Union Square" lane="817381417_0" startPos="368.43" endPos="568.43" friendlyPos="true" lines="N Q W R">
+        <access lane="-666752576#2_0" pos="18.78" length="11.03" friendlyPos="1"/>
+        <access lane="385105211#2_0" pos="25.86" length="0.75" friendlyPos="1"/>
+        <access lane="462605612#24_0" pos="8.03" length="3.75" friendlyPos="1"/>
+        <access lane="509025028_0" pos="0.00" length="16.18" friendlyPos="1"/>
+        <access lane="509025055_0" pos="15.98" length="9.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5105725456" name="42nd Street–Times Square" lane="525428790_0" startPos="1804.65" endPos="2004.65" friendlyPos="true" lines="2 1">
+        <access lane="-569345547#0_0" pos="52.44" length="19.89" friendlyPos="1"/>
+        <access lane="513706100_0" pos="4.46" length="29.98" friendlyPos="1"/>
+        <access lane="513706101_0" pos="5.57" length="28.30" friendlyPos="1"/>
+        <access lane="542258060_0" pos="239.27" length="33.52" friendlyPos="1"/>
+        <access lane="569345547#0_0" pos="16.17" length="8.61" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106257818" name="Houston Street" lane="808965713#1_0" startPos="160.88" endPos="360.88" friendlyPos="true" lines="2 1">
+        <access lane="812936280#0_0" pos="226.88" length="409.83" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260200" name="28th Street" lane="808965710#1_0" startPos="79.94" endPos="279.94" friendlyPos="true" lines="1 2">
+        <access lane="226041020_0" pos="2.79" length="98.22" friendlyPos="1"/>
+        <access lane="420512231#0_0" pos="62.18" length="16.45" friendlyPos="1"/>
+        <access lane="420512231#1_0" pos="0.00" length="23.98" friendlyPos="1"/>
+        <access lane="968394454#1_0" pos="195.00" length="8.51" friendlyPos="1"/>
+        <access lane="968394454#2_0" pos="0.00" length="22.86" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260201" name="28th Street" lane="803142786#1_0" startPos="527.17" endPos="727.17" friendlyPos="true" lines="2 1">
+        <access lane="420512231#2_0" pos="62.71" length="1.33" friendlyPos="1"/>
+        <access lane="420512232_0" pos="0.00" length="15.67" friendlyPos="1"/>
+        <access lane="420598330_0" pos="0.00" length="21.45" friendlyPos="1"/>
+        <access lane="5670719#19_0" pos="250.07" length="97.85" friendlyPos="1"/>
+        <access lane="968394451_0" pos="257.12" length="21.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260202" name="23rd Street" lane="808965710#1_0" startPos="79.94" endPos="279.94" friendlyPos="true" lines="1 2">
+        <access lane="396444294#14_0" pos="250.74" length="34.05" friendlyPos="1"/>
+        <access lane="396444294#15_0" pos="0.00" length="16.49" friendlyPos="1"/>
+        <access lane="420598327_0" pos="8.30" length="15.86" friendlyPos="1"/>
+        <access lane="570148920_0" pos="7.40" length="59.38" friendlyPos="1"/>
+        <access lane="986615542_0" pos="18.42" length="35.51" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260203" name="23rd Street" lane="803142786#1_0" startPos="936.50" endPos="1136.50" friendlyPos="true" lines="2 1">
+        <access lane="-813970416#0_0" pos="68.45" length="18.13" friendlyPos="1"/>
+        <access lane="813970415_0" pos="250.88" length="19.33" friendlyPos="1"/>
+        <access lane="813970416#0_0" pos="0.00" length="19.14" friendlyPos="1"/>
+        <access lane="813970417_0" pos="0.00" length="21.84" friendlyPos="1"/>
+        <access lane="954659191_0" pos="29.60" length="5.66" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260204" name="18th Street" lane="808965710#1_0" startPos="79.94" endPos="279.94" friendlyPos="true" lines="1 2">
+        <access lane="-852992111#0_0" pos="5.38" length="7.96" friendlyPos="1"/>
+        <access lane="-852992111#1_0" pos="43.00" length="21.93" friendlyPos="1"/>
+        <access lane="5672450#1_0" pos="264.49" length="11.89" friendlyPos="1"/>
+        <access lane="5672450#2_0" pos="0.00" length="33.51" friendlyPos="1"/>
+        <access lane="852992111#0_0" pos="58.75" length="26.86" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260206" name="14th Street" lane="449455275_0" startPos="2104.96" endPos="2304.96" friendlyPos="true" lines="1 2">
+        <access lane="-196117073#0_0" pos="0.00" length="3.58" friendlyPos="1"/>
+        <access lane="-196117073#1_0" pos="244.36" length="6.11" friendlyPos="1"/>
+        <access lane="196117073#0_0" pos="4.22" length="9.94" friendlyPos="1"/>
+        <access lane="554402298_0" pos="9.44" length="2.67" friendlyPos="1"/>
+        <access lane="894118367#5_0" pos="0.00" length="6.84" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260207" name="14th Street" lane="449455283_0" startPos="2104.79" endPos="2304.79" friendlyPos="true" lines="3 2">
+        <access lane="-196117073#0_0" pos="4.24" length="4.45" friendlyPos="1"/>
+        <access lane="-852992099#1_0" pos="0.00" length="6.91" friendlyPos="1"/>
+        <access lane="196117073#0_0" pos="0.00" length="10.27" friendlyPos="1"/>
+        <access lane="554402298_0" pos="1.54" length="2.73" friendlyPos="1"/>
+        <access lane="894118367#5_0" pos="0.00" length="15.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5106260209" name="14th Street" lane="808965713#1_0" startPos="118.04" endPos="267.99" friendlyPos="true" lines="2 1">
+        <access lane="852992101#0_0" pos="5.63" length="6.84" friendlyPos="1"/>
+        <access lane="888695509_0" pos="84.62" length="14.33" friendlyPos="1"/>
+        <access lane="888695510#0_0" pos="0.00" length="14.87" friendlyPos="1"/>
+        <access lane="888695510#9_0" pos="0.00" length="12.20" friendlyPos="1"/>
+        <access lane="894118362_0" pos="57.87" length="7.07" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111464765" name="42nd Street–Times Square" lane="803137434_0" startPos="110.26" endPos="310.26" friendlyPos="true" lines="1 2">
+        <access lane="-167922070_0" pos="52.09" length="13.41" friendlyPos="1"/>
+        <access lane="513706114_0" pos="7.64" length="9.35" friendlyPos="1"/>
+        <access lane="513706115_0" pos="7.41" length="29.54" friendlyPos="1"/>
+        <access lane="513706133_0" pos="0.00" length="17.64" friendlyPos="1"/>
+        <access lane="513706134_0" pos="0.00" length="23.24" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111464772" name="42nd Street–Times Square" lane="803130478_0" startPos="1805.63" endPos="2005.63" friendlyPos="true" lines="2 3">
+        <access lane="-569345547#0_0" pos="52.45" length="6.61" friendlyPos="1"/>
+        <access lane="513706100_0" pos="4.46" length="30.46" friendlyPos="1"/>
+        <access lane="513706102_0" pos="10.51" length="22.30" friendlyPos="1"/>
+        <access lane="569345546_0" pos="0.00" length="30.10" friendlyPos="1"/>
+        <access lane="569345547#0_0" pos="16.16" length="21.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111471159" name="50th Street" lane="823979090_0" startPos="0.00" endPos="113.34" friendlyPos="true" lines="1 2">
+        <access lane="-717625448#2_0" pos="65.84" length="39.03" friendlyPos="1"/>
+        <access lane="-812949648#4_0" pos="48.97" length="10.45" friendlyPos="1"/>
+        <access lane="717625448#0_0" pos="6.19" length="31.23" friendlyPos="1"/>
+        <access lane="812949648#3_0" pos="18.69" length="19.75" friendlyPos="1"/>
+        <access lane="965833822#13_0" pos="161.23" length="42.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111471161" name="50th Street" lane="525428790_0" startPos="1484.27" endPos="1684.27" friendlyPos="true" lines="2 1">
+        <access lane="-812949648#10_0" pos="50.78" length="3.09" friendlyPos="1"/>
+        <access lane="194920158#12_0" pos="103.55" length="29.33" friendlyPos="1"/>
+        <access lane="194920158#14_0" pos="0.00" length="27.29" friendlyPos="1"/>
+        <access lane="332054904#1_0" pos="103.55" length="35.84" friendlyPos="1"/>
+        <access lane="812949648#8_0" pos="14.49" length="6.21" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111472122" name="34th Street–Penn Station" lane="808965710#1_0" startPos="79.94" endPos="279.94" friendlyPos="true" lines="1 2">
+        <access lane="-464543615#1_0" pos="0.00" length="31.61" friendlyPos="1"/>
+        <access lane="-464543615#2_0" pos="53.55" length="8.06" friendlyPos="1"/>
+        <access lane="464543615#1_0" pos="66.36" length="47.44" friendlyPos="1"/>
+        <access lane="464543615#2_0" pos="11.83" length="36.56" friendlyPos="1"/>
+        <access lane="5673561#4_0" pos="203.15" length="26.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111472138" name="42nd Street–Times Square" lane="821671629_0" startPos="75.82" endPos="275.82" friendlyPos="true" lines="3 2">
+        <access lane="-167922070_0" pos="53.83" length="1.50" friendlyPos="1"/>
+        <access lane="-167922076_0" pos="0.00" length="27.55" friendlyPos="1"/>
+        <access lane="167922070_0" pos="14.62" length="27.00" friendlyPos="1"/>
+        <access lane="513706114_0" pos="7.64" length="10.34" friendlyPos="1"/>
+        <access lane="513706115_0" pos="7.41" length="14.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111472254" name="59th Street–Columbus Circle" lane="525428790_0" startPos="715.42" endPos="915.42" friendlyPos="true" lines="1">
+        <access lane="-22898530#0_0" pos="29.85" length="56.50" friendlyPos="1"/>
+        <access lane="22898530#0_0" pos="0.00" length="58.79" friendlyPos="1"/>
+        <access lane="329988122#0_0" pos="47.36" length="62.25" friendlyPos="1"/>
+        <access lane="329988122#1_0" pos="5.18" length="60.69" friendlyPos="1"/>
+        <access lane="948627243_0" pos="0.00" length="57.36" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5111472285" name="59th Street–Columbus Circle" lane="823979090_0" startPos="0.00" endPos="113.34" friendlyPos="true" lines="1">
+        <access lane="29317345_0" pos="184.55" length="179.58" friendlyPos="1"/>
+        <access lane="719105678#1_0" pos="172.98" length="189.78" friendlyPos="1"/>
+        <access lane="839155755_0" pos="0.00" length="224.97" friendlyPos="1"/>
+        <access lane="948627245#1_0" pos="13.69" length="222.70" friendlyPos="1"/>
+        <access lane="948627247#4_0" pos="32.40" length="224.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5155799272" lane="496978510#2_1" startPos="52.52" endPos="67.52" friendlyPos="true"/>
+    <busStop id="5155816415" lane="451905565#4_1" startPos="9.81" endPos="22.54" friendlyPos="true"/>
+    <busStop id="5160015817" lane="46469724#2_0" startPos="61.39" endPos="86.39" friendlyPos="true"/>
+    <busStop id="5243716991" lane="195743341#5_1" startPos="24.73" endPos="39.73" friendlyPos="true"/>
+    <busStop id="5243716992" lane="5670924#2_1" startPos="34.62" endPos="49.62" friendlyPos="true"/>
+    <busStop id="5243716993" lane="5670924#2_1" startPos="133.15" endPos="148.15" friendlyPos="true"/>
+    <busStop id="5244228882" lane="852992105#0_1" startPos="15.21" endPos="30.21" friendlyPos="true"/>
+    <busStop id="5244228883" lane="852992106#0_1" startPos="0.00" endPos="11.34" friendlyPos="true"/>
+    <busStop id="5244228884" lane="196117091#1_1" startPos="27.78" endPos="42.78" friendlyPos="true"/>
+    <busStop id="5244228885" lane="196117073#1_1" startPos="28.94" endPos="43.94" friendlyPos="true"/>
+    <busStop id="5244228886" lane="196117073#1_1" startPos="210.69" endPos="225.69" friendlyPos="true"/>
+    <busStop id="5244228887" lane="5672434#2_1" startPos="27.72" endPos="42.72" friendlyPos="true"/>
+    <busStop id="5244228888" lane="497746843#4_1" startPos="18.49" endPos="33.49" friendlyPos="true"/>
+    <busStop id="5244251221" lane="196117075#1_1" startPos="23.54" endPos="38.54" friendlyPos="true"/>
+    <busStop id="5244251222" lane="195834894#1_1" startPos="27.20" endPos="42.20" friendlyPos="true"/>
+    <busStop id="5265737234" name="1 Av/E 28 St" lane="974336290#0_1" startPos="1.64" endPos="16.64" friendlyPos="true" lines="M15-SBS M15"/>
+    <busStop id="5265740579" name="1 Av/E 34 St" lane="954878305#0_1" startPos="6.12" endPos="21.12" friendlyPos="true" lines="M15"/>
+    <busStop id="5265741650" name="1 Av/Mitchell Pl" lane="819074878_1" startPos="31.20" endPos="45.38" friendlyPos="true" lines="M15"/>
+    <busStop id="5266429277" lane="489019753#1_1" startPos="146.21" endPos="161.21" friendlyPos="true"/>
+    <busStop id="5266429278" lane="420519634#0_1" startPos="0.00" endPos="7.82" friendlyPos="true"/>
+    <busStop id="5266429279" lane="438390724_1" startPos="24.93" endPos="39.93" friendlyPos="true"/>
+    <busStop id="5266429280" lane="438390724_1" startPos="86.90" endPos="101.90" friendlyPos="true"/>
+    <busStop id="5266429281" lane="420519635#0_1" startPos="24.52" endPos="39.52" friendlyPos="true"/>
+    <busStop id="5266429282" lane="420520113#1_1" startPos="45.88" endPos="60.88" friendlyPos="true"/>
+    <busStop id="5266429283" lane="68668537#1_1" startPos="38.86" endPos="53.86" friendlyPos="true"/>
+    <busStop id="5266429284" lane="68668537#1_1" startPos="46.83" endPos="61.83" friendlyPos="true"/>
+    <busStop id="5266444850" lane="464683322_1" startPos="24.43" endPos="39.43" friendlyPos="true"/>
+    <busStop id="5277845114" name="2 Av/E 25 St" lane="420872193#4_1" startPos="18.43" endPos="33.43" friendlyPos="true" lines="M15"/>
+    <busStop id="5331842131" lane="439933935#1_1" startPos="18.14" endPos="25.64" friendlyPos="true"/>
+    <busStop id="5332358378" name="33rd Street" lane="552266810_0" startPos="83.65" endPos="183.41" friendlyPos="true" lines="HOB–33">
+        <access lane="385107995#0_0" pos="0.20" length="30.44" friendlyPos="1"/>
+        <access lane="460606347#1_0" pos="0.00" length="28.32" friendlyPos="1"/>
+        <access lane="484170269#1_0" pos="83.31" length="11.37" friendlyPos="1"/>
+        <access lane="511809755_0" pos="0.00" length="23.35" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="60.71" length="28.68" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5332358381" name="6th Avenue" lane="815767574#2_0" startPos="0.00" endPos="123.14" friendlyPos="true" lines="L">
+        <access lane="-561832676#1_0" pos="0.00" length="17.03" friendlyPos="1"/>
+        <access lane="-5672434#1_0" pos="0.00" length="0.67" friendlyPos="1"/>
+        <access lane="-5672434#2_0" pos="53.05" length="13.75" friendlyPos="1"/>
+        <access lane="5672434#1_0" pos="218.66" length="12.02" friendlyPos="1"/>
+        <access lane="894118355#2_0" pos="62.07" length="10.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5332398711" name="33rd Street" lane="552266811_0" startPos="23.90" endPos="123.90" friendlyPos="true" lines="JSQ–33 via HOB">
+        <access lane="385107995#0_0" pos="0.20" length="17.71" friendlyPos="1"/>
+        <access lane="460606347#1_0" pos="0.00" length="16.57" friendlyPos="1"/>
+        <access lane="664985025#1_0" pos="0.00" length="19.03" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="60.71" length="16.40" friendlyPos="1"/>
+        <access lane="693386105#6_0" pos="0.00" length="20.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5332398715" name="33rd Street" lane="552256574_0" startPos="83.73" endPos="183.48" friendlyPos="true" lines="JSQ–33">
+        <access lane="385107995#0_0" pos="0.20" length="7.57" friendlyPos="1"/>
+        <access lane="460606347#1_0" pos="0.00" length="10.10" friendlyPos="1"/>
+        <access lane="664985025#1_0" pos="0.00" length="7.42" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="60.71" length="8.39" friendlyPos="1"/>
+        <access lane="693386105#6_0" pos="0.00" length="8.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5336193667" name="6th Avenue" lane="808580928_0" startPos="790.30" endPos="990.30" friendlyPos="true" lines="L">
+        <access lane="-196117073#1_0" pos="53.95" length="0.09" friendlyPos="1"/>
+        <access lane="196117073#1_0" pos="190.41" length="12.51" friendlyPos="1"/>
+        <access lane="554402303_0" pos="156.03" length="6.30" friendlyPos="1"/>
+        <access lane="894118359#3_0" pos="190.31" length="22.45" friendlyPos="1"/>
+        <access lane="894118368#0_0" pos="190.40" length="12.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5341393936" lane="194923808#2_1" startPos="19.75" endPos="33.02" friendlyPos="true"/>
+    <busStop id="5350434153" name="34th Street–Herald Square" lane="819186625_0" startPos="261.24" endPos="461.24" friendlyPos="true" lines="D B">
+        <access lane="460606347#1_0" pos="42.89" length="16.14" friendlyPos="1"/>
+        <access lane="511809759_0" pos="2.17" length="14.68" friendlyPos="1"/>
+        <access lane="511809761_0" pos="7.03" length="21.37" friendlyPos="1"/>
+        <access lane="511809763_0" pos="5.28" length="17.00" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="16.68" length="17.80" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5402539614" lane="387128267#0_1" startPos="79.47" endPos="94.47" friendlyPos="true"/>
+    <busStop id="5402545375" lane="387128267#0_1" startPos="79.47" endPos="94.47" friendlyPos="true"/>
+    <busStop id="5402547521" lane="387128267#0_1" startPos="79.47" endPos="94.47" friendlyPos="true"/>
+    <busStop id="5402547522" lane="387128267#0_1" startPos="68.16" endPos="83.16" friendlyPos="true"/>
+    <busStop id="5402554392" lane="496986969#0_1" startPos="34.04" endPos="49.04" friendlyPos="true"/>
+    <busStop id="5402554393" lane="569345537#6_1" startPos="52.07" endPos="67.07" friendlyPos="true"/>
+    <busStop id="5404334152" name="9th Street" lane="591434572_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="JSQ–33 via HOB JSQ–33 HOB–33">
+        <access lane="-420522443#0_0" pos="69.31" length="119.67" friendlyPos="1"/>
+        <access lane="-5668993#0_0" pos="3.70" length="124.52" friendlyPos="1"/>
+        <access lane="420522443#0_0" pos="0.00" length="118.77" friendlyPos="1"/>
+        <access lane="451905565#0_0" pos="0.00" length="54.73" friendlyPos="1"/>
+        <access lane="888695528#6_0" pos="33.52" length="121.11" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5407862242" name="53rd Street–5th Avenue" lane="759735515_0" startPos="881.97" endPos="1081.97" friendlyPos="true" lines="E M">
+        <access lane="420281338_0" pos="134.76" length="44.62" friendlyPos="1"/>
+        <access lane="458180191#0_0" pos="0.00" length="22.27" friendlyPos="1"/>
+        <access lane="458180197_0" pos="65.44" length="16.44" friendlyPos="1"/>
+        <access lane="46521993#1_0" pos="250.69" length="106.48" friendlyPos="1"/>
+        <access lane="5671709#0_0" pos="7.64" length="1.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5492236426" name="New York Penn Station" lane="571475135_0" startPos="228.60" endPos="328.15" friendlyPos="true">
+        <access lane="195743190_0" pos="48.08" length="33.18" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="50.42" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="19.04" length="27.30" friendlyPos="1"/>
+        <access lane="541448644_0" pos="16.69" length="9.25" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="49.34" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5492236430" name="New York Penn Station" lane="571475141_0" startPos="212.35" endPos="312.04" friendlyPos="true">
+        <access lane="195743190_0" pos="56.29" length="40.70" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="52.16" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="24.09" length="15.00" friendlyPos="1"/>
+        <access lane="541448644_0" pos="11.61" length="3.01" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="47.35" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5492236436" name="New York Penn Station" lane="571475143_0" startPos="179.81" endPos="279.39" friendlyPos="true">
+        <access lane="195743190_0" pos="59.31" length="46.73" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="56.98" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="28.12" length="10.50" friendlyPos="1"/>
+        <access lane="541448644_0" pos="7.56" length="7.48" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="50.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5492236464" name="New York Penn Station" lane="571475152_0" startPos="111.79" endPos="211.79" friendlyPos="true">
+        <access lane="195743190_0" pos="63.18" length="47.54" friendlyPos="1"/>
+        <access lane="464515259#3_0" pos="33.35" length="56.19" friendlyPos="1"/>
+        <access lane="464515259#4_0" pos="28.14" length="4.20" friendlyPos="1"/>
+        <access lane="541448644_0" pos="7.50" length="22.18" friendlyPos="1"/>
+        <access lane="68668556_0" pos="0.00" length="46.99" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5551785164" name="23rd Street" lane="591434572_0" startPos="583.75" endPos="783.75" friendlyPos="true" lines="JSQ–33 via HOB JSQ–33 HOB–33">
+        <access lane="-465101198#1_0" pos="284.49" length="83.67" friendlyPos="1"/>
+        <access lane="396444294#17_0" pos="206.36" length="32.24" friendlyPos="1"/>
+        <access lane="396444294#18_0" pos="0.00" length="31.83" friendlyPos="1"/>
+        <access lane="630828586#0_0" pos="52.05" length="9.07" friendlyPos="1"/>
+        <access lane="630828586#1_0" pos="0.00" length="38.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5551785165" name="23rd Street" lane="813712317_0" startPos="441.56" endPos="641.56" friendlyPos="true" lines="JSQ–33 via HOB HOB–33 JSQ–33">
+        <access lane="196117090#11_0" pos="62.46" length="42.35" friendlyPos="1"/>
+        <access lane="196117090#12_0" pos="19.58" length="7.53" friendlyPos="1"/>
+        <access lane="420598415_0" pos="259.99" length="81.82" friendlyPos="1"/>
+        <access lane="813970417_0" pos="263.03" length="37.96" friendlyPos="1"/>
+        <access lane="846122853#0_0" pos="0.00" length="39.77" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5551785167" name="23rd Street" lane="46340246_0" startPos="502.50" endPos="702.50" friendlyPos="true" lines="&lt;F&gt; M F">
+        <access lane="196117090#11_0" pos="60.89" length="18.88" friendlyPos="1"/>
+        <access lane="196117090#12_0" pos="0.00" length="23.90" friendlyPos="1"/>
+        <access lane="813970417_0" pos="256.65" length="6.11" friendlyPos="1"/>
+        <access lane="833535304#0_0" pos="2.06" length="95.31" friendlyPos="1"/>
+        <access lane="846122853#0_0" pos="0.00" length="24.17" friendlyPos="1"/>
+    </busStop>
+    <busStop id="591990999" name="34th Street–Hudson Yards" lane="552272274#0_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="532308023_0" pos="0.00" length="28.17" friendlyPos="1"/>
+        <access lane="532308026_0" pos="48.24" length="5.52" friendlyPos="1"/>
+        <access lane="532308028_0" pos="5.71" length="23.67" friendlyPos="1"/>
+        <access lane="888552436#0_0" pos="0.00" length="25.50" friendlyPos="1"/>
+        <access lane="95181774#1_0" pos="46.91" length="18.12" friendlyPos="1"/>
+    </busStop>
+    <busStop id="591991023" name="8th Avenue" lane="554402300#2_0" startPos="69.78" endPos="169.78" friendlyPos="true" lines="L">
+        <access lane="-458106348#3_0" pos="165.90" length="16.85" friendlyPos="1"/>
+        <access lane="458106348#3_0" pos="11.12" length="4.25" friendlyPos="1"/>
+        <access lane="888695574#4_0" pos="11.20" length="7.10" friendlyPos="1"/>
+        <access lane="908009244#0_0" pos="22.61" length="24.17" friendlyPos="1"/>
+        <access lane="908009244#1_0" pos="2.42" length="21.37" friendlyPos="1"/>
+    </busStop>
+    <busStop id="591997397" name="42nd Street–Bryant Park" lane="819186625_0" startPos="261.24" endPos="461.24" friendlyPos="true" lines="D B">
+        <access lane="226041022#0_0" pos="0.00" length="18.57" friendlyPos="1"/>
+        <access lane="384649120#4_0" pos="67.93" length="13.44" friendlyPos="1"/>
+        <access lane="440122868_0" pos="0.00" length="18.97" friendlyPos="1"/>
+        <access lane="542258061_0" pos="168.15" length="7.31" friendlyPos="1"/>
+        <access lane="702073779#2_0" pos="8.80" length="29.33" friendlyPos="1"/>
+    </busStop>
+    <busStop id="591997437" name="Times Square" lane="-484012802_0" startPos="0.00" endPos="134.27" friendlyPos="true" lines="S">
+        <access lane="-167922072#7_0" pos="37.72" length="26.24" friendlyPos="1"/>
+        <access lane="163630203_0" pos="71.45" length="53.29" friendlyPos="1"/>
+        <access lane="167922072#7_0" pos="32.89" length="2.54" friendlyPos="1"/>
+        <access lane="513706130_0" pos="0.00" length="52.79" friendlyPos="1"/>
+        <access lane="702540323#1_0" pos="44.61" length="0.32" friendlyPos="1"/>
+    </busStop>
+    <busStop id="591997500" name="42nd Street–Times Square" lane="817381400_0" startPos="375.89" endPos="575.89" friendlyPos="true" lines="Q">
+        <access lane="-35027229#1_0" pos="45.09" length="4.85" friendlyPos="1"/>
+        <access lane="35027229#0_0" pos="22.98" length="12.65" friendlyPos="1"/>
+        <access lane="513706128_0" pos="6.87" length="7.30" friendlyPos="1"/>
+        <access lane="513706129_0" pos="2.69" length="9.96" friendlyPos="1"/>
+        <access lane="513706130_0" pos="7.45" length="21.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="591997974" name="42nd Street–Grand Central" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-438382685#0_0" pos="91.01" length="69.93" friendlyPos="1"/>
+        <access lane="420356168_0" pos="134.82" length="56.64" friendlyPos="1"/>
+        <access lane="438382685#0_0" pos="6.22" length="46.23" friendlyPos="1"/>
+        <access lane="473560390#2_0" pos="90.70" length="50.39" friendlyPos="1"/>
+        <access lane="496990647#2_0" pos="34.97" length="13.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="591998010" name="53rd Street–Lexington Avenue" lane="759735515_0" startPos="646.61" endPos="846.61" friendlyPos="true" lines="E M">
+        <access lane="-958832670_0" pos="4.61" length="55.72" friendlyPos="1"/>
+        <access lane="458180195_0" pos="64.23" length="91.51" friendlyPos="1"/>
+        <access lane="46521998#0_0" pos="47.97" length="58.59" friendlyPos="1"/>
+        <access lane="46521998#1_0" pos="29.66" length="0.46" friendlyPos="1"/>
+        <access lane="958832670_0" pos="0.00" length="51.11" friendlyPos="1"/>
+    </busStop>
+    <busStop id="597928314" name="47th–50th Streets–Rockefeller Center" lane="46340246_0" startPos="202.95" endPos="402.95" friendlyPos="true" lines="&lt;F&gt; M F">
+        <access lane="-5672036#1_0" pos="4.50" length="22.39" friendlyPos="1"/>
+        <access lane="464516471#2_0" pos="60.95" length="13.18" friendlyPos="1"/>
+        <access lane="702647992#3_0" pos="53.51" length="16.11" friendlyPos="1"/>
+        <access lane="702647992#4_0" pos="0.00" length="23.86" friendlyPos="1"/>
+        <access lane="901617511#0_0" pos="0.00" length="23.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6128549131" name="1 Av/E 42 St" lane="169383516#1_1" startPos="37.23" endPos="52.23" friendlyPos="true" lines="M15"/>
+    <busStop id="6133333101" name="1 Av &amp; E 28 St" lane="974336290#0_1" startPos="0.67" endPos="15.67" friendlyPos="true" lines="M15-SBS"/>
+    <busStop id="6133355290" name="1 Av/Mitchell Pl" lane="619280617#0_1" startPos="0.00" endPos="7.50" friendlyPos="true" lines="M15-SBS"/>
+    <busStop id="6133355291" name="1 Av &amp; E 25 St" lane="194923807#4_1" startPos="46.20" endPos="61.20" friendlyPos="true" lines="M15-SBS"/>
+    <busStop id="6133359418" name="1 Av/E 42 St" lane="169383516#1_1" startPos="35.67" endPos="50.67" friendlyPos="true" lines="M15-SBS"/>
+    <busStop id="6133388366" name="1 Av/E 34 St" lane="954878305#0_1" startPos="6.20" endPos="21.20" friendlyPos="true" lines="M15-SBS"/>
+    <busStop id="6139477278" name="2 Av/E 42 St" lane="420901673#1_1" startPos="17.29" endPos="32.29" friendlyPos="true" lines="M15 M15-SBS"/>
+    <busStop id="6139477282" name="2 Av/E 57 St" lane="455125048#0_1" startPos="37.84" endPos="52.84" friendlyPos="true" lines="M15 M15-SBS"/>
+    <busStop id="6139477286" name="2 Av/E 23 St" lane="157014136#1_1" startPos="17.26" endPos="32.26" friendlyPos="true" lines="M15 M15-SBS"/>
+    <busStop id="6139477293" name="2 Av/E 34 St" lane="118400729#1_1" startPos="11.51" endPos="26.51" friendlyPos="true" lines="M15 M15-SBS"/>
+    <busStop id="6139477294" name="2 Av &amp; E 28 St" lane="222299248#1_1" startPos="22.01" endPos="37.01" friendlyPos="true" lines="M15-SBS"/>
+    <busStop id="6139477296" name="2 Av/E 50 St" lane="169267541#0_1" startPos="20.03" endPos="35.03" friendlyPos="true" lines="M15 M15-SBS"/>
+    <busStop id="6162115861" name="2 Av/E 28 St" lane="420872190#1_1" startPos="33.72" endPos="48.72" friendlyPos="true" lines="M15"/>
+    <busStop id="6165053270" name="New York Penn Station" lane="756094505_0" startPos="13.01" endPos="213.01" friendlyPos="true" lines="63">
+        <access lane="-464902521_0" pos="35.68" length="42.25" friendlyPos="1"/>
+        <access lane="464902520_0" pos="42.86" length="42.34" friendlyPos="1"/>
+        <access lane="464902521_0" pos="8.23" length="37.45" friendlyPos="1"/>
+        <access lane="464902524#6_0" pos="35.68" length="39.85" friendlyPos="1"/>
+        <access lane="464902524#7_0" pos="30.96" length="4.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6177439758" name="East 60th Street/Lexington Avenue" lane="963856064_1" startPos="43.77" endPos="58.77" friendlyPos="true" lines="Q32"/>
+    <busStop id="6186989597" lane="455678353#1_1" startPos="13.88" endPos="28.88" friendlyPos="true" lines="Q32"/>
+    <busStop id="6186989601" lane="691480071#0_1" startPos="21.20" endPos="36.20" friendlyPos="true" lines="Q32"/>
+    <busStop id="6342154195" name="New York Penn Station" lane="46493326_0" startPos="53.01" endPos="152.96" friendlyPos="true" lines="55 57 2167 2165 157 141;143 171 65;67 99 93 195 175 173 167 165 161 139 137 135 95 147 2155;2163;2249;2251;2253;2255;2257;2259">
+        <access lane="-464902520_0" pos="23.80" length="40.60" friendlyPos="1"/>
+        <access lane="464902520_0" pos="19.06" length="35.80" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="144.59" length="42.65" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.90" length="6.65" friendlyPos="1"/>
+        <access lane="541448660_0" pos="1.05" length="1.58" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6463379284" name="59th Street–Columbus Circle" lane="816331850_0" startPos="140.70" endPos="340.70" friendlyPos="true" lines="D A">
+        <access lane="29317345_0" pos="184.55" length="183.96" friendlyPos="1"/>
+        <access lane="719105678#1_0" pos="172.98" length="196.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6463380701" name="59th Street–Columbus Circle" lane="689037414_0" startPos="140.74" endPos="340.74" friendlyPos="true" lines="A B C">
+        <access lane="29317327#0_0" pos="10.11" length="332.20" friendlyPos="1"/>
+        <access lane="29317345_0" pos="184.55" length="178.20" friendlyPos="1"/>
+        <access lane="719105678#1_0" pos="172.98" length="191.12" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6463380709" name="59th Street–Columbus Circle" lane="46340129_0" startPos="304.56" endPos="449.38" friendlyPos="true" lines="A B C">
+        <access lane="510806204_0" pos="23.76" length="43.41" friendlyPos="1"/>
+        <access lane="948627245#0_0" pos="30.33" length="44.74" friendlyPos="1"/>
+        <access lane="948627245#1_0" pos="11.24" length="35.72" friendlyPos="1"/>
+        <access lane="948627247#2_0" pos="0.00" length="43.36" friendlyPos="1"/>
+        <access lane="948627247#4_0" pos="32.56" length="11.66" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6463380721" name="59th Street–Columbus Circle" lane="171570637_0" startPos="530.87" endPos="676.36" friendlyPos="true" lines="D A">
+        <access lane="510806204_0" pos="23.76" length="35.77" friendlyPos="1"/>
+        <access lane="948627245#0_0" pos="30.33" length="34.52" friendlyPos="1"/>
+        <access lane="948627245#1_0" pos="11.15" length="23.72" friendlyPos="1"/>
+        <access lane="948627247#2_0" pos="0.00" length="34.08" friendlyPos="1"/>
+        <access lane="948627247#4_0" pos="40.25" length="14.98" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6496930048" name="34th Street–Penn Station" lane="803142785_0" startPos="68.26" endPos="268.26" friendlyPos="true" lines="2 3">
+        <access lane="492489884_0" pos="28.75" length="1.76" friendlyPos="1"/>
+        <access lane="492489888_0" pos="0.00" length="53.17" friendlyPos="1"/>
+        <access lane="492489893#2_0" pos="43.68" length="55.78" friendlyPos="1"/>
+        <access lane="541448645_0" pos="17.86" length="68.70" friendlyPos="1"/>
+        <access lane="5670803#1_0" pos="67.82" length="56.10" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6616343384" name="New York Penn Station" lane="571475066#1_0" startPos="198.30" endPos="298.30" friendlyPos="true" lines="54 2170 2164 2154 148 146 140 176 66 96;194 174 94 88 178 172 170 168 166 164 162 86 56 2158;2248;2250;2252;2254;2256">
+        <access lane="-464902520_0" pos="14.73" length="41.07" friendlyPos="1"/>
+        <access lane="464902520_0" pos="28.13" length="36.27" friendlyPos="1"/>
+        <access lane="464902524#7_0" pos="22.47" length="34.26" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.89" length="6.96" friendlyPos="1"/>
+        <access lane="541448660_0" pos="0.88" length="12.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6751622968" name="42nd Street–Port Authority Bus Terminal" lane="719086610#0_0" startPos="279.14" endPos="479.14" friendlyPos="true" lines="A E C">
+        <access lane="125479721_0" pos="56.95" length="24.62" friendlyPos="1"/>
+        <access lane="505317789#2_0" pos="226.15" length="16.22" friendlyPos="1"/>
+        <access lane="513706055_0" pos="22.05" length="8.06" friendlyPos="1"/>
+        <access lane="513706056_0" pos="8.03" length="34.49" friendlyPos="1"/>
+        <access lane="542258060_0" pos="0.00" length="35.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6751642150" name="42nd Street–Port Authority Bus Terminal" lane="46340263#1_0" startPos="447.49" endPos="608.18" friendlyPos="true" lines="A">
+        <access lane="125479721_0" pos="56.86" length="3.62" friendlyPos="1"/>
+        <access lane="505317789#2_0" pos="226.15" length="26.37" friendlyPos="1"/>
+        <access lane="513706055_0" pos="23.18" length="25.79" friendlyPos="1"/>
+        <access lane="513706056_0" pos="8.03" length="17.44" friendlyPos="1"/>
+        <access lane="542258060_0" pos="0.00" length="22.21" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6751642166" name="42nd Street–Port Authority Bus Terminal" lane="741691192_0" startPos="568.31" endPos="768.31" friendlyPos="true" lines="A E C">
+        <access lane="-194926851#1_0" pos="52.66" length="21.14" friendlyPos="1"/>
+        <access lane="194926851#1_0" pos="20.74" length="2.56" friendlyPos="1"/>
+        <access lane="226041027#4_0" pos="0.00" length="40.29" friendlyPos="1"/>
+        <access lane="513706079_0" pos="13.53" length="38.19" friendlyPos="1"/>
+        <access lane="702648008#7_0" pos="46.18" length="1.19" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6751642175" name="42nd Street–Port Authority Bus Terminal" lane="739454523#1_0" startPos="813.88" endPos="1013.88" friendlyPos="true" lines="A">
+        <access lane="-194926851#1_0" pos="53.08" length="6.43" friendlyPos="1"/>
+        <access lane="194926851#1_0" pos="20.32" length="17.27" friendlyPos="1"/>
+        <access lane="226041027#3_0" pos="3.88" length="40.54" friendlyPos="1"/>
+        <access lane="513706079_0" pos="13.53" length="27.36" friendlyPos="1"/>
+        <access lane="702648008#7_0" pos="46.68" length="13.51" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6751642215" name="50th Street" lane="46340266_0" startPos="522.91" endPos="722.91" friendlyPos="true" lines="E">
+        <access lane="-194926851#5_0" pos="0.00" length="35.11" friendlyPos="1"/>
+        <access lane="-194926851#6_0" pos="34.60" length="7.11" friendlyPos="1"/>
+        <access lane="194926851#6_0" pos="14.72" length="30.81" friendlyPos="1"/>
+        <access lane="5671115#3_0" pos="251.35" length="36.71" friendlyPos="1"/>
+        <access lane="663612305_0" pos="2.40" length="30.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6751642217" name="50th Street" lane="816679186_0" startPos="52.86" endPos="252.86" friendlyPos="true" lines="A C">
+        <access lane="-194926851#6_0" pos="1.51" length="7.09" friendlyPos="1"/>
+        <access lane="-420907903_0" pos="15.91" length="15.47" friendlyPos="1"/>
+        <access lane="194926851#6_0" pos="47.80" length="30.79" friendlyPos="1"/>
+        <access lane="420907903_0" pos="0.00" length="42.83" friendlyPos="1"/>
+        <access lane="46443656#6_0" pos="1.17" length="47.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6751642238" name="50th Street" lane="816336111_0" startPos="0.00" endPos="156.51" friendlyPos="true" lines="A C">
+        <access lane="-420907906#1_0" pos="0.00" length="14.03" friendlyPos="1"/>
+        <access lane="-420907906#2_0" pos="68.83" length="11.77" friendlyPos="1"/>
+        <access lane="226041031_0" pos="0.00" length="15.64" friendlyPos="1"/>
+        <access lane="420907906#1_0" pos="71.07" length="15.28" friendlyPos="1"/>
+        <access lane="420907906#2_0" pos="0.00" length="13.16" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621199" name="14th Street" lane="719086610#0_0" startPos="279.14" endPos="479.14" friendlyPos="true" lines="A E C">
+        <access lane="888695574#2_0" pos="63.89" length="5.82" friendlyPos="1"/>
+        <access lane="888695574#3_0" pos="0.00" length="9.58" friendlyPos="1"/>
+        <access lane="894118366#0_0" pos="0.00" length="8.10" friendlyPos="1"/>
+        <access lane="894118366#8_0" pos="4.43" length="3.01" friendlyPos="1"/>
+        <access lane="894118366#9_0" pos="0.00" length="3.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621203" name="14th Street" lane="741691192_0" startPos="568.31" endPos="768.31" friendlyPos="true" lines="A E C">
+        <access lane="420598337#0_0" pos="8.11" length="4.10" friendlyPos="1"/>
+        <access lane="465098276#1_0" pos="16.99" length="24.99" friendlyPos="1"/>
+        <access lane="888695600#1_0" pos="33.28" length="35.54" friendlyPos="1"/>
+        <access lane="888695603_0" pos="33.34" length="4.02" friendlyPos="1"/>
+        <access lane="888695604#4_0" pos="0.00" length="35.62" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621217" name="14th Street" lane="803137437#2_0" startPos="533.02" endPos="733.02" friendlyPos="true" lines="A">
+        <access lane="194923811#0_0" pos="2.56" length="16.05" friendlyPos="1"/>
+        <access lane="194923811#1_0" pos="0.00" length="15.12" friendlyPos="1"/>
+        <access lane="888695574#2_0" pos="63.89" length="18.40" friendlyPos="1"/>
+        <access lane="894118366#8_0" pos="0.00" length="4.39" friendlyPos="1"/>
+        <access lane="894118366#9_0" pos="0.00" length="15.55" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621236" name="23rd Street" lane="741691192_0" startPos="568.31" endPos="768.31" friendlyPos="true" lines="A E C">
+        <access lane="-483704512#3_0" pos="0.00" length="11.46" friendlyPos="1"/>
+        <access lane="420598332_0" pos="26.15" length="11.41" friendlyPos="1"/>
+        <access lane="483704512#3_0" pos="250.75" length="9.49" friendlyPos="1"/>
+        <access lane="630828583_0" pos="0.00" length="6.59" friendlyPos="1"/>
+        <access lane="846127260#1_0" pos="0.00" length="28.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621238" name="23rd Street" lane="719086610#0_0" startPos="279.14" endPos="479.14" friendlyPos="true" lines="A E C">
+        <access lane="-384178812#1_0" pos="94.46" length="44.54" friendlyPos="1"/>
+        <access lane="420598339_0" pos="11.98" length="18.27" friendlyPos="1"/>
+        <access lane="465098290_0" pos="34.17" length="27.24" friendlyPos="1"/>
+        <access lane="670519221_0" pos="0.00" length="43.33" friendlyPos="1"/>
+        <access lane="670519226_0" pos="6.32" length="3.50" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621274" name="34th Street–Penn Station" lane="719086610#0_0" startPos="279.14" endPos="479.14" friendlyPos="true" lines="A E C">
+        <access lane="464902524#1_0" pos="19.80" length="14.16" friendlyPos="1"/>
+        <access lane="541448658_0" pos="8.15" length="29.96" friendlyPos="1"/>
+        <access lane="767683114#2_0" pos="52.21" length="19.07" friendlyPos="1"/>
+        <access lane="888695653#2_0" pos="49.47" length="5.54" friendlyPos="1"/>
+        <access lane="934479936#0_0" pos="0.66" length="32.99" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621277" name="34th Street–Penn Station" lane="741691192_0" startPos="568.31" endPos="768.31" friendlyPos="true" lines="A E C">
+        <access lane="194926854#2_0" pos="1.14" length="9.16" friendlyPos="1"/>
+        <access lane="194926854#3_0" pos="0.00" length="6.72" friendlyPos="1"/>
+        <access lane="5673561#7_0" pos="175.22" length="9.31" friendlyPos="1"/>
+        <access lane="5673561#8_0" pos="1.16" length="0.80" friendlyPos="1"/>
+        <access lane="934479938#4_0" pos="0.00" length="7.12" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621290" name="34th Street–Penn Station" lane="739454523#1_0" startPos="702.25" endPos="902.25" friendlyPos="true" lines="A">
+        <access lane="194926854#3_0" pos="0.79" length="22.54" friendlyPos="1"/>
+        <access lane="194926854#4_0" pos="10.00" length="1.10" friendlyPos="1"/>
+        <access lane="934479938#4_0" pos="0.83" length="25.26" friendlyPos="1"/>
+        <access lane="934479961#0_0" pos="1.40" length="19.58" friendlyPos="1"/>
+        <access lane="934479965_0" pos="10.04" length="11.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6923621292" name="34th Street–Penn Station" lane="46340263#1_0" startPos="507.07" endPos="707.07" friendlyPos="true" lines="A">
+        <access lane="464902524#0_0" pos="0.20" length="10.55" friendlyPos="1"/>
+        <access lane="464902524#1_0" pos="0.71" length="8.41" friendlyPos="1"/>
+        <access lane="767683114#2_0" pos="71.66" length="13.10" friendlyPos="1"/>
+        <access lane="888695653#2_0" pos="68.51" length="11.66" friendlyPos="1"/>
+        <access lane="934479936#0_0" pos="5.16" length="4.57" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6938799279" name="14th Street" lane="741691191_0" startPos="564.97" endPos="764.97" friendlyPos="true" lines="A">
+        <access lane="420598337#0_0" pos="8.06" length="8.13" friendlyPos="1"/>
+        <access lane="465098276#1_0" pos="16.99" length="24.74" friendlyPos="1"/>
+        <access lane="888695600#1_0" pos="33.14" length="23.31" friendlyPos="1"/>
+        <access lane="888695603_0" pos="33.31" length="16.25" friendlyPos="1"/>
+        <access lane="888695604#4_0" pos="0.00" length="37.79" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6943260575" name="West 4th Street–Washington Square" lane="46340246_0" startPos="502.50" endPos="702.50" friendlyPos="true" lines="&lt;F&gt; M F"/>
+    <busStop id="6943260578" name="West 4th Street–Washington Square" lane="554387911_0" startPos="186.10" endPos="386.10" friendlyPos="true" lines="&lt;F&gt; F M">
+        <access lane="164420607#3_0" pos="138.15" length="227.72" friendlyPos="1"/>
+        <access lane="420522444#0_0" pos="287.10" length="459.88" friendlyPos="1"/>
+        <access lane="451905565#0_0" pos="0.00" length="218.82" friendlyPos="1"/>
+        <access lane="894036109#2_0" pos="0.00" length="351.20" friendlyPos="1"/>
+        <access lane="894036112#0_0" pos="0.00" length="466.73" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6943277291" name="14th Street" lane="46340246_0" startPos="502.50" endPos="702.50" friendlyPos="true" lines="&lt;F&gt; M F">
+        <access lane="-196117073#2_0" pos="1.58" length="8.67" friendlyPos="1"/>
+        <access lane="554696791_0" pos="27.52" length="3.71" friendlyPos="1"/>
+        <access lane="894118358#1_0" pos="1.67" length="3.94" friendlyPos="1"/>
+        <access lane="894118358#2_0" pos="0.11" length="6.20" friendlyPos="1"/>
+        <access lane="894118368#1_0" pos="0.00" length="9.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735274" name="New York Penn Station" lane="571475087_0" startPos="74.28" endPos="274.28" friendlyPos="true">
+        <access lane="-5671440#0_0" pos="63.81" length="13.77" friendlyPos="1"/>
+        <access lane="376545878_0" pos="6.75" length="34.53" friendlyPos="1"/>
+        <access lane="464902524#11_0" pos="19.95" length="20.07" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="110.32" length="13.05" friendlyPos="1"/>
+        <access lane="5671440#0_0" pos="19.94" length="26.37" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735275" name="New York Penn Station" lane="571475072_0" startPos="71.99" endPos="271.99" friendlyPos="true">
+        <access lane="-5671440#0_0" pos="63.78" length="21.77" friendlyPos="1"/>
+        <access lane="376545878_0" pos="12.08" length="34.55" friendlyPos="1"/>
+        <access lane="464902524#11_0" pos="19.98" length="28.07" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="113.10" length="6.92" friendlyPos="1"/>
+        <access lane="5671440#0_0" pos="19.98" length="34.37" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735276" name="New York Penn Station" lane="571475155_0" startPos="67.64" endPos="267.64" friendlyPos="true">
+        <access lane="-376545878_0" pos="16.80" length="39.41" friendlyPos="1"/>
+        <access lane="-5671440#0_0" pos="63.70" length="43.91" friendlyPos="1"/>
+        <access lane="376545878_0" pos="26.84" length="34.61" friendlyPos="1"/>
+        <access lane="464902524#10_0" pos="16.80" length="37.01" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="130.87" length="5.69" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735277" name="New York Penn Station" lane="571475107_0" startPos="155.33" endPos="277.49" friendlyPos="true">
+        <access lane="-376545878_0" pos="7.37" length="39.44" friendlyPos="1"/>
+        <access lane="376545878_0" pos="36.27" length="34.64" friendlyPos="1"/>
+        <access lane="464902520_0" pos="0.00" length="39.36" friendlyPos="1"/>
+        <access lane="464902524#10_0" pos="7.37" length="37.04" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="138.29" length="3.20" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735278" name="New York Penn Station" lane="571475101_0" startPos="196.29" endPos="340.21" friendlyPos="true">
+        <access lane="-376545878_0" pos="3.16" length="39.45" friendlyPos="1"/>
+        <access lane="376545878_0" pos="40.48" length="34.65" friendlyPos="1"/>
+        <access lane="464902520_0" pos="0.00" length="36.83" friendlyPos="1"/>
+        <access lane="464902524#10_0" pos="3.16" length="37.05" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="141.84" length="6.59" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735279" name="New York Penn Station" lane="571475068#1_0" startPos="126.26" endPos="256.78" friendlyPos="true">
+        <access lane="376545878_0" pos="43.64" length="35.84" friendlyPos="1"/>
+        <access lane="464902520_0" pos="0.35" length="34.83" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="144.59" length="15.88" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.92" length="34.74" friendlyPos="1"/>
+        <access lane="541448660_0" pos="1.40" length="29.66" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735280" name="New York Penn Station" lane="571475108#1_0" startPos="90.88" endPos="221.20" friendlyPos="true">
+        <access lane="376545878_0" pos="43.64" length="38.35" friendlyPos="1"/>
+        <access lane="464902520_0" pos="5.18" length="35.09" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="144.59" length="22.50" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.92" length="27.48" friendlyPos="1"/>
+        <access lane="541448660_0" pos="1.30" length="22.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735281" name="New York Penn Station" lane="571475110#1_0" startPos="172.72" endPos="372.72" friendlyPos="true">
+        <access lane="-464902520_0" pos="28.44" length="40.37" friendlyPos="1"/>
+        <access lane="464902520_0" pos="14.42" length="35.57" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="144.59" length="35.83" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.91" length="13.62" friendlyPos="1"/>
+        <access lane="541448660_0" pos="1.13" length="8.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735282" name="New York Penn Station" lane="571475123#1_0" startPos="169.92" endPos="369.92" friendlyPos="true">
+        <access lane="-464902520_0" pos="10.72" length="41.27" friendlyPos="1"/>
+        <access lane="464902520_0" pos="32.14" length="36.47" friendlyPos="1"/>
+        <access lane="464902524#7_0" pos="22.47" length="28.58" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.89" length="12.97" friendlyPos="1"/>
+        <access lane="541448660_0" pos="0.81" length="18.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735283" name="New York Penn Station" lane="571475120#1_0" startPos="100.12" endPos="283.55" friendlyPos="true">
+        <access lane="464902520_0" pos="41.71" length="36.97" friendlyPos="1"/>
+        <access lane="464902521_0" pos="0.00" length="38.06" friendlyPos="1"/>
+        <access lane="464902524#7_0" pos="22.47" length="15.99" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.88" length="27.33" friendlyPos="1"/>
+        <access lane="541448660_0" pos="0.63" length="32.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061735284" name="New York Penn Station" lane="571475128#1_0" startPos="130.28" endPos="330.28" friendlyPos="true">
+        <access lane="464902520_0" pos="42.86" length="37.52" friendlyPos="1"/>
+        <access lane="464902521_0" pos="0.00" length="37.23" friendlyPos="1"/>
+        <access lane="464902524#7_0" pos="22.47" length="11.65" friendlyPos="1"/>
+        <access lane="541448657_0" pos="14.87" length="33.98" friendlyPos="1"/>
+        <access lane="541448660_0" pos="0.55" length="39.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061962285" name="New York Penn Station" lane="756094488_0" startPos="17.02" endPos="217.02" friendlyPos="true">
+        <access lane="-464902521_0" pos="32.33" length="42.32" friendlyPos="1"/>
+        <access lane="464902520_0" pos="42.86" length="44.99" friendlyPos="1"/>
+        <access lane="464902521_0" pos="11.58" length="37.52" friendlyPos="1"/>
+        <access lane="464902524#6_0" pos="32.33" length="39.92" friendlyPos="1"/>
+        <access lane="464902524#7_0" pos="31.49" length="4.26" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061962286" name="New York Penn Station" lane="571475070#1_0" startPos="0.00" endPos="176.39" friendlyPos="true">
+        <access lane="-5671440#0_0" pos="63.87" length="0.20" friendlyPos="1"/>
+        <access lane="376545878_0" pos="0.00" length="34.67" friendlyPos="1"/>
+        <access lane="464902524#11_0" pos="19.89" length="6.49" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="107.50" length="24.19" friendlyPos="1"/>
+        <access lane="5671440#0_0" pos="19.89" length="12.80" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7061962287" name="New York Penn Station" lane="756094503_0" startPos="120.37" endPos="246.00" friendlyPos="true">
+        <access lane="-464902521_0" pos="22.24" length="42.61" friendlyPos="1"/>
+        <access lane="464515259#6_0" pos="10.56" length="39.39" friendlyPos="1"/>
+        <access lane="464902521_0" pos="21.67" length="37.81" friendlyPos="1"/>
+        <access lane="464902524#6_0" pos="22.24" length="40.21" friendlyPos="1"/>
+        <access lane="464902524#7_0" pos="48.45" length="6.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7097455188" name="Grand Central Terminal" lane="759735449_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="24.92" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="12.53" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="15.07" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="17.77" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="20.58" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7097455189" name="Grand Central Terminal" lane="759771438_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="19.15" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="17.57" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="20.32" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="23.16" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="26.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7097455194" name="Grand Central Terminal" lane="759771452_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944510#3_0" pos="125.46" length="23.46" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="20.74" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="18.00" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="15.32" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="12.78" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098821378" name="Grand Central Terminal" lane="759912303_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.40" length="36.34" friendlyPos="1"/>
+        <access lane="380991633_0" pos="66.02" length="26.41" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.84" length="39.95" friendlyPos="1"/>
+        <access lane="475109056_0" pos="37.42" length="52.49" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.47" length="41.14" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828762" name="Grand Central Terminal" lane="759912309_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.25" length="12.13" friendlyPos="1"/>
+        <access lane="380991633_0" pos="82.16" length="26.03" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="45.45" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.91" length="15.73" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.62" length="16.93" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828765" name="Grand Central Terminal" lane="759912333_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.09" length="0.37" friendlyPos="1"/>
+        <access lane="380991633_0" pos="90.28" length="25.71" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="37.31" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.87" length="3.23" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.77" length="4.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828768" name="Grand Central Terminal" lane="759912312_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.14" length="5.24" friendlyPos="1"/>
+        <access lane="380991633_0" pos="90.28" length="26.27" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="34.99" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.96" length="1.64" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.73" length="0.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828771" name="Grand Central Terminal" lane="759912334_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.00" length="18.66" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.07" length="31.08" friendlyPos="1"/>
+        <access lane="380991633_0" pos="96.37" length="30.17" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.94" length="15.06" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.87" length="13.86" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828774" name="Grand Central Terminal" lane="759912335_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.04" length="24.45" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.05" length="25.29" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="2.31" length="31.41" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="85.02" length="20.85" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.83" length="19.65" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828777" name="Grand Central Terminal" lane="759912336_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.91" length="36.95" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.20" length="12.79" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="10.64" length="31.42" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="85.01" length="33.35" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.96" length="32.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828780" name="Grand Central Terminal" lane="759912337_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.41" length="17.85" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="26.22" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="23.39" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="20.57" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="17.79" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098828783" name="Grand Central Terminal" lane="759735511_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.28" length="5.35" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="19.18" length="32.10" friendlyPos="1"/>
+        <access lane="380991639#2_0" pos="0.00" length="31.67" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="32.56" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="29.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098829004" name="Grand Central Terminal" lane="759912306_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.13" length="47.37" friendlyPos="1"/>
+        <access lane="380991633_0" pos="58.67" length="26.08" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.48" length="50.97" friendlyPos="1"/>
+        <access lane="475109056_0" pos="44.77" length="52.06" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.74" length="52.17" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098829007" name="Grand Central Terminal" lane="759912332_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.19" length="17.92" friendlyPos="1"/>
+        <access lane="380991633_0" pos="78.30" length="25.97" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.80" length="21.52" friendlyPos="1"/>
+        <access lane="473560394#0_0" pos="0.00" length="49.40" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.68" length="22.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098829009" name="Grand Central Terminal" lane="759912302_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="32.36" length="30.42" friendlyPos="1"/>
+        <access lane="380991633_0" pos="69.97" length="26.31" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.85" length="34.03" friendlyPos="1"/>
+        <access lane="475109056_0" pos="33.47" length="52.45" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.51" length="35.22" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931588" name="Grand Central Terminal" lane="759955595_0" startPos="212.63" endPos="412.63" friendlyPos="true">
+        <access lane="-46520921#0_0" pos="73.39" length="34.24" friendlyPos="1"/>
+        <access lane="-511699179_0" pos="2.84" length="29.15" friendlyPos="1"/>
+        <access lane="46520921#0_0" pos="0.00" length="45.43" friendlyPos="1"/>
+        <access lane="511699179_0" pos="64.18" length="41.75" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="58.51" length="9.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931591" name="Grand Central Terminal" lane="759955598_0" startPos="252.60" endPos="452.60" friendlyPos="true">
+        <access lane="-46520921#0_0" pos="73.39" length="29.34" friendlyPos="1"/>
+        <access lane="-511699179_0" pos="2.79" length="23.28" friendlyPos="1"/>
+        <access lane="46520921#0_0" pos="0.00" length="40.05" friendlyPos="1"/>
+        <access lane="511699179_0" pos="64.24" length="35.88" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="62.43" length="8.90" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931597" name="Grand Central Terminal" lane="759927888_0" startPos="0.00" endPos="80.76" friendlyPos="true">
+        <access lane="-46520921#0_0" pos="73.39" length="21.09" friendlyPos="1"/>
+        <access lane="-511699179_0" pos="2.95" length="10.86" friendlyPos="1"/>
+        <access lane="46520921#0_0" pos="0.00" length="29.58" friendlyPos="1"/>
+        <access lane="511699179_0" pos="64.08" length="23.46" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="70.71" length="8.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931598" name="Grand Central Terminal" lane="759927889_0" startPos="0.00" endPos="80.07" friendlyPos="true">
+        <access lane="-46520921#0_0" pos="73.39" length="18.66" friendlyPos="1"/>
+        <access lane="-511699179_0" pos="2.90" length="4.98" friendlyPos="1"/>
+        <access lane="511699179_0" pos="64.13" length="17.58" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="74.62" length="8.81" friendlyPos="1"/>
+        <access lane="609596058_0" pos="191.08" length="24.43" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931601" name="Grand Central Terminal" lane="759927875_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.74" length="24.48" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="39.88" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="35.55" length="32.02" friendlyPos="1"/>
+        <access lane="511699179_0" pos="28.17" length="30.74" friendlyPos="1"/>
+        <access lane="609596058_0" pos="226.12" length="24.60" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931604" name="Grand Central Terminal" lane="759927890_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.60" length="6.97" friendlyPos="1"/>
+        <access lane="46520921#0_0" pos="0.00" length="52.25" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.43" length="5.63" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="74.88" length="44.36" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.36" length="12.02" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931608" name="Grand Central Terminal" lane="759927891_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.69" length="25.26" friendlyPos="1"/>
+        <access lane="113944511_0" pos="32.82" length="42.69" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="23.41" length="51.66" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.33" length="12.66" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.30" length="6.26" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931613" name="Grand Central Terminal" lane="759927892_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.73" length="19.53" friendlyPos="1"/>
+        <access lane="113944511_0" pos="32.75" length="48.42" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.29" length="6.93" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="74.88" length="49.30" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.39" length="0.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931614" name="Grand Central Terminal" lane="759927880_0" startPos="361.63" endPos="460.82" friendlyPos="true">
+        <access lane="-511699179_0" pos="25.81" length="37.82" friendlyPos="1"/>
+        <access lane="113944511_0" pos="32.75" length="30.13" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="31.79" length="51.55" friendlyPos="1"/>
+        <access lane="511699179_0" pos="41.21" length="25.22" friendlyPos="1"/>
+        <access lane="609596058_0" pos="213.31" length="18.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931619" name="Grand Central Terminal" lane="759927874_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="11.66" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="19.15" length="36.86" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="33.96" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="44.09" length="32.19" friendlyPos="1"/>
+        <access lane="609596058_0" pos="225.95" length="37.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098931622" name="Grand Central Terminal" lane="759927893_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.86" length="6.63" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="18.90" length="31.85" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.00" length="32.79" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="29.44" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="32.33" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098953796" name="Grand Central Terminal" lane="759955594_0" startPos="213.89" endPos="413.89" friendlyPos="true">
+        <access lane="-46520921#0_0" pos="73.39" length="45.20" friendlyPos="1"/>
+        <access lane="-511699179_0" pos="2.69" length="41.56" friendlyPos="1"/>
+        <access lane="46520921#0_0" pos="0.00" length="56.98" friendlyPos="1"/>
+        <access lane="511699179_0" pos="64.33" length="54.16" friendlyPos="1"/>
+        <access lane="5672149#1_0" pos="50.24" length="9.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7098974468" name="Grand Central Terminal" lane="759945014_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="473560294#1_0" pos="3.33" length="24.40" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="10.90" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="8.89" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="7.53" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="7.25" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099088056" name="Grand Central Terminal" lane="804049792_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.71" length="23.36" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="39.20" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="36.29" length="31.99" friendlyPos="1"/>
+        <access lane="511699179_0" pos="28.14" length="31.86" friendlyPos="1"/>
+        <access lane="609596058_0" pos="226.14" length="25.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099088066" name="Grand Central Terminal" lane="759944972_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.73" length="10.78" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="19.15" length="36.27" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.27" length="33.51" friendlyPos="1"/>
+        <access lane="380992602#2_0" pos="44.68" length="32.01" friendlyPos="1"/>
+        <access lane="609596058_0" pos="226.07" length="38.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099088080" name="Grand Central Terminal" lane="759944980_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.75" length="7.51" friendlyPos="1"/>
+        <access lane="380991639#3_0" pos="18.31" length="31.67" friendlyPos="1"/>
+        <access lane="380991639#4_0" pos="0.00" length="32.83" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="28.55" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="31.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099088081" name="Grand Central Terminal" lane="759944981_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.39" length="4.60" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="19.18" length="31.80" friendlyPos="1"/>
+        <access lane="380991639#2_0" pos="0.00" length="31.55" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="33.25" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="30.31" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099092298" name="Grand Central Terminal" lane="804049798_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944510#3_0" pos="121.50" length="17.07" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="26.93" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="24.08" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="21.24" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="18.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099092299" name="Grand Central Terminal" lane="759944985_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944510#3_0" pos="125.45" length="22.69" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="21.38" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="18.62" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="15.90" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="13.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099092300" name="Grand Central Terminal" lane="759944986_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.74" length="20.08" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="16.65" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="19.39" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="22.22" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="25.11" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099092301" name="Grand Central Terminal" lane="759944987_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="113944511_0" pos="19.77" length="25.80" friendlyPos="1"/>
+        <access lane="473560295_0" pos="9.84" length="11.73" friendlyPos="1"/>
+        <access lane="473560296_0" pos="9.82" length="14.23" friendlyPos="1"/>
+        <access lane="473560297_0" pos="11.17" length="16.91" friendlyPos="1"/>
+        <access lane="473560298_0" pos="11.17" length="19.70" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099196283" name="Grand Central Terminal" lane="759955623_0" startPos="65.39" endPos="164.62" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.98" length="11.02" friendlyPos="1"/>
+        <access lane="380991633_0" pos="91.56" length="27.66" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="0.00" length="32.66" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.85" length="7.42" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.89" length="6.22" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099196284" name="Grand Central Terminal" lane="759955624_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.91" length="23.69" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.17" length="26.04" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="1.81" length="31.21" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.89" length="20.10" friendlyPos="1"/>
+        <access lane="804078256_0" pos="120.96" length="18.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7099209085" name="Grand Central Terminal" lane="759955625_0" startPos="0.00" endPos="100.00" friendlyPos="true">
+        <access lane="-380991634#0_0" pos="31.84" length="36.18" friendlyPos="1"/>
+        <access lane="113944510#3_0" pos="121.27" length="13.56" friendlyPos="1"/>
+        <access lane="380991639#1_0" pos="10.13" length="31.31" friendlyPos="1"/>
+        <access lane="44165033#1_0" pos="84.93" length="32.58" friendlyPos="1"/>
+        <access lane="804078256_0" pos="121.03" length="31.38" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7142064622" name="116th Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4"/>
+    <busStop id="7142969899" name="96th Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4"/>
+    <busStop id="7142969907" name="103rd Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4"/>
+    <busStop id="7142969921" name="28th Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-196117051#2_0" pos="0.00" length="2.94" friendlyPos="1"/>
+        <access lane="-464683339#0_0" pos="73.03" length="13.65" friendlyPos="1"/>
+        <access lane="196117051#2_0" pos="73.16" length="8.38" friendlyPos="1"/>
+        <access lane="226040993#6_0" pos="134.88" length="16.00" friendlyPos="1"/>
+        <access lane="420514149#0_0" pos="0.00" length="14.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7142969930" name="33rd Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="44165026_0" pos="31.82" length="3.24" friendlyPos="1"/>
+        <access lane="5673380#3_0" pos="29.39" length="9.28" friendlyPos="1"/>
+        <access lane="68674965#1_0" pos="30.47" length="30.95" friendlyPos="1"/>
+        <access lane="871725882_0" pos="28.73" length="14.89" friendlyPos="1"/>
+        <access lane="871725911_0" pos="31.71" length="34.36" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7142969936" name="51st Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="375673048#6_0" pos="16.05" length="109.30" friendlyPos="1"/>
+        <access lane="458180193#0_0" pos="70.38" length="15.59" friendlyPos="1"/>
+        <access lane="458180193#1_0" pos="0.00" length="14.11" friendlyPos="1"/>
+        <access lane="743358443#0_0" pos="0.00" length="6.10" friendlyPos="1"/>
+        <access lane="743358444#2_0" pos="113.34" length="17.84" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7142969941" name="23rd Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-420519635#0_0" pos="0.00" length="3.55" friendlyPos="1"/>
+        <access lane="-420519635#1_0" pos="71.53" length="9.45" friendlyPos="1"/>
+        <access lane="420519635#0_0" pos="67.77" length="8.09" friendlyPos="1"/>
+        <access lane="420519635#1_0" pos="0.00" length="11.92" friendlyPos="1"/>
+        <access lane="525768549#1_0" pos="0.00" length="12.01" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7167585626" name="FlixBus NYC 300 W 31st St." lane="767683111#1_0" startPos="10.23" endPos="14.99" friendlyPos="true" lines="2602 2601 2610 N2610 2686 2683 2680"/>
+    <busStop id="7450462465" name="50th Street" lane="816679188_0" startPos="0.00" endPos="152.25" friendlyPos="true" lines="E">
+        <access lane="-420907906#1_0" pos="27.34" length="0.43" friendlyPos="1"/>
+        <access lane="-420907906#2_0" pos="68.83" length="53.33" friendlyPos="1"/>
+        <access lane="226041031_0" pos="0.00" length="49.72" friendlyPos="1"/>
+        <access lane="420907906#1_0" pos="43.74" length="24.13" friendlyPos="1"/>
+        <access lane="663612299#0_0" pos="0.00" length="52.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7509382447" name="14th Street" lane="813712317_0" startPos="835.49" endPos="1035.49" friendlyPos="true" lines="JSQ–33 via HOB HOB–33 JSQ–33">
+        <access lane="497746843#4_0" pos="54.63" length="15.30" friendlyPos="1"/>
+        <access lane="894036114#2_0" pos="6.90" length="21.31" friendlyPos="1"/>
+        <access lane="894036115#3_0" pos="6.75" length="16.51" friendlyPos="1"/>
+        <access lane="894036116#0_0" pos="2.90" length="16.33" friendlyPos="1"/>
+        <access lane="894036116#1_0" pos="0.00" length="23.37" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7509382448" name="14th Street" lane="591434572_0" startPos="358.77" endPos="558.77" friendlyPos="true" lines="JSQ–33 via HOB JSQ–33 HOB–33">
+        <access lane="496978510#0_0" pos="3.25" length="18.19" friendlyPos="1"/>
+        <access lane="496978510#2_0" pos="5.00" length="9.10" friendlyPos="1"/>
+        <access lane="894118357#2_0" pos="4.97" length="15.56" friendlyPos="1"/>
+        <access lane="894118358#0_0" pos="0.20" length="16.87" friendlyPos="1"/>
+        <access lane="894118358#1_0" pos="0.00" length="18.98" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7512663145" name="18th Street" lane="803142786#1_0" startPos="1314.22" endPos="1414.20" friendlyPos="true" lines="2 1">
+        <access lane="-852992102#1_0" pos="0.00" length="13.28" friendlyPos="1"/>
+        <access lane="852992102#1_0" pos="54.54" length="13.45" friendlyPos="1"/>
+        <access lane="894118382#1_0" pos="54.54" length="15.82" friendlyPos="1"/>
+        <access lane="907770630#0_0" pos="0.20" length="13.34" friendlyPos="1"/>
+        <access lane="907770630#5_0" pos="0.00" length="12.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7535669386" name="14th Street" lane="554387911_0" startPos="450.55" endPos="650.55" friendlyPos="true" lines="&lt;F&gt; F M">
+        <access lane="-5670785#2_0" pos="3.19" length="63.86" friendlyPos="1"/>
+        <access lane="196117090#1_0" pos="67.74" length="54.72" friendlyPos="1"/>
+        <access lane="196117090#2_0" pos="27.74" length="9.31" friendlyPos="1"/>
+        <access lane="348477349#0_0" pos="3.24" length="50.15" friendlyPos="1"/>
+        <access lane="496993763#1_0" pos="258.97" length="53.52" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7596192196" name="86th Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-387128267#20_0" pos="1548.07" length="116.73" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="0.00" length="117.13" friendlyPos="1"/>
+        <access lane="686125782#2_0" pos="1624.58" length="211.85" friendlyPos="1"/>
+        <access lane="68674962#0_0" pos="685.27" length="262.13" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7596192197" name="77th Street" lane="813742875_0" startPos="361.61" endPos="561.61" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-387128267#20_0" pos="892.67" length="2.56" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="655.47" length="11.54" friendlyPos="1"/>
+        <access lane="686125782#2_0" pos="893.88" length="212.34" friendlyPos="1"/>
+        <access lane="68674962#0_0" pos="1423.69" length="262.47" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7618672833" name="42nd Street–Times Square" lane="815757677#3_0" startPos="69.86" endPos="269.86" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="195743209_0" pos="72.23" length="0.98" friendlyPos="1"/>
+        <access lane="513706085_0" pos="0.00" length="86.52" friendlyPos="1"/>
+        <access lane="513706089_0" pos="0.00" length="42.44" friendlyPos="1"/>
+        <access lane="513706090_0" pos="0.00" length="52.83" friendlyPos="1"/>
+        <access lane="513706110_0" pos="0.00" length="101.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7618672836" name="42nd Street–Times Square" lane="46340255#0_0" startPos="204.45" endPos="334.21" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="513706083_0" pos="26.09" length="0.39" friendlyPos="1"/>
+        <access lane="513706086_0" pos="31.06" length="5.52" friendlyPos="1"/>
+        <access lane="513706104_0" pos="0.00" length="27.76" friendlyPos="1"/>
+        <access lane="513706137_0" pos="0.00" length="15.90" friendlyPos="1"/>
+        <access lane="803047266_0" pos="19.90" length="11.28" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7618672865" name="5th Avenue" lane="815757679_0" startPos="993.76" endPos="1193.76" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="113722982#1_0" pos="53.54" length="10.86" friendlyPos="1"/>
+        <access lane="702073765#1_0" pos="4.83" length="14.24" friendlyPos="1"/>
+        <access lane="702073784#4_0" pos="63.65" length="14.82" friendlyPos="1"/>
+        <access lane="702073811#12_0" pos="13.37" length="5.13" friendlyPos="1"/>
+        <access lane="702073811#16_0" pos="12.25" length="13.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7618672883" name="34th Street–Hudson Yards" lane="815757675#2_0" startPos="86.54" endPos="186.54" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="888552352#1_0" pos="173.30" length="25.23" friendlyPos="1"/>
+        <access lane="888552353_0" pos="12.50" length="7.72" friendlyPos="1"/>
+        <access lane="888552357#0_0" pos="0.00" length="27.44" friendlyPos="1"/>
+        <access lane="888552358_0" pos="2.02" length="22.81" friendlyPos="1"/>
+        <access lane="95181774#1_0" pos="47.24" length="9.03" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7618745559" name="8th Avenue" lane="815767574#0_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="L">
+        <access lane="-458106348#3_0" pos="165.89" length="4.06" friendlyPos="1"/>
+        <access lane="458106348#3_0" pos="11.13" length="8.54" friendlyPos="1"/>
+        <access lane="888695574#4_0" pos="11.21" length="19.90" friendlyPos="1"/>
+        <access lane="894118365#1_0" pos="57.57" length="14.63" friendlyPos="1"/>
+        <access lane="908009244#1_0" pos="2.47" length="24.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7618745565" name="Union Square" lane="815767574#2_0" startPos="0.00" endPos="123.14" friendlyPos="true" lines="L">
+        <access lane="197582881#1_0" pos="10.19" length="75.90" friendlyPos="1"/>
+        <access lane="22819596#0_0" pos="0.00" length="63.98" friendlyPos="1"/>
+        <access lane="22819596#1_0" pos="18.08" length="63.76" friendlyPos="1"/>
+        <access lane="385105200_0" pos="0.00" length="25.22" friendlyPos="1"/>
+        <access lane="420598310#0_0" pos="0.00" length="15.41" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7618745568" name="Union Square" lane="808580928_0" startPos="216.34" endPos="416.34" friendlyPos="true" lines="L">
+        <access lane="-666752576#0_0" pos="0.00" length="3.99" friendlyPos="1"/>
+        <access lane="-666752576#2_0" pos="81.37" length="3.94" friendlyPos="1"/>
+        <access lane="362824468#1_0" pos="0.00" length="1.72" friendlyPos="1"/>
+        <access lane="894118344#4_0" pos="5.33" length="6.14" friendlyPos="1"/>
+        <access lane="894118344#5_0" pos="0.00" length="5.39" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630334256" name="116th Street" lane="816976506_0" startPos="223.09" endPos="423.09" friendlyPos="true" lines="6 &lt;6&gt; 4"/>
+    <busStop id="7630334265" name="103rd Street" lane="816976506_0" startPos="1245.99" endPos="1445.99" friendlyPos="true" lines="6 &lt;6&gt; 4"/>
+    <busStop id="7630334266" name="110th Street" lane="816976506_0" startPos="673.35" endPos="873.35" friendlyPos="true" lines="6 &lt;6&gt; 4"/>
+    <busStop id="7630379945" name="51st Street" lane="816976506_0" startPos="5493.02" endPos="5648.48" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="458180188_0" pos="0.00" length="14.10" friendlyPos="1"/>
+        <access lane="458180189_0" pos="0.00" length="14.88" friendlyPos="1"/>
+        <access lane="458180193#2_0" pos="71.64" length="9.47" friendlyPos="1"/>
+        <access lane="46522002_0" pos="135.91" length="116.74" friendlyPos="1"/>
+        <access lane="511924978#1_0" pos="127.78" length="14.63" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379952" name="59th Street" lane="816976506_0" startPos="4788.80" endPos="4988.80" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="198924552#5_0" pos="125.07" length="33.29" friendlyPos="1"/>
+        <access lane="458180200_0" pos="69.83" length="41.93" friendlyPos="1"/>
+        <access lane="569345468#0_0" pos="0.00" length="34.67" friendlyPos="1"/>
+        <access lane="569345474_0" pos="17.52" length="6.02" friendlyPos="1"/>
+        <access lane="671208359_0" pos="127.69" length="90.20" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379954" name="96th Street" lane="816976506_0" startPos="1865.89" endPos="2065.89" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="686125782#2_0" pos="2254.69" length="205.49" friendlyPos="1"/>
+        <access lane="68674962#0_0" pos="45.26" length="254.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379956" name="86th Street" lane="816976506_0" startPos="2651.95" endPos="2851.95" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-387128267#20_0" pos="1469.23" length="8.50" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="78.84" length="5.59" friendlyPos="1"/>
+        <access lane="686125782#2_0" pos="1470.07" length="206.67" friendlyPos="1"/>
+        <access lane="68674962#0_0" pos="846.04" length="256.81" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379959" name="77th Street" lane="816976506_0" startPos="3385.26" endPos="3585.26" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-387128267#20_0" pos="735.98" length="8.13" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="812.17" length="5.97" friendlyPos="1"/>
+        <access lane="686125782#2_0" pos="736.78" length="206.52" friendlyPos="1"/>
+        <access lane="68674962#0_0" pos="1581.51" length="256.42" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379961" name="68th Street–Hunter College" lane="816976506_0" startPos="4123.63" endPos="4323.63" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-387128267#20_0" pos="0.00" length="8.37" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="1548.12" length="7.49" friendlyPos="1"/>
+        <access lane="954595553#0_0" pos="0.51" length="11.99" friendlyPos="1"/>
+        <access lane="954595553#1_0" pos="0.00" length="11.92" friendlyPos="1"/>
+        <access lane="968393473#6_0" pos="0.61" length="13.10" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379968" name="86th Street" lane="816983740_0" startPos="1111.14" endPos="1311.14" friendlyPos="true" lines="5 4">
+        <access lane="-387128267#20_0" pos="1469.16" length="8.43" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="78.91" length="5.67" friendlyPos="1"/>
+        <access lane="686125782#2_0" pos="1470.00" length="206.75" friendlyPos="1"/>
+        <access lane="68674962#0_0" pos="846.12" length="256.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379974" name="59th Street" lane="816983740_0" startPos="2944.81" endPos="3144.81" friendlyPos="true" lines="5 4">
+        <access lane="198924552#5_0" pos="125.07" length="33.48" friendlyPos="1"/>
+        <access lane="458180200_0" pos="69.83" length="42.12" friendlyPos="1"/>
+        <access lane="569345468#0_0" pos="0.00" length="34.80" friendlyPos="1"/>
+        <access lane="569345474_0" pos="17.64" length="6.08" friendlyPos="1"/>
+        <access lane="671208359_0" pos="127.69" length="90.03" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630379982" name="86th Street" lane="817018813_0" startPos="362.62" endPos="562.62" friendlyPos="true" lines="5 4">
+        <access lane="-387128267#20_0" pos="1548.07" length="116.60" friendlyPos="1"/>
+        <access lane="387128267#0_0" pos="0.00" length="117.01" friendlyPos="1"/>
+        <access lane="686125782#2_0" pos="1624.50" length="211.93" friendlyPos="1"/>
+        <access lane="68674962#0_0" pos="685.35" length="262.22" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630410489" name="59th Street" lane="817018813_0" startPos="362.62" endPos="562.62" friendlyPos="true" lines="5 4">
+        <access lane="198595461#2_0" pos="132.05" length="43.26" friendlyPos="1"/>
+        <access lane="198595461#3_0" pos="0.00" length="43.51" friendlyPos="1"/>
+        <access lane="420496091#3_0" pos="69.09" length="46.17" friendlyPos="1"/>
+        <access lane="420496091#4_0" pos="22.20" length="7.90" friendlyPos="1"/>
+        <access lane="963856064_0" pos="52.72" length="71.77" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630558481" name="42nd Street–Grand Central" lane="817018813_0" startPos="362.62" endPos="562.62" friendlyPos="true" lines="5 4">
+        <access lane="438382685#0_0" pos="12.82" length="56.04" friendlyPos="1"/>
+        <access lane="473560390#2_0" pos="84.17" length="40.47" friendlyPos="1"/>
+        <access lane="475107046_0" pos="6.49" length="64.40" friendlyPos="1"/>
+        <access lane="475109056_0" pos="88.91" length="61.80" friendlyPos="1"/>
+        <access lane="496990647#2_0" pos="28.44" length="23.80" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630588804" name="33rd Street" lane="817013581_0" startPos="435.12" endPos="635.12" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-464683344#1_0" pos="27.87" length="3.66" friendlyPos="1"/>
+        <access lane="447001270#1_0" pos="27.30" length="27.67" friendlyPos="1"/>
+        <access lane="464683344#1_0" pos="21.64" length="15.24" friendlyPos="1"/>
+        <access lane="727116511#2_0" pos="29.53" length="29.49" friendlyPos="1"/>
+        <access lane="871725887_0" pos="31.09" length="9.94" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630588806" name="28th Street" lane="817013581_0" startPos="788.65" endPos="988.65" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-464683339#1_0" pos="0.00" length="9.60" friendlyPos="1"/>
+        <access lane="-464683339#2_0" pos="71.93" length="5.40" friendlyPos="1"/>
+        <access lane="464683339#1_0" pos="68.04" length="10.20" friendlyPos="1"/>
+        <access lane="464683339#2_0" pos="0.00" length="6.41" friendlyPos="1"/>
+        <access lane="5672487#11_0" pos="0.00" length="10.98" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630588808" name="23rd Street" lane="817013581_0" startPos="1183.42" endPos="1383.42" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-456308945_0" pos="61.99" length="15.66" friendlyPos="1"/>
+        <access lane="-464683329#0_0" pos="5.96" length="4.34" friendlyPos="1"/>
+        <access lane="-464683329#1_0" pos="68.17" length="21.82" friendlyPos="1"/>
+        <access lane="456308943#1_0" pos="213.43" length="22.58" friendlyPos="1"/>
+        <access lane="464683329#0_0" pos="61.99" length="9.76" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630588813" name="42nd Street–Grand Central" lane="816976506_0" startPos="5548.82" endPos="5748.82" friendlyPos="true" lines="6 &lt;6&gt; 4">
+        <access lane="-988956476_0" pos="64.48" length="22.90" friendlyPos="1"/>
+        <access lane="381565176_0" pos="26.78" length="0.02" friendlyPos="1"/>
+        <access lane="44165027_0" pos="41.75" length="33.36" friendlyPos="1"/>
+        <access lane="5670106#5_0" pos="13.61" length="49.32" friendlyPos="1"/>
+        <access lane="872052106_0" pos="92.81" length="4.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630588825" name="42nd Street–Grand Central" lane="816983740_0" startPos="2944.81" endPos="3144.81" friendlyPos="true" lines="5 4">
+        <access lane="-988956476_0" pos="70.99" length="32.17" friendlyPos="1"/>
+        <access lane="381565176_0" pos="20.23" length="9.22" friendlyPos="1"/>
+        <access lane="5670106#5_0" pos="13.61" length="42.27" friendlyPos="1"/>
+        <access lane="5670106#6_0" pos="0.00" length="39.22" friendlyPos="1"/>
+        <access lane="872052106_0" pos="86.30" length="13.27" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630776657" name="Times Square" lane="817036018_0" startPos="0.00" endPos="100.00" friendlyPos="true" lines="S">
+        <access lane="-167922072#7_0" pos="35.21" length="9.51" friendlyPos="1"/>
+        <access lane="167922072#7_0" pos="35.41" length="14.19" friendlyPos="1"/>
+        <access lane="513706128_0" pos="0.00" length="50.81" friendlyPos="1"/>
+        <access lane="513706130_0" pos="0.00" length="41.32" friendlyPos="1"/>
+        <access lane="702540323#1_0" pos="42.05" length="17.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7630776662" name="Grand Central" lane="817036018_0" startPos="247.25" endPos="447.25" friendlyPos="true" lines="S">
+        <access lane="-496995905_0" pos="0.00" length="3.20" friendlyPos="1"/>
+        <access lane="-5672991#1_0" pos="76.41" length="9.13" friendlyPos="1"/>
+        <access lane="496995905_0" pos="50.59" length="24.15" friendlyPos="1"/>
+        <access lane="5671160#0_0" pos="0.00" length="28.47" friendlyPos="1"/>
+        <access lane="5672991#0_0" pos="0.00" length="25.61" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633689319" name="28th Street" lane="817381417_0" startPos="368.43" endPos="568.43" friendlyPos="true" lines="N Q W R">
+        <access lane="5670296#0_0" pos="95.39" length="27.67" friendlyPos="1"/>
+        <access lane="5670296#1_0" pos="2.57" length="18.26" friendlyPos="1"/>
+        <access lane="788278347#0_0" pos="60.93" length="1.84" friendlyPos="1"/>
+        <access lane="788278347#1_0" pos="0.00" length="31.97" friendlyPos="1"/>
+        <access lane="890023178_0" pos="14.84" length="92.31" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633689324" name="23rd Street" lane="817381417_0" startPos="368.43" endPos="568.43" friendlyPos="true" lines="N Q W R">
+        <access lane="474864230#6_0" pos="0.20" length="7.43" friendlyPos="1"/>
+        <access lane="474864230#7_0" pos="0.00" length="7.18" friendlyPos="1"/>
+        <access lane="474864231#2_0" pos="0.00" length="6.63" friendlyPos="1"/>
+        <access lane="5670876#3_0" pos="1.58" length="6.23" friendlyPos="1"/>
+        <access lane="889114529#1_0" pos="0.55" length="2.08" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633689337" name="49th Street" lane="817381419_0" startPos="233.06" endPos="433.06" friendlyPos="true" lines="N Q W R">
+        <access lane="-167922071_0" pos="14.46" length="7.91" friendlyPos="1"/>
+        <access lane="-5672036#2_0" pos="0.00" length="35.70" friendlyPos="1"/>
+        <access lane="167922071_0" pos="52.57" length="15.79" friendlyPos="1"/>
+        <access lane="452322757#0_0" pos="0.00" length="32.56" friendlyPos="1"/>
+        <access lane="5672036#2_0" pos="252.87" length="28.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633689352" name="42nd Street–Times Square" lane="817381422_0" startPos="344.18" endPos="544.18" friendlyPos="true" lines="Q">
+        <access lane="36806906#1_0" pos="144.25" length="37.05" friendlyPos="1"/>
+        <access lane="513706143_0" pos="0.00" length="69.50" friendlyPos="1"/>
+        <access lane="542257982#0_0" pos="0.76" length="31.96" friendlyPos="1"/>
+        <access lane="958919323_0" pos="50.22" length="0.48" friendlyPos="1"/>
+        <access lane="958919324_0" pos="0.00" length="46.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633689355" name="34th Street–Herald Square" lane="817381424_0" startPos="147.65" endPos="347.65" friendlyPos="true" lines="Q N">
+        <access lane="35027226#2_0" pos="36.18" length="5.41" friendlyPos="1"/>
+        <access lane="511809819_0" pos="1.00" length="12.59" friendlyPos="1"/>
+        <access lane="511809821_0" pos="1.12" length="10.70" friendlyPos="1"/>
+        <access lane="664950979#2_0" pos="34.37" length="17.36" friendlyPos="1"/>
+        <access lane="693386105#2_0" pos="40.03" length="21.02" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633705497" name="34th Street–Herald Square" lane="817381417_0" startPos="147.96" endPos="347.96" friendlyPos="true" lines="N Q W R">
+        <access lane="35027226#2_0" pos="36.65" length="19.53" friendlyPos="1"/>
+        <access lane="460606347#1_0" pos="21.44" length="26.39" friendlyPos="1"/>
+        <access lane="511809821_0" pos="0.14" length="3.36" friendlyPos="1"/>
+        <access lane="511809823_0" pos="4.90" length="24.78" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="37.85" length="25.04" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633705506" name="34th Street–Herald Square" lane="817415225_0" startPos="350.27" endPos="550.27" friendlyPos="true" lines="N Q W R">
+        <access lane="511809772_0" pos="8.98" length="38.14" friendlyPos="1"/>
+        <access lane="511809773_0" pos="5.45" length="27.94" friendlyPos="1"/>
+        <access lane="511809775_0" pos="0.00" length="29.85" friendlyPos="1"/>
+        <access lane="511809798_0" pos="4.74" length="32.96" friendlyPos="1"/>
+        <access lane="667933506#1_0" pos="45.61" length="22.28" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633705507" name="34th Street–Herald Square" lane="813742876_0" startPos="351.96" endPos="551.96" friendlyPos="true" lines="N Q">
+        <access lane="511809773_0" pos="5.45" length="35.45" friendlyPos="1"/>
+        <access lane="511809798_0" pos="4.74" length="34.49" friendlyPos="1"/>
+        <access lane="511809799_0" pos="5.54" length="33.97" friendlyPos="1"/>
+        <access lane="667933506#0_0" pos="40.24" length="28.75" friendlyPos="1"/>
+        <access lane="667933506#1_0" pos="42.60" length="34.21" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633705517" name="28th Street" lane="817415225_0" startPos="350.27" endPos="550.27" friendlyPos="true" lines="N Q W R">
+        <access lane="46334597_0" pos="21.12" length="65.48" friendlyPos="1"/>
+        <access lane="5669669#1_0" pos="86.16" length="46.26" friendlyPos="1"/>
+        <access lane="5669669#2_0" pos="0.00" length="44.93" friendlyPos="1"/>
+        <access lane="788278350#0_0" pos="46.44" length="16.07" friendlyPos="1"/>
+        <access lane="788278350#2_0" pos="0.00" length="57.99" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633705521" name="23rd Street" lane="817415225_0" startPos="350.27" endPos="550.27" friendlyPos="true" lines="N Q W R">
+        <access lane="530038709#3_0" pos="9.92" length="3.16" friendlyPos="1"/>
+        <access lane="530038738#1_0" pos="0.20" length="18.84" friendlyPos="1"/>
+        <access lane="530038747#1_0" pos="11.75" length="11.86" friendlyPos="1"/>
+        <access lane="663499004#0_0" pos="0.00" length="16.83" friendlyPos="1"/>
+        <access lane="788602261#0_0" pos="0.00" length="14.47" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633705531" name="42nd Street–Times Square" lane="817381402_0" startPos="376.36" endPos="576.36" friendlyPos="true" lines="N Q W R">
+        <access lane="-35027229#1_0" pos="45.75" length="20.99" friendlyPos="1"/>
+        <access lane="35027229#0_0" pos="22.33" length="28.79" friendlyPos="1"/>
+        <access lane="513706128_0" pos="6.87" length="8.95" friendlyPos="1"/>
+        <access lane="513706129_0" pos="2.77" length="26.13" friendlyPos="1"/>
+        <access lane="513706130_0" pos="7.45" length="17.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7633705534" name="49th Street" lane="817381402_0" startPos="724.15" endPos="924.15" friendlyPos="true" lines="N Q W R">
+        <access lane="194920158#14_0" pos="66.17" length="50.07" friendlyPos="1"/>
+        <access lane="420908138#0_0" pos="0.00" length="43.14" friendlyPos="1"/>
+        <access lane="542258337#4_0" pos="86.19" length="65.37" friendlyPos="1"/>
+        <access lane="569345540#0_0" pos="25.72" length="20.83" friendlyPos="1"/>
+        <access lane="588157337#0_0" pos="69.22" length="60.90" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650173977" name="53rd Street–Lexington Avenue" lane="819186609_0" startPos="262.94" endPos="462.94" friendlyPos="true" lines="E M">
+        <access lane="-841671025_0" pos="4.01" length="20.21" friendlyPos="1"/>
+        <access lane="420806146_0" pos="0.00" length="76.52" friendlyPos="1"/>
+        <access lane="456409016#0_0" pos="97.61" length="22.73" friendlyPos="1"/>
+        <access lane="456409016#1_0" pos="2.67" length="13.73" friendlyPos="1"/>
+        <access lane="841671025_0" pos="0.00" length="22.75" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650206920" name="42nd Street–Bryant Park" lane="46340246_0" startPos="502.50" endPos="702.50" friendlyPos="true" lines="&lt;F&gt; M F">
+        <access lane="226041022#0_0" pos="0.00" length="29.80" friendlyPos="1"/>
+        <access lane="384649120#4_0" pos="67.77" length="24.87" friendlyPos="1"/>
+        <access lane="440122868_0" pos="0.00" length="28.35" friendlyPos="1"/>
+        <access lane="542258061_0" pos="164.19" length="5.08" friendlyPos="1"/>
+        <access lane="702073779#2_0" pos="10.01" length="38.35" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650206922" name="47th–50th Streets–Rockefeller Center" lane="819186625_0" startPos="203.06" endPos="362.93" friendlyPos="true" lines="D B">
+        <access lane="-5672036#1_0" pos="0.73" length="21.85" friendlyPos="1"/>
+        <access lane="702647992#3_0" pos="53.36" length="4.68" friendlyPos="1"/>
+        <access lane="702647992#4_0" pos="0.00" length="15.84" friendlyPos="1"/>
+        <access lane="810630534_0" pos="0.00" length="19.91" friendlyPos="1"/>
+        <access lane="901617511#0_0" pos="0.00" length="17.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650206927" name="47th–50th Streets–Rockefeller Center" lane="554387911_0" startPos="450.55" endPos="650.55" friendlyPos="true" lines="&lt;F&gt; F M">
+        <access lane="330177547#3_0" pos="70.13" length="30.04" friendlyPos="1"/>
+        <access lane="464516471#6_0" pos="70.13" length="27.16" friendlyPos="1"/>
+        <access lane="464516471#8_0" pos="5.21" length="4.00" friendlyPos="1"/>
+        <access lane="542258337#1_0" pos="0.00" length="37.41" friendlyPos="1"/>
+        <access lane="5670114#2_0" pos="175.51" length="12.35" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650206932" name="47th–50th Streets–Rockefeller Center" lane="813712314_0" startPos="641.91" endPos="841.91" friendlyPos="true" lines="D B">
+        <access lane="330177547#3_0" pos="70.13" length="26.68" friendlyPos="1"/>
+        <access lane="464516471#6_0" pos="70.13" length="27.62" friendlyPos="1"/>
+        <access lane="464516471#8_0" pos="5.02" length="7.43" friendlyPos="1"/>
+        <access lane="542258337#1_0" pos="0.00" length="26.75" friendlyPos="1"/>
+        <access lane="5670114#2_0" pos="175.51" length="17.01" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650206934" name="34th Street–Herald Square" lane="813712314_0" startPos="641.91" endPos="841.91" friendlyPos="true" lines="D B">
+        <access lane="382532142_0" pos="1.80" length="13.87" friendlyPos="1"/>
+        <access lane="5673561#0_0" pos="0.00" length="13.46" friendlyPos="1"/>
+        <access lane="587038081#0_0" pos="0.00" length="8.28" friendlyPos="1"/>
+        <access lane="587038081#1_0" pos="0.00" length="12.39" friendlyPos="1"/>
+        <access lane="664985018_0" pos="0.00" length="11.88" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650207492" name="34th Street–Herald Square" lane="46340246_0" startPos="502.50" endPos="702.50" friendlyPos="true" lines="&lt;F&gt; M F">
+        <access lane="460606347#1_0" pos="41.98" length="31.59" friendlyPos="1"/>
+        <access lane="511809756_0" pos="9.32" length="12.56" friendlyPos="1"/>
+        <access lane="511809759_0" pos="2.96" length="30.14" friendlyPos="1"/>
+        <access lane="511809763_0" pos="5.28" length="17.26" friendlyPos="1"/>
+        <access lane="693386105#5_0" pos="17.69" length="33.24" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650207498" name="34th Street–Herald Square" lane="554387911_0" startPos="450.55" endPos="650.55" friendlyPos="true" lines="&lt;F&gt; F M">
+        <access lane="382532142_0" pos="0.60" length="4.69" friendlyPos="1"/>
+        <access lane="385107999#1_0" pos="0.26" length="2.39" friendlyPos="1"/>
+        <access lane="496983398#0_0" pos="9.68" length="7.41" friendlyPos="1"/>
+        <access lane="587038081#0_0" pos="0.18" length="6.26" friendlyPos="1"/>
+        <access lane="587038081#1_0" pos="0.00" length="10.53" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7650207504" name="53rd Street–5th Avenue" lane="819186609_0" startPos="147.40" endPos="347.40" friendlyPos="true" lines="E M">
+        <access lane="420281338_0" pos="0.00" length="32.69" friendlyPos="1"/>
+        <access lane="420281339_0" pos="0.00" length="18.57" friendlyPos="1"/>
+        <access lane="458180192#2_0" pos="121.49" length="1.19" friendlyPos="1"/>
+        <access lane="496992868_0" pos="68.48" length="24.38" friendlyPos="1"/>
+        <access lane="541331485_0" pos="9.38" length="106.34" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750798" name="Lexington Avenue–63rd Street" lane="46340259_0" startPos="418.44" endPos="618.44" friendlyPos="true" lines="Q">
+        <access lane="420496091#1_0" pos="69.03" length="63.11" friendlyPos="1"/>
+        <access lane="420496091#2_0" pos="0.00" length="64.19" friendlyPos="1"/>
+        <access lane="46522160#1_0" pos="133.90" length="82.06" friendlyPos="1"/>
+        <access lane="46522160#2_0" pos="39.07" length="2.99" friendlyPos="1"/>
+        <access lane="5670029#6_0" pos="91.98" length="108.10" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750799" name="Lexington Avenue–63rd Street" lane="819186615_0" startPos="0.00" endPos="111.46" friendlyPos="true" lines="&lt;F&gt; F">
+        <access lane="46522160#0_0" pos="202.13" length="42.56" friendlyPos="1"/>
+        <access lane="46522160#1_0" pos="2.40" length="9.84" friendlyPos="1"/>
+        <access lane="497251086#0_0" pos="72.33" length="36.89" friendlyPos="1"/>
+        <access lane="497251086#1_0" pos="0.00" length="39.33" friendlyPos="1"/>
+        <access lane="5673461#8_0" pos="131.27" length="117.18" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750800" name="Lexington Avenue–63rd Street" lane="46340264_0" startPos="226.37" endPos="426.37" friendlyPos="true" lines="&lt;F&gt; F">
+        <access lane="420496091#1_0" pos="69.03" length="64.95" friendlyPos="1"/>
+        <access lane="420496091#2_0" pos="0.44" length="63.55" friendlyPos="1"/>
+        <access lane="46522160#1_0" pos="133.90" length="83.00" friendlyPos="1"/>
+        <access lane="46522160#2_0" pos="39.34" length="9.77" friendlyPos="1"/>
+        <access lane="5673461#7_0" pos="90.49" length="117.66" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750801" name="Lexington Avenue–63rd Street" lane="817381408_0" startPos="0.00" endPos="179.07" friendlyPos="true" lines="Q">
+        <access lane="46522160#0_0" pos="202.13" length="41.03" friendlyPos="1"/>
+        <access lane="46522160#1_0" pos="2.06" length="3.40" friendlyPos="1"/>
+        <access lane="497251086#0_0" pos="73.19" length="38.31" friendlyPos="1"/>
+        <access lane="497251086#1_0" pos="0.00" length="36.39" friendlyPos="1"/>
+        <access lane="5670029#7_0" pos="131.43" length="107.87" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750802" name="Lexington Avenue–59th Street" lane="817383471_0" startPos="831.22" endPos="1031.22" friendlyPos="true" lines="N W R">
+        <access lane="198595461#3_0" pos="7.19" length="115.59" friendlyPos="1"/>
+        <access lane="420496091#4_0" pos="66.00" length="16.91" friendlyPos="1"/>
+        <access lane="458180200_0" pos="0.00" length="17.87" friendlyPos="1"/>
+        <access lane="46334594#0_0" pos="4.39" length="2.07" friendlyPos="1"/>
+        <access lane="963856064_0" pos="52.72" length="34.49" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750804" name="5th Avenue–59th Street" lane="817383474_0" startPos="549.62" endPos="749.62" friendlyPos="true" lines="N W R">
+        <access lane="436899183#0_0" pos="0.00" length="4.07" friendlyPos="1"/>
+        <access lane="436899186#0_0" pos="0.20" length="3.17" friendlyPos="1"/>
+        <access lane="436899192_0" pos="0.00" length="7.66" friendlyPos="1"/>
+        <access lane="810630535_0" pos="0.22" length="12.78" friendlyPos="1"/>
+        <access lane="810630537_0" pos="0.00" length="12.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750805" name="5th Avenue–59th Street" lane="817383471_0" startPos="1462.32" endPos="1662.32" friendlyPos="true" lines="N W R">
+        <access lane="-5670253#1_0" pos="87.54" length="0.72" friendlyPos="1"/>
+        <access lane="162138628#1_0" pos="8.45" length="11.06" friendlyPos="1"/>
+        <access lane="5670253#1_0" pos="130.92" length="22.98" friendlyPos="1"/>
+        <access lane="810630542_0" pos="0.00" length="22.09" friendlyPos="1"/>
+        <access lane="810630543_0" pos="0.00" length="21.12" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750806" name="57th Street–7th Avenue" lane="821206641_0" startPos="9.36" endPos="209.36" friendlyPos="true" lines="Q">
+        <access lane="-496986969#1_0" pos="0.00" length="30.04" friendlyPos="1"/>
+        <access lane="-5672752#0_0" pos="67.74" length="34.17" friendlyPos="1"/>
+        <access lane="496986969#1_0" pos="95.21" length="10.58" friendlyPos="1"/>
+        <access lane="496986970#2_0" pos="69.98" length="14.30" friendlyPos="1"/>
+        <access lane="5672752#0_0" pos="0.00" length="19.40" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750807" name="57th Street–7th Avenue" lane="817381421_0" startPos="202.60" endPos="380.79" friendlyPos="true" lines="Q">
+        <access lane="324118554#1_0" pos="75.43" length="112.93" friendlyPos="1"/>
+        <access lane="496989355#1_0" pos="64.65" length="25.18" friendlyPos="1"/>
+        <access lane="496989355#3_0" pos="7.05" length="7.75" friendlyPos="1"/>
+        <access lane="499172074#3_0" pos="91.59" length="25.13" friendlyPos="1"/>
+        <access lane="499172074#5_0" pos="0.00" length="23.72" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750808" name="57th Street–7th Avenue" lane="817381420_0" startPos="202.86" endPos="380.81" friendlyPos="true" lines="N W R">
+        <access lane="324118554#1_0" pos="73.57" length="112.04" friendlyPos="1"/>
+        <access lane="496989355#1_0" pos="64.65" length="24.70" friendlyPos="1"/>
+        <access lane="496989355#3_0" pos="7.18" length="6.03" friendlyPos="1"/>
+        <access lane="499172074#3_0" pos="91.59" length="35.62" friendlyPos="1"/>
+        <access lane="499172074#5_0" pos="0.45" length="20.33" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750809" name="57th Street–7th Avenue" lane="821206643_0" startPos="9.54" endPos="209.54" friendlyPos="true" lines="N W R">
+        <access lane="-496986969#1_0" pos="2.90" length="28.61" friendlyPos="1"/>
+        <access lane="-5672752#0_0" pos="67.74" length="43.39" friendlyPos="1"/>
+        <access lane="496986969#1_0" pos="92.31" length="4.91" friendlyPos="1"/>
+        <access lane="496986970#2_0" pos="69.92" length="28.07" friendlyPos="1"/>
+        <access lane="5672752#0_0" pos="0.00" length="32.94" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750813" name="42nd Street–Times Square" lane="817381419_0" startPos="344.32" endPos="544.32" friendlyPos="true" lines="N Q W R">
+        <access lane="36806906#1_0" pos="144.25" length="49.65" friendlyPos="1"/>
+        <access lane="513706143_0" pos="0.00" length="70.80" friendlyPos="1"/>
+        <access lane="542257982#0_0" pos="11.57" length="35.36" friendlyPos="1"/>
+        <access lane="958919323_0" pos="45.24" length="14.31" friendlyPos="1"/>
+        <access lane="958919324_0" pos="0.00" length="55.48" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750823" name="14th Street–Union Square" lane="817381426#1_0" startPos="894.99" endPos="1094.99" friendlyPos="true" lines="Q N">
+        <access lane="109294069#0_0" pos="0.00" length="7.55" friendlyPos="1"/>
+        <access lane="385105211#2_0" pos="33.83" length="5.29" friendlyPos="1"/>
+        <access lane="462605612#24_0" pos="0.00" length="6.31" friendlyPos="1"/>
+        <access lane="509025055_0" pos="15.98" length="6.90" friendlyPos="1"/>
+        <access lane="770930068#1_0" pos="0.00" length="7.56" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750824" name="14th Street–Union Square" lane="813742876_0" startPos="288.86" endPos="451.93" friendlyPos="true" lines="N Q">
+        <access lane="22819461#0_0" pos="16.12" length="24.31" friendlyPos="1"/>
+        <access lane="22819461#1_0" pos="0.00" length="24.82" friendlyPos="1"/>
+        <access lane="462605612#2_0" pos="87.34" length="1.56" friendlyPos="1"/>
+        <access lane="462605612#3_0" pos="0.00" length="27.63" friendlyPos="1"/>
+        <access lane="509025018_0" pos="7.29" length="9.94" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7656750825" name="14th Street–Union Square" lane="817415225_0" startPos="289.54" endPos="450.04" friendlyPos="true" lines="N Q W R">
+        <access lane="22819461#0_0" pos="16.12" length="31.25" friendlyPos="1"/>
+        <access lane="22819461#1_0" pos="3.33" length="28.61" friendlyPos="1"/>
+        <access lane="22819461#2_0" pos="0.00" length="32.08" friendlyPos="1"/>
+        <access lane="462605612#2_0" pos="84.36" length="8.84" friendlyPos="1"/>
+        <access lane="509025018_0" pos="7.29" length="21.24" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247698" name="7th Avenue" lane="819186612_0" startPos="0.00" endPos="119.45" friendlyPos="true" lines="D B">
+        <access lane="-812949648#2_0" pos="64.53" length="27.51" friendlyPos="1"/>
+        <access lane="46538371#0_0" pos="66.15" length="11.27" friendlyPos="1"/>
+        <access lane="949022073_0" pos="59.18" length="24.67" friendlyPos="1"/>
+        <access lane="949022075#2_0" pos="0.00" length="19.32" friendlyPos="1"/>
+        <access lane="949022075#3_0" pos="0.00" length="22.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247699" name="7th Avenue" lane="816679188_0" startPos="0.00" endPos="152.25" friendlyPos="true" lines="E">
+        <access lane="-458448236_0" pos="0.00" length="7.97" friendlyPos="1"/>
+        <access lane="-458448240#0_0" pos="0.00" length="5.00" friendlyPos="1"/>
+        <access lane="420905130#0_0" pos="152.60" length="3.44" friendlyPos="1"/>
+        <access lane="420905130#2_0" pos="0.00" length="8.44" friendlyPos="1"/>
+        <access lane="458448240#0_0" pos="1.90" length="6.50" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247700" name="7th Avenue" lane="715214982_0" startPos="48.00" endPos="248.00" friendlyPos="true" lines="D B">
+        <access lane="-458448239_0" pos="59.97" length="8.63" friendlyPos="1"/>
+        <access lane="-458448240#1_0" pos="4.15" length="2.00" friendlyPos="1"/>
+        <access lane="420905130#0_0" pos="152.60" length="12.79" friendlyPos="1"/>
+        <access lane="458448239_0" pos="0.00" length="9.16" friendlyPos="1"/>
+        <access lane="458448240#1_0" pos="0.00" length="3.54" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247701" name="7th Avenue" lane="46340266_0" startPos="483.56" endPos="662.71" friendlyPos="true" lines="E">
+        <access lane="-812949648#2_0" pos="64.53" length="33.99" friendlyPos="1"/>
+        <access lane="46538371#0_0" pos="65.96" length="0.99" friendlyPos="1"/>
+        <access lane="949022073_0" pos="59.18" length="13.51" friendlyPos="1"/>
+        <access lane="949022075#2_0" pos="0.00" length="8.97" friendlyPos="1"/>
+        <access lane="949022075#3_0" pos="0.00" length="12.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247702" name="57th Street" lane="819186615_0" startPos="0.00" endPos="111.46" friendlyPos="true" lines="&lt;F&gt; F">
+        <access lane="-497258109#1_0" pos="295.86" length="68.64" friendlyPos="1"/>
+        <access lane="308322447#3_0" pos="260.15" length="50.51" friendlyPos="1"/>
+        <access lane="308322447#4_0" pos="0.00" length="47.93" friendlyPos="1"/>
+        <access lane="497258108#0_0" pos="42.58" length="1.69" friendlyPos="1"/>
+        <access lane="497258108#1_0" pos="0.00" length="61.06" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247703" name="57th Street" lane="46340264_0" startPos="1155.72" endPos="1355.72" friendlyPos="true" lines="&lt;F&gt; F">
+        <access lane="499172074#0_0" pos="296.56" length="48.53" friendlyPos="1"/>
+        <access lane="499172074#1_0" pos="0.00" length="43.53" friendlyPos="1"/>
+        <access lane="541350711#0_0" pos="26.25" length="18.72" friendlyPos="1"/>
+        <access lane="569345537#6_0" pos="73.71" length="54.67" friendlyPos="1"/>
+        <access lane="618990022#14_0" pos="151.47" length="62.39" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247704" name="42nd Street–Bryant Park" lane="813712314_0" startPos="641.91" endPos="841.91" friendlyPos="true" lines="D B">
+        <access lane="127693103#1_0" pos="2.99" length="6.41" friendlyPos="1"/>
+        <access lane="702540323#2_0" pos="0.66" length="23.01" friendlyPos="1"/>
+        <access lane="702540323#3_0" pos="4.85" length="19.44" friendlyPos="1"/>
+        <access lane="901619653#0_0" pos="0.00" length="25.13" friendlyPos="1"/>
+        <access lane="901619653#5_0" pos="0.00" length="20.73" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247706" name="42nd Street–Bryant Park" lane="554387911_0" startPos="450.55" endPos="650.55" friendlyPos="true" lines="&lt;F&gt; F M">
+        <access lane="127693103#1_0" pos="3.31" length="5.00" friendlyPos="1"/>
+        <access lane="511699183#3_0" pos="27.26" length="19.53" friendlyPos="1"/>
+        <access lane="702540323#2_0" pos="0.66" length="33.71" friendlyPos="1"/>
+        <access lane="702540323#3_0" pos="5.04" length="30.86" friendlyPos="1"/>
+        <access lane="901619653#5_0" pos="0.00" length="31.64" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7657247708" name="23rd Street" lane="554387911_0" startPos="450.55" endPos="650.55" friendlyPos="true" lines="&lt;F&gt; F M">
+        <access lane="-483704512#1_0" pos="0.00" length="104.87" friendlyPos="1"/>
+        <access lane="396444294#17_0" pos="206.36" length="30.30" friendlyPos="1"/>
+        <access lane="396444294#18_0" pos="0.00" length="15.04" friendlyPos="1"/>
+        <access lane="630828586#0_0" pos="68.70" length="18.91" friendlyPos="1"/>
+        <access lane="630828586#1_0" pos="4.22" length="2.68" friendlyPos="1"/>
+    </busStop>
+    <busStop id="7946231852" name="2 Av/E 54 St" lane="670988060#1_1" startPos="16.75" endPos="31.75" friendlyPos="true" lines="M15"/>
+    <busStop id="7946231855" name="2 Av/E 46 St" lane="420901681#1_1" startPos="54.37" endPos="69.37" friendlyPos="true" lines="M15"/>
+    <busStop id="7949892055" name="2 Av/E 36 St" lane="157014137#1_1" startPos="10.25" endPos="21.58" friendlyPos="true" lines="M15"/>
+    <busStop id="8119193323" name="2 Av/E 31 St" lane="420872194#0_1" startPos="23.20" endPos="38.20" friendlyPos="true" lines="M15"/>
+    <busStop id="8378777747" name="West 24th Street &amp; 11th Avenue" lane="420908135#1_1" startPos="64.03" endPos="79.03" friendlyPos="true" lines="M23 SBS"/>
+    <busStop id="8378777761" name="12th Avenue &amp; West 23rd Street" lane="22904005_0" startPos="49.85" endPos="64.85" friendlyPos="true" lines="M23 SBS"/>
+    <busStop id="8389238660" name="42nd Street–Grand Central" lane="46340255#2_0" startPos="964.98" endPos="1164.98" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="-496990648_0" pos="75.61" length="4.45" friendlyPos="1"/>
+        <access lane="420356168_0" pos="59.14" length="19.25" friendlyPos="1"/>
+        <access lane="458166897#3_0" pos="66.04" length="127.13" friendlyPos="1"/>
+        <access lane="5670106#7_0" pos="74.53" length="122.82" friendlyPos="1"/>
+        <access lane="5670106#8_0" pos="0.00" length="127.61" friendlyPos="1"/>
+    </busStop>
+    <busStop id="8389238665" name="42nd Street–Grand Central" lane="815757679_0" startPos="993.76" endPos="1193.76" friendlyPos="true" lines="7 &lt;7&gt;">
+        <access lane="-438382685#0_0" pos="28.13" length="18.65" friendlyPos="1"/>
+        <access lane="438382685#0_0" pos="69.23" length="5.05" friendlyPos="1"/>
+        <access lane="438382685#1_0" pos="0.00" length="49.93" friendlyPos="1"/>
+        <access lane="44165033#0_0" pos="42.98" length="50.97" friendlyPos="1"/>
+        <access lane="473560394#3_0" pos="47.59" length="46.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="8402249048" name="10th Avenue &amp; West 15th Street" lane="22909152#0_1" startPos="10.04" endPos="23.08" friendlyPos="true" lines="M12"/>
+    <busStop id="895371274" name="New York Penn Station" lane="46493326_0" startPos="41.31" endPos="152.96" friendlyPos="true" lines="Morristown North Jersey Coast">
+        <access lane="-464902520_0" pos="21.70" length="23.12" friendlyPos="1"/>
+        <access lane="464902520_0" pos="21.16" length="18.32" friendlyPos="1"/>
+        <access lane="464902524#9_0" pos="166.00" length="37.49" friendlyPos="1"/>
+        <access lane="541448657_0" pos="3.18" length="4.13" friendlyPos="1"/>
+        <access lane="541448660_0" pos="12.74" length="1.29" friendlyPos="1"/>
+    </busStop>
+</additional>
