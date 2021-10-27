@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2021-10-27 12:06:02 by Eclipse SUMO netconvert Version 1.10.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="/usr/local/opt/sumo/share/sumo/data/typemap/osmNetconvert.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+        <railway.topology.repair.stop-turn value="true"/>
+    </railway>
+
+    <report>
+        <verbose value="true"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-1279124392" name="Piscine" lane="-29698038#0_0" startPos="17.68" endPos="32.68" friendlyPos="true" lines="9D 9AB"/>
+    <busStop id="-1679793174" name="Christiane Frahier" lane="-286506387#4_0" startPos="18.53" endPos="31.84" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="-1686058306" name="Jehan Alain" lane="-35396292_0" startPos="52.39" endPos="67.39" friendlyPos="true" lines="R4 R2-Nord 24 3"/>
+    <busStop id="-1731764049" name="Saint-Germain-en-Laye" lane="-161180860#2_0" startPos="0.00" endPos="100.83" friendlyPos="true">
+        <access lane="298584102_0" pos="9.34" length="10.76" friendlyPos="1"/>
+        <access lane="298584105_0" pos="2.08" length="6.77" friendlyPos="1"/>
+        <access lane="298584106_0" pos="4.90" length="3.37" friendlyPos="1"/>
+        <access lane="35336334#0_0" pos="0.00" length="9.69" friendlyPos="1"/>
+        <access lane="629797752_0" pos="33.58" length="12.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="-2015011195" name="Pont de Bougival" lane="-22753551#0_0" startPos="61.21" endPos="76.21" friendlyPos="true" lines="D"/>
+    <busStop id="-2032349248" name="Gare de Marly-le-Roi - Bèque" lane="-427848448#0_0" startPos="0.00" endPos="4.31" friendlyPos="true" lines="10"/>
+    <busStop id="-2670875458" name="Gare de Mareil-Marly" lane="-784011539#2_0" startPos="32.55" endPos="45.66" friendlyPos="true" lines="R5"/>
+    <busStop id="-2714473475" name="Village d&apos;Hennemont" lane="-286506392#1_0" startPos="65.63" endPos="79.62" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="-286860362" name="Jacques Cartier" lane="-26197891#5_0" startPos="16.00" endPos="31.00" friendlyPos="true" lines="21S"/>
+    <busStop id="-2901561304" name="Chemin Neuf" lane="-77991878_0" startPos="24.29" endPos="39.29" friendlyPos="true" lines="R4"/>
+    <busStop id="-2901561306" name="Châtaigneraie" lane="-684817941_0" startPos="16.53" endPos="31.53" friendlyPos="true" lines="R4"/>
+    <busStop id="-2901561312" name="Grande Ceinture" lane="-286506391#4_0" startPos="27.07" endPos="42.07" friendlyPos="true" lines="R4 R2-Nord"/>
+    <busStop id="-2901561318" name="Mermoz" lane="-320010013#2_0" startPos="55.48" endPos="70.48" friendlyPos="true" lines="R4 R2-Nord"/>
+    <busStop id="-2901561322" name="Péreire" lane="-149544540#2_0" startPos="23.13" endPos="38.13" friendlyPos="true" lines="R4 R2-Nord"/>
+    <busStop id="-315642082" name="Aristide Briand" lane="-28712829#0_0" startPos="82.23" endPos="97.23" friendlyPos="true" lines="C"/>
+    <busStop id="-3594253385" name="Basses Auges" lane="-353610252#1_0" startPos="0.00" endPos="11.66" friendlyPos="true" lines="R5"/>
+    <busStop id="-3594255199" name="Mairie" lane="-49290580_0" startPos="38.32" endPos="53.32" friendlyPos="true" lines="R5"/>
+    <busStop id="-3594255204" name="Poney Club" lane="-49290577#1_0" startPos="25.61" endPos="40.61" friendlyPos="true" lines="R5"/>
+    <busStop id="-3594255210" name="Verger" lane="-784011533#0_0" startPos="0.00" endPos="8.87" friendlyPos="true" lines="R5"/>
+    <busStop id="-431659640" name="Charmettes" lane="-26198066#2_0" startPos="51.99" endPos="66.99" friendlyPos="true" lines="C A"/>
+    <busStop id="-431659653" name="Belloy" lane="-26198066#4_0" startPos="64.10" endPos="79.10" friendlyPos="true" lines="C A"/>
+    <busStop id="-4320215188" name="Réservoir" lane="-827146974#0_0" startPos="0.00" endPos="8.94" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="-4322085533" name="Président Wilson" lane="-30102955#3_0" startPos="34.40" endPos="49.40" friendlyPos="true" lines="20"/>
+    <busStop id="-4324073772" name="Ourches Hôpital" lane="-28882962_0" startPos="96.56" endPos="111.56" friendlyPos="true" lines="R3-Nord R6"/>
+    <busStop id="-4326574281" name="Gaudines" lane="-23152770#8_0" startPos="38.26" endPos="53.26" friendlyPos="true" lines="R2-Nord"/>
+    <busStop id="-4326656952" name="Verdun" lane="-368614352_0" startPos="108.94" endPos="123.94" friendlyPos="true" lines="20"/>
+    <busStop id="-4328365456" name="Nicot" lane="-172192378#1_0" startPos="43.59" endPos="58.59" friendlyPos="true" lines="R1 14"/>
+    <busStop id="-4331120658" name="Gabillon" lane="-580878350_0" startPos="0.00" endPos="10.33" friendlyPos="true" lines="E 20"/>
+    <busStop id="-4332119422" name="Centre Administratif" lane="-35396355#3_0" startPos="20.95" endPos="35.95" friendlyPos="true" lines="R3-Nord R6"/>
+    <busStop id="-437923622" name="La Frégate" lane="-37438062#5_0" startPos="34.00" endPos="49.00" friendlyPos="true" lines="9D 9B 9AB"/>
+    <busStop id="-437923630" name="La Linière" lane="-37438062#7_0" startPos="49.56" endPos="64.56" friendlyPos="true" lines="9D 9B 9AB"/>
+    <busStop id="-437923774" name="Clos des Épines" lane="-572426994#0_0" startPos="22.37" endPos="37.37" friendlyPos="true" lines="9AB"/>
+    <busStop id="-437970285" name="Ramon Saint-Thibault" lane="-347163841#1_0" startPos="45.43" endPos="59.97" friendlyPos="true" lines="10 9D"/>
+    <busStop id="-4758524063" name="Jules Ferry" lane="-28712823#0_0" startPos="130.17" endPos="145.17" friendlyPos="true" lines="C"/>
+    <busStop id="-4983892516" name="Jaurès" lane="-42859108#2_0" startPos="70.78" endPos="85.78" friendlyPos="true" lines="R2-Sud R3-Sud"/>
+    <busStop id="-4983893720" name="Mairie" lane="-72180373#0_0" startPos="37.63" endPos="52.63" friendlyPos="true" lines="15"/>
+    <busStop id="-535098814" name="L&apos;Ermitage" lane="-353254016_0" startPos="10.53" endPos="25.53" friendlyPos="true" lines="R3-Sud R5"/>
+    <busStop id="-535547922" name="Croix de Fer" lane="-42818750#6_0" startPos="53.51" endPos="68.51" friendlyPos="true" lines="R2-Nord"/>
+    <busStop id="-535810397" name="Place Royale" lane="-353610204#2_0" startPos="0.00" endPos="9.15" friendlyPos="true" lines="259"/>
+    <busStop id="-536473646" name="Boufflers" lane="-758162576#8_0" startPos="77.62" endPos="92.62" friendlyPos="true" lines="R2-Nord R6"/>
+    <busStop id="-5447580458" name="Alexandre Bertrand" lane="-23139964#1_0" startPos="0.00" endPos="12.65" friendlyPos="true" lines="259 R3-Sud R5"/>
+    <busStop id="-5592618329" name="Bergerie" lane="-35016314#1_0" startPos="41.17" endPos="56.17" friendlyPos="true" lines="564"/>
+    <busStop id="-5668122988" name="Place Vauban" lane="-23139725#3_0" startPos="23.53" endPos="38.53" friendlyPos="true" lines="24 3"/>
+    <busStop id="-5676187339" name="Maurice de Vlaminck" lane="-40949638#2_0" startPos="33.84" endPos="48.84" friendlyPos="true" lines="A"/>
+    <busStop id="-5676187340" name="Renoir" lane="-28915874#1_0" startPos="0.00" endPos="13.46" friendlyPos="true" lines="A"/>
+    <busStop id="-5676191844" name="Ribot - Barbier" lane="-40949638#0_0" startPos="17.45" endPos="32.45" friendlyPos="true" lines="A"/>
+    <busStop id="-5679344701" name="Monceau" lane="-28939393#3_0" startPos="45.93" endPos="60.93" friendlyPos="true" lines="A"/>
+    <busStop id="-5717925666" name="La Roseraie" lane="-371924815#0_0" startPos="20.39" endPos="35.39" friendlyPos="true" lines="E D M"/>
+    <busStop id="-5717925667" name="Verdun" lane="-371924815#8_0" startPos="23.86" endPos="38.86" friendlyPos="true" lines="E D M"/>
+    <busStop id="-5717925670" name="Président Roosevelt" lane="-371730921#2_0" startPos="37.76" endPos="52.76" friendlyPos="true" lines="E M 20"/>
+    <busStop id="-5717925677" name="Lycée Alain" lane="-362068182#4_0" startPos="65.45" endPos="80.45" friendlyPos="true" lines="M"/>
+    <busStop id="-5717925678" name="Allée de la Gare" lane="-362068182#10_0" startPos="0.00" endPos="7.70" friendlyPos="true" lines="M"/>
+    <busStop id="-5717925679" name="Émile Thiebaut" lane="-601749977#0_0" startPos="92.10" endPos="107.10" friendlyPos="true" lines="M"/>
+    <busStop id="-5717925680" name="Gare du Vésinet Centre" lane="-797519598#0_0" startPos="0.53" endPos="15.53" friendlyPos="true" lines="M"/>
+    <busStop id="-5717925683" name="Carrefour de la Croix" lane="-45740899#3_0" startPos="27.53" endPos="42.53" friendlyPos="true" lines="M"/>
+    <busStop id="-5722098862" name="Gallieni" lane="-35396455#2_0" startPos="87.81" endPos="102.81" friendlyPos="true" lines="R3-Sud R6"/>
+    <busStop id="-5722098863" name="Caraman" lane="-758162576#2_0" startPos="18.01" endPos="33.01" friendlyPos="true" lines="R2-Nord R6"/>
+    <busStop id="-5722250078" name="République" lane="-35332802#1_0" startPos="35.02" endPos="50.02" friendlyPos="true" lines="R4"/>
+    <busStop id="-5756804735" name="République" lane="-427795683#0_0" startPos="12.49" endPos="27.49" friendlyPos="true" lines="G 20"/>
+    <busStop id="-5756804737" name="Aligre" lane="-30102955#0_0" startPos="114.67" endPos="129.67" friendlyPos="true" lines="20"/>
+    <busStop id="-5756804739" name="Cirsée - Buisson" lane="-77113415#4_0" startPos="38.62" endPos="51.48" friendlyPos="true" lines="20"/>
+    <busStop id="-5756804741" name="Liberté" lane="-878853560#0_0" startPos="0.00" endPos="8.50" friendlyPos="true" lines="20"/>
+    <busStop id="-5761221487" name="Jacques Cartier" lane="-26197891#5_0" startPos="20.47" endPos="35.47" friendlyPos="true" lines="G"/>
+    <busStop id="-589050467" name="Corbellerie" lane="-39845101#1_0" startPos="0.00" endPos="12.84" friendlyPos="true" lines="18 18S"/>
+    <busStop id="-5937935975" name="Patte d&apos;Oie" lane="-26197244_0" startPos="18.64" endPos="31.05" friendlyPos="true" lines="E D"/>
+    <busStop id="-5937935976" name="Les Moulins" lane="-370155236#2_0" startPos="21.17" endPos="36.17" friendlyPos="true" lines="E D"/>
+    <busStop id="-5937935980" name="Stade Omnisport" lane="-580878339#1_0" startPos="101.50" endPos="116.50" friendlyPos="true" lines="E 20"/>
+    <busStop id="-5937935981" name="Cultures Lorraine" lane="-40325350#0_0" startPos="99.53" endPos="114.53" friendlyPos="true" lines="E 20"/>
+    <busStop id="-5937935982" name="Henri Régnault" lane="-40345749_0" startPos="1.45" endPos="16.45" friendlyPos="true" lines="E 20"/>
+    <busStop id="-5937935984" name="Princesse - Croissy" lane="-362068171_0" startPos="26.84" endPos="41.84" friendlyPos="true" lines="E 20"/>
+    <busStop id="-5937939985" name="Crèche" lane="-26194969#2_0" startPos="40.17" endPos="55.17" friendlyPos="true" lines="E 20"/>
+    <busStop id="-5937939987" name="IRSN" lane="-371730926#0_0" startPos="8.37" endPos="23.37" friendlyPos="true" lines="E 20"/>
+    <busStop id="-5937939988" name="Chemin de Ronde" lane="-371730926#6_0" startPos="0.55" endPos="11.78" friendlyPos="true" lines="E"/>
+    <busStop id="-6166055483" name="Alexandre Bertrand" lane="-23139964#1_0" startPos="0.00" endPos="9.60" friendlyPos="true" lines="10 1 15"/>
+    <busStop id="-6166055484" name="Giraud Teulon" lane="-23139964#5_0" startPos="56.91" endPos="71.91" friendlyPos="true" lines="1"/>
+    <busStop id="-6166184993" name="Hôtel de Ville - Le Vésinet Centre RER" lane="-28375471#0_0" startPos="46.95" endPos="61.95" friendlyPos="true" lines="N153"/>
+    <busStop id="-6185664288" name="Pontel" lane="-353254018#0_0" startPos="75.99" endPos="90.99" friendlyPos="true" lines="R3-Nord"/>
+    <busStop id="-6185664289" name="Quatre Chemins" lane="-82804924#1_0" startPos="4.73" endPos="19.73" friendlyPos="true" lines="R3-Nord"/>
+    <busStop id="-6220241942" name="Square Forest" lane="-286506390#3_0" startPos="44.00" endPos="59.00" friendlyPos="true" lines="R4 R2-Nord"/>
+    <busStop id="-6416426085" name="Gambetta" lane="-353610204#2_0" startPos="0.30" endPos="15.30" friendlyPos="true" lines="R3-Nord R5 1"/>
+    <busStop id="-6597572443" name="Mairie" lane="-172225643#8_0" startPos="8.41" endPos="23.41" friendlyPos="true" lines="R5"/>
+    <busStop id="-6597572445" name="George Sand" lane="-42860316#3_0" startPos="96.56" endPos="111.56" friendlyPos="true" lines="R5"/>
+    <busStop id="-6597572450" name="Val Fleuri" lane="-120290387#6_0" startPos="3.45" endPos="18.45" friendlyPos="true" lines="R5"/>
+    <busStop id="-6597572457" name="Victor Hugo" lane="-49290577#7_0" startPos="0.00" endPos="8.47" friendlyPos="true" lines="R5"/>
+    <busStop id="-6597572459" name="Couture" lane="-118927919#1_0" startPos="10.09" endPos="18.24" friendlyPos="true" lines="R5"/>
+    <busStop id="-6597572464" name="Rue de Port Marly" lane="-34287257#1_0" startPos="260.36" endPos="271.01" friendlyPos="true" lines="R5"/>
+    <busStop id="-6597572465" name="Planche" lane="-34287257#2_0" startPos="27.46" endPos="42.46" friendlyPos="true" lines="R5"/>
+    <busStop id="-6598228489" name="Vieille Butte" lane="-42818750#5_0" startPos="20.01" endPos="35.01" friendlyPos="true" lines="R2-Nord"/>
+    <busStop id="-6598228496" name="Taillevent" lane="-157286610#0_0" startPos="84.11" endPos="99.11" friendlyPos="true" lines="R2-Nord"/>
+    <busStop id="-6598315510" name="Mairie" lane="-353610272#2_0" startPos="38.44" endPos="53.44" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="-6598315516" name="Diderot" lane="-35396529#0_0" startPos="53.95" endPos="68.95" friendlyPos="true" lines="R2-Sud R1"/>
+    <busStop id="-6649181596" name="Landes" lane="-141598083#0_0" startPos="105.64" endPos="120.64" friendlyPos="true" lines="A"/>
+    <busStop id="-6649181597" name="Stade Finaltéri" lane="-141598083#5_0" startPos="84.83" endPos="99.83" friendlyPos="true" lines="A"/>
+    <busStop id="-6649181598" name="Sabinettes" lane="-141598083#10_0" startPos="30.43" endPos="40.57" friendlyPos="true" lines="A"/>
+    <busStop id="-6658431279" name="Fourqueux" lane="-22604461#4_0" startPos="8.47" endPos="23.47" friendlyPos="true" lines="R3-Sud"/>
+    <busStop id="-6658497687" name="Ermitage" lane="-353254009#0_0" startPos="22.47" endPos="37.47" friendlyPos="true" lines="R3-Nord"/>
+    <busStop id="-6658497688" name="Schnapper" lane="-353254009#6_0" startPos="92.89" endPos="107.89" friendlyPos="true" lines="R3-Nord"/>
+    <busStop id="-6658497689" name="Sainte-Radegonde" lane="-42794371#0_0" startPos="176.02" endPos="191.02" friendlyPos="true" lines="R3-Nord"/>
+    <busStop id="-7118977296" name="Lieutenant Chassagne" lane="-33968247#7_0" startPos="94.33" endPos="109.33" friendlyPos="true" lines="15"/>
+    <busStop id="-731556749" name="Rue Nouvelle" lane="-165300935#2_0" startPos="8.86" endPos="23.86" friendlyPos="true" lines="15"/>
+    <busStop id="-7425741757" name="Cormiers - Ricard" lane="-791547221#0_0" startPos="5.44" endPos="20.44" friendlyPos="true" lines="A"/>
+    <busStop id="-7449644382" name="Chemin de Ronde" lane="-217559043_0" startPos="113.73" endPos="128.73" friendlyPos="true" lines="20"/>
+    <busStop id="-7449644383" name="Allée des Machines" lane="-401846271#7_0" startPos="120.65" endPos="135.65" friendlyPos="true" lines="20"/>
+    <busStop id="-7624279541" name="Égalité" lane="-28939393#5_0" startPos="10.45" endPos="25.45" friendlyPos="true" lines="L"/>
+    <busStop id="-7624279544" name="Renoir" lane="-28915874#1_0" startPos="0.00" endPos="11.79" friendlyPos="true" lines="B"/>
+    <busStop id="-7624279554" name="Maurice de Vlaminck" lane="-794194395#0_0" startPos="22.83" endPos="37.83" friendlyPos="true" lines="B"/>
+    <busStop id="-7641045919" name="Paul Bert" lane="-29160367_0" startPos="56.92" endPos="71.92" friendlyPos="true" lines="B"/>
+    <busStop id="-7641045932" name="Claude Monet" lane="-28368126#2_0" startPos="51.95" endPos="66.95" friendlyPos="true" lines="B"/>
+    <busStop id="-7641045933" name="République Leclerc" lane="-35359347#1_0" startPos="25.50" endPos="40.50" friendlyPos="true" lines="B"/>
+    <busStop id="-7641045934" name="République Pathé" lane="-35359313#4_0" startPos="123.65" endPos="138.65" friendlyPos="true" lines="B"/>
+    <busStop id="-7653926596" name="Square des Sablons" lane="-158856549#2_0" startPos="30.43" endPos="45.43" friendlyPos="true" lines="21"/>
+    <busStop id="-7653926597" name="Les Marronniers" lane="-85537031#6_0" startPos="53.01" endPos="68.01" friendlyPos="true" lines="21"/>
+    <busStop id="-7653926602" name="Les Pins - Clos Courché" lane="-427848447#5_0" startPos="12.35" endPos="27.35" friendlyPos="true" lines="21 10"/>
+    <busStop id="-7653926603" name="Brossolette" lane="-28989504_0" startPos="19.32" endPos="34.32" friendlyPos="true" lines="21"/>
+    <busStop id="-7653926604" name="Ramon Saint-Thibault" lane="-427848446#3_0" startPos="0.00" endPos="13.78" friendlyPos="true" lines="21 10"/>
+    <busStop id="-7653926607" name="République" lane="-427795683#0_0" startPos="18.75" endPos="33.75" friendlyPos="true" lines="21"/>
+    <busStop id="-7656622103" name="Square de Versailles" lane="-37439255#1_0" startPos="7.71" endPos="22.71" friendlyPos="true" lines="10"/>
+    <busStop id="-7656622107" name="Valcort Maigrets" lane="-51528990#0_0" startPos="34.86" endPos="49.86" friendlyPos="true" lines="9D 9B 9AB"/>
+    <busStop id="-7656622109" name="Le Galion" lane="-29698052#2_0" startPos="30.75" endPos="45.75" friendlyPos="true" lines="9D 9AB"/>
+    <busStop id="-7656622114" name="Les Lampes" lane="-37439255#15_0" startPos="6.95" endPos="21.95" friendlyPos="true" lines="10"/>
+    <busStop id="-7656622115" name="Sablons - Jean Vilar" lane="-572426994#7_0" startPos="5.48" endPos="20.48" friendlyPos="true" lines="9AB"/>
+    <busStop id="-7657520071" name="Gambetta" lane="-353610204#1_0" startPos="43.15" endPos="58.15" friendlyPos="true" lines="10 15"/>
+    <busStop id="-7657528189" name="Les Alizés" lane="-37438062#6_0" startPos="78.67" endPos="93.67" friendlyPos="true" lines="9D 9B 9AB"/>
+    <busStop id="-7657528214" name="Bèque SNCF - Gare de Marly-le-Roi" lane="-565730069#1_0" startPos="0.00" endPos="7.70" friendlyPos="true" lines="9B 18S"/>
+    <busStop id="-7659912616" name="L&apos;Ermitage" lane="-353254016_0" startPos="7.60" endPos="22.60" friendlyPos="true" lines="15"/>
+    <busStop id="-7661067763" name="Noyer Garenne" lane="-51685444#1_0" startPos="6.97" endPos="21.97" friendlyPos="true" lines="9D"/>
+    <busStop id="-7661067767" name="Le Verger Saint-Exupéry" lane="-166969274#0_0" startPos="19.37" endPos="30.21" friendlyPos="true" lines="10 9D"/>
+    <busStop id="-7662174633" name="Square de Monte Cristo" lane="-37439255#9_0" startPos="2.25" endPos="17.25" friendlyPos="true" lines="10"/>
+    <busStop id="-7674894975" name="Avenue des Chênes" lane="-33968247#1_0" startPos="9.62" endPos="24.62" friendlyPos="true" lines="15"/>
+    <busStop id="-7674894980" name="La Doucerie" lane="-33968247#8_0" startPos="57.77" endPos="72.77" friendlyPos="true" lines="15"/>
+    <busStop id="-7674898690" name="Prés Jummelles" lane="-33968247#11_0" startPos="165.35" endPos="180.35" friendlyPos="true" lines="15"/>
+    <busStop id="-7674898709" name="Sabotte" lane="-72180586#1_0" startPos="24.22" endPos="39.22" friendlyPos="true" lines="15"/>
+    <busStop id="-7674898714" name="Bas Roi" lane="-72180586#4_0" startPos="38.47" endPos="53.47" friendlyPos="true" lines="15"/>
+    <busStop id="-7678571462" name="Mairie (L&apos;Étang-la-Ville)" lane="-72180373#0_0" startPos="32.47" endPos="47.47" friendlyPos="true" lines="15"/>
+    <busStop id="-7681539009" name="Alain" lane="-77032835_0" startPos="31.13" endPos="46.13" friendlyPos="true" lines="21S"/>
+    <busStop id="-87360108" name="Saint-Germain-en-Laye" lane="-10445257#0_0" startPos="138.02" endPos="238.92" friendlyPos="true">
+        <access lane="298584102_0" pos="9.34" length="9.20" friendlyPos="1"/>
+        <access lane="298584105_0" pos="2.00" length="4.08" friendlyPos="1"/>
+        <access lane="298584106_0" pos="6.65" length="3.94" friendlyPos="1"/>
+        <access lane="35336334#0_0" pos="0.00" length="7.00" friendlyPos="1"/>
+        <access lane="629797752_0" pos="33.48" length="9.61" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1191783297" name="École La Malmaison" lane="374808758#3_0" startPos="0.61" endPos="8.32" friendlyPos="true" lines="259"/>
+    <busStop id="1191784315" name="Le Parc" lane="374808749#1_0" startPos="34.76" endPos="49.76" friendlyPos="true" lines="259"/>
+    <busStop id="1191784646" name="La Jonchère" lane="10278697#1_0" startPos="29.69" endPos="44.69" friendlyPos="true" lines="259"/>
+    <busStop id="1191784755" name="École la Malmaison" lane="374808745#2_0" startPos="36.31" endPos="51.31" friendlyPos="true" lines="258 259"/>
+    <busStop id="1191785020" name="Le Château" lane="374808745#4_0" startPos="21.13" endPos="32.61" friendlyPos="true" lines="258 259"/>
+    <busStop id="1191785962" name="Le Parc" lane="10275364#2_0" startPos="27.63" endPos="42.63" friendlyPos="true" lines="259"/>
+    <busStop id="1191787993" name="Maison Rouge" lane="374808757#6_0" startPos="11.53" endPos="26.53" friendlyPos="true" lines="259"/>
+    <busStop id="1191788202" name="Maison Rouge" lane="196756850#2_0" startPos="29.16" endPos="44.16" friendlyPos="true" lines="259"/>
+    <busStop id="1191788726" name="Le Château" lane="10275365#1_0" startPos="4.70" endPos="19.70" friendlyPos="true" lines="259 27"/>
+    <busStop id="1192733145" name="Pont de Bougival" lane="551605198_0" startPos="9.14" endPos="24.14" friendlyPos="true" lines="259"/>
+    <busStop id="1192733192" name="La Passerelle" lane="196711640#7_0" startPos="36.80" endPos="51.80" friendlyPos="true" lines="259"/>
+    <busStop id="1192733227" name="La Chaussée - Musée Tourgueniev" lane="983149027#3_0" startPos="16.06" endPos="31.06" friendlyPos="true" lines="259"/>
+    <busStop id="1192733280" name="Jaurès" lane="128206709#2_0" startPos="97.29" endPos="112.29" friendlyPos="true" lines="259"/>
+    <busStop id="1192733743" name="La Chaussée - Musée Tourgueniev" lane="196756851#0_0" startPos="141.43" endPos="156.43" friendlyPos="true" lines="259"/>
+    <busStop id="1192733837" name="Bas Prunay" lane="670533338#0_0" startPos="77.35" endPos="92.35" friendlyPos="true" lines="259"/>
+    <busStop id="1192733848" name="Val André" lane="938345847#1_0" startPos="18.87" endPos="33.87" friendlyPos="true" lines="259 1"/>
+    <busStop id="1192734064" name="Jaurès" lane="996821055#6_0" startPos="0.00" endPos="10.30" friendlyPos="true" lines="259"/>
+    <busStop id="1192734516" name="Pavillon Halevy" lane="196701462#1_0" startPos="353.24" endPos="368.24" friendlyPos="true" lines="259"/>
+    <busStop id="1192734696" name="La Passerelle" lane="22753547#7_0" startPos="57.00" endPos="72.00" friendlyPos="true" lines="259"/>
+    <busStop id="1192735110" name="Bas Prunay" lane="670533337#0_0" startPos="12.96" endPos="27.96" friendlyPos="true" lines="259"/>
+    <busStop id="1192735114" name="Val André" lane="46193426#1_0" startPos="145.54" endPos="157.06" friendlyPos="true" lines="259"/>
+    <busStop id="1192735114@8268258" name="Val André" lane="957164332_0" startPos="14.25" endPos="29.25" friendlyPos="true" lines="18S"/>
+    <busStop id="1192735124" name="Gare de Saint-Germain en Laye - Rue Thiers" lane="103289154#1_0" startPos="28.93" endPos="43.93" friendlyPos="true"/>
+    <busStop id="1192735261" name="Place Royale" lane="103289122#1_0" startPos="65.14" endPos="80.14" friendlyPos="true" lines="259 R3-Sud R5"/>
+    <busStop id="1279124392" name="Piscine" lane="944220918#1_0" startPos="0.00" endPos="9.26" friendlyPos="true" lines="9A"/>
+    <busStop id="1349021902" name="Victor Hugo" lane="49290577#7_0" startPos="25.12" endPos="32.62" friendlyPos="true"/>
+    <busStop id="1349115409" name="Clos Badère" lane="120290405#0_0" startPos="0.00" endPos="7.35" friendlyPos="true"/>
+    <busStop id="1349115564" name="Val Fleuri" lane="120290387#5_0" startPos="9.81" endPos="24.81" friendlyPos="true"/>
+    <busStop id="1401048938" name="Abreuvoir" lane="126368125_0" startPos="21.82" endPos="36.82" friendlyPos="true" lines="9D"/>
+    <busStop id="1408977964" name="Saint-Nom-la-Bretèche" lane="681346061#0_0" startPos="0.00" endPos="131.87" friendlyPos="true">
+        <access lane="403900983#0_0" pos="68.77" length="46.92" friendlyPos="1"/>
+        <access lane="403900983#1_0" pos="0.00" length="45.43" friendlyPos="1"/>
+        <access lane="403900984_0" pos="75.84" length="41.72" friendlyPos="1"/>
+        <access lane="681346062#0_0" pos="7.93" length="39.35" friendlyPos="1"/>
+        <access lane="838218771_0" pos="6.01" length="44.70" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1408978024" name="L&apos;Étang-la-Ville" lane="681346058_0" startPos="1942.14" endPos="2142.14" friendlyPos="true">
+        <access lane="-51766060#1_0" pos="72.38" length="20.95" friendlyPos="1"/>
+        <access lane="-72180471_0" pos="102.83" length="63.27" friendlyPos="1"/>
+        <access lane="-77006958#2_0" pos="99.70" length="27.77" friendlyPos="1"/>
+        <access lane="51766060#1_0" pos="118.04" length="25.75" friendlyPos="1"/>
+        <access lane="77006958#2_0" pos="27.16" length="32.57" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1549917253" name="Landes" lane="141598083#0_0" startPos="37.07" endPos="52.07" friendlyPos="true"/>
+    <busStop id="1679792573" name="Christiane Frahier" lane="286506387#3_0" startPos="139.66" endPos="153.45" friendlyPos="true" lines="R2-Nord"/>
+    <busStop id="1686062581" name="Place Vauban" lane="23139725#3_0" startPos="23.27" endPos="38.27" friendlyPos="true" lines="24"/>
+    <busStop id="1694933669" name="Rue de Seine" lane="28888986#7_0" startPos="14.91" endPos="22.36" friendlyPos="true"/>
+    <busStop id="1730998221" name="Gare de Chatou - Croissy" lane="506093859_0" startPos="16.44" endPos="24.16" friendlyPos="true" lines="M"/>
+    <busStop id="1730998232" name="Chatou - Croissy" lane="422071413_0" startPos="1968.23" endPos="2168.23" friendlyPos="true" lines="A">
+        <access lane="-506093867_0" pos="40.36" length="50.35" friendlyPos="1"/>
+        <access lane="35591398#0_0" pos="92.30" length="51.80" friendlyPos="1"/>
+        <access lane="35591398#1_0" pos="0.20" length="50.74" friendlyPos="1"/>
+        <access lane="40953567#3_0" pos="27.03" length="41.22" friendlyPos="1"/>
+        <access lane="506093867_0" pos="2.30" length="45.55" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1731764049" name="Saint-Germain-en-Laye" lane="161180860#2_0" startPos="157.91" endPos="258.17" friendlyPos="true" lines="A">
+        <access lane="298584102_0" pos="9.34" length="10.76" friendlyPos="1"/>
+        <access lane="298584105_0" pos="2.08" length="6.77" friendlyPos="1"/>
+        <access lane="298584106_0" pos="4.90" length="3.37" friendlyPos="1"/>
+        <access lane="35336334#0_0" pos="0.00" length="9.69" friendlyPos="1"/>
+        <access lane="629797752_0" pos="33.58" length="12.30" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1741135073" name="Bercail" lane="28939393#4_0" startPos="168.97" endPos="183.97" friendlyPos="true"/>
+    <busStop id="1787007194" name="Patte d&apos;Oie" lane="26197244_0" startPos="4.86" endPos="19.86" friendlyPos="true"/>
+    <busStop id="1806123617" name="Le Vésinet Centre" lane="24492308#2_0" startPos="155.44" endPos="155.44" friendlyPos="true" lines="A">
+        <access lane="-797519598#0_0" pos="33.66" length="26.33" friendlyPos="1"/>
+        <access lane="205666130#2_0" pos="1.92" length="35.73" friendlyPos="1"/>
+        <access lane="330200540_0" pos="20.62" length="33.77" friendlyPos="1"/>
+        <access lane="427233453#2_0" pos="22.53" length="31.13" friendlyPos="1"/>
+        <access lane="76506984#2_0" pos="10.26" length="41.51" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1806123617@2333439" name="Le Vésinet Centre" lane="422071413_0" startPos="1138.83" endPos="1138.83" friendlyPos="true" lines="A">
+        <access lane="-797519598#0_0" pos="33.66" length="26.33" friendlyPos="1"/>
+        <access lane="205666130#2_0" pos="1.92" length="35.73" friendlyPos="1"/>
+        <access lane="330200540_0" pos="20.62" length="33.77" friendlyPos="1"/>
+        <access lane="427233453#2_0" pos="22.53" length="31.13" friendlyPos="1"/>
+        <access lane="76506984#2_0" pos="10.26" length="41.51" friendlyPos="1"/>
+    </busStop>
+    <busStop id="1820540860" name="La Roseraie" lane="371924815#1_0" startPos="34.45" endPos="49.45" friendlyPos="true"/>
+    <busStop id="1820540862" name="Pont de Bougival" lane="22753551#0_0" startPos="19.25" endPos="34.25" friendlyPos="true" lines="D"/>
+    <busStop id="1820540867" name="Verdun" lane="371924815#8_0" startPos="39.22" endPos="54.22" friendlyPos="true"/>
+    <busStop id="2032291719" name="Marly-le-Roi" lane="192681887#3_0" startPos="112.15" endPos="211.95" friendlyPos="true">
+        <access lane="479074636#0_0" pos="0.20" length="40.55" friendlyPos="1"/>
+        <access lane="479074636#1_0" pos="3.47" length="33.19" friendlyPos="1"/>
+        <access lane="820001681#1_0" pos="13.03" length="40.42" friendlyPos="1"/>
+        <access lane="841689225_0" pos="0.00" length="41.16" friendlyPos="1"/>
+        <access lane="841689227_0" pos="0.00" length="40.87" friendlyPos="1"/>
+    </busStop>
+    <busStop id="208911699" name="Ancienne Mairie" lane="572427008#4_0" startPos="55.79" endPos="70.79" friendlyPos="true"/>
+    <busStop id="2275949482" name="Gare de Mareil-Marly" lane="784011536#2_0" startPos="14.00" endPos="26.41" friendlyPos="true"/>
+    <busStop id="231286269" name="Chatou - Croissy" lane="24492308#2_0" startPos="55.44" endPos="255.44" friendlyPos="true" lines="A">
+        <access lane="-506093867_0" pos="42.67" length="56.69" friendlyPos="1"/>
+        <access lane="35591398#0_0" pos="92.30" length="53.15" friendlyPos="1"/>
+        <access lane="35591398#1_0" pos="0.20" length="53.03" friendlyPos="1"/>
+        <access lane="40953567#3_0" pos="20.50" length="41.31" friendlyPos="1"/>
+        <access lane="506093867_0" pos="0.00" length="51.97" friendlyPos="1"/>
+    </busStop>
+    <busStop id="242542118" name="Fourqueux" lane="22604461#4_0" startPos="73.18" endPos="88.18" friendlyPos="true"/>
+    <busStop id="242542597" name="Place Sainte-Catherine" lane="22604576#1_0" startPos="10.37" endPos="25.37" friendlyPos="true"/>
+    <busStop id="2567779245" name="Félix Éboué" lane="250295033#3_0" startPos="117.04" endPos="123.86" friendlyPos="true"/>
+    <busStop id="2572080390" name="Gare du Vésinet - Le Pecq" lane="59577047_0" startPos="205.15" endPos="174.83" friendlyPos="true"/>
+    <busStop id="2572164520" name="Mairie" lane="28605093#4_0" startPos="60.42" endPos="75.42" friendlyPos="true" lines="B N153"/>
+    <busStop id="2670875469" name="Gare de Mareil-Marly" lane="784011536#2_0" startPos="13.56" endPos="26.41" friendlyPos="true" lines="R5"/>
+    <busStop id="2676813457" lane="362068182#9_0" startPos="19.60" endPos="34.60" friendlyPos="true"/>
+    <busStop id="2716947233" name="Croix de Fer" lane="42818750#6_0" startPos="210.44" endPos="224.59" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="2716953002" name="Vieille Butte" lane="42818750#5_0" startPos="34.46" endPos="49.46" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="282098107" name="Brossolette" lane="572427006#4_0" startPos="64.83" endPos="79.83" friendlyPos="true" lines="21"/>
+    <busStop id="286909340" name="Le Vésinet - Le Pecq" lane="422071412_0" startPos="113.88" endPos="313.88" friendlyPos="true" lines="A">
+        <access lane="265762544_0" pos="0.00" length="8.28" friendlyPos="1"/>
+        <access lane="699662427_0" pos="0.00" length="8.61" friendlyPos="1"/>
+        <access lane="699662429#1_0" pos="0.20" length="5.61" friendlyPos="1"/>
+        <access lane="699662429#2_0" pos="0.00" length="6.19" friendlyPos="1"/>
+        <access lane="699662430#0_0" pos="0.00" length="4.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="286909340@2333439" name="Le Vésinet - Le Pecq" lane="422071411_0" startPos="44.66" endPos="244.66" friendlyPos="true" lines="A">
+        <access lane="265762544_0" pos="0.00" length="8.28" friendlyPos="1"/>
+        <access lane="699662427_0" pos="0.00" length="8.61" friendlyPos="1"/>
+        <access lane="699662429#1_0" pos="0.20" length="5.61" friendlyPos="1"/>
+        <access lane="699662429#2_0" pos="0.00" length="6.19" friendlyPos="1"/>
+        <access lane="699662430#0_0" pos="0.00" length="4.71" friendlyPos="1"/>
+    </busStop>
+    <busStop id="2901561305" name="Chemin Neuf" lane="77991878_0" startPos="85.73" endPos="100.73" friendlyPos="true" lines="R4"/>
+    <busStop id="2901561309" name="Georges Thill" lane="77993624#1_0" startPos="33.14" endPos="48.14" friendlyPos="true" lines="R4"/>
+    <busStop id="2901561310" name="Georges Thill" lane="77993629_0" startPos="61.77" endPos="76.77" friendlyPos="true" lines="R4"/>
+    <busStop id="2901561311" name="Grande Ceinture" lane="286506391#4_0" startPos="32.52" endPos="47.52" friendlyPos="true" lines="R2-Sud R4"/>
+    <busStop id="2901561315" name="Les Écuyers" lane="877615338_0" startPos="15.48" endPos="30.48" friendlyPos="true" lines="R4 R3-Nord R2-Nord"/>
+    <busStop id="2901561317" name="Mermoz" lane="320010013#1_0" startPos="105.32" endPos="120.32" friendlyPos="true" lines="R2-Sud R4"/>
+    <busStop id="2901561321" name="Péreire" lane="149544540#2_0" startPos="37.70" endPos="52.70" friendlyPos="true" lines="R4"/>
+    <busStop id="2901561325" name="Square Forest" lane="286506390#2_0" startPos="0.00" endPos="10.44" friendlyPos="true" lines="R2-Sud R4"/>
+    <busStop id="2901561332" name="Gare de Saint-Germain-en-Laye" lane="666436858_0" startPos="29.01" endPos="44.01" friendlyPos="true" lines="R5 R6"/>
+    <busStop id="2901561336" name="Gare de Saint-Germain-en-Laye" lane="666436857_0" startPos="13.97" endPos="28.97" friendlyPos="true" lines="R3-Sud"/>
+    <busStop id="2901561367" name="Gare de Saint-Germain en Laye" lane="666436853_0" startPos="1.23" endPos="16.23" friendlyPos="true"/>
+    <busStop id="2901561371" name="Gare de Saint-Germain en Laye" lane="286478285_0" startPos="61.18" endPos="64.50" friendlyPos="true"/>
+    <busStop id="2901561506" name="Jehan Alain" lane="353254007#1_0" startPos="30.50" endPos="45.50" friendlyPos="true"/>
+    <busStop id="3097317451" name="Rue de Seine" lane="608032199_0" startPos="18.74" endPos="26.24" friendlyPos="true"/>
+    <busStop id="314078239" name="Ramon Saint-Thibault" lane="158856549#1_0" startPos="29.86" endPos="44.86" friendlyPos="true" lines="21"/>
+    <busStop id="314078242" name="Les Aubades" lane="85537031#3_0" startPos="12.06" endPos="27.06" friendlyPos="true" lines="21"/>
+    <busStop id="314078448" name="Jean Moulin" lane="753637281#1_0" startPos="29.19" endPos="44.19" friendlyPos="true" lines="21"/>
+    <busStop id="317479359" name="Gallieni" lane="35396455#2_0" startPos="58.16" endPos="73.16" friendlyPos="true"/>
+    <busStop id="317479362" name="Jaurès" lane="42859108#1_0" startPos="38.37" endPos="53.37" friendlyPos="true"/>
+    <busStop id="320760925" name="Collège Auguste Renoir" lane="29164017#0_0" startPos="5.35" endPos="20.35" friendlyPos="true"/>
+    <busStop id="326994583" name="Mairie (L&apos;Étang-la-Ville)" lane="72180373#1_0" startPos="0.84" endPos="8.34" friendlyPos="true" lines="15"/>
+    <busStop id="326995144" name="Les Poteries" lane="51578815#1_0" startPos="13.33" endPos="28.33" friendlyPos="true"/>
+    <busStop id="331589394" name="Augier" lane="521384730_0" startPos="0.00" endPos="8.20" friendlyPos="true"/>
+    <busStop id="3588048751" name="Thiers" lane="35332900_0" startPos="14.81" endPos="29.81" friendlyPos="true" lines="R3-Nord R6"/>
+    <busStop id="3594253388" name="Les Closeaux" lane="353610263#1_0" startPos="21.18" endPos="36.18" friendlyPos="true" lines="R5"/>
+    <busStop id="3594255121" name="Mairie (Bel Air-Fourqueux)" lane="353610272#0_0" startPos="20.38" endPos="35.38" friendlyPos="true"/>
+    <busStop id="3594255194" name="Guillemotte" lane="120290405#12_0" startPos="158.27" endPos="164.33" friendlyPos="true" lines="R5"/>
+    <busStop id="3594255200" name="Mairie" lane="353610272#0_0" startPos="20.58" endPos="35.58" friendlyPos="true" lines="R2-Nord"/>
+    <busStop id="3594255202" name="Planche" lane="34287257#2_0" startPos="26.27" endPos="41.27" friendlyPos="true" lines="R5"/>
+    <busStop id="3594255205" name="Rue Saint-Louis" lane="583373333#1_0" startPos="12.74" endPos="27.74" friendlyPos="true" lines="R2-Sud R3-Sud R5 R1"/>
+    <busStop id="3594255208" name="Val Fleuri" lane="120290387#5_0" startPos="15.29" endPos="30.29" friendlyPos="true" lines="R5"/>
+    <busStop id="3594255288" name="Rue de Port Marly" lane="34287257#0_0" startPos="17.44" endPos="32.44" friendlyPos="true"/>
+    <busStop id="3594255543" name="Planche" lane="34287257#2_0" startPos="28.47" endPos="43.47" friendlyPos="true"/>
+    <busStop id="3594255556" name="Professeur Roux" lane="353610239_0" startPos="22.36" endPos="37.36" friendlyPos="true" lines="15"/>
+    <busStop id="3594255998" name="Guillemotte" lane="120290405#12_0" startPos="159.13" endPos="164.33" friendlyPos="true"/>
+    <busStop id="3781873949" name="École La Malmaison" lane="374808755_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="389062582" name="Prés Jummelles" lane="33968247#11_0" startPos="52.57" endPos="67.57" friendlyPos="true" lines="15"/>
+    <busStop id="414147127" name="Gare de Saint-Germain en Laye" lane="666436853_0" startPos="1.23" endPos="16.23" friendlyPos="true"/>
+    <busStop id="415273941" name="Saint-Nom-la-Bretèche" lane="681346059_0" startPos="104.29" endPos="231.13" friendlyPos="true">
+        <access lane="-403900983#0_0" pos="0.00" length="37.49" friendlyPos="1"/>
+        <access lane="-403900983#1_0" pos="3.49" length="38.77" friendlyPos="1"/>
+        <access lane="403900983#0_0" pos="68.77" length="32.74" friendlyPos="1"/>
+        <access lane="403900983#1_0" pos="0.00" length="34.20" friendlyPos="1"/>
+        <access lane="403900984_0" pos="74.72" length="27.48" friendlyPos="1"/>
+    </busStop>
+    <busStop id="420799274" name="Saint-Germain-en-Laye RER" lane="820328289_0" startPos="4.32" endPos="19.32" friendlyPos="true"/>
+    <busStop id="4269667282" name="La Chapelle" lane="28605266#3_0" startPos="56.22" endPos="71.22" friendlyPos="true" lines="E D M"/>
+    <busStop id="4269749054" name="Jean Jaurès" lane="708615871_0" startPos="28.24" endPos="43.24" friendlyPos="true" lines="20"/>
+    <busStop id="4270235285" name="Mairie (Marly-le-Roi)" lane="427848450_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="9D"/>
+    <busStop id="4273545476" name="Marly Soleil" lane="128206714#3_0" startPos="20.28" endPos="35.28" friendlyPos="true" lines="1 18 18S"/>
+    <busStop id="4273545477" name="Marly-Soleil" lane="428217078#0_0" startPos="19.81" endPos="34.81" friendlyPos="true" lines="1"/>
+    <busStop id="4273565995" name="Plains Champs" lane="572427013_0" startPos="35.81" endPos="50.81" friendlyPos="true" lines="1"/>
+    <busStop id="4273566004" name="Voisins" lane="172861631#4_0" startPos="15.59" endPos="30.59" friendlyPos="true"/>
+    <busStop id="4273566005" name="Voisins" lane="46240444#0_0" startPos="53.82" endPos="64.81" friendlyPos="true"/>
+    <busStop id="431659653" name="Belloy" lane="26198066#4_0" startPos="102.35" endPos="117.35" friendlyPos="true" lines="C"/>
+    <busStop id="4320215187" name="Réservoir" lane="827146974#1_0" startPos="3.38" endPos="18.38" friendlyPos="true" lines="R2-Nord"/>
+    <busStop id="4320216124" name="Jacques Cartier" lane="28888977#0_0" startPos="7.15" endPos="22.15" friendlyPos="true" lines="G"/>
+    <busStop id="4321708663" name="Place du Docteur Roux" lane="791547223#0_0" startPos="0.00" endPos="11.22" friendlyPos="true" lines="A"/>
+    <busStop id="4321708664" name="Place du Docteur Roux" lane="28990215_0" startPos="0.00" endPos="13.79" friendlyPos="true" lines="A"/>
+    <busStop id="4321790702" name="Taillevent" lane="157286610#0_0" startPos="54.38" endPos="69.38" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="4322002179" name="Président Roosevelt" lane="371730921#2_0" startPos="29.92" endPos="44.92" friendlyPos="true"/>
+    <busStop id="4323467791" name="Debussy" lane="167661099_0" startPos="166.50" endPos="173.77" friendlyPos="true" lines="R2-Sud R1"/>
+    <busStop id="4324487762" name="Joffre" lane="22604578#1_0" startPos="16.76" endPos="31.76" friendlyPos="true" lines="R1 R2-Nord"/>
+    <busStop id="4325170868" name="Hôpital Marché" lane="42834408#6_0" startPos="68.06" endPos="83.06" friendlyPos="true" lines="R3-Sud R6"/>
+    <busStop id="4325327810" name="Schnapper" lane="353254009#3_0" startPos="86.67" endPos="101.67" friendlyPos="true" lines="R3-Sud"/>
+    <busStop id="4326574280" name="Gaudines" lane="23152770#8_0" startPos="9.12" endPos="24.12" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="4332194120" name="Maurice de Vlaminck" lane="794194395#0_0" startPos="54.54" endPos="69.54" friendlyPos="true" lines="A"/>
+    <busStop id="4375493972" name="Gare de Marly-Le-Roi" lane="565683207#1_0" startPos="9.89" endPos="17.39" friendlyPos="true"/>
+    <busStop id="437923774" name="Clos des Épines" lane="572426994#0_0" startPos="45.67" endPos="60.67" friendlyPos="true" lines="9B"/>
+    <busStop id="437923776" name="Clos des Épines" lane="572385850_0" startPos="79.46" endPos="94.46" friendlyPos="true" lines="9B"/>
+    <busStop id="437955152" name="Bas des Ormes" lane="37438932#0_0" startPos="0.00" endPos="7.50" friendlyPos="true" lines="9D 18 18S"/>
+    <busStop id="462274194" name="Place du Docteur Roux" lane="791547223#0_0" startPos="0.00" endPos="11.22" friendlyPos="true"/>
+    <busStop id="462274198" name="Place du Docteur Roux" lane="28990215_0" startPos="0.00" endPos="13.79" friendlyPos="true"/>
+    <busStop id="4664170569" name="Princesse - Croissy" lane="700888869_0" startPos="53.19" endPos="68.19" friendlyPos="true" lines="M"/>
+    <busStop id="4755328424" name="Gare du Vésinet Centre" lane="427233453#2_0" startPos="13.19" endPos="20.69" friendlyPos="true"/>
+    <busStop id="4758524063" name="Jules Ferry" lane="28712823#0_0" startPos="14.50" endPos="29.50" friendlyPos="true" lines="C"/>
+    <busStop id="4763873424" name="Rue de Seine" lane="795789061#0_0" startPos="0.00" endPos="12.51" friendlyPos="true" lines="G"/>
+    <busStop id="477695026" name="Bois Joly" lane="39845090#1_0" startPos="8.50" endPos="19.75" friendlyPos="true" lines="18 18S"/>
+    <busStop id="4954925747" name="Les Moulins" lane="370155236#2_0" startPos="173.02" endPos="188.02" friendlyPos="true"/>
+    <busStop id="4971887398" name="Le Parc" lane="374808749#1_0" startPos="34.71" endPos="49.71" friendlyPos="true"/>
+    <busStop id="4971887399" name="Le Château" lane="10275365#1_0" startPos="4.82" endPos="19.82" friendlyPos="true"/>
+    <busStop id="4971887400" name="Bois Préau" lane="23911681#0_0" startPos="54.11" endPos="69.11" friendlyPos="true" lines="258"/>
+    <busStop id="4983905940" name="Cormiers - Ricard" lane="141598088_0" startPos="186.79" endPos="201.79" friendlyPos="true" lines="A"/>
+    <busStop id="4997917321" name="République" lane="35332802#1_0" startPos="29.88" endPos="44.88" friendlyPos="true" lines="R2-Sud R3-Sud R4"/>
+    <busStop id="5017728397" name="Bellevue" lane="513266209_0" startPos="53.51" endPos="68.51" friendlyPos="true"/>
+    <busStop id="512552817" name="Ermitage Pont" lane="41680025#3_0" startPos="40.60" endPos="55.60" friendlyPos="true" lines="21"/>
+    <busStop id="5326990468" name="Pont de Bougival" lane="495867030#0_0" startPos="46.10" endPos="60.57" friendlyPos="true" lines="259"/>
+    <busStop id="5347188661" name="L&apos;Étang-la-Ville" lane="37438463#2_0" startPos="301.57" endPos="501.57" friendlyPos="true">
+        <access lane="-72180444#1_0" pos="22.68" length="45.33" friendlyPos="1"/>
+        <access lane="-77006958#0_0" pos="66.28" length="24.25" friendlyPos="1"/>
+        <access lane="72180444#1_0" pos="97.03" length="40.53" friendlyPos="1"/>
+        <access lane="77006938_0" pos="0.00" length="67.86" friendlyPos="1"/>
+        <access lane="77006958#0_0" pos="240.83" length="29.05" friendlyPos="1"/>
+    </busStop>
+    <busStop id="5347188662" name="Marly-le-Roi" lane="554034395#1_0" startPos="157.80" endPos="332.86" friendlyPos="true">
+        <access lane="-192681885_0" pos="0.00" length="21.94" friendlyPos="1"/>
+        <access lane="192681885_0" pos="27.97" length="26.07" friendlyPos="1"/>
+        <access lane="192681886_0" pos="5.63" length="28.84" friendlyPos="1"/>
+        <access lane="729967582_0" pos="0.00" length="25.69" friendlyPos="1"/>
+        <access lane="729967584#0_0" pos="3.33" length="15.89" friendlyPos="1"/>
+    </busStop>
+    <busStop id="535098971" name="L&apos;Ermitage" lane="42793524_0" startPos="4.95" endPos="19.95" friendlyPos="true" lines="R5"/>
+    <busStop id="535321292" name="Caraman" lane="758162576#1_0" startPos="39.18" endPos="54.18" friendlyPos="true"/>
+    <busStop id="5360830021" name="Place Sainte-Catherine" lane="22604576#1_0" startPos="12.31" endPos="27.31" friendlyPos="true" lines="R1 R3-Sud"/>
+    <busStop id="536401606" name="Christiane Frahier" lane="286506387#4_0" startPos="2.47" endPos="17.47" friendlyPos="true"/>
+    <busStop id="536433841" name="Place Sainte-Catherine" lane="22604584_0" startPos="1.51" endPos="16.51" friendlyPos="true"/>
+    <busStop id="536440784" name="Quatre Chemins" lane="82804924#0_0" startPos="21.88" endPos="36.88" friendlyPos="true" lines="R3-Sud"/>
+    <busStop id="536470234" name="Gare du Bel Air" lane="42860727#1_0" startPos="34.23" endPos="49.23" friendlyPos="true"/>
+    <busStop id="536472137" name="Marie Curie" lane="42860911_0" startPos="70.89" endPos="78.39" friendlyPos="true"/>
+    <busStop id="536472591" name="Marie Curie" lane="245208091#2_0" startPos="0.00" endPos="11.34" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="536473651" name="Boufflers" lane="758162576#8_0" startPos="18.25" endPos="33.25" friendlyPos="true" lines="R2-Sud R6"/>
+    <busStop id="537148152" name="Village d&apos;Hennemont" lane="684836609_0" startPos="13.12" endPos="25.70" friendlyPos="true"/>
+    <busStop id="5447580461" name="Alexandre Bertrand" lane="23139964#4_0" startPos="2.49" endPos="17.49" friendlyPos="true" lines="R3-Nord R5 259 1"/>
+    <busStop id="5447580463" name="Mairie" lane="565734706#2_0" startPos="3.34" endPos="14.11" friendlyPos="true" lines="9D"/>
+    <busStop id="5447580472" name="Giraud Teulon" lane="23139964#6_0" startPos="15.26" endPos="30.26" friendlyPos="true" lines="R3-Nord R5 259 1"/>
+    <busStop id="5447580478" name="Ermitage" lane="103289090_0" startPos="56.16" endPos="71.16" friendlyPos="true" lines="259"/>
+    <busStop id="5447580479" name="Ermitage" lane="166962445#0_0" startPos="151.04" endPos="166.04" friendlyPos="true" lines="259 1"/>
+    <busStop id="5499193192" name="Collège" lane="590802817_0" startPos="87.76" endPos="102.76" friendlyPos="true" lines="10"/>
+    <busStop id="5499407373" name="Jean Moulin" lane="427799143#2_0" startPos="98.41" endPos="105.36" friendlyPos="true" lines="21"/>
+    <busStop id="5535378940" name="Belloy" lane="26198066#4_0" startPos="102.63" endPos="117.63" friendlyPos="true" lines="A"/>
+    <busStop id="5535380283" name="Charmettes" lane="26198066#2_0" startPos="47.41" endPos="62.41" friendlyPos="true" lines="A"/>
+    <busStop id="5535402525" name="Gare du Vésinet - Le Pecq" lane="28392896_0" startPos="48.18" endPos="41.97" friendlyPos="true"/>
+    <busStop id="5567854794" name="Gare de Saint-Germain en Laye - Rue Thiers" lane="820328280#1_0" startPos="5.38" endPos="20.38" friendlyPos="true"/>
+    <busStop id="5577386156" name="Gare de Saint-Germain en Laye - Rue Thiers" lane="820328280#1_0" startPos="18.62" endPos="33.62" friendlyPos="true"/>
+    <busStop id="5592744634" name="Gare de Marly-le-Roi" lane="820001680#1_0" startPos="21.28" endPos="30.08" friendlyPos="true" lines="10"/>
+    <busStop id="5595002570" name="Glaxo Rougemonts" lane="572427017#2_0" startPos="18.68" endPos="19.25" friendlyPos="true"/>
+    <busStop id="5595097272" name="Ancienne Mairie" lane="572427008#4_0" startPos="59.61" endPos="74.61" friendlyPos="true" lines="1"/>
+    <busStop id="5668122992" name="Jehan Alain" lane="353254007#1_0" startPos="30.50" endPos="45.50" friendlyPos="true" lines="R2-Sud R3-Sud R4 R6 24 3"/>
+    <busStop id="5668251950" name="Place Vauban" lane="23139725#3_0" startPos="27.62" endPos="42.62" friendlyPos="true"/>
+    <busStop id="5669694390" name="Gare de Saint-Germain en Laye - Rue Thiers" lane="820328280#1_0" startPos="32.08" endPos="47.08" friendlyPos="true"/>
+    <busStop id="5676187357" name="Renoir" lane="28915874#1_0" startPos="47.64" endPos="55.24" friendlyPos="true" lines="A"/>
+    <busStop id="5676187359" name="Ribot - Barbier" lane="40949638#0_0" startPos="20.08" endPos="35.08" friendlyPos="true" lines="A"/>
+    <busStop id="5679344692" name="Monceau" lane="28939393#3_0" startPos="25.50" endPos="40.50" friendlyPos="true" lines="A"/>
+    <busStop id="5679344693" name="Parc de l&apos;Europe" lane="28925445#3_0" startPos="39.16" endPos="54.02" friendlyPos="true" lines="A"/>
+    <busStop id="5679344694" name="Collège Auguste Renoir" lane="28925445#0_0" startPos="20.83" endPos="29.95" friendlyPos="true" lines="A"/>
+    <busStop id="5679344699" name="Collège Auguste Renoir" lane="29164017#0_0" startPos="6.45" endPos="21.45" friendlyPos="true" lines="A"/>
+    <busStop id="5679344700" name="Parc de l&apos;Europe" lane="263959608#1_0" startPos="98.35" endPos="113.35" friendlyPos="true" lines="A"/>
+    <busStop id="5701475575" name="Mairie" lane="72180564_0" startPos="0.00" endPos="13.39" friendlyPos="true" lines="15"/>
+    <busStop id="5716730562" name="La Jonchère" lane="601541594#1_0" startPos="10.52" endPos="25.52" friendlyPos="true" lines="259"/>
+    <busStop id="5716928465" name="La Jonchère" lane="10277647_0" startPos="22.46" endPos="29.96" friendlyPos="true"/>
+    <busStop id="5717925668" name="Carrefour de la Croix" lane="45740899#3_0" startPos="95.16" endPos="110.16" friendlyPos="true" lines="M"/>
+    <busStop id="5717925671" name="Gare du Vésinet Centre" lane="427233453#2_0" startPos="7.44" endPos="22.44" friendlyPos="true" lines="M"/>
+    <busStop id="5717925672" name="Émile Thiebaut" lane="109300487#1_0" startPos="55.41" endPos="70.41" friendlyPos="true" lines="M"/>
+    <busStop id="5717925673" name="Allée de la Gare" lane="362068182#9_0" startPos="20.93" endPos="35.93" friendlyPos="true" lines="M"/>
+    <busStop id="5717925674" name="Lycée Alain" lane="362068182#4_0" startPos="111.39" endPos="126.39" friendlyPos="true" lines="M"/>
+    <busStop id="5717925681" name="Président Roosevelt" lane="371730921#2_0" startPos="35.62" endPos="50.62" friendlyPos="true" lines="M E 20"/>
+    <busStop id="5717925682" name="Princesse - Croissy" lane="371730921#0_0" startPos="21.81" endPos="36.81" friendlyPos="true" lines="M E 20"/>
+    <busStop id="5717925684" name="Verdun" lane="371924815#8_0" startPos="29.11" endPos="44.11" friendlyPos="true" lines="D M E"/>
+    <busStop id="5717925685" name="La Roseraie" lane="371924815#1_0" startPos="37.29" endPos="52.29" friendlyPos="true" lines="D M E"/>
+    <busStop id="5718098709" name="Gare de Chatou - Croissy" lane="28607143_0" startPos="0.00" endPos="7.50" friendlyPos="true"/>
+    <busStop id="5722098857" name="Gare de Saint-Germain-en-Laye" lane="666436853_0" startPos="1.23" endPos="16.23" friendlyPos="true" lines="R3-Sud R4 R6"/>
+    <busStop id="5722098858" name="Les Écuyers" lane="877615341_0" startPos="34.36" endPos="49.36" friendlyPos="true" lines="R2-Sud R3-Sud R4 R6"/>
+    <busStop id="5722098859" name="Centre Administratif" lane="28033623#1_0" startPos="13.63" endPos="28.63" friendlyPos="true" lines="R3-Sud R6"/>
+    <busStop id="5722098861" name="Bergette" lane="35396476#0_0" startPos="28.27" endPos="43.27" friendlyPos="true" lines="R3-Sud R6"/>
+    <busStop id="5722098865" name="Gare du Bel Air" lane="42860858#2_0" startPos="63.47" endPos="78.47" friendlyPos="true" lines="R1 R6"/>
+    <busStop id="5722098866" name="Place des Rotondes" lane="174682500#1_0" startPos="0.00" endPos="13.36" friendlyPos="true" lines="R1 R6"/>
+    <busStop id="5722098867" name="Lycée Léonard de Vinci" lane="172205687#2_0" startPos="28.84" endPos="43.84" friendlyPos="true" lines="R6 14"/>
+    <busStop id="5722098868" name="Verdi" lane="42860813#4_0" startPos="26.59" endPos="41.59" friendlyPos="true" lines="R1 R6"/>
+    <busStop id="5722098869" name="Gounod" lane="42860813#0_0" startPos="226.80" endPos="241.80" friendlyPos="true" lines="R1 R6"/>
+    <busStop id="5722098870" name="Gare du Bel Air" lane="42860727#1_0" startPos="38.24" endPos="53.20" friendlyPos="true" lines="R1 R6"/>
+    <busStop id="5722098872" name="Caraman" lane="758162576#1_0" startPos="46.78" endPos="61.78" friendlyPos="true" lines="R2-Sud R6"/>
+    <busStop id="5722098873" name="Gallieni" lane="35396455#2_0" startPos="58.62" endPos="73.62" friendlyPos="true" lines="R3-Nord R6"/>
+    <busStop id="5722098877" name="Place de la Victoire" lane="877615337_0" startPos="5.02" endPos="20.02" friendlyPos="true" lines="R6"/>
+    <busStop id="5722250074" name="Les Écuyers" lane="877615341_0" startPos="34.37" endPos="49.37" friendlyPos="true"/>
+    <busStop id="5756804740" name="Hameau Sisley - Collége Pierre et Marie Curie" lane="124075434_0" startPos="83.14" endPos="98.14" friendlyPos="true" lines="20"/>
+    <busStop id="5756804743" name="Route de Croissy" lane="795795138_0" startPos="19.00" endPos="34.00" friendlyPos="true" lines="20"/>
+    <busStop id="5761221482" name="Rue de Seine" lane="608032199_0" startPos="13.49" endPos="28.49" friendlyPos="true" lines="G"/>
+    <busStop id="5761221484" name="République" lane="26197561#0_0" startPos="100.91" endPos="114.83" friendlyPos="true" lines="G 20"/>
+    <busStop id="5790031166" name="Les Glaises" lane="611600981#1_0" startPos="6.41" endPos="21.41" friendlyPos="true" lines="9B"/>
+    <busStop id="5937935977" name="Augier" lane="39362945#1_0" startPos="5.60" endPos="20.60" friendlyPos="true" lines="E D"/>
+    <busStop id="5937935978" name="Lucien Guitry" lane="77180885#3_0" startPos="9.30" endPos="24.30" friendlyPos="true" lines="E"/>
+    <busStop id="5937935983" name="École Princesse" lane="68452284#1_0" startPos="3.35" endPos="18.35" friendlyPos="true" lines="E 20"/>
+    <busStop id="5937939989" name="Lucien Guitry" lane="77180876#4_0" startPos="19.57" endPos="34.57" friendlyPos="true" lines="E"/>
+    <busStop id="5937939990" name="Augier" lane="521384730_0" startPos="0.00" endPos="8.20" friendlyPos="true" lines="D E"/>
+    <busStop id="5937939991" name="Les Moulins" lane="370155236#2_0" startPos="172.31" endPos="187.31" friendlyPos="true" lines="D E"/>
+    <busStop id="5937939992" name="Patte d&apos;Oie" lane="26197244_0" startPos="11.32" endPos="26.32" friendlyPos="true" lines="D E"/>
+    <busStop id="6119468790" name="Gare de Saint-Germain en Laye" lane="666436853_0" startPos="1.23" endPos="16.23" friendlyPos="true"/>
+    <busStop id="6166055478" name="Plains Champs" lane="783835197_0" startPos="16.86" endPos="31.86" friendlyPos="true" lines="1"/>
+    <busStop id="6166055479" name="Marly-Soleil" lane="128206714#3_0" startPos="20.84" endPos="35.84" friendlyPos="true" lines="1 18 18S"/>
+    <busStop id="6166055480" name="Ancienne Mairie" lane="25862642#0_0" startPos="18.86" endPos="33.86" friendlyPos="true" lines="1 18S"/>
+    <busStop id="6166055481" name="Val André" lane="46193426#1_0" startPos="145.57" endPos="157.06" friendlyPos="true" lines="1"/>
+    <busStop id="6166055482" name="Ermitage" lane="103289090_0" startPos="53.74" endPos="68.74" friendlyPos="true" lines="10 1"/>
+    <busStop id="6166061685" name="Rue Saint-Louis" lane="583373333#1_0" startPos="12.47" endPos="27.47" friendlyPos="true" lines="1"/>
+    <busStop id="6166061687" name="Gare de Saint-Germain en Laye - Rue Thiers" lane="103289154#1_0" startPos="33.38" endPos="40.87" friendlyPos="true"/>
+    <busStop id="6166184992" name="Gare du Vésinet - Le Pecq" lane="26197592_0" startPos="16.34" endPos="31.34" friendlyPos="true" lines="N153"/>
+    <busStop id="6166185001" name="Mairie" lane="933836385#1_0" startPos="119.85" endPos="134.85" friendlyPos="true" lines="N153 B"/>
+    <busStop id="6185663281" name="Pontel" lane="353254018#0_0" startPos="45.36" endPos="60.36" friendlyPos="true" lines="R3-Sud"/>
+    <busStop id="6185663284" name="Gare de Saint-Germain en Laye - Rue Thiers" lane="820328289_0" startPos="12.05" endPos="27.05" friendlyPos="true"/>
+    <busStop id="6239474567" name="Gare de Saint-Germain en Laye" lane="666436857_0" startPos="8.90" endPos="23.90" friendlyPos="true"/>
+    <busStop id="6252396586" name="La Machine" lane="196701461#2_0" startPos="14.44" endPos="29.44" friendlyPos="true" lines="259"/>
+    <busStop id="6252396587" name="Pavillon Halevy" lane="670533337#4_0" startPos="26.92" endPos="41.92" friendlyPos="true" lines="259"/>
+    <busStop id="6252396594" name="La Machine" lane="196701462#0_0" startPos="0.00" endPos="10.31" friendlyPos="true" lines="259"/>
+    <busStop id="626014401" name="Mairie (Bel Air-Fourqueux)" lane="49290580_0" startPos="77.06" endPos="92.06" friendlyPos="true"/>
+    <busStop id="6371241226" lane="37549704#5_0" startPos="1.87" endPos="16.87" friendlyPos="true"/>
+    <busStop id="6416426088" name="Voisins" lane="46240444#0_0" startPos="51.62" endPos="64.81" friendlyPos="true" lines="1"/>
+    <busStop id="6416426097" name="Voisins" lane="172861631#4_0" startPos="17.66" endPos="32.66" friendlyPos="true" lines="1"/>
+    <busStop id="6416640190" name="Village d&apos;Hennemont" lane="684836609_0" startPos="9.30" endPos="24.30" friendlyPos="true" lines="R2-Nord R4"/>
+    <busStop id="6416700730" name="Village d&apos;Hennemont" lane="545639981_0" startPos="17.35" endPos="29.20" friendlyPos="true"/>
+    <busStop id="6575502415" name="Lycée International" lane="684836609_0" startPos="6.55" endPos="21.55" friendlyPos="true" lines="14"/>
+    <busStop id="6597572440" name="Rue de Port Marly" lane="34287257#0_0" startPos="20.84" endPos="35.84" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572444" name="Lavoir" lane="692545408#5_0" startPos="0.00" endPos="13.23" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572447" name="Croix Rouge" lane="353249791#5_0" startPos="134.40" endPos="149.40" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572448" name="Clos Baron" lane="353249791#3_0" startPos="0.00" endPos="6.92" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572452" name="Clos Badère" lane="120290422#9_0" startPos="0.00" endPos="5.90" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572454" name="Guillemotte" lane="120290422#0_0" startPos="0.00" endPos="11.55" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572458" name="Croix Rouge" lane="119907642#0_0" startPos="26.93" endPos="41.93" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572461" name="Mairie" lane="172225643#8_0" startPos="122.27" endPos="137.27" friendlyPos="true" lines="R5"/>
+    <busStop id="6597572463" name="Verger" lane="33637996#3_0" startPos="16.02" endPos="31.02" friendlyPos="true" lines="R5"/>
+    <busStop id="6598228491" name="Rue de la Salle" lane="162108049#4_0" startPos="1.11" endPos="8.61" friendlyPos="true" lines="R1 R2-Nord"/>
+    <busStop id="6598228493" name="Place Sainte-Catherine" lane="42808092#0_0" startPos="6.79" endPos="21.79" friendlyPos="true" lines="R3-Nord R2-Nord"/>
+    <busStop id="6598228494" name="Jaurès" lane="42859108#1_0" startPos="43.23" endPos="58.23" friendlyPos="true" lines="R3-Nord R2-Nord"/>
+    <busStop id="6598306879" name="Croix de Fer" lane="42818750#6_0" startPos="207.45" endPos="222.45" friendlyPos="true"/>
+    <busStop id="6598315505" name="École Normale" lane="702617152#1_0" startPos="50.29" endPos="65.29" friendlyPos="true" lines="R2-Sud"/>
+    <busStop id="6598315515" name="Place Sainte-Catherine" lane="22604584_0" startPos="1.51" endPos="16.51" friendlyPos="true" lines="R2-Sud R1"/>
+    <busStop id="6598361480" name="Nicot" lane="172192378#1_0" startPos="73.33" endPos="88.33" friendlyPos="true" lines="R1"/>
+    <busStop id="6598371022" name="Sous-Préfecture" lane="680348065_0" startPos="0.00" endPos="8.92" friendlyPos="true" lines="R1"/>
+    <busStop id="6598371025" name="Sous-Préfecture" lane="353259114_0" startPos="15.04" endPos="26.96" friendlyPos="true" lines="R1"/>
+    <busStop id="660187547" name="Gare de Marly-Le-Roi" lane="820001680#1_0" startPos="19.54" endPos="34.54" friendlyPos="true" lines="10"/>
+    <busStop id="663127111" name="Claude Monet" lane="799470696#2_0" startPos="22.38" endPos="37.03" friendlyPos="true" lines="367"/>
+    <busStop id="663127113" name="Claude Monet" lane="799470695#1_0" startPos="5.78" endPos="17.69" friendlyPos="true" lines="367"/>
+    <busStop id="6649181593" name="Sabinettes" lane="141598083#10_0" startPos="27.65" endPos="40.57" friendlyPos="true" lines="A"/>
+    <busStop id="6649181594" name="Stade Finaltéri" lane="141598083#4_0" startPos="10.40" endPos="25.40" friendlyPos="true" lines="A"/>
+    <busStop id="6649181595" name="Landes" lane="141598083#0_0" startPos="54.12" endPos="69.12" friendlyPos="true" lines="A"/>
+    <busStop id="6658431280" name="Sainte-Radegonde" lane="42794371#0_0" startPos="22.27" endPos="37.27" friendlyPos="true" lines="R3-Sud"/>
+    <busStop id="6658497690" name="Fourqueux" lane="22604461#4_0" startPos="66.36" endPos="81.36" friendlyPos="true" lines="R3-Nord"/>
+    <busStop id="6658598421" name="Mairie" lane="528835938#2_0" startPos="0.00" endPos="11.59" friendlyPos="true" lines="21"/>
+    <busStop id="6988636301" name="Gare du Vésinet - Le Pecq" lane="28392896_0" startPos="39.60" endPos="54.60" friendlyPos="true"/>
+    <busStop id="7003442500" name="Saint-Germain-en-Laye RER" lane="748887683_0" startPos="11.76" endPos="26.76" friendlyPos="true"/>
+    <busStop id="7118977296" name="Lieutenant Chassagne" lane="33968247#7_0" startPos="4.59" endPos="19.59" friendlyPos="true" lines="15"/>
+    <busStop id="7321382070" name="Plains Champs" lane="821998679_0" startPos="27.60" endPos="42.60" friendlyPos="true" lines="18 18S"/>
+    <busStop id="7323493900" name="Gare de Mareil-Marly" lane="784011539#2_0" startPos="0.00" endPos="11.51" friendlyPos="true"/>
+    <busStop id="738958298" name="Gare du Vésinet - Le Pecq" lane="59577047_0" startPos="198.46" endPos="213.46" friendlyPos="true"/>
+    <busStop id="7439530158" name="Gare de Marly-le-Roi - Bèque" lane="565727504_0" startPos="15.04" endPos="20.48" friendlyPos="true"/>
+    <busStop id="7441926163" name="Mairie (Pecq)" lane="528835938#2_0" startPos="0.00" endPos="6.68" friendlyPos="true" lines="21"/>
+    <busStop id="7454739262" name="Gare du Vésinet Centre" lane="427233453#2_0" startPos="7.44" endPos="22.44" friendlyPos="true"/>
+    <busStop id="7454739263" name="Allée des Machines" lane="401846271#7_0" startPos="13.67" endPos="28.67" friendlyPos="true" lines="20"/>
+    <busStop id="7454739264" name="Chemin de Ronde" lane="217559043_0" startPos="58.52" endPos="73.52" friendlyPos="true" lines="20"/>
+    <busStop id="7624109098" name="Jacques Cartier" lane="28888977#0_0" startPos="4.22" endPos="19.22" friendlyPos="true" lines="21S"/>
+    <busStop id="7624109109" name="République" lane="26197561#0_0" startPos="95.78" endPos="110.78" friendlyPos="true" lines="21"/>
+    <busStop id="7624279535" name="Landes" lane="141598083#0_0" startPos="52.05" endPos="67.05" friendlyPos="true"/>
+    <busStop id="7624279539" name="Monceau" lane="28939393#3_0" startPos="19.97" endPos="34.97" friendlyPos="true" lines="L"/>
+    <busStop id="7624279540" name="Bercail" lane="28939393#4_0" startPos="135.09" endPos="150.09" friendlyPos="true" lines="L"/>
+    <busStop id="7624279542" name="Ribot - Barbier" lane="40949638#0_0" startPos="18.44" endPos="33.44" friendlyPos="true"/>
+    <busStop id="7624279543" name="Charmettes" lane="26198066#2_0" startPos="42.45" endPos="57.45" friendlyPos="true" lines="C"/>
+    <busStop id="7624279544" name="Renoir" lane="28915874#1_0" startPos="43.50" endPos="55.24" friendlyPos="true" lines="B"/>
+    <busStop id="7624279548" name="Parc de l&apos;Europe" lane="28925445#3_0" startPos="36.56" endPos="51.56" friendlyPos="true" lines="L"/>
+    <busStop id="7624279552" name="Cormiers - Ricard" lane="791547221#0_0" startPos="7.43" endPos="22.43" friendlyPos="true"/>
+    <busStop id="7624279553" name="Maurice de Vlaminck" lane="40949638#2_0" startPos="37.78" endPos="52.78" friendlyPos="true"/>
+    <busStop id="7624279554" name="Maurice de Vlaminck" lane="794194395#0_0" startPos="44.22" endPos="59.22" friendlyPos="true" lines="B"/>
+    <busStop id="7624279555" name="Collège Auguste Renoir" lane="28925445#0_0" startPos="17.00" endPos="29.95" friendlyPos="true" lines="L"/>
+    <busStop id="7624279556" name="Parc de l&apos;Europe" lane="263959608#1_0" startPos="95.15" endPos="110.15" friendlyPos="true"/>
+    <busStop id="7624279557" name="Sabinettes" lane="141598083#10_0" startPos="26.87" endPos="40.57" friendlyPos="true"/>
+    <busStop id="7624279558" name="Sabinettes" lane="141598083#10_0" startPos="0.00" endPos="12.25" friendlyPos="true"/>
+    <busStop id="7624279559" name="Cormiers - Ricard" lane="141598088_0" startPos="182.91" endPos="197.91" friendlyPos="true"/>
+    <busStop id="7624279561" name="Stade Finaltéri" lane="141598083#5_0" startPos="9.43" endPos="24.43" friendlyPos="true"/>
+    <busStop id="7624279562" name="Stade Finaltéri" lane="141598083#4_0" startPos="10.14" endPos="25.14" friendlyPos="true"/>
+    <busStop id="7630448542" name="Nicot" lane="172192378#1_0" startPos="72.87" endPos="87.87" friendlyPos="true"/>
+    <busStop id="7630448548" name="Lycée Léonard de Vinci" lane="172205687#2_0" startPos="28.84" endPos="43.84" friendlyPos="true"/>
+    <busStop id="7641045918" name="Paul Bert" lane="806567431_0" startPos="10.08" endPos="25.08" friendlyPos="true" lines="B"/>
+    <busStop id="7641045921" name="Mairie (Chatou)" lane="933836385#1_0" startPos="116.99" endPos="131.99" friendlyPos="true" lines="N153 B"/>
+    <busStop id="7641045922" name="Mairie (Chatou)" lane="28605093#4_0" startPos="56.32" endPos="71.32" friendlyPos="true" lines="B"/>
+    <busStop id="7641045932" name="Claude Monet" lane="28368126#2_0" startPos="10.47" endPos="25.47" friendlyPos="true" lines="B"/>
+    <busStop id="7641045933" name="République Leclerc" lane="35359347#1_0" startPos="135.88" endPos="150.88" friendlyPos="true" lines="B"/>
+    <busStop id="7641045935" name="République Pathé" lane="35359313#4_0" startPos="34.64" endPos="49.64" friendlyPos="true" lines="B"/>
+    <busStop id="7653926594" name="Square de Saint-Germain" lane="85537031#10_0" startPos="0.00" endPos="9.43" friendlyPos="true" lines="21"/>
+    <busStop id="7653926595" name="Square des Sablons" lane="158856549#2_0" startPos="139.79" endPos="154.79" friendlyPos="true" lines="21"/>
+    <busStop id="7653926598" name="Les Lampes" lane="819897878_0" startPos="23.59" endPos="38.59" friendlyPos="true" lines="21"/>
+    <busStop id="7653926601" name="Ermitage - Castors" lane="41680024_0" startPos="4.68" endPos="19.68" friendlyPos="true" lines="21"/>
+    <busStop id="7653926605" name="Les Pins - Clos Courché" lane="427848447#5_0" startPos="18.62" endPos="33.62" friendlyPos="true" lines="10 21"/>
+    <busStop id="7653926606" name="Jean Witold" lane="819897880#1_0" startPos="33.45" endPos="48.45" friendlyPos="true" lines="10 21"/>
+    <busStop id="7653926608" name="Jean Jaurès" lane="208966714_0" startPos="28.05" endPos="43.05" friendlyPos="true" lines="21"/>
+    <busStop id="7653926609" name="Jean Jaurès" lane="708615871_0" startPos="23.05" endPos="38.05" friendlyPos="true" lines="21"/>
+    <busStop id="7653926610" name="Les Vignes Benettes" lane="428223140_0" startPos="11.48" endPos="26.48" friendlyPos="true" lines="21"/>
+    <busStop id="7656622106" name="Square de Versailles" lane="37439255#2_0" startPos="0.00" endPos="10.55" friendlyPos="true" lines="10"/>
+    <busStop id="7656622109" name="Le Galion" lane="29698052#2_0" startPos="7.56" endPos="22.56" friendlyPos="true" lines="9B"/>
+    <busStop id="7656622111" name="Gare de Marly-Le-Roi" lane="51730550_0" startPos="9.33" endPos="16.82" friendlyPos="true"/>
+    <busStop id="7656622112" name="Vauillons" lane="585488265#10_0" startPos="14.09" endPos="27.94" friendlyPos="true" lines="9D"/>
+    <busStop id="7656622114" name="Les Lampes" lane="37439255#15_0" startPos="18.38" endPos="33.38" friendlyPos="true" lines="10"/>
+    <busStop id="7656622115" name="Sablons - Jean Vilar" lane="572426994#7_0" startPos="4.53" endPos="19.53" friendlyPos="true" lines="9B"/>
+    <busStop id="7656622116" name="Sablons - Jean Vilar" lane="572426994#6_0" startPos="0.24" endPos="15.24" friendlyPos="true" lines="9B"/>
+    <busStop id="7657520068" name="Allée des Épines" lane="37438098#2_0" startPos="0.00" endPos="12.63" friendlyPos="true" lines="9B"/>
+    <busStop id="7657520069" name="Viaduc" lane="585488265#7_0" startPos="0.00" endPos="13.28" friendlyPos="true" lines="9D"/>
+    <busStop id="7657520070" name="Saint-Fiacre" lane="572367926#1_0" startPos="9.55" endPos="24.55" friendlyPos="true" lines="1 9D 18 18S"/>
+    <busStop id="7657520072" name="Alexandre Bertrand" lane="23139964#4_0" startPos="1.20" endPos="16.20" friendlyPos="true" lines="10 15"/>
+    <busStop id="7657520073" name="Ermitage" lane="166962445#0_0" startPos="145.89" endPos="160.89" friendlyPos="true" lines="10"/>
+    <busStop id="7657528192" name="Giraud Teulon" lane="23139964#6_0" startPos="9.85" endPos="24.85" friendlyPos="true" lines="10 15"/>
+    <busStop id="7657528193" name="Place Royale" lane="103289122#1_0" startPos="61.08" endPos="76.08" friendlyPos="true" lines="10 15"/>
+    <busStop id="7657528194" name="Gare de Saint-Germain en Laye - Rue Thiers" lane="103289154#1_0" startPos="28.93" endPos="43.93" friendlyPos="true"/>
+    <busStop id="7657528195" name="Bèque SNCF - Gare de Marly-le-Roi" lane="820001674_0" startPos="0.00" endPos="10.64" friendlyPos="true"/>
+    <busStop id="7657528203" name="Europe" lane="37439195#1_0" startPos="8.87" endPos="23.87" friendlyPos="true" lines="9D"/>
+    <busStop id="7659824481" name="Boufflers" lane="758162576#8_0" startPos="23.54" endPos="38.54" friendlyPos="true"/>
+    <busStop id="7659824482" name="Verdi" lane="42860813#4_0" startPos="23.23" endPos="38.23" friendlyPos="true"/>
+    <busStop id="7659824484" name="Gounod" lane="42860813#0_0" startPos="221.20" endPos="236.20" friendlyPos="true"/>
+    <busStop id="7659912586" name="Sainte-Radegonde" lane="42794371#0_0" startPos="19.45" endPos="34.45" friendlyPos="true"/>
+    <busStop id="7659912587" name="George Sand" lane="42860316#3_0" startPos="7.71" endPos="22.71" friendlyPos="true"/>
+    <busStop id="7659912588" name="Gaudines" lane="23152770#8_0" startPos="6.32" endPos="21.32" friendlyPos="true"/>
+    <busStop id="7659912589" name="Taillevent" lane="157286610#0_0" startPos="50.43" endPos="65.43" friendlyPos="true"/>
+    <busStop id="7659912590" name="Taillevent" lane="157286610#0_0" startPos="83.11" endPos="98.11" friendlyPos="true"/>
+    <busStop id="7659912592" name="Mairie (Bel Air-Fourqueux)" lane="353610272#2_0" startPos="20.31" endPos="35.31" friendlyPos="true"/>
+    <busStop id="7659912594" name="Centre Administratif" lane="35396355#3_0" startPos="39.47" endPos="54.47" friendlyPos="true"/>
+    <busStop id="7659912596" name="Quatre Chemins" lane="82804924#0_0" startPos="18.31" endPos="33.31" friendlyPos="true"/>
+    <busStop id="7659912598" name="Quatre Chemins" lane="82804924#1_0" startPos="24.92" endPos="39.92" friendlyPos="true"/>
+    <busStop id="7659912603" name="Place Sainte-Catherine" lane="42808092#0_0" startPos="4.69" endPos="19.69" friendlyPos="true"/>
+    <busStop id="7659912604" name="Jaurès" lane="42859108#2_0" startPos="9.20" endPos="24.20" friendlyPos="true"/>
+    <busStop id="7659912606" name="Gallieni" lane="35396455#2_0" startPos="94.59" endPos="109.59" friendlyPos="true"/>
+    <busStop id="7659912608" name="République" lane="35332802#1_0" startPos="26.82" endPos="41.82" friendlyPos="true"/>
+    <busStop id="7659912609" name="Les Écuyers" lane="877615338_0" startPos="14.32" endPos="29.32" friendlyPos="true"/>
+    <busStop id="7659912610" name="Thiers" lane="35332900_0" startPos="13.36" endPos="28.36" friendlyPos="true"/>
+    <busStop id="7659912613" name="Centre Administratif" lane="28033623#1_0" startPos="10.04" endPos="25.04" friendlyPos="true"/>
+    <busStop id="7659912615" name="L&apos;Ermitage" lane="42793524_0" startPos="1.37" endPos="16.37" friendlyPos="true" lines="15"/>
+    <busStop id="7659912617" name="Rue de Port Marly" lane="34287257#1_0" startPos="1.93" endPos="16.93" friendlyPos="true"/>
+    <busStop id="7659912618" name="Verger" lane="33637996#3_0" startPos="12.10" endPos="27.10" friendlyPos="true"/>
+    <busStop id="7659912619" name="Mairie (Mareil-Marly)" lane="172225643#8_0" startPos="136.54" endPos="151.54" friendlyPos="true"/>
+    <busStop id="7659912620" name="Mairie (Mareil-Marly)" lane="172225643#8_0" startPos="120.77" endPos="135.77" friendlyPos="true"/>
+    <busStop id="7659912621" name="Lavoir" lane="692545408#5_0" startPos="0.00" endPos="11.63" friendlyPos="true"/>
+    <busStop id="7659912622" name="Couture" lane="118927919#1_0" startPos="0.00" endPos="12.12" friendlyPos="true"/>
+    <busStop id="7659912623" name="Croix Rouge" lane="353249791#5_0" startPos="131.78" endPos="146.78" friendlyPos="true"/>
+    <busStop id="7659912624" name="Croix Rouge" lane="119907642#0_0" startPos="21.32" endPos="36.32" friendlyPos="true"/>
+    <busStop id="7659912627" name="Poney Club" lane="49290577#1_0" startPos="9.83" endPos="24.83" friendlyPos="true"/>
+    <busStop id="7659912628" name="Val Fleuri" lane="120290387#6_0" startPos="14.25" endPos="29.25" friendlyPos="true"/>
+    <busStop id="7659912656" name="Val André" lane="938345847#1_0" startPos="15.21" endPos="30.21" friendlyPos="true"/>
+    <busStop id="7659912657" name="La Source" lane="572427004_0" startPos="25.53" endPos="40.53" friendlyPos="true" lines="18 18S"/>
+    <busStop id="7659912660" name="Route de Versailles" lane="585497361#0_0" startPos="6.13" endPos="21.13" friendlyPos="true" lines="18 18S"/>
+    <busStop id="7660960872" name="Bergette" lane="35396476#0_0" startPos="25.20" endPos="40.20" friendlyPos="true"/>
+    <busStop id="7660960874" name="Gambetta / Place Royale" lane="353610204#2_0" startPos="40.57" endPos="54.45" friendlyPos="true"/>
+    <busStop id="7660960876" name="Pontel" lane="353254018#0_0" startPos="37.60" endPos="52.60" friendlyPos="true"/>
+    <busStop id="7660960881" name="Hôpital Marché" lane="42834408#6_0" startPos="66.73" endPos="81.73" friendlyPos="true"/>
+    <busStop id="7660960882" name="Village d&apos;Hennemont" lane="286506392#1_0" startPos="4.62" endPos="19.62" friendlyPos="true"/>
+    <busStop id="7660960884" name="Vieille Butte" lane="42818750#5_0" startPos="31.17" endPos="46.17" friendlyPos="true"/>
+    <busStop id="7660979388" name="Mermoz" lane="320010013#2_0" startPos="17.37" endPos="32.37" friendlyPos="true"/>
+    <busStop id="7660979391" name="Mermoz" lane="320010013#1_0" startPos="100.11" endPos="115.11" friendlyPos="true"/>
+    <busStop id="7660979394" name="Square Forest" lane="286506390#2_0" startPos="0.00" endPos="10.44" friendlyPos="true"/>
+    <busStop id="7660979395" name="Grande Ceinture" lane="286506391#4_0" startPos="28.83" endPos="43.83" friendlyPos="true"/>
+    <busStop id="7660979396" name="École Normale" lane="702617152#1_0" startPos="43.66" endPos="58.66" friendlyPos="true"/>
+    <busStop id="7661067759" name="Gaillon" lane="51578802#1_0" startPos="40.50" endPos="55.50" friendlyPos="true" lines="9D 9A 9AB"/>
+    <busStop id="7661067760" name="Les Bas Picards" lane="572373716#1_0" startPos="34.05" endPos="49.05" friendlyPos="true" lines="9D 9A 9AB"/>
+    <busStop id="7661067762" name="La Sabotte" lane="572373716#0_0" startPos="4.86" endPos="19.86" friendlyPos="true" lines="9D 9A 9AB"/>
+    <busStop id="7661067764" name="Noyer Garenne" lane="944220912#2_0" startPos="12.26" endPos="27.26" friendlyPos="true" lines="9A 9AB"/>
+    <busStop id="7661067765" name="Piscine" lane="29698038#1_0" startPos="1.31" endPos="16.16" friendlyPos="true" lines="9A"/>
+    <busStop id="7661067766" name="Mareil Montval" lane="51424335#2_0" startPos="131.84" endPos="146.84" friendlyPos="true" lines="9D 9A 9AB"/>
+    <busStop id="7661067768" name="Le Verger Saint-Exupéry" lane="166969274#1_0" startPos="7.28" endPos="22.28" friendlyPos="true" lines="10"/>
+    <busStop id="7661821713" name="Diderot" lane="35396529#0_0" startPos="185.78" endPos="200.78" friendlyPos="true"/>
+    <busStop id="7661821714" name="Ermitage" lane="353254009#0_0" startPos="42.70" endPos="57.70" friendlyPos="true"/>
+    <busStop id="7661821717" name="Sous-Préfecture" lane="353259114_0" startPos="10.93" endPos="25.93" friendlyPos="true"/>
+    <busStop id="7661821721" name="Les Ombrages" lane="51686658#0_0" startPos="19.61" endPos="34.61" friendlyPos="true" lines="9D"/>
+    <busStop id="7662174634" name="Square de Monte Cristo" lane="37439255#11_0" startPos="0.00" endPos="13.67" friendlyPos="true" lines="10"/>
+    <busStop id="7674894974" name="Petit Parc Bignon" lane="821982601#4_0" startPos="146.45" endPos="158.56" friendlyPos="true"/>
+    <busStop id="7674894975" name="Avenue des Chênes" lane="33968247#1_0" startPos="132.44" endPos="147.44" friendlyPos="true" lines="15"/>
+    <busStop id="7674894978" name="La Doucerie" lane="33968247#8_0" startPos="167.49" endPos="182.49" friendlyPos="true" lines="15"/>
+    <busStop id="7674898708" name="Sabotte" lane="72180586#1_0" startPos="76.28" endPos="91.28" friendlyPos="true" lines="15"/>
+    <busStop id="7674898714" name="Bas Roi" lane="72180586#4_0" startPos="116.25" endPos="131.25" friendlyPos="true" lines="15"/>
+    <busStop id="7674898719" name="Rue Nouvelle" lane="165300935#2_0" startPos="15.95" endPos="30.95" friendlyPos="true" lines="15"/>
+    <busStop id="7674898721" name="Professeur Roux" lane="353610242_0" startPos="58.18" endPos="71.51" friendlyPos="true" lines="15"/>
+    <busStop id="7675058719" name="Plains Champs" lane="572427013_0" startPos="32.88" endPos="47.88" friendlyPos="true"/>
+    <busStop id="7678571461" name="Pré de l&apos;Isle" lane="57727108#1_0" startPos="78.65" endPos="93.65" friendlyPos="true" lines="15"/>
+    <busStop id="7681335264" name="Champs Maraîchers" lane="174422970#1_0" startPos="1.62" endPos="16.62" friendlyPos="true" lines="F"/>
+    <busStop id="7681335265" name="Franklin Roosevelt" lane="174422970#1_0" startPos="204.08" endPos="219.08" friendlyPos="true" lines="F"/>
+    <busStop id="7681509086" name="Allée des Machines" lane="401846271#7_0" startPos="13.21" endPos="28.21" friendlyPos="true"/>
+    <busStop id="7681509087" name="Chemin de Ronde" lane="217559043_0" startPos="57.36" endPos="72.36" friendlyPos="true"/>
+    <busStop id="7681539010" name="Alain" lane="878853562#1_0" startPos="0.00" endPos="8.78" friendlyPos="true" lines="21S"/>
+    <busStop id="7684097786" name="Augier" lane="39362945#1_0" startPos="3.18" endPos="18.18" friendlyPos="true"/>
+    <busStop id="7684097787" name="Henri Régnault" lane="40345749_0" startPos="107.65" endPos="117.19" friendlyPos="true"/>
+    <busStop id="7684097788" name="La Chapelle" lane="28605266#3_0" startPos="53.91" endPos="68.91" friendlyPos="true"/>
+    <busStop id="7684097789" name="École Princesse" lane="68452284#1_0" startPos="2.08" endPos="17.08" friendlyPos="true"/>
+    <busStop id="7684097790" name="Princesse - Croissy" lane="362068171_0" startPos="65.74" endPos="80.74" friendlyPos="true"/>
+    <busStop id="7684097791" name="Cultures Lorraine" lane="40325350#0_0" startPos="37.31" endPos="52.31" friendlyPos="true"/>
+    <busStop id="7684097792" name="Princesse - Croissy" lane="371730921#0_0" startPos="16.57" endPos="31.57" friendlyPos="true"/>
+    <busStop id="8105541661" name="La Roseraie" lane="371924815#0_0" startPos="44.29" endPos="59.29" friendlyPos="true"/>
+    <busStop id="8108500499" name="Maupassant" lane="28825543#4_0" startPos="34.74" endPos="49.74" friendlyPos="true"/>
+    <busStop id="8108500500" name="Maupassant" lane="28825543#5_0" startPos="5.12" endPos="20.12" friendlyPos="true" lines="L"/>
+    <busStop id="8189789458" name="Hôtel de Ville - Le Vésinet Centre RER" lane="28375471#0_0" startPos="15.55" endPos="30.55" friendlyPos="true" lines="N153"/>
+    <busStop id="8189789459" name="Gare du Vésinet - Le Pecq" lane="806197195#1_0" startPos="86.06" endPos="101.06" friendlyPos="true" lines="N153"/>
+    <busStop id="8644328820" name="Lucien Guitry" lane="77180861#0_0" startPos="25.72" endPos="40.72" friendlyPos="true"/>
+    <busStop id="8644328821" name="Lucien Guitry" lane="77180861#0_0" startPos="7.06" endPos="22.06" friendlyPos="true"/>
+    <busStop id="87360108" name="Saint-Germain-en-Laye" lane="10445257#0_0" startPos="0.00" endPos="100.90" friendlyPos="true" lines="A">
+        <access lane="298584102_0" pos="9.34" length="9.20" friendlyPos="1"/>
+        <access lane="298584105_0" pos="2.00" length="4.08" friendlyPos="1"/>
+        <access lane="298584106_0" pos="6.65" length="3.94" friendlyPos="1"/>
+        <access lane="35336334#0_0" pos="0.00" length="7.00" friendlyPos="1"/>
+        <access lane="629797752_0" pos="33.48" length="9.61" friendlyPos="1"/>
+    </busStop>
+</additional>
