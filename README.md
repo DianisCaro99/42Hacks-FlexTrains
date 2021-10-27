@@ -7,3 +7,4 @@ Then we utilize a multilayer perceptron model to predict the occupation for ever
 We propose the following architecture to provide a scalable and feasible solution.
 
 ![Sumo-cfg: Ne York City - Traffic Simulation](https://i.ibb.co/Pg57GCr/sumo-ny.png)
+![Sumo-cfg: Ne York City - Traffic Simulation](https://i.ibb.co/YXQPq4G/Captura-de-pantalla-2021-10-27-155039.png)
